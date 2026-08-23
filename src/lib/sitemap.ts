@@ -1,7 +1,7 @@
 import { articles } from "@/data/articles";
 import { categories } from "@/data/site";
 
-const BASE_URL = "https://celebrationstuff.com";
+const BASE_URL = "https://celebrationsstuff.com";
 
 export function generateSitemapXml(): string {
   const staticRoutes = [
