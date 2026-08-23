@@ -1,0 +1,187 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+/*
+ * Celebration Stuff design system — light mode only.
+ * Editorial Red primary, Charcoal secondary, Sage accent.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-background-subtle: var(--background-subtle);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-destructive: var(--error);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--ring);
+
+  --shadow-card: 0 1px 2px oklch(0.25 0.03 40 / 0.04), 0 8px 24px oklch(0.25 0.03 40 / 0.06);
+  --shadow-lift: 0 2px 6px oklch(0.25 0.03 40 / 0.06), 0 18px 40px oklch(0.25 0.03 40 / 0.1);
+
+  --ease-editorial: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.995 0.004 85);
+  --background-subtle: oklch(0.972 0.011 80);
+  --foreground: oklch(0.245 0.018 45);
+  --foreground-muted: oklch(0.532 0.021 55);
+  --surface: oklch(1 0 0);
+  --surface-hover: oklch(0.978 0.008 80);
+  --muted: oklch(0.965 0.01 80);
+  --primary: oklch(0.516 0.169 22);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --primary-soft: oklch(0.952 0.028 25);
+  --secondary: oklch(0.29 0.014 55);
+  --secondary-foreground: oklch(0.985 0.004 85);
+  --accent: oklch(0.598 0.062 148);
+  --accent-foreground: oklch(0.99 0.005 85);
+  --accent-soft: oklch(0.951 0.024 150);
+  --border: oklch(0.912 0.011 75);
+  --ring: oklch(0.516 0.169 22);
+  --success: oklch(0.586 0.114 152);
+  --warning: oklch(0.742 0.135 75);
+  --error: oklch(0.556 0.196 27);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--primary-soft);
+  }
+}
+
+@utility text-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 1.4rem + 3.6vw, 4.25rem);
+  line-height: 1.03;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+
+@utility text-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.3rem + 2.4vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+@utility text-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 1.2rem + 1.1vw, 2.1rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+@utility text-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.08rem + 0.5vw, 1.5rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@utility text-body-lg {
+  font-size: clamp(1.06rem, 1rem + 0.3vw, 1.22rem);
+  line-height: 1.7;
+  color: var(--foreground-muted);
+}
+
+@utility text-body {
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+@utility text-caption {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--foreground-muted);
+}
+
+@utility text-overline {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+@utility surface-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+@utility reveal {
+  animation: reveal-up 0.6s var(--ease-editorial) both;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
