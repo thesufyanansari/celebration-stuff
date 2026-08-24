@@ -5,6 +5,7 @@ import article3 from "./christmas/christmas-mantel-decorating-ideas";
 import article4 from "./christmas/10-best-christmas-gifts-for-mom";
 import article5 from "./christmas/best-christmas-gifts-for-mom-2026";
 import article6 from "./christmas/12-christmas-gifts-for-mom-she-will-actually-love";
+import article7 from "./christmas/20-christmas-gift-ideas-for-dad-useful-picks";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -17,6 +18,7 @@ export const registryArticles: Article[] = [
   article4,
   article5,
   article6,
+  article7,
 ];
 
 export default registryArticles;
