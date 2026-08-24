@@ -8,30 +8,32 @@ export type AdConfig = {
   defaultDensity: AdDensity;
   minWordCountForAds: number;
   slots: {
-    homepageBanner: string;
-    articleAfterIntro: string;
-    articleMidContent: string;
-    articleAfterProducts: string;
-    articleBeforeFaq: string;
-    articleAfterConclusion: string;
-    sidebarBanner: string;
+    top: string;
+    afterIntro: string;
+    betweenProducts: string;
+    midContent: string;
+    beforeRelated: string;
+    sidebarPrimary: string;
+    sidebarSecondary: string;
+    footer: string;
   };
 };
 
 export const adConfig: AdConfig = {
   publisherId: import.meta.env.VITE_ADSENSE_CLIENT || "ca-pub-0000000000000000",
   enabled: true,
-  isDevelopment: import.meta.env.DEV || true,
+  isDevelopment: import.meta.env.DEV ?? false,
   autoAdsEnabled: true,
   defaultDensity: "standard",
-  minWordCountForAds: 300,
+  minWordCountForAds: 250,
   slots: {
-    homepageBanner: "1000000001",
-    articleAfterIntro: "1000000002",
-    articleMidContent: "1000000003",
-    articleAfterProducts: "1000000004",
-    articleBeforeFaq: "1000000005",
-    articleAfterConclusion: "1000000006",
-    sidebarBanner: "1000000007",
+    top: "1000000001",
+    afterIntro: "1000000002",
+    betweenProducts: "1000000003",
+    midContent: "1000000004",
+    beforeRelated: "1000000005",
+    sidebarPrimary: "1000000006",
+    sidebarSecondary: "1000000007",
+    footer: "1000000008",
   },
 };

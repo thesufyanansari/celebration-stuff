@@ -1,16 +1,25 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Eye, Clock, Award, Sparkles, ShieldCheck } from "lucide-react";
-import { formatDate, formatViews, getArticle, related } from "@/data/articles";
-import { getAuthor, getCategory, site } from "@/data/site";
-import { ArticleCard } from "@/components/site/ArticleCard";
+import { createFileRoute, notFound } from "@tanstack/react-router";
+import { ShieldCheck } from "lucide-react";
+import { getArticle, getRelatedArticles } from "@/data/articles";
+import { getAuthor, site } from "@/data/site";
+import { CommentsSection } from "@/components/site/CommentsSection";
 import { PinterestCta } from "@/components/site/PinterestCta";
 import { Newsletter } from "@/components/site/Newsletter";
-import { AffiliateDisclosure } from "@/components/site/AffiliateDisclosure";
-import { ArticleSidebar } from "@/components/site/ArticleSidebar";
-import { ProductCardBlock, ProductComparisonTable, QuickPicksSection } from "@/components/site/ProductCardBlock";
-import { CommentsSection } from "@/components/site/CommentsSection";
 import { ArticleAd } from "@/components/ads/AdSlot";
-import { FaqAccordion } from "@/components/site/FaqAccordion";
+import {
+  ArticleHeader,
+  ArticleSidebar,
+  ArticleTableOfContents,
+  TopProductPicks,
+  ProductFeature,
+  ComparisonTable,
+  InternalArticleCard,
+  ArticleFAQ,
+  AuthorBox,
+  RelatedArticles,
+  ArticleContentRenderer,
+  type EnhancedProduct,
+} from "@/components/article";
 
 export const Route = createFileRoute("/article/$slug")({
   loader: ({ params }) => {
@@ -36,7 +45,7 @@ export const Route = createFileRoute("/article/$slug")({
       description: pageDescription,
       image: [article.image],
       datePublished: article.published,
-      dateModified: article.updated,
+      dateModified: article.updated || article.published,
       author: {
         "@type": "Person",
         name: article.author,
@@ -62,20 +71,23 @@ export const Route = createFileRoute("/article/$slug")({
       ],
     };
 
-    const jsonLdFaq = article.faqs && article.faqs.length > 0 ? {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: article.faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.a,
-        },
-      })),
-    } : null;
+    const jsonLdFaq =
+      article.faqs && article.faqs.length > 0
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: article.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.a,
+              },
+            })),
+          }
+        : null;
 
-    const scripts = [
+    const scripts: any[] = [
       { type: "application/ld+json", children: JSON.stringify(jsonLdArticle) },
       { type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) },
     ];
@@ -108,223 +120,210 @@ export const Route = createFileRoute("/article/$slug")({
 function ArticlePage() {
   const { article } = Route.useLoaderData();
   const author = getAuthor(article.author);
-  const category = getCategory(article.category);
-  const more = related(article);
+  const moreArticles = getRelatedArticles(article, 6);
 
-  const enhancedProducts = article.products.map((p, idx) => ({
+  // Normalize products with full fallback metadata
+  const enhancedProducts: EnhancedProduct[] = (article.products || []).map((p, idx) => ({
     ...p,
     image: p.image || article.image,
     imageAlt: p.imageAlt || p.name,
     galleryImages: p.galleryImages?.length ? p.galleryImages : [p.image || article.image],
     rating: p.rating !== undefined ? p.rating : 4.8 + (idx % 3) * 0.1,
-    badge: p.badge || (idx === 0 ? "Best Overall" : idx === 1 ? "Best Value" : "Best Luxury"),
-    bestFor: p.bestFor || (idx === 0 ? "Moms & Partners" : idx === 1 ? "Friends & Family" : "Special Milestones"),
+    badge: p.badge || (idx === 0 ? "Best Overall" : idx === 1 ? "Best Budget" : idx === 2 ? "Best Premium" : undefined),
+    bestFor: p.bestFor || (idx === 0 ? "Top Recommendation" : "Practical Choice"),
     whyWeLoveIt: p.whyWeLoveIt || p.why,
     keyDetails: p.keyDetails || p.keyFeatures || [
-      "High-grade materials & gift-ready presentation",
-      "Consistently top-rated by verified buyers",
-      "Versatile design suitable for any celebration",
+      "Tested for daily durability and ease of use",
+      "Prime-eligible fast shipping with free returns",
+      "Consistently high satisfaction ratings from buyers",
     ],
-    consider: p.consider || p.considerations || (idx === 0 ? "Popular item that can sell out close to major holidays." : "Requires 2–3 days extra lead time for custom engraving."),
-    verdict: p.verdict || "An exceptional gift choice that combines high practical utility with memorable emotional value.",
+    consider:
+      p.consider ||
+      p.considerations ||
+      "Popular item during holiday rush; check current stock on Amazon.",
+    verdict:
+      p.verdict ||
+      "An exceptional gift pick that balances real-world practicality with memorable celebration value.",
   }));
 
+  // Separate non-product intro sections vs closing sections
+  const nonProductSections = article.sections.filter((s) => !s.productId);
+  const introSections = nonProductSections.slice(0, 2);
+  const closingSections = nonProductSections.slice(2);
+
+  // Cross-linking candidates from recommendation engine
+  const inlineRelatedSlug1 = moreArticles[0]?.slug;
+  const inlineRelatedSlug2 = moreArticles[1]?.slug;
+
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="text-caption mb-4">
-        <Link to="/" className="hover:text-primary">
-          Home
-        </Link>
-        <span className="px-2">/</span>
-        <Link to="/explore" className="hover:text-primary">
-          Gift Guides
-        </Link>
-        {category && (
-          <>
-            <span className="px-2">/</span>
-            <Link
-              to="/category/$slug"
-              params={{ slug: category.slug }}
-              className="hover:text-primary"
-            >
-              {category.name}
-            </Link>
-          </>
-        )}
-        <span className="px-2">/</span>
-        <span className="text-foreground font-medium truncate max-w-[220px] inline-block align-bottom">{article.title}</span>
-      </nav>
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      {/* 1. EDITORIAL ARTICLE HEADER */}
+      <ArticleHeader article={article} />
 
-      <div className="grid gap-10 lg:grid-cols-12">
-        {/* Main Article Content Column (8 Cols) */}
-        <main className="lg:col-span-8">
+      {/* Top of Article Leaderboard Ad */}
+      <ArticleAd placement="top" />
+
+      {/* 2. MAIN 2-COLUMN GRID LAYOUT (Bounded sticky container) */}
+      <div className="relative grid gap-12 lg:grid-cols-12">
+        {/* Main Editorial Content Column (8 Cols) */}
+        <main className="lg:col-span-8 min-w-0">
           <article>
-            {/* Article Hero */}
-            <header>
-              <h1 className="text-h1 font-display">{article.title}</h1>
-              <p className="mt-4 text-lg text-foreground-muted leading-relaxed">{article.excerpt}</p>
+            {/* Mobile Collapsible Table of Contents */}
+            <ArticleTableOfContents isMobileDrawer />
 
-              <div className="mt-5 flex flex-wrap items-center gap-3 text-caption border-y border-border/60 py-3">
-                {author && (
-                  <Link to="/author/$slug" params={{ slug: author.slug }} className="font-semibold text-foreground hover:text-primary">
-                    By {author.name}
-                  </Link>
-                )}
-                <span>•</span>
-                <span>Published {formatDate(article.published)}</span>
-                <span>•</span>
-                <span>Updated {formatDate(article.updated)}</span>
-                <span>•</span>
-                <span className="inline-flex items-center gap-1">
-                  <Clock className="h-3.5 w-3.5" /> {article.readingMinutes} min read
-                </span>
-                <span className="inline-flex items-center gap-1 ml-auto font-medium">
-                  <Eye className="h-3.5 w-3.5" /> {formatViews(article.views)} views
-                </span>
-              </div>
+            {/* Introductory Context Sections */}
+            {introSections.map((section, idx) => {
+              const secId =
+                section.id ||
+                `intro-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
-              <div className="mt-5">
-                <AffiliateDisclosure />
-              </div>
+              return (
+                <section key={secId} id={secId} className="mb-8 scroll-mt-24">
+                  <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                    {section.heading}
+                  </h2>
+                  <div className="space-y-3">
+                    {section.body.map((para, pIdx) => (
+                      <ArticleContentRenderer key={pIdx} text={para} />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
 
-              <img
-                src={article.image}
-                alt={article.featuredImageAlt || article.title}
-                width={article.imageWidth}
-                height={article.imageHeight}
-                className="mt-6 aspect-16/9 w-full rounded-3xl object-cover shadow-card"
-              />
-            </header>
-
-            {/* Introduction / Short Answer */}
-            <div className="mt-8 rounded-2xl border border-primary/20 bg-accent-soft/30 p-6">
-              <div className="flex items-center gap-2 text-overline text-primary font-semibold">
-                <Sparkles className="h-4 w-4" />
-                <span>Editorial Executive Summary</span>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-foreground">{article.answer}</p>
-            </div>
-
-            {/* Quick Picks Component */}
-            {enhancedProducts.length > 0 && (
-              <div className="mt-8">
-                <QuickPicksSection products={enhancedProducts} />
-              </div>
-            )}
-
-            {/* In-Content Ad Placement 1 */}
+            {/* In-Article Ad After Intro */}
             <ArticleAd placement="after-intro" />
 
-            {/* Product-by-Product Integrated Editorial Flow */}
-            <div className="mt-10 flex flex-col gap-14">
-              {article.sections.map((s, idx) => {
-                // Find matching product by explicit productId, fallback to index
-                const prod = s.productId
-                  ? enhancedProducts.find((p) => p.id === s.productId)
-                  : enhancedProducts[idx];
+            {/* Quick Picks / Top Recommendations Shopping Grid */}
+            {enhancedProducts.length > 0 && (
+              <TopProductPicks products={enhancedProducts} />
+            )}
 
-                const sectionSlug = s.id || (s.heading ? s.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") : `section-${idx}`);
-                const showAdAfter = idx === 2 || idx === 5 || idx === 8;
+            {/* Detailed Product Reviews Flow */}
+            <div className="my-10 flex flex-col gap-12">
+              {enhancedProducts.map((product, idx) => {
+                const matchingSection = article.sections.find(
+                  (s) =>
+                    s.productId === product.id ||
+                    (s.heading && s.heading.toLowerCase().includes(product.name.toLowerCase().slice(0, 8)))
+                );
+
+                const showInlineCard1 = idx === 2 && inlineRelatedSlug1;
+                const showInlineCard2 = idx === 8 && inlineRelatedSlug2;
+                // Place an ad after every 2 products (after Product 2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+                const showBetweenProductsAd = (idx + 1) % 2 === 0;
 
                 return (
-                  <section key={s.id || s.heading || idx} id={sectionSlug} className="article-section scroll-mt-24">
-                    {/* 1. SECTION HEADING */}
-                    {s.heading && (
-                      <h2 id={sectionSlug} className="text-h2 font-display mb-4">{s.heading}</h2>
+                  <div key={product.id || idx} className="flex flex-col gap-8">
+                    <ProductFeature
+                      product={product}
+                      index={idx}
+                      narrativeParagraphs={matchingSection?.body}
+                    />
+
+                    {/* Contextual Inline Recommendation Card between items */}
+                    {showInlineCard1 && (
+                      <InternalArticleCard
+                        slug={inlineRelatedSlug1}
+                        calloutText="Trending Holiday Inspiration"
+                      />
+                    )}
+                    {showInlineCard2 && (
+                      <InternalArticleCard
+                        slug={inlineRelatedSlug2}
+                        calloutText="You Might Also Enjoy"
+                      />
                     )}
 
-                    {/* 2. EDITORIAL CONTENT (NARRATIVE PARAGRAPHS) */}
-                    <div className="article-section-content space-y-3 mb-6">
-                      {s.body.map((p, i) => (
-                        <p key={i} className="text-foreground-muted leading-relaxed">
-                          {p}
-                        </p>
-                      ))}
-                    </div>
-
-                    {/* 3. PRODUCT CARD — MUST BE AFTER EDITORIAL CONTENT */}
-                    {prod && (
-                      <div className="mt-6">
-                        <ProductCardBlock product={prod} index={idx} />
-                      </div>
+                    {/* In-Article Ad between product batches */}
+                    {showBetweenProductsAd && (
+                      <ArticleAd placement="between-products" />
                     )}
-
-                    {/* Interstitial Display Ad Opportunities between sections */}
-                    {showAdAfter && (
-                      <div className="mt-10">
-                        <ArticleAd placement={`after-section-${idx}`} />
-                      </div>
-                    )}
-                  </section>
+                  </div>
                 );
               })}
             </div>
 
-            {/* Quick Comparison Section (After all products) */}
+            {/* Product Comparison Table */}
             {enhancedProducts.length > 0 && (
-              <section className="mt-12">
-                <h2 className="text-h2 font-display mb-4">Product Comparison Table</h2>
-                <ProductComparisonTable products={enhancedProducts} />
-              </section>
+              <ComparisonTable products={enhancedProducts} />
             )}
 
-            {/* How We Chose These Gifts */}
-            <section className="mt-12 rounded-3xl border border-border bg-surface p-6 shadow-card">
-              <div className="flex items-center gap-2 text-overline text-primary font-semibold">
-                <ShieldCheck className="h-4 w-4" />
+            {/* Closing Editorial & Decision Sections */}
+            {closingSections.map((section, idx) => {
+              const secId =
+                section.id ||
+                `guide-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
+              return (
+                <section
+                  key={secId}
+                  id={secId}
+                  className="my-10 scroll-mt-24 rounded-3xl border border-border/80 bg-surface p-6 shadow-card sm:p-8"
+                >
+                  <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                    {section.heading}
+                  </h2>
+                  <div className="space-y-3">
+                    {section.body.map((para, pIdx) => (
+                      <ArticleContentRenderer key={pIdx} text={para} />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+
+            {/* In-Article Ad Before FAQs & Editorial Standards */}
+            <ArticleAd placement="mid-article" />
+
+            {/* Editorial Testing & Quality Standards Box */}
+            <div className="my-10 rounded-3xl border border-primary/20 bg-gradient-to-br from-surface to-primary-soft/30 p-6 shadow-card sm:p-8">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">
+                <ShieldCheck className="h-4 w-4 text-emerald-600" />
                 <span>Our Editorial Standards</span>
               </div>
-              <h3 className="mt-2 font-display text-lg font-semibold text-foreground">How We Chose These Gifts</h3>
-              <p className="mt-2 text-xs text-foreground-muted leading-relaxed">
-                Every item featured in this guide is selected by our editorial team based on design quality, recipient usefulness, verified owner feedback, brand reputation, and overall value. We update our recommendations regularly to keep links and availability current.
+              <h3 className="mt-2 font-display text-xl font-bold text-foreground">
+                How We Choose & Verify Every Recommendation
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-foreground-muted sm:text-sm">
+                Every product featured on <em>Celebration Stuff</em> is curated through extensive research, genuine utility assessment, price-to-value analysis, and feedback from real buyers. We continuously monitor price updates and stock availability to ensure our gift guides remain genuinely helpful when you need them.
               </p>
-            </section>
-
-            {/* In-Content Ad Placement 3: Before FAQ */}
-            <ArticleAd placement="before-faq" />
-
-            {/* Accessible Accordion FAQs */}
-            {article.faqs && article.faqs.length > 0 && (
-              <FaqAccordion faqs={article.faqs} />
-            )}
-
-            {/* Pinterest Share CTA */}
-            <div className="mt-12">
-              <PinterestCta />
             </div>
 
-            {/* Comments */}
-            <div className="mt-12">
+            {/* Buyer FAQs */}
+            {article.faqs && article.faqs.length > 0 && (
+              <ArticleFAQ faqs={article.faqs} />
+            )}
+
+            {/* Author Box */}
+            {author && <AuthorBox author={author} />}
+
+            {/* Pinterest Share & Comments */}
+            <div className="mt-12 space-y-10">
+              <PinterestCta />
               <CommentsSection articleSlug={article.slug} />
             </div>
           </article>
         </main>
 
-        {/* Sidebar Column (4 Cols) */}
-        <div className="lg:col-span-4">
+        {/* Bounded Desktop Right Sidebar Column (4 Cols) */}
+        <div className="hidden lg:col-span-4 lg:block relative">
           <ArticleSidebar currentArticle={article} />
         </div>
       </div>
 
-      {/* Related Gift Guides */}
-      {more.length > 0 && (
-        <section className="mt-16 border-t border-border pt-12">
-          <h2 className="text-h2 font-display">More Gift Guides You Might Like</h2>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {more.map((a) => (
-              <ArticleCard key={a.slug} article={a} />
-            ))}
-          </div>
-        </section>
+      {/* Ad Before Related Articles */}
+      <ArticleAd placement="before-related" />
+
+      {/* 3. MORE IDEAS YOU'LL LOVE (Related Article Cards) */}
+      {moreArticles.length > 0 && (
+        <RelatedArticles articles={moreArticles} />
       )}
 
-      {/* Footer Newsletter */}
-      <div className="mt-14">
+      {/* 4. FOOTER NEWSLETTER */}
+      <div className="mt-16">
         <Newsletter compact />
       </div>
     </div>
   );
 }
-
-

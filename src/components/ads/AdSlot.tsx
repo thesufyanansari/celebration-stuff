@@ -7,25 +7,93 @@ declare global {
   }
 }
 
-export type AdSlotProps = {
+export type AdSlotType =
+  | "top"
+  | "after-intro"
+  | "between-products"
+  | "mid-article"
+  | "before-related"
+  | "sidebar"
+  | "sidebar-secondary"
+  | "footer";
+
+export interface AdSlotProps {
+  type?: AdSlotType;
   slotId?: string;
-  format?: "auto" | "fluid" | "rectangle";
+  format?: "auto" | "fluid" | "rectangle" | "horizontal";
   className?: string;
   label?: string;
   minWordCount?: number;
   wordCount?: number;
+}
+
+const slotTypeMapping: Record<AdSlotType, { slot: string; minHeight: string; label: string; format: "auto" | "rectangle" | "horizontal" }> = {
+  top: {
+    slot: adConfig.slots.top,
+    minHeight: "min-h-[100px] sm:min-h-[120px]",
+    label: "Advertisement",
+    format: "horizontal",
+  },
+  "after-intro": {
+    slot: adConfig.slots.afterIntro,
+    minHeight: "min-h-[120px] sm:min-h-[140px]",
+    label: "Sponsored Content",
+    format: "auto",
+  },
+  "between-products": {
+    slot: adConfig.slots.betweenProducts,
+    minHeight: "min-h-[140px] sm:min-h-[180px]",
+    label: "Advertisement",
+    format: "auto",
+  },
+  "mid-article": {
+    slot: adConfig.slots.midContent,
+    minHeight: "min-h-[180px] sm:min-h-[250px]",
+    label: "Advertisement",
+    format: "auto",
+  },
+  "before-related": {
+    slot: adConfig.slots.beforeRelated,
+    minHeight: "min-h-[120px] sm:min-h-[150px]",
+    label: "Advertisement",
+    format: "auto",
+  },
+  sidebar: {
+    slot: adConfig.slots.sidebarPrimary,
+    minHeight: "min-h-[250px]",
+    label: "Advertisement",
+    format: "rectangle",
+  },
+  "sidebar-secondary": {
+    slot: adConfig.slots.sidebarSecondary,
+    minHeight: "min-h-[250px]",
+    label: "Sponsored",
+    format: "rectangle",
+  },
+  footer: {
+    slot: adConfig.slots.footer,
+    minHeight: "min-h-[100px]",
+    label: "Advertisement",
+    format: "horizontal",
+  },
 };
 
 export function AdSlot({
-  slotId = adConfig.slots.articleMidContent,
-  format = "auto",
+  type = "mid-article",
+  slotId,
+  format,
   className = "",
-  label = "Advertisement",
+  label,
   minWordCount = adConfig.minWordCountForAds,
   wordCount = 800,
 }: AdSlotProps) {
   const adRef = useRef<HTMLDivElement>(null);
   const pushedRef = useRef(false);
+
+  const slotMeta = slotTypeMapping[type] || slotTypeMapping["mid-article"];
+  const finalSlotId = slotId || slotMeta.slot;
+  const finalLabel = label || slotMeta.label;
+  const finalFormat = format || slotMeta.format;
 
   // Minimum content guard
   if (!adConfig.enabled || wordCount < minWordCount) {
@@ -38,7 +106,7 @@ export function AdSlot({
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushedRef.current = true;
       } catch (err) {
-        console.error("AdSense push error:", err);
+        console.error("AdSense initialization error:", err);
       }
     }
   }, []);
@@ -46,22 +114,23 @@ export function AdSlot({
   return (
     <div
       ref={adRef}
-      className={`my-8 rounded-2xl border border-border/50 bg-background-subtle/50 p-4 text-center ${className}`}
+      className={`my-8 flex flex-col items-center justify-center rounded-2xl border border-border/60 bg-surface/50 p-3 text-center shadow-sm ${slotMeta.minHeight} ${className}`}
+      aria-label={finalLabel}
     >
-      <span className="mb-2 block text-[0.65rem] font-medium uppercase tracking-wider text-foreground-muted/70">
-        {label}
+      <span className="mb-2 block text-[0.65rem] font-bold uppercase tracking-wider text-foreground-muted/70">
+        {finalLabel}
       </span>
 
       {adConfig.isDevelopment ? (
-        <div className="flex h-32 w-full items-center justify-center rounded-xl border border-dashed border-border bg-surface text-xs font-semibold text-foreground-muted">
-          <span>AdSense Placeholder ({slotId})</span>
+        <div className="flex h-full w-full min-h-[90px] items-center justify-center rounded-xl border border-dashed border-border/80 bg-background-subtle/70 px-4 text-xs font-semibold text-foreground-muted">
+          <span>AdSense Placement [{type}]</span>
         </div>
       ) : (
         <ins
-          className="adsbygoogle block"
+          className="adsbygoogle block w-full"
           data-ad-client={adConfig.publisherId}
-          data-ad-slot={slotId}
-          data-ad-format={format}
+          data-ad-slot={finalSlotId}
+          data-ad-format={finalFormat}
           data-full-width-responsive="true"
         />
       )}
@@ -69,35 +138,11 @@ export function AdSlot({
   );
 }
 
-export function ArticleAd({
-  placement,
-  wordCount = 1000,
-}: {
-  placement:
-    | "after-intro"
-    | "after-product-2"
-    | "mid-article"
-    | "after-product-6"
-    | "before-faq"
-    | "after-conclusion";
-  wordCount?: number;
-}) {
-  const slotMap = {
-    "after-intro": adConfig.slots.articleAfterIntro,
-    "after-product-2": adConfig.slots.articleMidContent,
-    "mid-article": adConfig.slots.articleMidContent,
-    "after-product-6": adConfig.slots.articleAfterProducts,
-    "before-faq": adConfig.slots.articleBeforeFaq,
-    "after-conclusion": adConfig.slots.articleAfterConclusion,
-  };
-
-  return <AdSlot slotId={slotMap[placement]} wordCount={wordCount} />;
+// Convenience wrapper functions
+export function ArticleAd({ placement, wordCount = 1000 }: { placement: AdSlotType; wordCount?: number }) {
+  return <AdSlot type={placement} wordCount={wordCount} />;
 }
 
-export function SidebarAd() {
-  return (
-    <div className="my-6">
-      <AdSlot slotId={adConfig.slots.sidebarBanner} format="rectangle" label="Advertisement" />
-    </div>
-  );
+export function SidebarAd({ isSecondary = false }: { isSecondary?: boolean }) {
+  return <AdSlot type={isSecondary ? "sidebar-secondary" : "sidebar"} className="my-5" />;
 }

@@ -121,11 +121,11 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
                 src={images[activeImageIndex]}
                 alt={product.imageAlt || `${product.name} Amazon gift idea`}
                 loading={index === 0 ? "eager" : "lazy"}
-                className="aspect-4/3 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           ) : (
-            <div className="flex aspect-4/3 w-full items-center justify-center rounded-2xl border border-border bg-background-subtle text-xs text-foreground-muted">
+            <div className="flex aspect-square w-full items-center justify-center rounded-2xl border border-border bg-background-subtle text-xs text-foreground-muted">
               <div className="text-center p-4">
                 <ShoppingBag className="mx-auto h-8 w-8 text-primary/40 mb-2" />
                 <span>Product image coming soon</span>
