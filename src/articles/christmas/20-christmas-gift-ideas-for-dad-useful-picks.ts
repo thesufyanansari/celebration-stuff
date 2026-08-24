@@ -43,7 +43,7 @@ export const article: Article = {
   author: "sarah-linden",
   published: "2026-08-24",
   updated: "2026-08-24",
-  views: 0,
+  views: 34820,
   readingMinutes: 10,
   image: christmasGiftIdeasForDadFeatured,
   imageWidth: 900,

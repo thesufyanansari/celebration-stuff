@@ -1,0 +1,643 @@
+import type { Article } from "@/data/articles";
+
+// Image Imports from assets
+import featuredImage from "@/assets/practical-christmas-gifts-for-dad-who-has-everything-featured.jpg";
+import personalizedTravelCase from "@/assets/personalized-leather-travel-case.jpg";
+import leatherToiletryBag from "@/assets/leather-toiletry-bag-men.jp.jpg";
+import hostFreezeGlasses from "@/assets/host-freeze-beer-glasses-set.jpg";
+import teslyarDockingStation from "@/assets/teslyar-wood-phone-docking-station.jpg";
+import cologneOrganizer from "@/assets/exin-dechen-cologne-organizer-men.jpg";
+import dadCandle from "@/assets/dad-candle-gift-best-dad-ever.jp.jpg";
+import engravedDecanterSet from "@/assets/engraved-whiskey-decanter-set-dad.jpg";
+import luxurySpaBasket from "@/assets/luxury-spa-gift-basket-men.jpg";
+import globeDecanter from "@/assets/whiskey-decanter-globe-set.jpg";
+import dadGiftSet15Pcs from "@/assets/15-pcs-dad-gift-set-care-kit.jpg";
+import cedarBergamotKit from "@/assets/cedar-bergamot-spa-kit-men.jpg";
+import weightedHeatingPad from "@/assets/weighted-heating-pad-neck-shoulder.jpg";
+import vikingHornMug from "@/assets/viking-drinking-horn-mug-gift.jpg";
+import personalizedStorageCase from "@/assets/personalized-leather-travel-storage-case.jpg";
+import nightVisionBinoculars from "@/assets/4k-night-vision-binoculars-men.jpg";
+import dadGlass from "@/assets/dad-glass-gift-daughter-son.jpg";
+import mensSpaSet from "@/assets/mens-spa-gift-set-cedarwood.jpg";
+
+export const article: Article = {
+  slug: "17-practical-christmas-gifts-for-dad-who-has-everything",
+  title: "17 Practical Christmas Gifts for Dad Who Has Everything",
+  excerpt:
+    "Struggling to shop for the dad who insists he 'doesn't need anything'? Discover 17 thoughtful, practical Christmas gifts designed to fill gaps he didn't even know existed.",
+  answer:
+    "The best gifts for a dad who has everything are thoughtful upgrades, personal keepsakes, and everyday problem-solvers. Top picks include the Personalized Leather Travel Case, Engraved Whiskey Decanter Set, TESLYAR Wood Docking Station, and Weighted Heating Pad.",
+  category: "gift-guides",
+  event: "Christmas",
+  season: "Winter",
+  tags: [
+    "christmas-gifts",
+    "gifts-for-dad",
+    "gifts-for-men",
+    "gifts-for-dad-who-has-everything",
+    "practical-gifts",
+    "holiday-gift-guide",
+    "sentimental-gifts"
+  ],
+  author: "sarah-linden",
+  published: "2026-08-25",
+  updated: "2026-08-25",
+  views: 28450,
+  readingMinutes: 9,
+  image: featuredImage,
+  imageWidth: 900,
+  imageHeight: 1200,
+  featured: false,
+
+  // SEO & Schema Metadata
+  metaTitle: "17 Practical Christmas Gifts for Dad Who Has Everything | Celebration Stuff",
+  metaDescription:
+    "Discover 17 thoughtful, practical Christmas gifts for the dad who has everything — from personalized leather goods and whiskey decanters to smart docking stations and tech gadgets.",
+  canonicalUrl: "https://celebrationstuff.com/article/17-practical-christmas-gifts-for-dad-who-has-everything",
+  featuredImageAlt:
+    "Curated collection of practical and luxury Christmas gifts for a dad who has everything arranged on a warm festive background.",
+  primaryKeyword: "Christmas gifts for dad who has everything",
+  secondaryKeywords: [
+    "gifts for dad who has everything",
+    "practical Christmas gifts for dad",
+    "thoughtful dad gifts",
+    "gifts for dad who wants nothing",
+    "unique Christmas gifts for dad",
+    "dad holiday gift guide"
+  ],
+  focusTopic: "Practical and Sentimental Christmas Gifts for Dads Who Have Everything",
+  recipient: ["gifts-for-dad", "gifts-for-men"],
+  occasion: ["christmas-gifts", "holiday-gifts"],
+  holiday: ["christmas-gifts"],
+  giftStyle: ["practical-gifts", "premium-gifts", "sentimental-gifts", "tech-gifts"],
+
+  sections: [
+    {
+      id: "why-dads-who-have-everything-are-so-hard-to-buy-for",
+      heading: "Why Dads Who Have Everything Are So Hard to Buy For",
+      body: [
+        "Let's be honest — your dad probably already owns the basics. He has clothes. He has tools. He has gadgets. And when you ask him what he wants, he genuinely means it when he says 'nothing.'",
+        "The problem isn't that he doesn't appreciate gifts. It's that he's reached a point in life where he buys what he needs when he needs it. So by the time Christmas rolls around, there's nothing obvious left.",
+        "The solution? Think beyond the obvious. Think about small upgrades, organization, comfort, and items that make his daily routine just a little better. That's exactly what this list delivers.",
+        "Also be sure to explore our companion guide on [20 Christmas gift ideas for dad he'll actually use](/article/20-christmas-gift-ideas-for-dad-useful-picks) for additional inspiration!"
+      ],
+    },
+    {
+      id: "how-we-chose-these-gifts",
+      heading: "How We Chose These Gifts",
+      body: [
+        "Every product on this list had to pass a simple test: Would a dad who has everything still appreciate it? Is it actually useful — not just decorative? Does it make his life easier, more organized, or more enjoyable? And is it something he probably doesn't already own?",
+        "We also prioritized quality craftsmanship, thoughtful packaging, and products with a personal touch. Because when you're buying for someone who has everything, the thoughtfulness matters just as much as the gift itself."
+      ],
+    },
+    {
+      id: "personalized-leather-travel-case",
+      heading: "1. Best Sentimental: Personalized Leather Travel Case",
+      productId: "personalized-leather-travel-case",
+      body: [
+        "There's something special about a gift that has his name on it — literally. This premium leather travel case is custom engraved with his initials or a short message, making it a deeply personal gift he'll treasure.",
+        "The cedar lining keeps his belongings fresh, and the premium leather ages beautifully over time. Whether he uses it for travel, storage, or keepsakes, it's a gift that feels personal every time he sees it.",
+        "Best for: The dad who appreciates craftsmanship and personal touches. Skip this if: He doesn't travel or already has a favorite travel case."
+      ],
+    },
+    {
+      id: "leather-toiletry-bag-men",
+      heading: "2. Best Practical Everyday: Leather Toiletry Bag",
+      productId: "leather-toiletry-bag-men",
+      body: [
+        "Every dad needs a good toiletry bag — even if he doesn't know it yet. This water-resistant leather bag features two zippered internal pockets and two snap-fastened compartments, keeping everything organized and accessible.",
+        "It's perfect for travel, gym bags, or even just keeping his bathroom essentials tidy. The premium leather construction means it'll last for years, and the thoughtful design makes it a pleasure to use.",
+        "Best for: The dad who travels, goes to the gym, or just appreciates good organization. Skip this if: He already has a toiletry bag he loves."
+      ],
+    },
+    {
+      id: "host-freeze-beer-glasses-set",
+      heading: "3. Best for Entertaining: Host Freeze Beer Glasses",
+      productId: "host-freeze-beer-glasses-set",
+      body: [
+        "If your dad enjoys hosting friends and family, these freezable beer glasses are a game-changer. Simply pop them in the freezer, and they'll keep his beer ice-cold from the first sip to the last.",
+        "The double-wall insulated design prevents condensation, so there's no messy rings on the table. And because they're made from durable materials, they won't break like traditional glassware.",
+        "Best for: The dad who loves entertaining or enjoys a cold beer after a long day. Skip this if: He doesn't drink beer or already has a favorite glassware set."
+      ],
+    },
+    {
+      id: "teslyar-wood-phone-docking-station",
+      heading: "4. Best Office/Work-From-Home: TESLYAR Wood Phone Docking Station",
+      productId: "teslyar-wood-phone-docking-station",
+      body: [
+        "If your dad works from home, he probably has a cluttered desk. This beautiful wood docking station solves that problem by organizing his phone, watch, keys, and other daily essentials in one stylish place.",
+        "The natural wood finish looks premium, and the thoughtful design keeps everything within easy reach. It's the kind of gift that makes his daily routine just a little bit smoother.",
+        "Best for: The dad who works from home or appreciates a tidy workspace. Skip this if: He doesn't have a desk or prefers a minimalist setup."
+      ],
+    },
+    {
+      id: "exin-dechen-cologne-organizer-men",
+      heading: "5. Best Grooming/Personal Care: EXIN DECHEN Cologne Organizer",
+      productId: "exin-dechen-cologne-organizer-men",
+      body: [
+        "Does your dad have a collection of colognes and fragrances sitting in a drawer? This cologne organizer brings them out into the open, displaying his collection in a stylish, accessible way.",
+        "The sleek design fits on any dresser or vanity, and the tiered layout makes it easy to see and choose his favorite fragrance. It's a small upgrade that makes a big difference in his daily routine.",
+        "Best for: The dad who appreciates fragrances and good grooming. Skip this if: He doesn't wear cologne or prefers a minimalist approach."
+      ],
+    },
+    {
+      id: "dad-candle-gift-best-dad-ever",
+      heading: "6. Best Budget: Dad Candle Gift",
+      productId: "dad-candle-gift-best-dad-ever",
+      body: [
+        "Sometimes the simplest gifts are the most meaningful. This premium candle is specifically designed for dads, with a masculine scent that fills any room with warmth and sophistication.",
+        "The 'Best Dad Ever' message adds a personal touch, and the high-quality wax ensures a clean, long-lasting burn. It's an affordable gift that still feels thoughtful and intentional.",
+        "Best for: The dad who appreciates a cozy atmosphere and good scents. Skip this if: He's sensitive to fragrances or doesn't use candles."
+      ],
+    },
+    {
+      id: "engraved-whiskey-decanter-set-dad",
+      heading: "7. Best Premium: Engraved Whiskey Decanter Set",
+      productId: "engraved-whiskey-decanter-set-dad",
+      body: [
+        "For the dad who deserves the best, this engraved whiskey decanter set is a statement piece. The intricate engraving adds a personal touch, and the premium glassware elevates his whiskey-drinking experience.",
+        "The set includes a decanter and matching glasses, all presented in a luxurious gift box. It's the kind of gift that sits proudly on his bar cart and gets used for special occasions — or just a quiet evening at home.",
+        "Best for: The dad who enjoys whiskey and appreciates quality craftsmanship. Skip this if: He's not a whiskey drinker or already owns a decanter set."
+      ],
+    },
+    {
+      id: "luxury-spa-gift-basket-men",
+      heading: "8. Best Wellness/Relaxation: Luxury Spa Gift Basket",
+      productId: "luxury-spa-gift-basket-men",
+      body: [
+        "Even the toughest dads need a little relaxation sometimes. This luxury spa gift basket includes sandalwood-scented bath and body products that help him unwind after a long day.",
+        "From body wash to deodorant, everything in this set is designed to elevate his grooming routine and provide a spa-like experience at home.",
+        "Best for: The dad who deserves a little self-care but never treats himself. Skip this if: He's not into grooming products or prefers unscented options."
+      ],
+    },
+    {
+      id: "whiskey-decanter-globe-set",
+      heading: "9. Best Unique/Unusual: Whiskey Decanter Globe Set",
+      productId: "whiskey-decanter-globe-set",
+      body: [
+        "Here's something he definitely doesn't already own: a whiskey decanter shaped like a globe. This unique set is a conversation starter and a practical piece of home decor all in one.",
+        "The globe opens to reveal a premium decanter, and the set includes matching glasses. It's the perfect gift for the dad who loves whiskey, travel, or just cool, unique items.",
+        "Best for: The dad who loves unique decor, travel, or whiskey. Skip this if: He's not a whiskey drinker or prefers minimalist design."
+      ],
+    },
+    {
+      id: "15-pcs-dad-gift-set-care-kit",
+      heading: "10. Best Gift Set/Bundle: 15 Pcs Dad Gift Set",
+      productId: "15-pcs-dad-gift-set-care-kit",
+      body: [
+        "When in doubt, go with a bundle. This 15-piece gift set includes everything he needs for a complete self-care routine — from grooming essentials to relaxation products.",
+        "The all-in-one set is beautifully packaged and ready for gifting, making it perfect for dads who appreciate variety and quality.",
+        "Best for: The dad who deserves a full care package. Skip this if: He already has similar products or prefers minimalism."
+      ],
+    },
+    {
+      id: "cedar-bergamot-spa-kit-men",
+      heading: "11. Best Self-Care: Cedar & Bergamot Spa Kit",
+      productId: "cedar-bergamot-spa-kit-men",
+      body: [
+        "This spa kit features the natural, masculine scents of cedar and bergamot. The set includes premium bath and body products that turn his shower into a spa-like experience.",
+        "It's perfect for the dad who deserves to be pampered — even if he'd never admit it. The natural ingredients and sophisticated packaging make it feel truly luxurious.",
+        "Best for: The dad who appreciates quality self-care products. Skip this if: He prefers unscented products or already has a grooming routine."
+      ],
+    },
+    {
+      id: "weighted-heating-pad-neck-shoulder",
+      heading: "12. Best Pain Relief/Comfort: Weighted Heating Pad",
+      productId: "weighted-heating-pad-neck-shoulder",
+      body: [
+        "If your dad has aches and pains from years of hard work, this weighted heating pad is a thoughtful gift that provides real relief. The heat therapy soothes sore muscles, and the weighted design adds comforting pressure.",
+        "It's perfect for the dad who spends hours at a desk, working in the yard, or just needs a little extra comfort at the end of the day.",
+        "Best for: The dad with neck, shoulder, or back tension. Skip this if: He's sensitive to heat therapy or already has a heating pad."
+      ],
+    },
+    {
+      id: "viking-drinking-horn-mug-gift",
+      heading: "13. Best Novelty: Viking Drinking Horn Mug",
+      productId: "viking-drinking-horn-mug-gift",
+      body: [
+        "This one's just plain fun. The Viking drinking horn mug is a unique, conversation-starting gift for the dad with a sense of adventure — or a sense of humor.",
+        "Made from natural ox horn, each mug is one-of-a-kind. It's perfect for coffee, beer, or just displaying on a shelf.",
+        "Best for: The dad who loves unique, fun gifts or has a playful side. Skip this if: He prefers traditional, practical items."
+      ],
+    },
+    {
+      id: "personalized-leather-travel-storage-case",
+      heading: "14. Best Sentimental & Personalized: Personalized Leather Travel Storage Case",
+      productId: "personalized-leather-travel-storage-case",
+      body: [
+        "Another personalized leather option, this travel storage case is designed for keeping small valuables safe and organized. The cedar lining adds a touch of luxury, and the custom engraving makes it truly personal.",
+        "Whether he uses it for watches, jewelry, cufflinks, or other small items, it's a gift that feels tailor-made for him.",
+        "Best for: The dad who appreciates thoughtful, personalized gifts. Skip this if: He already has similar storage or doesn't travel often."
+      ],
+    },
+    {
+      id: "4k-night-vision-binoculars-men",
+      heading: "15. Best Tech Gadget: 4K Night Vision Binoculars",
+      productId: "4k-night-vision-binoculars-men",
+      body: [
+        "For the dad who loves gadgets and the outdoors, these 4K night vision binoculars are a dream gift. They record video, offer crystal-clear night vision, and are perfect for camping, wildlife watching, or just exploring the backyard.",
+        "It's the kind of high-tech gift he probably hasn't bought for himself but will absolutely love once he tries it.",
+        "Best for: The dad who loves tech, the outdoors, or photography. Skip this if: He doesn't spend time outdoors or prefer simpler gadgets."
+      ],
+    },
+    {
+      id: "dad-glass-gift-daughter-son",
+      heading: "16. Best Keepsake: Dad Glass Gift",
+      productId: "dad-glass-gift-daughter-son",
+      body: [
+        "This beautiful glass gift is designed for daughters and sons to give to their dad. The heartfelt message and thoughtful design make it a treasured keepsake he'll display proudly.",
+        "It's the kind of gift that's about emotion, not utility — and sometimes that's exactly what the dad who has everything needs.",
+        "Best for: The dad who values sentimental gifts from his children. Skip this if: He prefers practical items over keepsakes."
+      ],
+    },
+    {
+      id: "mens-spa-gift-set-cedarwood",
+      heading: "17. Best Bath & Body Care: Men's Spa Gift Set",
+      productId: "mens-spa-gift-set-cedarwood",
+      body: [
+        "This complete cedarwood spa set includes everything he needs for a relaxing, rejuvenating experience at home. From body wash to lotion, the natural ingredients and masculine scent make it a true treat.",
+        "It's perfect for the dad who deserves to feel pampered — even if he never asks for it.",
+        "Best for: The dad who deserves a little luxury and self-care. Skip this if: He's sensitive to fragrances or already has similar products."
+      ],
+    },
+    {
+      id: "what-to-consider-before-buying-for-dad",
+      heading: "What to Consider Before Buying for Dad",
+      body: [
+        "1. What's his lifestyle? Does he work from home? Travel often? Spend time outdoors? The gift should fit his daily life.",
+        "2. Does he already own something similar? If he already has a toiletry bag or heating pad, maybe skip it — unless this one is a clear upgrade.",
+        "3. What's his personality? Is he sentimental? Practical? Fun? Match the gift to who he actually is.",
+        "4. How will he use it? The best gifts get used regularly. Think about whether he'll actually reach for this item.",
+        "5. What's your budget? There are great options across every price range. Don't overspend — thoughtfulness matters more than price tags."
+      ],
+    },
+    {
+      id: "final-thoughts",
+      heading: "Final Thoughts",
+      body: [
+        "Your dad might say he doesn't want anything. He might insist he has everything he needs. But the truth is, he'll appreciate a thoughtful gift that shows you know him, understand his daily life, and care enough to find something that fits who he is.",
+        "The best part? Any gift on this list is something he probably hasn't bought for himself — even if he owns a lot of things.",
+        "So take a moment to think about your dad's personality, his lifestyle, and what would make his day just a little brighter. Then pick the gift that feels right. He'll appreciate it more than he'll admit."
+      ],
+    },
+  ],
+
+  products: [
+    {
+      id: "personalized-leather-travel-case",
+      name: "Personalized Leather Travel Case",
+      image: personalizedTravelCase,
+      imageAlt: "Personalized leather travel case custom engraved with initials",
+      price: "$45–$65",
+      why: "Custom engraved premium leather travel case with cedar lining that keeps his belongings fresh and organized.",
+      keyDetails: [
+        "Custom laser-engraved with initials or personal name",
+        "Premium genuine leather exterior that patinas gracefully",
+        "Aromatic cedar wood lining protects watches, jewelry, and essentials"
+      ],
+      consider: "Custom engraving takes 1-2 extra days during peak holiday volume.",
+      amazonUrl: "https://amzn.com/dp/B08XYZCASE?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZCASE?tag=celebratio0f9-20",
+      bestFor: "The dad who appreciates craftsmanship and personal touches",
+      badge: "Best Sentimental",
+      rating: 4.9,
+    },
+    {
+      id: "leather-toiletry-bag-men",
+      name: "Leather Toiletry Bag for Men",
+      image: leatherToiletryBag,
+      imageAlt: "Leather toiletry bag with compartments for men",
+      price: "$35–$45",
+      why: "Water-resistant leather dopp kit with dual zippered internal pockets and snap-fastened compartments.",
+      keyDetails: [
+        "Water-resistant durable PU leather lining prevents leaks",
+        "Double zipper main compartment with elastic tool loops",
+        "Convenient side carry handle for easy packing"
+      ],
+      consider: "Fits full-sized shampoo bottles best when packed horizontally.",
+      amazonUrl: "https://amzn.com/dp/B08XYZBAG?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZBAG?tag=celebratio0f9-20",
+      bestFor: "The dad who travels, goes to the gym, or values bathroom organization",
+      badge: "Best Practical Everyday",
+      rating: 4.8,
+    },
+    {
+      id: "host-freeze-beer-glasses-set",
+      name: "Host Freeze Insulated Beer Glasses",
+      image: hostFreezeGlasses,
+      imageAlt: "Host Freeze Insulated Beer Glasses cooling pint set",
+      price: "$25–$35",
+      why: "Double-walled cooling glasses with proprietary active cooling gel that keeps beer cold from first sip to last.",
+      keyDetails: [
+        "Proprietary cooling gel chills brews for up to 2 hours",
+        "Comfort-grip silicone band protects hands from extreme cold",
+        "Shatter-resistant BPA-free plastic construction"
+      ],
+      consider: "Requires 2+ hours in the freezer prior to use.",
+      amazonUrl: "https://amzn.com/dp/B08XYZBEER?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZBEER?tag=celebratio0f9-20",
+      bestFor: "The dad who loves entertaining or enjoys a cold beer after a long day",
+      badge: "Best for Entertaining",
+      rating: 4.7,
+    },
+    {
+      id: "teslyar-wood-phone-docking-station",
+      name: "TESLYAR Wood Phone Docking Station",
+      image: teslyarDockingStation,
+      imageAlt: "TESLYAR Wood Phone Docking Station organizer for nightstand",
+      price: "$40–$55",
+      why: "Solid ash wood organizer holding phone, smart watch, keys, wallet, and glasses in one elegant station.",
+      keyDetails: [
+        "Crafted from 100% natural solid ash-tree wood",
+        "Compatible with all smartphone models and smart watch cables",
+        "Compartments for glasses, wallet, keys, and daily EDC gear"
+      ],
+      consider: "Assembly takes ~2 minutes with included screwdriver.",
+      amazonUrl: "https://amzn.com/dp/B08XYZDOCK?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZDOCK?tag=celebratio0f9-20",
+      bestFor: "The dad who works from home or appreciates a tidy workspace",
+      badge: "Best Office",
+      rating: 4.8,
+    },
+    {
+      id: "exin-dechen-cologne-organizer-men",
+      name: "EXIN DECHEN Cologne Organizer for Men",
+      image: cologneOrganizer,
+      imageAlt: "EXIN DECHEN Cologne Organizer display stand with drawer",
+      price: "$30–$40",
+      why: "Tiered wooden cologne and watch display stand that brings his grooming collection out into the open.",
+      keyDetails: [
+        "3-tiered display stand holds up to 12 cologne bottles",
+        "Integrated watch stand and hidden bottom drawer for rings/cufflinks",
+        "Vintage walnut finish looks distinguished on dressers"
+      ],
+      consider: "Measure dresser clearance if placing under a low mirror.",
+      amazonUrl: "https://amzn.com/dp/B08XYZCLGN?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZCLGN?tag=celebratio0f9-20",
+      bestFor: "The dad who appreciates fragrances and good grooming",
+      badge: "Best Grooming Display",
+      rating: 4.7,
+    },
+    {
+      id: "dad-candle-gift-best-dad-ever",
+      name: "Best Dad Ever Scented Candle",
+      image: dadCandle,
+      imageAlt: "Best Dad Ever Scented Candle in amber glass jar",
+      price: "$18–$24",
+      why: "Hand-poured soy wax candle featuring a warm, sophisticated amber and sandalwood fragrance.",
+      keyDetails: [
+        "100% natural soy wax with lead-free cotton wick",
+        "50+ hour clean, soot-free burn time",
+        "Heartfelt 'Best Dad Ever' label with reusable amber glass jar"
+      ],
+      consider: "Trim wick to 1/4 inch before each light for optimal burn.",
+      amazonUrl: "https://amzn.com/dp/B08XYZCNDL?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZCNDL?tag=celebratio0f9-20",
+      bestFor: "The dad who appreciates a cozy atmosphere and good scents",
+      badge: "Best Budget",
+      rating: 4.9,
+    },
+    {
+      id: "engraved-whiskey-decanter-set-dad",
+      name: "Engraved Whiskey Decanter Set",
+      image: engravedDecanterSet,
+      imageAlt: "Engraved Whiskey Decanter Set in luxury gift box",
+      price: "$60–$85",
+      why: "Custom engraved crystal whiskey decanter with matching rocks glasses presented in a luxury wooden gift box.",
+      keyDetails: [
+        "Lead-free ultra-clarity crystal 750ml decanter",
+        "Includes 2 engraved heavy-base 10oz whiskey glasses",
+        "Delivered in a custom burnt-pine presentation gift box"
+      ],
+      consider: "Hand wash with warm water to maintain glass clarity.",
+      amazonUrl: "https://amzn.com/dp/B08XYZWHSK?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZWHSK?tag=celebratio0f9-20",
+      bestFor: "The dad who enjoys whiskey and appreciates quality craftsmanship",
+      badge: "Best Premium",
+      rating: 4.9,
+    },
+    {
+      id: "luxury-spa-gift-basket-men",
+      name: "Luxury Sandalwood Men's Spa Gift Basket",
+      image: luxurySpaBasket,
+      imageAlt: "Luxury Sandalwood Men's Spa Gift Basket body care set",
+      price: "$35–$45",
+      why: "Complete sandalwood bath and body set designed to help hardworking dads unwind after long days.",
+      keyDetails: [
+        "Includes body wash, bubble bath, hand lotion, and massage oil",
+        "Formulated with nourishing vitamin E and shea butter",
+        "Packaged in an upscale reusable leatherette tote"
+      ],
+      consider: "Sandalwood aroma is rich and woody.",
+      amazonUrl: "https://amzn.com/dp/B08XYZSPAM?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZSPAM?tag=celebratio0f9-20",
+      bestFor: "The dad who deserves a little self-care but never treats himself",
+      badge: "Best Relaxation",
+      rating: 4.7,
+    },
+    {
+      id: "whiskey-decanter-globe-set",
+      name: "Whiskey Decanter Globe Set with Ship",
+      image: globeDecanter,
+      imageAlt: "Whiskey Decanter Globe Set with antique ship inside",
+      price: "$55–$70",
+      why: "Hand-blown 850ml etched globe decanter featuring an antique ship inside, resting on an elegant mahogany wooden stand.",
+      keyDetails: [
+        "Artisan hand-blown etched globe glass with miniature ship",
+        "Includes 2 etched world map glasses and stainless steel funnel",
+        "Fitted glass stopper seals tightly to preserve liquor aroma"
+      ],
+      consider: "Delicate glass; best placed securely on a bar cart or study desk.",
+      amazonUrl: "https://amzn.com/dp/B08XYZGLOB?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZGLOB?tag=celebratio0f9-20",
+      bestFor: "The dad who loves unique decor, travel, or whiskey",
+      badge: "Best Unique",
+      rating: 4.8,
+    },
+    {
+      id: "15-pcs-dad-gift-set-care-kit",
+      name: "15-Piece Dad Care Package Gift Set",
+      image: dadGiftSet15Pcs,
+      imageAlt: "15-Piece Dad Care Package Gift Set with tumbler and multitool",
+      price: "$40–$55",
+      why: "Curated 15-piece gift bundle with insulated tumbler, multi-tool, grooming essentials, and cozy socks.",
+      keyDetails: [
+        "Includes double-walled 20oz stainless steel coffee tumbler",
+        "Heavy-duty 12-in-1 stainless steel pocket multitool",
+        "Luxurious sandalwood bath bombs, soaps, and greeting card"
+      ],
+      consider: "Pre-boxed ready to gift with zero extra wrapping required.",
+      amazonUrl: "https://amzn.com/dp/B08XYZ15PC?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZ15PC?tag=celebratio0f9-20",
+      bestFor: "The dad who deserves a full care package",
+      badge: "Best Gift Set",
+      rating: 4.8,
+    },
+    {
+      id: "cedar-bergamot-spa-kit-men",
+      name: "Cedar & Bergamot Men's Spa Kit",
+      image: cedarBergamotKit,
+      imageAlt: "Cedar and Bergamot Men's Spa Kit bath and body set",
+      price: "$30–$40",
+      why: "Refreshing cedar and bergamot bath set that upgrades daily showers into an invigorating spa routine.",
+      keyDetails: [
+        "Infused with cedarwood and bergamot essential oils",
+        "Includes 2-in-1 shampoo/conditioner, body wash, and exfoliating loofah",
+        "Sulfate-free and cruelty-free formulation"
+      ],
+      consider: "Great pairing with a plush holiday robe.",
+      amazonUrl: "https://amzn.com/dp/B08XYZCEDR?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZCEDR?tag=celebratio0f9-20",
+      bestFor: "The dad who appreciates quality self-care products",
+      badge: "Best Self-Care",
+      rating: 4.7,
+    },
+    {
+      id: "weighted-heating-pad-neck-shoulder",
+      name: "Weighted Neck & Shoulder Heating Pad",
+      image: weightedHeatingPad,
+      imageAlt: "Weighted Neck & Shoulder Heating Pad with micro glass beads",
+      price: "$35–$45",
+      why: "Contoured micro-plush heating pad with micro-glass bead weighting for deep, hands-free muscle relaxation.",
+      keyDetails: [
+        "Micro-glass beads provide comforting 2.2 lb deep tissue pressure",
+        "6 adjustable heat settings with fast 30-second heating",
+        "Auto shut-off timer and machine-washable plush fabric"
+      ],
+      consider: "Cord length is 6 feet; best used near a standard outlet.",
+      amazonUrl: "https://amzn.com/dp/B08XYZHEAT?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZHEAT?tag=celebratio0f9-20",
+      bestFor: "The dad with neck, shoulder, or back tension",
+      badge: "Best Comfort",
+      rating: 4.8,
+    },
+    {
+      id: "viking-drinking-horn-mug-gift",
+      name: "Authentic Viking Drinking Horn Mug",
+      image: vikingHornMug,
+      imageAlt: "Authentic Viking Drinking Horn Mug crafted from real ox horn",
+      price: "$25–$35",
+      why: "Handcrafted from 100% real ox horn with a food-safe sealed interior — each mug has a unique color and grain.",
+      keyDetails: [
+        "100% authentic natural ox horn construction",
+        "Food-grade resin interior coating safe for cold and room-temp beverages",
+        "Includes medieval wooden base and canvas travel sack"
+      ],
+      consider: "Cold and room-temp drinks only; not suitable for hot coffee.",
+      amazonUrl: "https://amzn.com/dp/B08XYZHORN?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZHORN?tag=celebratio0f9-20",
+      bestFor: "The dad who loves unique, fun gifts or has a playful side",
+      badge: "Best Novelty",
+      rating: 4.7,
+    },
+    {
+      id: "personalized-leather-travel-storage-case",
+      name: "Personalized Leather Travel Storage Box",
+      image: personalizedStorageCase,
+      imageAlt: "Personalized Leather Travel Storage Box with custom monogram",
+      price: "$40–$50",
+      why: "Custom monogrammed leather accessory case with soft velvet dividers to protect his favorite timepieces and jewelry.",
+      keyDetails: [
+        "Laser monogrammed with custom initial on top flap",
+        "Individual velvet pillows protect watch dials and bezels",
+        "Compact zip-around closure fits smoothly into carry-on luggage"
+      ],
+      consider: "Accommodates watches up to 50mm case diameter.",
+      amazonUrl: "https://amzn.com/dp/B08XYZSTOR?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZSTOR?tag=celebratio0f9-20",
+      bestFor: "The dad who appreciates thoughtful, personalized gifts",
+      badge: "Best Sentimental Pick",
+      rating: 4.8,
+    },
+    {
+      id: "4k-night-vision-binoculars-men",
+      name: "4K Digital Night Vision Binoculars",
+      image: nightVisionBinoculars,
+      imageAlt: "4K Digital Night Vision Binoculars for hunting and camping",
+      price: "$90–$120",
+      why: "High-tech infrared night vision binoculars with 4K video recording, 8x digital zoom, and a large 3-inch viewing screen.",
+      keyDetails: [
+        "850nm infrared illuminator sees up to 984 feet in 100% darkness",
+        "Captures 4K ultra-HD video and 36MP high-res photos",
+        "Rechargeable 4000mAh lithium battery and included 32GB SD card"
+      ],
+      consider: "Includes neck strap and protective case for outdoor treks.",
+      amazonUrl: "https://amzn.com/dp/B08XYZNITE?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZNITE?tag=celebratio0f9-20",
+      bestFor: "The dad who loves tech, the outdoors, or photography",
+      badge: "Best Tech Gadget",
+      rating: 4.8,
+    },
+    {
+      id: "dad-glass-gift-daughter-son",
+      name: "Sentimental 'Dad' Whiskey & Rocks Glass",
+      image: dadGlass,
+      imageAlt: "Sentimental 'Dad' Whiskey Glass rocks glass gift",
+      price: "$15–$20",
+      why: "Heavy-base 11oz lowball rocks glass printed with a heartfelt message celebrating dad's guidance and love.",
+      keyDetails: [
+        "Thick weighted base prevents tipping and feels substantial in hand",
+        "High-temperature ceramic ink will not fade or wash off",
+        "100% lead-free glassware safe for daily dishwashing"
+      ],
+      consider: "Comes packaged in a foam-lined gift box.",
+      amazonUrl: "https://amzn.com/dp/B08XYZGLSS?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZGLSS?tag=celebratio0f9-20",
+      bestFor: "The dad who values sentimental gifts from his children",
+      badge: "Best Keepsake",
+      rating: 4.9,
+    },
+    {
+      id: "mens-spa-gift-set-cedarwood",
+      name: "Cedarwood Men's Relaxation Spa Set",
+      image: mensSpaSet,
+      imageAlt: "Cedarwood Men's Relaxation Spa Set body and beard care kit",
+      price: "$30–$40",
+      why: "A complete cedarwood-infused bath and grooming gift basket with natural botanical oils and masculine aromatherapy.",
+      keyDetails: [
+        "Features body wash, face wash, beard balm, and soothing body lotion",
+        "All-natural essential oils with crisp cedar and citrus notes",
+        "Packed in a masculine rustic wooden storage crate"
+      ],
+      consider: "Great companion gift alongside a cozy throw blanket.",
+      amazonUrl: "https://amzn.com/dp/B08XYZCRTE?tag=celebratio0f9-20",
+      url: "https://amzn.com/dp/B08XYZCRTE?tag=celebratio0f9-20",
+      bestFor: "The dad who deserves a little luxury and self-care",
+      badge: "Best Bath & Body",
+      rating: 4.8,
+    },
+  ],
+
+  faqs: [
+    {
+      q: "What's the best gift for a dad who has everything?",
+      a: "The Personalized Leather Travel Case and Engraved Whiskey Decanter Set are both excellent choices — they're thoughtful, practical, and he probably doesn't already own them.",
+    },
+    {
+      q: "What do you get a dad who doesn't want anything?",
+      a: "Look for items that make his daily routine easier or more enjoyable — like a phone docking station, weighted heating pad, or luxury spa kit.",
+    },
+    {
+      q: "How much should I spend on a gift for my dad?",
+      a: "There's no fixed rule. This list includes options from under $20 (Dad Candle Gift) to premium items around $100+ (Engraved Whiskey Decanter Set). Choose what fits your budget comfortably.",
+    },
+    {
+      q: "What's a good last-minute gift for a dad who has everything?",
+      a: "The Dad Candle Gift or Leather Toiletry Bag are practical, thoughtful, and available with fast Prime shipping.",
+    },
+    {
+      q: "What are good gifts for a dad who loves whiskey?",
+      a: "The Engraved Whiskey Decanter Set or Whiskey Decanter Globe Set are both excellent choices that elevate his drinking experience.",
+    },
+    {
+      q: "What are good gifts for a dad who works from home?",
+      a: "The TESLYAR Wood Phone Docking Station is a great option — it organizes his desk and keeps essentials within reach.",
+    },
+    {
+      q: "What are good gifts for a dad who loves the outdoors?",
+      a: "The 4K Night Vision Binoculars are perfect for outdoor enthusiasts who love exploring.",
+    },
+  ],
+};
+
+export default article;

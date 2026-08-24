@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { Eye } from "lucide-react";
 import { formatViews, type Article } from "@/data/articles";
 import { getAuthor, getCategory } from "@/data/site";
+import { getArticleViews } from "@/utils/views";
 
 export function ArticleCard({
   article,
@@ -14,6 +16,11 @@ export function ArticleCard({
 }) {
   const author = getAuthor(article.author);
   const category = getCategory(article.category);
+  const [views, setViews] = useState<number>(article.views);
+
+  useEffect(() => {
+    setViews(getArticleViews(article.slug, article.views));
+  }, [article.slug, article.views]);
 
   if (layout === "horizontal") {
     return (
@@ -52,7 +59,7 @@ export function ArticleCard({
               <span>{author?.name}</span>
               <span className="ml-auto inline-flex items-center gap-1">
                 <Eye className="h-3.5 w-3.5" />
-                {formatViews(article.views)}
+                {formatViews(views)}
               </span>
             </div>
           </div>
@@ -97,7 +104,7 @@ export function ArticleCard({
             <span>{author?.name}</span>
             <span className="ml-auto inline-flex items-center gap-1">
               <Eye className="h-3.5 w-3.5" />
-              {formatViews(article.views)}
+              {formatViews(views)}
             </span>
           </div>
         </div>

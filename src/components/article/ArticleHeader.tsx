@@ -5,6 +5,7 @@ import type { Article } from "@/data/articles";
 import { formatDate, formatViews } from "@/data/articles";
 import { getAuthor, getCategory } from "@/data/site";
 import { PinterestIcon } from "@/components/site/icons";
+import { useArticleViews } from "@/utils/views";
 
 interface ArticleHeaderProps {
   article: Article;
@@ -14,6 +15,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
   const author = getAuthor(article.author);
   const category = getCategory(article.category);
   const [copied, setCopied] = useState(false);
+  const liveViews = useArticleViews(article.slug, article.views);
 
   const handleCopyLink = () => {
     if (typeof window !== "undefined") {
@@ -112,7 +114,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
           <span className="hidden sm:inline text-border">•</span>
           <span className="inline-flex items-center gap-1 font-medium text-foreground">
             <Eye className="h-3.5 w-3.5 text-primary/70" />
-            <span>{formatViews(article.views)} views</span>
+            <span>{formatViews(liveViews)} views</span>
           </span>
         </div>
 
