@@ -1,7 +1,7 @@
 import type { Article } from "@/data/articles";
 
 // Image Imports from assets
-import featuredImage from "@/assets/useful-christmas-gifts-for-dad-no-clutter-featured.jpg";
+import featuredImage from "@/assets/useful-christmas-gifts-for-dad-no-clutter-featured.png";
 import luenxSunglasses from "@/assets/luenx-aviator-polarized-sunglasses-men.jpg";
 import pocketKnife from "@/assets/small-pocket-knife-gift-men.jpg";
 import beardKit from "@/assets/beard-straightener-kit-men.jpg.jpg";
