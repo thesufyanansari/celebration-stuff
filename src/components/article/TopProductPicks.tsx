@@ -59,10 +59,10 @@ export function TopProductPicks({
             (idx === 0
               ? "Best Overall"
               : idx === 1
-              ? "Best Budget"
-              : idx === 2
-              ? "Best Premium"
-              : "Best Tech");
+                ? "Best Budget"
+                : idx === 2
+                  ? "Best Premium"
+                  : "Best Tech");
 
           return (
             <div
@@ -92,9 +92,7 @@ export function TopProductPicks({
                 {/* Rating & Best For */}
                 <div className="mt-3 flex items-center justify-between gap-1 text-[0.75rem]">
                   {product.bestFor && (
-                    <span className="truncate font-semibold text-primary">
-                      {product.bestFor}
-                    </span>
+                    <span className="truncate font-semibold text-primary">{product.bestFor}</span>
                   )}
                   {product.rating !== undefined && (
                     <span className="flex shrink-0 items-center gap-1 font-bold text-amber-600">

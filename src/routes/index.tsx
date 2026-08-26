@@ -18,7 +18,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Celebration Stuff — Thoughtful Gift Ideas, Holiday Guides & Celebration Inspiration" },
+      {
+        title:
+          "Celebration Stuff — Thoughtful Gift Ideas, Holiday Guides & Celebration Inspiration",
+      },
       {
         name: "description",
         content:

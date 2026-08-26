@@ -9,7 +9,8 @@ export function Footer() {
         <div className="lg:col-span-1">
           <span className="font-display text-lg font-semibold">Celebration Stuff</span>
           <p className="mt-3 max-w-xs text-sm text-foreground-muted">
-            Thoughtful gift guides, holiday recommendations, and curated occasion shopping across the US and Canada.
+            Thoughtful gift guides, holiday recommendations, and curated occasion shopping across
+            the US and Canada.
           </p>
           <div className="mt-5 flex items-center gap-2">
             <a
@@ -70,7 +71,11 @@ export function Footer() {
           <Link to="/category/$slug" params={{ slug: "anniversary-gifts" }} className="footer-link">
             Anniversary Gifts
           </Link>
-          <Link to="/category/$slug" params={{ slug: "housewarming-gifts" }} className="footer-link">
+          <Link
+            to="/category/$slug"
+            params={{ slug: "housewarming-gifts" }}
+            className="footer-link"
+          >
             Housewarming Gifts
           </Link>
         </FooterColumn>
@@ -113,7 +118,8 @@ export function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-caption sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} Celebration Stuff. All rights reserved.</p>
           <p>
-            Celebration Stuff earns commission from qualifying purchases made through links on this site.
+            Celebration Stuff earns commission from qualifying purchases made through links on this
+            site.
           </p>
         </div>
       </div>
@@ -131,4 +137,3 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
     </div>
   );
 }
-

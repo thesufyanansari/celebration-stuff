@@ -20,25 +20,20 @@ interface ProductFeatureProps {
   narrativeParagraphs?: string[];
 }
 
-export function ProductFeature({
-  product,
-  index,
-  narrativeParagraphs = [],
-}: ProductFeatureProps) {
+export function ProductFeature({ product, index, narrativeParagraphs = [] }: ProductFeatureProps) {
   const [activeImageIdx, setActiveImageIdx] = useState(0);
 
   const images = product.galleryImages?.length
     ? product.galleryImages
     : product.image
-    ? [product.image]
-    : [];
+      ? [product.image]
+      : [];
 
   const targetUrl = product.amazonUrl || product.url || null;
   const keyDetailsList = product.keyDetails || product.keyFeatures || [];
   const considerText = product.consider || product.considerations;
   const sectionId =
-    product.id ||
-    `product-${index + 1}-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+    product.id || `product-${index + 1}-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
   return (
     <article

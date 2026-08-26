@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       sameAs: [
         "https://www.pinterest.com/celebrationstuff/",
         "https://www.instagram.com/celebrationstuff/",
-        "https://www.facebook.com/celebrationstuff/"
-      ]
+        "https://www.facebook.com/celebrationstuff/",
+      ],
     };
 
     const jsonLdWebSite = {
@@ -93,8 +93,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       potentialAction: {
         "@type": "SearchAction",
         target: "https://celebrationstuff.com/explore?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+        "query-input": "required name=search_term_string",
+      },
     };
 
     return {
@@ -102,10 +102,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { title: "Celebration Stuff — Thoughtful Gift Ideas, Holidays & Celebrations" },
-        { name: "description", content: "Editorial gift guides and celebration inspiration for holidays, birthdays, anniversaries, moms, dads, and special moments." },
+        {
+          name: "description",
+          content:
+            "Editorial gift guides and celebration inspiration for holidays, birthdays, anniversaries, moms, dads, and special moments.",
+        },
         { name: "author", content: "Celebration Stuff" },
         { property: "og:title", content: "Celebration Stuff — Thoughtful Gift Ideas & Guides" },
-        { property: "og:description", content: "Editorial gift guides and celebration inspiration for holidays, birthdays, anniversaries, moms, dads, and special moments." },
+        {
+          property: "og:description",
+          content:
+            "Editorial gift guides and celebration inspiration for holidays, birthdays, anniversaries, moms, dads, and special moments.",
+        },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://celebrationstuff.com" },
         { name: "twitter:card", content: "summary_large_image" },

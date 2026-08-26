@@ -38,8 +38,8 @@ export function VisitorArrivalExperience({
   // Particle positions
   const particles = Array.from({ length: particleCount }).map((_, i) => ({
     id: i,
-    top: `${15 + (i * 7) % 70}%`,
-    left: `${10 + (i * 13) % 80}%`,
+    top: `${15 + ((i * 7) % 70)}%`,
+    left: `${10 + ((i * 13) % 80)}%`,
     size: 14 + (i % 3) * 6,
     delay: (i % 4) * 0.15,
   }));

@@ -12,10 +12,7 @@ export function Newsletter({ compact = false }: { compact?: boolean }) {
     >
       <div className="mx-auto max-w-xl text-center">
         <p className="text-overline">The weekly edit</p>
-        <h2
-          id="newsletter-heading"
-          className={compact ? "mt-2 text-h3" : "mt-3 text-h2"}
-        >
+        <h2 id="newsletter-heading" className={compact ? "mt-2 text-h3" : "mt-3 text-h2"}>
           Celebration ideas, before the season starts
         </h2>
         <p className="mt-3 text-sm text-foreground-muted">

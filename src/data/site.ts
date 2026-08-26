@@ -12,12 +12,7 @@ export const site = {
 };
 
 export type CategoryGroup =
-  | "people"
-  | "occasions"
-  | "holidays"
-  | "life-events"
-  | "styles"
-  | "general";
+  "people" | "occasions" | "holidays" | "life-events" | "styles" | "general";
 
 export type Category = {
   slug: string;
@@ -83,19 +78,22 @@ export const categories: Category[] = [
   {
     slug: "gifts-for-women",
     name: "Gifts for Women",
-    description: "Curated gift guides for women, mothers, wives, girlfriends, sisters and female friends.",
+    description:
+      "Curated gift guides for women, mothers, wives, girlfriends, sisters and female friends.",
     group: "people",
   },
   {
     slug: "gifts-for-men",
     name: "Gifts for Men",
-    description: "Thoughtful gift ideas for men, fathers, husbands, boyfriends, brothers and male friends.",
+    description:
+      "Thoughtful gift ideas for men, fathers, husbands, boyfriends, brothers and male friends.",
     group: "people",
   },
   {
     slug: "gifts-for-mom",
     name: "Gifts for Mom",
-    description: "Heartfelt and practical gift guides for mothers, grandmothers, and mother figures.",
+    description:
+      "Heartfelt and practical gift guides for mothers, grandmothers, and mother figures.",
     group: "people",
     parentSlug: "gifts-for-women",
   },
@@ -137,7 +135,8 @@ export const categories: Category[] = [
   {
     slug: "wedding-gifts",
     name: "Wedding Gifts",
-    description: "Memorable wedding and registry gift ideas for couples starting their lives together.",
+    description:
+      "Memorable wedding and registry gift ideas for couples starting their lives together.",
     group: "occasions",
   },
   {
@@ -171,7 +170,8 @@ export const categories: Category[] = [
   {
     slug: "eid-ramadan",
     name: "Eid & Ramadan",
-    description: "Warm decor, family gifts, dates trays, and celebration hosting for Eid and Ramadan.",
+    description:
+      "Warm decor, family gifts, dates trays, and celebration hosting for Eid and Ramadan.",
     group: "holidays",
     parentSlug: "holidays",
   },
@@ -199,7 +199,6 @@ export const categories: Category[] = [
     group: "styles",
   },
 ];
-
 
 export type Author = {
   slug: string;

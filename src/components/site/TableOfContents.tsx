@@ -48,7 +48,10 @@ export function TableOfContents({ selector = "article section" }: { selector?: s
   if (headings.length === 0) return null;
 
   return (
-    <nav className="rounded-2xl border border-border bg-surface p-5 shadow-card" aria-label="Table of Contents">
+    <nav
+      className="rounded-2xl border border-border bg-surface p-5 shadow-card"
+      aria-label="Table of Contents"
+    >
       <div className="flex items-center gap-2 font-display text-sm font-semibold text-foreground">
         <List className="h-4 w-4 text-primary" />
         <span>In This Article</span>

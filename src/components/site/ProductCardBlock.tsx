@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { Star, ExternalLink, CheckCircle, AlertCircle, Sparkles, Heart, ChevronRight, ShoppingBag } from "lucide-react";
+import {
+  Star,
+  ExternalLink,
+  CheckCircle,
+  AlertCircle,
+  Sparkles,
+  Heart,
+  ChevronRight,
+  ShoppingBag,
+} from "lucide-react";
 import type { Product } from "@/data/articles";
 
 export type EnhancedProduct = Product & {
@@ -35,7 +44,10 @@ export function QuickPicksSection({ products }: { products: EnhancedProduct[] })
           const targetUrl = pick.product.amazonUrl || pick.product.url || null;
 
           return (
-            <div key={i} className="flex flex-col justify-between rounded-xl border border-border/80 bg-surface p-4 shadow-sm">
+            <div
+              key={i}
+              className="flex flex-col justify-between rounded-xl border border-border/80 bg-surface p-4 shadow-sm"
+            >
               <div>
                 <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-primary">
                   {pick.label}
@@ -43,7 +55,9 @@ export function QuickPicksSection({ products }: { products: EnhancedProduct[] })
                 <h4 className="mt-2 font-display text-sm font-semibold text-foreground line-clamp-1">
                   {pick.product.name}
                 </h4>
-                <p className="mt-1 text-xs text-foreground-muted line-clamp-2">{pick.product.whyWeLoveIt || pick.product.why}</p>
+                <p className="mt-1 text-xs text-foreground-muted line-clamp-2">
+                  {pick.product.whyWeLoveIt || pick.product.why}
+                </p>
               </div>
               <div className="mt-4 flex items-center justify-between pt-2 border-t border-border/40">
                 <span className="text-xs font-bold text-primary">{pick.product.price}</span>
@@ -86,7 +100,10 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
   const considerText = product.consider || product.considerations;
 
   return (
-    <div id={product.id || `gift-${(index !== undefined ? index + 1 : 1)}`} className="group rounded-3xl border border-border bg-surface p-6 shadow-card transition-all duration-300 hover:shadow-lift scroll-mt-24">
+    <div
+      id={product.id || `gift-${index !== undefined ? index + 1 : 1}`}
+      className="group rounded-3xl border border-border bg-surface p-6 shadow-card transition-all duration-300 hover:shadow-lift scroll-mt-24"
+    >
       {/* Product Top Header */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-4">
         <div className="flex flex-wrap items-center gap-2">
@@ -140,8 +157,11 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
                   key={i}
                   type="button"
                   onClick={() => setActiveImageIndex(i)}
-                  className={`h-14 w-14 shrink-0 overflow-hidden rounded-xl border transition-all ${activeImageIndex === i ? "border-primary ring-2 ring-primary/20" : "border-border opacity-70"
-                    }`}
+                  className={`h-14 w-14 shrink-0 overflow-hidden rounded-xl border transition-all ${
+                    activeImageIndex === i
+                      ? "border-primary ring-2 ring-primary/20"
+                      : "border-border opacity-70"
+                  }`}
                 >
                   <img src={img} alt="" className="h-full w-full object-cover" />
                 </button>
@@ -163,14 +183,20 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
 
             {/* Why We Love It */}
             <div className="mt-4">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-primary">Why We Love It</h4>
-              <p className="mt-1 text-sm leading-relaxed text-foreground">{product.whyWeLoveIt || product.why}</p>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-primary">
+                Why We Love It
+              </h4>
+              <p className="mt-1 text-sm leading-relaxed text-foreground">
+                {product.whyWeLoveIt || product.why}
+              </p>
             </div>
 
             {/* Key Details */}
             {keyDetailsList.length > 0 && (
               <div className="mt-4">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-foreground-muted mb-2">Key Details</h4>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-foreground-muted mb-2">
+                  Key Details
+                </h4>
                 <ul className="grid gap-1.5 text-xs text-foreground-muted sm:grid-cols-1">
                   {keyDetailsList.map((feat, i) => (
                     <li key={i} className="flex items-start gap-1.5">
@@ -220,7 +246,9 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
                 <span>Curated Amazon Selection</span>
               </span>
             )}
-            <span className="text-[0.7rem] text-foreground-muted ml-auto">Amazon Associate Partner</span>
+            <span className="text-[0.7rem] text-foreground-muted ml-auto">
+              Amazon Associate Partner
+            </span>
           </div>
         </div>
       </div>
@@ -249,7 +277,9 @@ export function ProductComparisonTable({ products }: { products: EnhancedProduct
             return (
               <tr key={i} className="hover:bg-surface-hover/50">
                 <td className="p-3.5 font-medium text-foreground">{p.name}</td>
-                <td className="p-3.5 text-foreground-muted">{p.bestFor || p.badge || "Top Choice"}</td>
+                <td className="p-3.5 text-foreground-muted">
+                  {p.bestFor || p.badge || "Top Choice"}
+                </td>
                 <td className="p-3.5 font-semibold text-primary">{p.price}</td>
                 <td className="p-3.5 text-right">
                   {targetUrl ? (
@@ -276,4 +306,3 @@ export function ProductComparisonTable({ products }: { products: EnhancedProduct
     </div>
   );
 }
-

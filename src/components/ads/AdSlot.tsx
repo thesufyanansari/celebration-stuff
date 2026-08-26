@@ -27,7 +27,10 @@ export interface AdSlotProps {
   wordCount?: number;
 }
 
-const slotTypeMapping: Record<AdSlotType, { slot: string; minHeight: string; label: string; format: "auto" | "rectangle" | "horizontal" }> = {
+const slotTypeMapping: Record<
+  AdSlotType,
+  { slot: string; minHeight: string; label: string; format: "auto" | "rectangle" | "horizontal" }
+> = {
   top: {
     slot: adConfig.slots.top,
     minHeight: "min-h-[100px] sm:min-h-[120px]",
@@ -95,13 +98,10 @@ export function AdSlot({
   const finalLabel = label || slotMeta.label;
   const finalFormat = format || slotMeta.format;
 
-  // Minimum content guard
-  if (!adConfig.enabled || wordCount < minWordCount) {
-    return null;
-  }
+  const isEligible = adConfig.enabled && wordCount >= minWordCount;
 
   useEffect(() => {
-    if (!adConfig.isDevelopment && !pushedRef.current) {
+    if (isEligible && !adConfig.isDevelopment && !pushedRef.current) {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushedRef.current = true;
@@ -109,7 +109,12 @@ export function AdSlot({
         console.error("AdSense initialization error:", err);
       }
     }
-  }, []);
+  }, [isEligible]);
+
+  // Minimum content guard
+  if (!isEligible) {
+    return null;
+  }
 
   return (
     <div
@@ -139,7 +144,13 @@ export function AdSlot({
 }
 
 // Convenience wrapper functions
-export function ArticleAd({ placement, wordCount = 1000 }: { placement: AdSlotType; wordCount?: number }) {
+export function ArticleAd({
+  placement,
+  wordCount = 1000,
+}: {
+  placement: AdSlotType;
+  wordCount?: number;
+}) {
   return <AdSlot type={placement} wordCount={wordCount} />;
 }
 

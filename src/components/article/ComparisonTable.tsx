@@ -39,10 +39,7 @@ export function ComparisonTable({
               const targetUrl = p.amazonUrl || p.url || null;
 
               return (
-                <tr
-                  key={p.id || p.name}
-                  className="transition-colors hover:bg-surface-hover/60"
-                >
+                <tr key={p.id || p.name} className="transition-colors hover:bg-surface-hover/60">
                   {/* Product with thumbnail */}
                   <td className="py-3.5 px-4">
                     <div className="flex items-center gap-3">
@@ -54,13 +51,9 @@ export function ComparisonTable({
                         />
                       )}
                       <div>
-                        <span className="font-semibold text-foreground line-clamp-1">
-                          {p.name}
-                        </span>
+                        <span className="font-semibold text-foreground line-clamp-1">{p.name}</span>
                         {p.badge && (
-                          <span className="text-[0.68rem] text-primary font-bold">
-                            {p.badge}
-                          </span>
+                          <span className="text-[0.68rem] text-primary font-bold">{p.badge}</span>
                         )}
                       </div>
                     </div>
@@ -72,9 +65,7 @@ export function ComparisonTable({
                   </td>
 
                   {/* Price */}
-                  <td className="py-3.5 px-4 font-bold text-primary">
-                    {p.price}
-                  </td>
+                  <td className="py-3.5 px-4 font-bold text-primary">{p.price}</td>
 
                   {/* Rating */}
                   <td className="py-3.5 px-4">

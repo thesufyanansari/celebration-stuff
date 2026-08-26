@@ -34,7 +34,8 @@ export const Route = createFileRoute("/article/$slug")({
       };
     }
     const { article } = loaderData;
-    const canonicalUrl = article.canonicalUrl || `https://celebrationstuff.com/article/${article.slug}`;
+    const canonicalUrl =
+      article.canonicalUrl || `https://celebrationstuff.com/article/${article.slug}`;
     const pageTitle = article.metaTitle || `${article.title} | ${site.name}`;
     const pageDescription = article.metaDescription || article.excerpt;
 
@@ -66,7 +67,12 @@ export const Route = createFileRoute("/article/$slug")({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://celebrationstuff.com" },
-        { "@type": "ListItem", position: 2, name: "Gift Guides", item: "https://celebrationstuff.com/explore" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Gift Guides",
+          item: "https://celebrationstuff.com/explore",
+        },
         { "@type": "ListItem", position: 3, name: article.title, item: canonicalUrl },
       ],
     };
@@ -87,7 +93,7 @@ export const Route = createFileRoute("/article/$slug")({
           }
         : null;
 
-    const scripts: any[] = [
+    const scripts: Array<{ type: string; children: string }> = [
       { type: "application/ld+json", children: JSON.stringify(jsonLdArticle) },
       { type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) },
     ];
@@ -129,14 +135,23 @@ function ArticlePage() {
     imageAlt: p.imageAlt || p.name,
     galleryImages: p.galleryImages?.length ? p.galleryImages : [p.image || article.image],
     rating: p.rating !== undefined ? p.rating : 4.8 + (idx % 3) * 0.1,
-    badge: p.badge || (idx === 0 ? "Best Overall" : idx === 1 ? "Best Budget" : idx === 2 ? "Best Premium" : undefined),
+    badge:
+      p.badge ||
+      (idx === 0
+        ? "Best Overall"
+        : idx === 1
+          ? "Best Budget"
+          : idx === 2
+            ? "Best Premium"
+            : undefined),
     bestFor: p.bestFor || (idx === 0 ? "Top Recommendation" : "Practical Choice"),
     whyWeLoveIt: p.whyWeLoveIt || p.why,
-    keyDetails: p.keyDetails || p.keyFeatures || [
-      "Tested for daily durability and ease of use",
-      "Prime-eligible fast shipping with free returns",
-      "Consistently high satisfaction ratings from buyers",
-    ],
+    keyDetails: p.keyDetails ||
+      p.keyFeatures || [
+        "Tested for daily durability and ease of use",
+        "Prime-eligible fast shipping with free returns",
+        "Consistently high satisfaction ratings from buyers",
+      ],
     consider:
       p.consider ||
       p.considerations ||
@@ -195,9 +210,7 @@ function ArticlePage() {
             <ArticleAd placement="after-intro" />
 
             {/* Quick Picks / Top Recommendations Shopping Grid */}
-            {enhancedProducts.length > 0 && (
-              <TopProductPicks products={enhancedProducts} />
-            )}
+            {enhancedProducts.length > 0 && <TopProductPicks products={enhancedProducts} />}
 
             {/* Detailed Product Reviews Flow */}
             <div className="my-10 flex flex-col gap-12">
@@ -205,7 +218,8 @@ function ArticlePage() {
                 const matchingSection = article.sections.find(
                   (s) =>
                     s.productId === product.id ||
-                    (s.heading && s.heading.toLowerCase().includes(product.name.toLowerCase().slice(0, 8)))
+                    (s.heading &&
+                      s.heading.toLowerCase().includes(product.name.toLowerCase().slice(0, 8))),
                 );
 
                 const showInlineCard1 = idx === 2 && inlineRelatedSlug1;
@@ -236,18 +250,14 @@ function ArticlePage() {
                     )}
 
                     {/* In-Article Ad between product batches */}
-                    {showBetweenProductsAd && (
-                      <ArticleAd placement="between-products" />
-                    )}
+                    {showBetweenProductsAd && <ArticleAd placement="between-products" />}
                   </div>
                 );
               })}
             </div>
 
             {/* Product Comparison Table */}
-            {enhancedProducts.length > 0 && (
-              <ComparisonTable products={enhancedProducts} />
-            )}
+            {enhancedProducts.length > 0 && <ComparisonTable products={enhancedProducts} />}
 
             {/* Closing Editorial & Decision Sections */}
             {closingSections.map((section, idx) => {
@@ -286,14 +296,15 @@ function ArticlePage() {
                 How We Choose & Verify Every Recommendation
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-foreground-muted sm:text-sm">
-                Every product featured on <em>Celebration Stuff</em> is curated through extensive research, genuine utility assessment, price-to-value analysis, and feedback from real buyers. We continuously monitor price updates and stock availability to ensure our gift guides remain genuinely helpful when you need them.
+                Every product featured on <em>Celebration Stuff</em> is curated through extensive
+                research, genuine utility assessment, price-to-value analysis, and feedback from
+                real buyers. We continuously monitor price updates and stock availability to ensure
+                our gift guides remain genuinely helpful when you need them.
               </p>
             </div>
 
             {/* Buyer FAQs */}
-            {article.faqs && article.faqs.length > 0 && (
-              <ArticleFAQ faqs={article.faqs} />
-            )}
+            {article.faqs && article.faqs.length > 0 && <ArticleFAQ faqs={article.faqs} />}
 
             {/* Author Box */}
             {author && <AuthorBox author={author} />}
@@ -316,9 +327,7 @@ function ArticlePage() {
       <ArticleAd placement="before-related" />
 
       {/* 3. MORE IDEAS YOU'LL LOVE (Related Article Cards) */}
-      {moreArticles.length > 0 && (
-        <RelatedArticles articles={moreArticles} />
-      )}
+      {moreArticles.length > 0 && <RelatedArticles articles={moreArticles} />}
 
       {/* 4. FOOTER NEWSLETTER */}
       <div className="mt-16">

@@ -7,13 +7,10 @@ interface ArticleFAQProps {
   title?: string;
 }
 
-export function ArticleFAQ({
-  faqs,
-  title = "Frequently Asked Questions",
-}: ArticleFAQProps) {
-  if (!faqs || faqs.length === 0) return null;
-
+export function ArticleFAQ({ faqs, title = "Frequently Asked Questions" }: ArticleFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  if (!faqs || faqs.length === 0) return null;
 
   const toggleFaq = (idx: number) => {
     setOpenIndex((prev) => (prev === idx ? null : idx));

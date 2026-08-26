@@ -2,12 +2,42 @@ import { Link } from "@tanstack/react-router";
 import { TreePine, ArrowRight } from "lucide-react";
 
 export const holidayList = [
-  { name: "Christmas", slug: "christmas-gifts", count: "80+ Guides", desc: "Tree decor, gift guides & holiday tables" },
-  { name: "Thanksgiving", slug: "thanksgiving", count: "30+ Guides", desc: "Warm tablescapes & host gifts" },
-  { name: "Valentine's Day", slug: "occasions", count: "40+ Guides", desc: "Romantic surprises & cozy date nights" },
-  { name: "Mother's Day", slug: "gifts-for-mom", count: "50+ Guides", desc: "Pampering finds & meaningful keepsakes" },
-  { name: "Father's Day", slug: "gifts-for-dad", count: "45+ Guides", desc: "High-utility gadgets & outdoor gear" },
-  { name: "Eid & Ramadan", slug: "eid-ramadan", count: "25+ Guides", desc: "Lantern decor, date platters & favors" },
+  {
+    name: "Christmas",
+    slug: "christmas-gifts",
+    count: "80+ Guides",
+    desc: "Tree decor, gift guides & holiday tables",
+  },
+  {
+    name: "Thanksgiving",
+    slug: "thanksgiving",
+    count: "30+ Guides",
+    desc: "Warm tablescapes & host gifts",
+  },
+  {
+    name: "Valentine's Day",
+    slug: "occasions",
+    count: "40+ Guides",
+    desc: "Romantic surprises & cozy date nights",
+  },
+  {
+    name: "Mother's Day",
+    slug: "gifts-for-mom",
+    count: "50+ Guides",
+    desc: "Pampering finds & meaningful keepsakes",
+  },
+  {
+    name: "Father's Day",
+    slug: "gifts-for-dad",
+    count: "45+ Guides",
+    desc: "High-utility gadgets & outdoor gear",
+  },
+  {
+    name: "Eid & Ramadan",
+    slug: "eid-ramadan",
+    count: "25+ Guides",
+    desc: "Lantern decor, date platters & favors",
+  },
 ];
 
 export function ExploreByHoliday() {
@@ -47,9 +77,7 @@ export function ExploreByHoliday() {
               <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
                 {hol.name}
               </h3>
-              <p className="mt-1.5 text-xs text-foreground-muted leading-relaxed">
-                {hol.desc}
-              </p>
+              <p className="mt-1.5 text-xs text-foreground-muted leading-relaxed">{hol.desc}</p>
             </div>
 
             <div className="mt-4 flex items-center justify-between border-t border-border/40 pt-3 text-xs font-semibold text-primary">

@@ -46,7 +46,8 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "christmas-gifts",
     name: "Christmas",
     tagline: "Find the Perfect Present Under the Tree",
-    description: "Curated holiday shopping guides for partners, parents, kids, and hard-to-shop-for friends.",
+    description:
+      "Curated holiday shopping guides for partners, parents, kids, and hard-to-shop-for friends.",
     categorySlug: "christmas-gifts",
     heroImage: christmasImg,
     priority: 10,
@@ -64,7 +65,8 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "new-years-eve",
     name: "New Year's Eve",
     tagline: "Ring in the New Year with Style",
-    description: "Sparkling dinner party ideas, cocktail tablescapes, and celebratory gifts for hosts.",
+    description:
+      "Sparkling dinner party ideas, cocktail tablescapes, and celebratory gifts for hosts.",
     categorySlug: "holidays",
     heroImage: hostingImg,
     priority: 8,
@@ -75,7 +77,8 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "valentines-day",
     name: "Valentine's Day",
     tagline: "Thoughtful Ways to Show You Care",
-    description: "Romantic gift ideas, cozy date night plans, and meaningful keepsakes for partners.",
+    description:
+      "Romantic gift ideas, cozy date night plans, and meaningful keepsakes for partners.",
     categorySlug: "occasions",
     heroImage: giftsImg,
     priority: 9,
@@ -98,7 +101,8 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "mothers-day",
     name: "Mother's Day",
     tagline: "Celebrate Mom with Something Meaningful",
-    description: "Personalized keepsakes, luxury comfort upgrades, and thoughtful ideas to make Mom feel seen.",
+    description:
+      "Personalized keepsakes, luxury comfort upgrades, and thoughtful ideas to make Mom feel seen.",
     categorySlug: "gifts-for-mom",
     heroImage: showerImg,
     priority: 10,
@@ -114,13 +118,17 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "fathers-day",
     name: "Father's Day",
     tagline: "Celebrate Dad with Something He'll Actually Use",
-    description: "Practical gadgets, rugged outdoor gear, and high-utility everyday items Dad will love.",
+    description:
+      "Practical gadgets, rugged outdoor gear, and high-utility everyday items Dad will love.",
     categorySlug: "gifts-for-dad",
     heroImage: giftsImg,
     priority: 9,
     month: 6,
     floatingType: "fathers-day",
-    relatedArticles: ["20-christmas-gift-ideas-for-dad-useful-picks", "gift-ideas-for-people-who-want-nothing"],
+    relatedArticles: [
+      "20-christmas-gift-ideas-for-dad-useful-picks",
+      "gift-ideas-for-people-who-want-nothing",
+    ],
   },
   {
     slug: "halloween",
@@ -137,7 +145,8 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     slug: "thanksgiving",
     name: "Thanksgiving",
     tagline: "Warm Tablescapes & Host Appreciation",
-    description: "Layered linen tables, low garlands, taper candles, and thank-you gifts for hosts.",
+    description:
+      "Layered linen tables, low garlands, taper candles, and thank-you gifts for hosts.",
     categorySlug: "thanksgiving",
     heroImage: fallImg,
     priority: 9,
@@ -195,7 +204,10 @@ function getFloatingDate(year: number, type: string): Date {
 /**
  * Calculates next upcoming date (current year or next year if past)
  */
-export function calculateNextOccurrence(def: RecurringHolidayDefinition, referenceDate = new Date()): Date {
+export function calculateNextOccurrence(
+  def: RecurringHolidayDefinition,
+  referenceDate = new Date(),
+): Date {
   const currentYear = referenceDate.getUTCFullYear();
 
   let candidateDate: Date;
@@ -206,7 +218,11 @@ export function calculateNextOccurrence(def: RecurringHolidayDefinition, referen
   }
 
   // If candidate date is more than 3 days in the past, roll over to next year
-  const nowUtc = Date.UTC(referenceDate.getUTCFullYear(), referenceDate.getUTCMonth(), referenceDate.getUTCDate());
+  const nowUtc = Date.UTC(
+    referenceDate.getUTCFullYear(),
+    referenceDate.getUTCMonth(),
+    referenceDate.getUTCDate(),
+  );
   const candidateUtc = candidateDate.getTime();
 
   if (candidateUtc < nowUtc - 3 * 24 * 60 * 60 * 1000) {
@@ -232,8 +248,18 @@ export function getDaysRemaining(targetDateIso: string): number {
 }
 
 const MONTH_NAMES = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 /**
@@ -276,25 +302,30 @@ export function getUpcomingEvents(limit = 6, referenceDate = new Date()): Season
  */
 export function getCurrentOrNextMajorEvent(referenceDate = new Date()): SeasonalEvent {
   const upcoming = getUpcomingEvents(6, referenceDate);
-  return upcoming[0] || {
-    slug: "christmas-gifts",
-    name: "Christmas",
-    tagline: "Find the Perfect Present Under the Tree",
-    description: "Curated holiday shopping guides for partners, parents, kids, and hard-to-shop-for friends.",
-    displayDate: "December 25",
-    targetDate: "2026-12-25",
-    categorySlug: "christmas-gifts",
-    heroImage: christmasImg,
-    priority: 10,
-    daysRemaining: 122,
-    isCurrentOrVeryClose: false,
-  };
+  return (
+    upcoming[0] || {
+      slug: "christmas-gifts",
+      name: "Christmas",
+      tagline: "Find the Perfect Present Under the Tree",
+      description:
+        "Curated holiday shopping guides for partners, parents, kids, and hard-to-shop-for friends.",
+      displayDate: "December 25",
+      targetDate: "2026-12-25",
+      categorySlug: "christmas-gifts",
+      heroImage: christmasImg,
+      priority: 10,
+      daysRemaining: 122,
+      isCurrentOrVeryClose: false,
+    }
+  );
 }
 
 /**
  * Resolves the next featured event for banner / arrival experience
  */
-export function getNextUpcomingEvent(referenceDate = new Date()): { event: SeasonalEvent; daysLeft: number } | null {
+export function getNextUpcomingEvent(
+  referenceDate = new Date(),
+): { event: SeasonalEvent; daysLeft: number } | null {
   const upcoming = getUpcomingEvents(1, referenceDate);
   if (upcoming.length === 0) return null;
   return {
@@ -302,4 +333,3 @@ export function getNextUpcomingEvent(referenceDate = new Date()): { event: Seaso
     daysLeft: upcoming[0].daysRemaining,
   };
 }
-

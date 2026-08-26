@@ -2,12 +2,42 @@ import { Link } from "@tanstack/react-router";
 import { Sparkles, Calendar, ArrowRight } from "lucide-react";
 
 export const occasionList = [
-  { name: "Birthday Gifts", slug: "birthday-gifts", count: "50+ Guides", desc: "Thoughtful milestones & theme parties" },
-  { name: "Wedding Gifts", slug: "wedding-gifts", count: "40+ Guides", desc: "Registry staples & couple keepsakes" },
-  { name: "Anniversary Gifts", slug: "anniversary-gifts", count: "35+ Guides", desc: "Traditional & modern anniversary picks" },
-  { name: "Housewarming Gifts", slug: "housewarming-gifts", count: "25+ Guides", desc: "Cozy home accents & host essentials" },
-  { name: "Baby Shower Gifts", slug: "baby-shower", count: "30+ Guides", desc: "Practical nursery picks & new mom luxury" },
-  { name: "Parties & Celebrations", slug: "parties-celebrations", count: "45+ Guides", desc: "Decorating themes, food bars & setups" },
+  {
+    name: "Birthday Gifts",
+    slug: "birthday-gifts",
+    count: "50+ Guides",
+    desc: "Thoughtful milestones & theme parties",
+  },
+  {
+    name: "Wedding Gifts",
+    slug: "wedding-gifts",
+    count: "40+ Guides",
+    desc: "Registry staples & couple keepsakes",
+  },
+  {
+    name: "Anniversary Gifts",
+    slug: "anniversary-gifts",
+    count: "35+ Guides",
+    desc: "Traditional & modern anniversary picks",
+  },
+  {
+    name: "Housewarming Gifts",
+    slug: "housewarming-gifts",
+    count: "25+ Guides",
+    desc: "Cozy home accents & host essentials",
+  },
+  {
+    name: "Baby Shower Gifts",
+    slug: "baby-shower",
+    count: "30+ Guides",
+    desc: "Practical nursery picks & new mom luxury",
+  },
+  {
+    name: "Parties & Celebrations",
+    slug: "parties-celebrations",
+    count: "45+ Guides",
+    desc: "Decorating themes, food bars & setups",
+  },
 ];
 
 export function ExploreByOccasion() {
@@ -47,9 +77,7 @@ export function ExploreByOccasion() {
               <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
                 {occ.name}
               </h3>
-              <p className="mt-1.5 text-xs text-foreground-muted leading-relaxed">
-                {occ.desc}
-              </p>
+              <p className="mt-1.5 text-xs text-foreground-muted leading-relaxed">{occ.desc}</p>
             </div>
 
             <div className="mt-4 flex items-center justify-between border-t border-border/40 pt-3 text-xs font-semibold text-primary">

@@ -23,7 +23,8 @@ export function NewsletterCard() {
         Get Curated Holiday & Gift Ideas
       </h4>
       <p className="mt-1 text-xs text-foreground-muted leading-relaxed">
-        Weekly gift guides, party plans, and seasonal holiday picks delivered straight to your inbox.
+        Weekly gift guides, party plans, and seasonal holiday picks delivered straight to your
+        inbox.
       </p>
 
       {subscribed ? (

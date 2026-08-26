@@ -24,7 +24,8 @@ export function HomeHero({ featuredArticle }: HomeHeroProps) {
         </h1>
 
         <p className="mt-4 text-base font-normal leading-relaxed text-foreground-muted sm:text-lg">
-          Thoughtful gift guides, verified Amazon picks, holiday tablescapes, and celebration ideas curated by lifestyle editors for life's most special moments.
+          Thoughtful gift guides, verified Amazon picks, holiday tablescapes, and celebration ideas
+          curated by lifestyle editors for life's most special moments.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">

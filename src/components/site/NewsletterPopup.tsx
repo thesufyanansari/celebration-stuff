@@ -21,7 +21,10 @@ export function NewsletterPopup({ delaySeconds = 10 }: { delaySeconds?: number }
   const handleClose = () => {
     setIsOpen(false);
     // Suppress popup for 7 days if closed
-    localStorage.setItem("newsletter_popup_suppressed", String(Date.now() + 7 * 24 * 60 * 60 * 1000));
+    localStorage.setItem(
+      "newsletter_popup_suppressed",
+      String(Date.now() + 7 * 24 * 60 * 60 * 1000),
+    );
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -62,7 +65,8 @@ export function NewsletterPopup({ delaySeconds = 10 }: { delaySeconds?: number }
               Find Your Next Great Gift
             </h3>
             <p className="mt-2 text-xs text-foreground-muted leading-relaxed">
-              Get fresh gift guides, seasonal inspiration and curated recommendations delivered straight to your inbox.
+              Get fresh gift guides, seasonal inspiration and curated recommendations delivered
+              straight to your inbox.
             </p>
           </div>
 

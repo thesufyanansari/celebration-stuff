@@ -31,7 +31,10 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
   return (
     <header className="mb-10">
       {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex flex-wrap items-center gap-1.5 text-xs text-foreground-muted">
+      <nav
+        aria-label="Breadcrumb"
+        className="text-caption mb-4 flex flex-wrap items-center gap-1.5 text-xs text-foreground-muted"
+      >
         <Link to="/" className="transition-colors hover:text-primary">
           Home
         </Link>
@@ -100,7 +103,10 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
                 {author.initials}
               </div>
               <span>
-                By <strong className="font-semibold transition-colors group-hover:text-primary">{author.name}</strong>
+                By{" "}
+                <strong className="font-semibold transition-colors group-hover:text-primary">
+                  {author.name}
+                </strong>
               </span>
             </Link>
           )}
@@ -136,7 +142,11 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-surface-hover"
             title="Copy link"
           >
-            {copied ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Copy className="h-3.5 w-3.5" />}
+            {copied ? (
+              <Check className="h-3.5 w-3.5 text-emerald-600" />
+            ) : (
+              <Copy className="h-3.5 w-3.5" />
+            )}
             <span className="hidden sm:inline">{copied ? "Copied" : "Copy"}</span>
           </button>
         </div>
@@ -147,8 +157,12 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
         <p className="leading-normal">
           <strong className="font-semibold text-foreground">Affiliate Disclosure: </strong>
-          Celebration Stuff is reader-supported. When you buy through our links, we may earn an affiliate commission at no extra cost to you.{" "}
-          <Link to="/affiliate-disclosure" className="underline decoration-border hover:text-primary">
+          Celebration Stuff is reader-supported. When you buy through our links, we may earn an
+          affiliate commission at no extra cost to you.{" "}
+          <Link
+            to="/affiliate-disclosure"
+            className="underline decoration-border hover:text-primary"
+          >
             Learn more
           </Link>
         </p>

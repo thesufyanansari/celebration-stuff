@@ -453,15 +453,27 @@ export const getTopicArticles = (article: Article, limit = 10): Article[] => {
       let score = 0;
 
       // Same holiday / event (e.g. Christmas)
-      if (article.event && candidate.event && article.event.toLowerCase() === candidate.event.toLowerCase()) {
+      if (
+        article.event &&
+        candidate.event &&
+        article.event.toLowerCase() === candidate.event.toLowerCase()
+      ) {
         score += 50;
       }
-      if (article.holiday && candidate.holiday && article.holiday.some((h) => candidate.holiday?.includes(h))) {
+      if (
+        article.holiday &&
+        candidate.holiday &&
+        article.holiday.some((h) => candidate.holiday?.includes(h))
+      ) {
         score += 40;
       }
 
       // Same recipient (e.g. Dad / Mom)
-      if (article.recipient && candidate.recipient && article.recipient.some((r) => candidate.recipient?.includes(r))) {
+      if (
+        article.recipient &&
+        candidate.recipient &&
+        article.recipient.some((r) => candidate.recipient?.includes(r))
+      ) {
         score += 30;
       }
 
@@ -492,8 +504,7 @@ export const getTopicArticles = (article: Article, limit = 10): Article[] => {
 export const getRelatedArticles = (article: Article, count = 6): Article[] =>
   getTopicArticles(article, count);
 
-export const related = (article: Article, count = 6) =>
-  getRelatedArticles(article, count);
+export const related = (article: Article, count = 6) => getRelatedArticles(article, count);
 
 export const formatDate = (iso: string) =>
   new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
@@ -505,5 +516,3 @@ export const formatDate = (iso: string) =>
 
 export const formatViews = (views: number) =>
   views >= 1000 ? `${(views / 1000).toFixed(views >= 10000 ? 0 : 1)}k` : `${views}`;
-
-

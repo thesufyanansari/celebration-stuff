@@ -23,7 +23,12 @@ export const Route = createFileRoute("/category/$slug")({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://celebrationstuff.com" },
-        { "@type": "ListItem", position: 2, name: "Categories", item: "https://celebrationstuff.com/explore" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Categories",
+          item: "https://celebrationstuff.com/explore",
+        },
         { "@type": "ListItem", position: 3, name: category.name, item: canonicalUrl },
       ],
     };

@@ -13,14 +13,16 @@ export const recipientsList: RecipientCard[] = [
   {
     name: "Gifts for Dad",
     slug: "gifts-for-dad",
-    description: "Practical gadgets, rugged outdoor gear, and everyday upgrades he'll actually use.",
+    description:
+      "Practical gadgets, rugged outdoor gear, and everyday upgrades he'll actually use.",
     tagline: "High-utility finds",
     badge: "Trending",
   },
   {
     name: "Gifts for Mom",
     slug: "gifts-for-mom",
-    description: "Personalized keepsakes, cozy luxury blankets, and self-care essentials to make her feel seen.",
+    description:
+      "Personalized keepsakes, cozy luxury blankets, and self-care essentials to make her feel seen.",
     tagline: "Thoughtful & cozy",
     badge: "Most Popular",
   },

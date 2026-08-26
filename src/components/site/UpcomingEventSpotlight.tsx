@@ -12,8 +12,12 @@ export function UpcomingEventSpotlight() {
     return (
       <div className="rounded-3xl border border-border bg-surface p-8 shadow-card text-center">
         <Sparkles className="mx-auto h-6 w-6 text-primary" />
-        <h3 className="mt-2 font-display text-xl font-bold text-foreground">Discover Thoughtful Gift Ideas</h3>
-        <p className="mt-1 text-sm text-foreground-muted">Explore curated lists for every person and special occasion.</p>
+        <h3 className="mt-2 font-display text-xl font-bold text-foreground">
+          Discover Thoughtful Gift Ideas
+        </h3>
+        <p className="mt-1 text-sm text-foreground-muted">
+          Explore curated lists for every person and special occasion.
+        </p>
         <Link
           to="/explore"
           className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-xs font-semibold text-primary-foreground"
@@ -26,7 +30,9 @@ export function UpcomingEventSpotlight() {
   }
 
   const { event, daysLeft } = next;
-  const relatedArticleObj = event.relatedArticles?.[0] ? getArticle(event.relatedArticles[0]) : null;
+  const relatedArticleObj = event.relatedArticles?.[0]
+    ? getArticle(event.relatedArticles[0])
+    : null;
 
   return (
     <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-accent-soft/30 p-6 sm:p-8 shadow-card">
@@ -41,9 +47,7 @@ export function UpcomingEventSpotlight() {
           <h3 className="mt-3 font-display text-2xl sm:text-3xl font-bold text-foreground">
             {event.name} is Coming Up
           </h3>
-          <p className="mt-2 text-sm text-foreground-muted leading-relaxed">
-            {event.description}
-          </p>
+          <p className="mt-2 text-sm text-foreground-muted leading-relaxed">{event.description}</p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
@@ -69,7 +73,9 @@ export function UpcomingEventSpotlight() {
 
         {/* Live Countdown Card */}
         <div className="lg:col-span-5 flex flex-col items-center justify-center rounded-2xl border border-border/80 bg-surface p-6 shadow-sm text-center">
-          <span className="text-overline text-foreground-muted">Target Date: {event.displayDate}</span>
+          <span className="text-overline text-foreground-muted">
+            Target Date: {event.displayDate}
+          </span>
 
           <div className="mt-3 flex items-baseline justify-center gap-2">
             <span className="font-display text-4xl sm:text-5xl font-extrabold text-primary">

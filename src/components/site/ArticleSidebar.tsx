@@ -65,7 +65,11 @@ export function ArticleSidebar({ currentArticle }: { currentArticle: Article }) 
             onClick={handleCopyLink}
             className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-foreground-muted transition-colors hover:bg-surface-hover hover:text-foreground"
           >
-            {copied ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Copy className="h-3.5 w-3.5" />}
+            {copied ? (
+              <Check className="h-3.5 w-3.5 text-emerald-600" />
+            ) : (
+              <Copy className="h-3.5 w-3.5" />
+            )}
             <span>{copied ? "Copied" : "Copy Link"}</span>
           </button>
         </div>

@@ -45,7 +45,9 @@ export function ArticleCard({
               <div className="flex items-center gap-2 text-overline">
                 <span>{category?.name}</span>
                 <span className="text-border">/</span>
-                <span className="text-foreground-muted normal-case tracking-normal">{article.event}</span>
+                <span className="text-foreground-muted normal-case tracking-normal">
+                  {article.event}
+                </span>
               </div>
               <h3 className="mt-2 font-display text-lg sm:text-xl leading-snug font-semibold transition-colors group-hover:text-primary">
                 {article.title}
@@ -90,7 +92,9 @@ export function ArticleCard({
             <div className="flex items-center gap-2 text-overline">
               <span>{category?.name}</span>
               <span className="text-border">/</span>
-              <span className="text-foreground-muted normal-case tracking-normal">{article.event}</span>
+              <span className="text-foreground-muted normal-case tracking-normal">
+                {article.event}
+              </span>
             </div>
             <h3 className="mt-2 font-display text-base leading-snug font-semibold transition-colors group-hover:text-primary">
               {article.title}
@@ -126,4 +130,3 @@ export function BlogGrid({ articles, columns = 3 }: { articles: Article[]; colum
 
 // Backward compatibility export alias
 export const MasonryGrid = BlogGrid;
-

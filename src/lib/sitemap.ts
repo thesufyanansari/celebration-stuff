@@ -28,7 +28,7 @@ export function generateSitemapXml(): string {
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${path === "" ? "1.0" : path.startsWith("/article/") ? "0.8" : "0.6"}</priority>
-  </url>`
+  </url>`,
     )
     .join("");
 

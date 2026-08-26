@@ -19,8 +19,8 @@ export function TopicArticles({ currentArticle, limit = 10 }: TopicArticlesProps
   const sectionTitle = currentArticle.event
     ? `More ${currentArticle.event} Ideas`
     : currentArticle.recipient?.[0]
-    ? `More Gift Ideas for ${currentArticle.recipient[0].replace("gifts-for-", "").replace("-", " ")}`
-    : "More In This Series";
+      ? `More Gift Ideas for ${currentArticle.recipient[0].replace("gifts-for-", "").replace("-", " ")}`
+      : "More In This Series";
 
   const initialVisibleCount = 4;
   const visibleArticles = expanded ? topicArticles : topicArticles.slice(0, initialVisibleCount);

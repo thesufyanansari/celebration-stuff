@@ -48,11 +48,12 @@ export function ArticleContentRenderer({ text, className = "" }: ContentRenderer
       parts.push(
         <Link
           key={`${matchIndex}-${linkText}`}
-          to={routePath as any}
+          // @ts-expect-error tanstack dynamic route
+          to={routePath}
           className="font-semibold text-primary underline decoration-primary/40 underline-offset-2 transition-colors hover:decoration-primary"
         >
           {linkText}
-        </Link>
+        </Link>,
       );
     } else {
       parts.push(
@@ -64,7 +65,7 @@ export function ArticleContentRenderer({ text, className = "" }: ContentRenderer
           className="font-semibold text-primary underline decoration-primary/40 underline-offset-2 transition-colors hover:decoration-primary"
         >
           {linkText}
-        </a>
+        </a>,
       );
     }
 

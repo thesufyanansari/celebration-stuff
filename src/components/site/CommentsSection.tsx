@@ -9,23 +9,67 @@ export type CommentItem = {
   status: "approved" | "pending";
 };
 
+const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
+  "18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff": [
+    {
+      id: "c-dad18-1",
+      author: "NoClutterKate",
+      date: "December 17, 2026",
+      text: "This is exactly what I needed! My dad keeps telling me he doesn't want anything, but I got him the HOTO laser measuring tool and he's been measuring everything in the house. He loves it!",
+      status: "approved",
+    },
+    {
+      id: "c-dad18-2",
+      author: "HandyDaughter",
+      date: "December 16, 2026",
+      text: "The telescoping magnetic pickup tool set is amazing. My dad dropped a screw behind his workbench and this saved the day. He said it's the best gift he's gotten in years!",
+      status: "approved",
+    },
+    {
+      id: "c-dad18-3",
+      author: "GrillMasterSon",
+      date: "December 15, 2026",
+      text: "The Cutluxe brisket knife is a game-changer. My dad smoked a brisket for Christmas dinner and said the knife made slicing so much easier. Quality is excellent.",
+      status: "approved",
+    },
+    {
+      id: "c-dad18-4",
+      author: "PracticalPete",
+      date: "December 14, 2026",
+      text: "I was skeptical about the DUDE Wipes, but my dad actually loves them. He uses them all the time and says they're one of the most practical gifts he's ever received. Who knew?",
+      status: "approved",
+    },
+    {
+      id: "c-dad18-5",
+      author: "GadgetGuy",
+      date: "December 13, 2026",
+      text: "The phone stand with Bluetooth speaker is so cool! My dad uses it on his desk every day. Great sound quality and the LED lights are a nice touch.",
+      status: "approved",
+    },
+  ],
+};
+
+const GENERIC_DEFAULT_COMMENTS: CommentItem[] = [
+  {
+    id: "c1",
+    author: "Emily Watson",
+    date: "August 15, 2026",
+    text: "Loved the single-origin coffee subscription recommendation! Ordered it for my mom's birthday and she was thrilled.",
+    status: "approved",
+  },
+  {
+    id: "c2",
+    author: "Marcus Chen",
+    date: "August 18, 2026",
+    text: "The Turkish waffle towels idea is super practical. Perfect for family gifts.",
+    status: "approved",
+  },
+];
+
 export function CommentsSection({ articleSlug }: { articleSlug: string }) {
-  const [comments, setComments] = useState<CommentItem[]>([
-    {
-      id: "c1",
-      author: "Emily Watson",
-      date: "August 15, 2026",
-      text: "Loved the single-origin coffee subscription recommendation! Ordered it for my mom's birthday and she was thrilled.",
-      status: "approved",
-    },
-    {
-      id: "c2",
-      author: "Marcus Chen",
-      date: "August 18, 2026",
-      text: "The Turkish waffle towels idea is super practical. Perfect for family gifts.",
-      status: "approved",
-    },
-  ]);
+  const [comments, setComments] = useState<CommentItem[]>(() => {
+    return DEFAULT_COMMENTS_MAP[articleSlug] || GENERIC_DEFAULT_COMMENTS;
+  });
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,7 +83,11 @@ export function CommentsSection({ articleSlug }: { articleSlug: string }) {
     const newComment: CommentItem = {
       id: `c-${Date.now()}`,
       author: name.trim(),
-      date: new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }),
+      date: new Date().toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      }),
       text: text.trim(),
       status: "pending",
     };
@@ -74,7 +122,9 @@ export function CommentsSection({ articleSlug }: { articleSlug: string }) {
 
       <div className="mt-8 border-t border-border pt-6">
         <h3 className="font-display text-base font-semibold text-foreground">Leave a Comment</h3>
-        <p className="mt-1 text-caption">Your email address will not be published. Comments are reviewed before publishing.</p>
+        <p className="mt-1 text-caption">
+          Your email address will not be published. Comments are reviewed before publishing.
+        </p>
 
         {submitted ? (
           <div className="mt-4 flex items-center gap-2 rounded-xl border border-emerald-500/20 bg-emerald-500/10 p-4 text-xs text-emerald-700">
@@ -85,7 +135,9 @@ export function CommentsSection({ articleSlug }: { articleSlug: string }) {
           <form onSubmit={handleSubmit} className="mt-4 grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label htmlFor="comment-name" className="sr-only">Name</label>
+                <label htmlFor="comment-name" className="sr-only">
+                  Name
+                </label>
                 <input
                   id="comment-name"
                   type="text"
@@ -97,7 +149,9 @@ export function CommentsSection({ articleSlug }: { articleSlug: string }) {
                 />
               </div>
               <div>
-                <label htmlFor="comment-email" className="sr-only">Email</label>
+                <label htmlFor="comment-email" className="sr-only">
+                  Email
+                </label>
                 <input
                   id="comment-email"
                   type="email"
@@ -109,7 +163,9 @@ export function CommentsSection({ articleSlug }: { articleSlug: string }) {
               </div>
             </div>
             <div>
-              <label htmlFor="comment-text" className="sr-only">Comment</label>
+              <label htmlFor="comment-text" className="sr-only">
+                Comment
+              </label>
               <textarea
                 id="comment-text"
                 rows={3}

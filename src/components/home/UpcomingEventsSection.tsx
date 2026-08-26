@@ -51,8 +51,8 @@ export function UpcomingEventsSection() {
                       {isTodayOrActive
                         ? "Happening Now!"
                         : isSoon
-                        ? `Coming in ${evt.daysRemaining} days`
-                        : evt.displayDate}
+                          ? `Coming in ${evt.daysRemaining} days`
+                          : evt.displayDate}
                     </span>
                   </div>
                 </div>

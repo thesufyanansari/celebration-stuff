@@ -7,13 +7,15 @@ export function CurrentSeasonFeature() {
   const currentEvent = getCurrentOrNextMajorEvent();
 
   // Find articles matching this event
-  const eventArticles = articles.filter(
-    (a) =>
-      (a.event && a.event.toLowerCase() === currentEvent.name.toLowerCase()) ||
-      a.holiday?.some((h) => h.includes(currentEvent.slug.replace("-gifts", ""))) ||
-      a.category === currentEvent.categorySlug ||
-      currentEvent.relatedArticles?.includes(a.slug)
-  ).slice(0, 3);
+  const eventArticles = articles
+    .filter(
+      (a) =>
+        (a.event && a.event.toLowerCase() === currentEvent.name.toLowerCase()) ||
+        a.holiday?.some((h) => h.includes(currentEvent.slug.replace("-gifts", ""))) ||
+        a.category === currentEvent.categorySlug ||
+        currentEvent.relatedArticles?.includes(a.slug),
+    )
+    .slice(0, 3);
 
   if (eventArticles.length === 0) return null;
 

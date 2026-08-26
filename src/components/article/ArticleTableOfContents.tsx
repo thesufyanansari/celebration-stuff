@@ -23,9 +23,7 @@ export function ArticleTableOfContents({
   useEffect(() => {
     // Collect all h2 and h3 elements within the article
     const headingElements = Array.from(
-      document.querySelectorAll<HTMLHeadingElement>(
-        `${selector} h2, ${selector} h3`
-      )
+      document.querySelectorAll<HTMLHeadingElement>(`${selector} h2, ${selector} h3`),
     );
 
     const items: TocHeading[] = headingElements
@@ -62,7 +60,7 @@ export function ArticleTableOfContents({
           }
         });
       },
-      { rootMargin: "0px 0px -70% 0px" }
+      { rootMargin: "0px 0px -70% 0px" },
     );
 
     headingElements.forEach((el) => observer.observe(el));
@@ -95,10 +93,7 @@ export function ArticleTableOfContents({
         {isMobileOpen && (
           <ul className="mt-3 flex flex-col gap-2 border-t border-border/60 pt-3 text-xs">
             {headings.map((item, idx) => (
-              <li
-                key={item.id}
-                className={item.level === 3 ? "pl-3 text-foreground-muted" : ""}
-              >
+              <li key={item.id} className={item.level === 3 ? "pl-3 text-foreground-muted" : ""}>
                 <a
                   href={`#${item.id}`}
                   onClick={(e) => {
@@ -139,10 +134,7 @@ export function ArticleTableOfContents({
           const isActive = activeId === item.id;
 
           return (
-            <li
-              key={item.id}
-              className={item.level === 3 ? "pl-3" : ""}
-            >
+            <li key={item.id} className={item.level === 3 ? "pl-3" : ""}>
               <a
                 href={`#${item.id}`}
                 onClick={(e) => {
