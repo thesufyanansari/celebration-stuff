@@ -121,6 +121,43 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
+  "25-thoughtful-christmas-gifts-for-dad": [
+    {
+      id: "c-dad25-1",
+      author: "ThoughtfulDaughter",
+      date: "December 19, 2026",
+      text: "The Dad's Life Story Journal is the best gift I've ever given my dad. He's been filling it out every night and sharing stories with me. Thank you for this recommendation!",
+      status: "approved",
+    },
+    {
+      id: "c-dad25-2",
+      author: "FunnySon",
+      date: "December 18, 2026",
+      text: "The Toilet Timer is hilarious! My dad loves it and keeps using it as a conversation starter. Best $16 I've ever spent!",
+      status: "approved",
+    },
+    {
+      id: "c-dad25-3",
+      author: "GrillMasterDaughter",
+      date: "December 17, 2026",
+      text: "The rolling grill basket changed my dad's grilling game. He uses it every weekend now. Such a simple but thoughtful gift.",
+      status: "approved",
+    },
+    {
+      id: "c-dad25-4",
+      author: "WhiskeyLoverKid",
+      date: "December 16, 2026",
+      text: "The whiskey decanter globe set is stunning. My dad put it on his bar cart and it looks like a million bucks. He loves it!",
+      status: "approved",
+    },
+    {
+      id: "c-dad25-5",
+      author: "ProudDadKid",
+      date: "December 15, 2026",
+      text: "The 'Awesome Like My Daughter' shirt is my dad's new favorite. He wore it to dinner and showed everyone. Such a fun gift!",
+      status: "approved",
+    },
+  ],
 };
 
 const GENERIC_DEFAULT_COMMENTS: CommentItem[] = [

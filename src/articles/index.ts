@@ -10,6 +10,7 @@ import article8 from "./christmas/17-practical-christmas-gifts-for-dad-who-has-e
 import article9 from "./christmas/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff";
 import article10 from "./christmas/20-christmas-gifts-for-dad-under-50";
 import article11 from "./christmas/23-unique-christmas-gifts-for-dad-practical";
+import article12 from "./christmas/25-thoughtful-christmas-gifts-for-dad";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -27,6 +28,7 @@ export const registryArticles: Article[] = [
   article9,
   article10,
   article11,
+  article12,
 ];
 
 export default registryArticles;

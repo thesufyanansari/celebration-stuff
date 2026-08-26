@@ -89,7 +89,7 @@ export const article: Article = {
         "• **Consumable** — they get used up with zero long-term clutter",
         "• **Upgrades** — a superior version of an essential tool he already owns",
         "• **Problem-solvers** — clever items that eliminate minor daily hassles",
-        "That's exactly what this list delivers. For more inspiration on hard-to-shop-for family members, check out our companion guides to [17 practical Christmas gifts for dad who has everything](/article/17-practical-christmas-gifts-for-dad-who-has-everything) and [gift ideas for people who want nothing](/article/gift-ideas-for-people-who-want-nothing).",
+        "That's exactly what this list delivers. For more inspiration on hard-to-shop-for family members, check out our companion guides to [25 thoughtful Christmas gifts for dad that show you know him](/article/25-thoughtful-christmas-gifts-for-dad), [17 practical Christmas gifts for dad who has everything](/article/17-practical-christmas-gifts-for-dad-who-has-everything), and [gift ideas for people who want nothing](/article/gift-ideas-for-people-who-want-nothing).",
       ],
     },
     {

@@ -1,0 +1,823 @@
+import type { Article } from "@/data/articles";
+
+// Image Imports from assets
+import featuredImage from "@/assets/thoughtful-christmas-gifts-for-dad-featured.jpg";
+import whiskeyGunDecanter from "@/assets/whiskey-gun-decanter-set-bullet-glasses.jpg";
+import kalunsGrillSet from "@/assets/kaluns-grilling-accessories-set.jpg";
+import teslyarPhoneDock from "@/assets/teslyar-wood-phone-docking-station.jpg";
+import rollingGrillBasket from "@/assets/rolling-grill-basket-removable-handle.jpg";
+import dadNotSleepingBlanket from "@/assets/dad-is-not-sleeping-blanket-gift.jpg";
+import whiskeyGlobeSet from "@/assets/whiskey-decanter-globe-set-stones.jpg";
+import teslyarNightstandDock from "@/assets/teslyar-wood-docking-station-nightstand.jpg";
+import rakWristband from "@/assets/rak-magnetic-wristband-tools-dad.jpg";
+import whiskeySet2Glasses from "@/assets/whiskey-decanter-set-2-glasses.jpg";
+import dadCandle from "@/assets/dad-candle-best-dad-gift.jpg";
+import dadJokesButton from "@/assets/dad-jokes-button-75-plus.jpg";
+import funnyGagGiftsMen from "@/assets/funny-gag-gifts-men-boyfriend.jpg";
+import universalSocket from "@/assets/super-universal-socket-tools-set.jpg";
+import dadWhiteElephant from "@/assets/dad-white-elephant-gift-birthday.jpg";
+import dadLifeStoryJournal from "@/assets/dads-life-story-journal-keepsake.jpg";
+import legendaryFlannel from "@/assets/legendary-whitetails-flannel-shirt-dad.jpg";
+import alcoholInfusionKit from "@/assets/alcohol-infusion-kit-whiskey-gin.jpg";
+import woodenClock from "@/assets/wooden-clock-dad-gift-birthday.jpg";
+import funnyDadGift from "@/assets/funny-dad-birthday-gift.jpg";
+import funnyGiftMen from "@/assets/funny-gift-for-dad-men.jpg";
+import driveSafeKeychain from "@/assets/drive-safe-keychain-dad-gift.jpg";
+import awesomeDaughterTshirt from "@/assets/awesome-like-my-daughter-tshirt-dad.jpg";
+import toiletTimer from "@/assets/toilet-timer-shark-tank-gag-gift.jpg";
+import acrylicPuzzleKeepsake from "@/assets/engraved-acrylic-puzzle-keepsake-dad.jpg";
+import whiskeyDecanterSetDad from "@/assets/whiskey-decanter-set-dad-gift.jpg";
+
+export const article: Article = {
+  slug: "25-thoughtful-christmas-gifts-for-dad",
+  title: "25 Thoughtful Christmas Gifts for Dad That Show You Know Him",
+  excerpt:
+    "Skip the boring generic presents. Discover 25 thoughtful Christmas gifts for Dad that celebrate his quirks, passions, and sense of humor — all under $60.",
+  answer:
+    "The secret to giving Dad a memorable Christmas gift is choosing something that reflects his personality rather than spending a fortune. Top thoughtful picks include the Dad's Life Story Journal for sentimental dads, the Rolling Grill Basket for BBQ lovers, and the Whiskey Gun Decanter Set for dads with great humor.",
+  category: "gift-guides",
+  event: "Christmas",
+  season: "Winter",
+  tags: [
+    "christmas-gifts",
+    "gifts-for-dad",
+    "thoughtful-gifts",
+    "sentimental-gifts",
+    "dad-gift-ideas",
+    "budget-gifts",
+    "whiskey-gifts",
+    "funny-gifts-for-dad",
+  ],
+  author: "sarah-linden",
+  published: "2026-08-27",
+  updated: "2026-08-27",
+  views: 24800,
+  readingMinutes: 12,
+  image: featuredImage,
+  imageWidth: 900,
+  imageHeight: 1200,
+  featured: true,
+
+  // Extended SEO & Content Metadata
+  metaTitle: "25 Thoughtful Christmas Gifts for Dad That Show You Know Him | Celebration Stuff",
+  metaDescription:
+    "Looking for a meaningful present for Dad? Explore 25 thoughtful Christmas gifts for Dad that prove you actually know him. From guided journals to barware under $60.",
+  canonicalUrl: "https://celebrationstuff.com/article/25-thoughtful-christmas-gifts-for-dad",
+  featuredImageAlt:
+    "Thoughtful Christmas gift ideas for dad arranged on a festive holiday background with wooden keepsakes and barware.",
+  primaryKeyword: "thoughtful Christmas gifts for dad",
+  secondaryKeywords: [
+    "meaningful gifts for dad",
+    "Christmas gifts for dad who has everything",
+    "sentimental dad gifts",
+    "unique Christmas gifts for dad",
+    "gifts for dad under $50",
+    "personalized gifts for dad",
+  ],
+  focusTopic: "Thoughtful Christmas Gifts for Dads",
+  recipient: ["gifts-for-dad", "gifts-for-men"],
+  occasion: ["christmas-gifts", "holiday-gifts", "birthday-gifts", "fathers-day-gifts"],
+  holiday: ["christmas-gifts"],
+  giftStyle: [
+    "sentimental-gifts",
+    "thoughtful-gifts",
+    "unique-gifts",
+    "budget-gifts",
+    "practical-gifts",
+  ],
+
+  sections: [
+    {
+      id: "why-thoughtful-gifts-matter-more-than-price-tags",
+      heading: "Why Thoughtful Gifts Matter More Than Price Tags",
+      body: [
+        "You know your dad better than anyone. You know his quirks, his hobbies, his sense of humor, and the things that make him smile.",
+        "So why does buying him a gift still feel so hard? Because most gift guides are generic. They recommend the same boring items to everyone. But your dad isn't everyone — he's *your* dad.",
+        "Your dad doesn't care how much you spend. He cares that you *thought* about him. A $6 gag gift that makes him laugh is worth more than a $100 generic gift card. A $9 candle that says \"Best Dad\" means more than an expensive sweater he'll never wear.",
+        "The gifts on this list are all under $60 — most are under $30. But every single one shows that you paid attention to who he is. For more curated ideas, check out our guides on [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical) and [20 Christmas gifts for dad under $50 he'll put to good use](/article/20-christmas-gifts-for-dad-under-50).",
+      ],
+    },
+    {
+      id: "25-thoughtful-christmas-gifts-for-dad-show-you-know-him",
+      heading: "25 Thoughtful Christmas Gifts for Dad That Show You Know Him",
+      body: [
+        "Here are 25 thoughtful, personal gifts designed to match his personality, sense of humor, and everyday passions.",
+      ],
+    },
+    {
+      id: "whiskey-gun-decanter-set",
+      heading: "1. Best Unique/Novelty: Whiskey Gun Decanter Set — $29",
+      productId: "whiskey-gun-decanter-set",
+      body: [
+        "This decanter set is shaped like a gun and comes with bullet glasses. It's bold, unique, and perfect for the dad with a sense of humor.",
+        "Crafted from premium hand-blown borosilicate glass, it holds his favorite scotch or bourbon while making an unmistakable statement on his home bar cart.",
+      ],
+    },
+    {
+      id: "kaluns-grilling-accessories-set",
+      heading: "2. Best for Grill Master: Kaluns Grilling Accessories Set — $27",
+      productId: "kaluns-grilling-accessories-set",
+      body: [
+        "A complete set of heavy-duty stainless steel grilling tools. He'll use these every time he fires up the grill.",
+        "Equipped with elongated heat-resistant handles, sharp meat forks, basting brushes, and a heavy-duty spatula, it delivers professional barbecue performance in a portable carrying case.",
+      ],
+    },
+    {
+      id: "teslyar-wood-phone-docking-station",
+      heading: "3. Best for Home Office: TESLYAR Wood Phone Docking Station — $39",
+      productId: "teslyar-wood-phone-docking-station",
+      body: [
+        "Keeps his phone, watch, and keys organized on his desk. Simple, practical, and looks great.",
+        "Handcrafted from solid ash wood, it features precision cable cutouts that turn messy desktop wires into a clean, minimalist charging station.",
+      ],
+    },
+    {
+      id: "rolling-grill-basket",
+      heading: "4. Best for Grill Master (Tool): Rolling Grill Basket — $23",
+      productId: "rolling-grill-basket",
+      body: [
+        "Toss veggies, meat, or fish in this basket and roll it on the grill for even cooking. A simple tool that makes grilling easier.",
+        "Eliminates the frustration of small vegetables or delicate seafood falling between the grill grates while ensuring 360-degree caramelized sear.",
+      ],
+    },
+    {
+      id: "dad-is-not-sleeping-blanket",
+      heading: '5. Best Unique/Novelty: "Dad is Not Sleeping" Blanket — $21',
+      productId: "dad-is-not-sleeping-blanket",
+      body: [
+        "A hilarious blanket that says, \"I'm not sleeping, I'm just resting my eyes.\" Perfect for the dad who always falls asleep on the couch.",
+        "Made with plush, anti-pilling flannel fleece that keeps him warm during football games and Sunday afternoon naps.",
+      ],
+    },
+    {
+      id: "whiskey-decanter-globe-set",
+      heading: "6. Best Premium: Whiskey Decanter Globe Set — $59",
+      productId: "whiskey-decanter-globe-set",
+      body: [
+        "A globe-shaped decanter with ball stones and glasses. It's a conversation starter and a functional piece of decor.",
+        "Features an antique hand-etched map of the world with an intricate glass ship inside, resting on an elegant mahogany-stained wooden base.",
+      ],
+    },
+    {
+      id: "teslyar-wood-docking-station-nightstand",
+      heading: "7. Best for Organization: TESLYAR Wood Phone Docking Station — $26",
+      productId: "teslyar-wood-docking-station-nightstand",
+      body: [
+        "A compact version of the docking station — perfect for his nightstand.",
+        "Provides dedicated cradles for his smartphone, reading glasses, wedding band, and pocket change to keep his bedside table clean every morning.",
+      ],
+    },
+    {
+      id: "rak-magnetic-wristband-tools-dad",
+      heading: "8. Best for Handy Dad: RAK Magnetic Wristband for Tools — $19",
+      productId: "rak-magnetic-wristband-tools-dad",
+      body: [
+        "Holds screws, nails, and small tools right on his wrist. A simple tool that makes DIY projects easier.",
+        "Fitted with 10 super-strong neodymium magnets and breathable ballistic nylon, saving him from dropping hardware off ladders or climbing back down.",
+      ],
+    },
+    {
+      id: "whiskey-decanter-set-2-glasses",
+      heading: "9. Best for Whiskey Lover: Whiskey Decanter Set with 2 Glasses — $29",
+      productId: "whiskey-decanter-set-2-glasses",
+      body: [
+        "A classic decanter set with matching glasses. Elegant, practical, and perfect for his home bar.",
+        "Crafted with heavy-weighted bases and timeless diamond-cut facets that bring a touch of luxury to every pour.",
+      ],
+    },
+    {
+      id: "dad-candle-best-dad-gift",
+      heading: "10. Best Budget: Dad Candle Gift — $9",
+      productId: "dad-candle-best-dad-gift",
+      body: [
+        'A simple, thoughtful candle with a "Best Dad" message. Affordable and meaningful.',
+        "Infused with calming amber and sandalwood notes that burn cleanly for up to 50 hours.",
+      ],
+    },
+    {
+      id: "dad-jokes-button-75-plus",
+      heading: "11. Best Fun/Entertainment: 75+ Funny Dad Jokes Button — $19",
+      productId: "dad-jokes-button-75-plus",
+      body: [
+        "A button that delivers 75+ dad jokes at the push of a button. He'll annoy everyone with it — and love every second.",
+        "Features crisp audio and comedic timing that turns family dinners and desk breaks into laugh sessions.",
+      ],
+    },
+    {
+      id: "funny-gag-gifts-men-boyfriend",
+      heading: "12. Best Stocking Stuffer: Funny Gag Gifts for Men — $6",
+      productId: "funny-gag-gifts-men-boyfriend",
+      body: [
+        "A small, funny gift that's perfect for stockings. At $6, it's an easy add-on.",
+        "Brings immediate holiday laughs on Christmas morning and shows you appreciate his witty personality.",
+      ],
+    },
+    {
+      id: "super-universal-socket-tools-set",
+      heading: "13. Best for Handy Dad: Super Universal Socket Tools — $9",
+      productId: "super-universal-socket-tools-set",
+      body: [
+        "Fits any bolt or nut — a clever, affordable tool for his workshop.",
+        'Equipped with 54 individual spring-loaded steel rods that automatically conform to any standard (1/4" to 3/4") or metric (7mm to 19mm) fastener.',
+      ],
+    },
+    {
+      id: "dad-white-elephant-gift-birthday",
+      heading: "14. Best Stocking Stuffer: Dad Birthday Gifts White Elephant — $9",
+      productId: "dad-white-elephant-gift-birthday",
+      body: [
+        "A fun white elephant-style gift that's perfect for gift exchanges.",
+        "Combines lighthearted banter with everyday appeal, making it a crowd favorite at holiday parties.",
+      ],
+    },
+    {
+      id: "dads-life-story-journal-keepsake",
+      heading: "15. Best Sentimental: Dad's Life Story Journal — $24",
+      productId: "dads-life-story-journal-keepsake",
+      body: [
+        "A guided journal that helps him share his life story. A meaningful gift for the whole family.",
+        "Contains structured writing prompts covering his childhood memories, career milestones, lessons learned, and family traditions.",
+      ],
+    },
+    {
+      id: "legendary-whitetails-flannel-shirt-dad",
+      heading: "16. Best Practical Everyday: Legendary Whitetails Flannel Shirt — $36",
+      productId: "legendary-whitetails-flannel-shirt-dad",
+      body: [
+        "A comfortable, classic flannel shirt that he'll wear all winter. Quality materials, great fit.",
+        "Made from 100% soft brushed heavyweight cotton with corduroy-lined collar and cuffs for timeless cold-weather durability.",
+      ],
+    },
+    {
+      id: "alcohol-infusion-kit-whiskey-gin",
+      heading: "17. Best for Foodie Dad: Alcohol Infusion Kit — $18",
+      productId: "alcohol-infusion-kit-whiskey-gin",
+      body: [
+        "Lets him infuse whiskey, gin, or vodka with his favorite flavors. A fun DIY gift for the dad who loves cocktails.",
+        "Comes with natural aromatic botanicals, dried herbs, and an infusion jar that allows him to craft signature cocktail blends at home.",
+      ],
+    },
+    {
+      id: "wooden-clock-dad-gift-birthday",
+      heading: "18. Best Sentimental: Wooden Clock Dad Gift — $19",
+      productId: "wooden-clock-dad-gift-birthday",
+      body: [
+        "A beautiful wooden clock with a heartfelt message. Functional and sentimental.",
+        "Handcrafted from polished solid wood with precise quartz movement, creating an elegant addition to his office desk or mantel.",
+      ],
+    },
+    {
+      id: "funny-dad-birthday-gift",
+      heading: "19. Best Unique/Novelty: Funny Dad Birthday Gift — $19",
+      productId: "funny-dad-birthday-gift",
+      body: [
+        "A funny, unique gift that'll make him laugh out loud.",
+        "Designed to bring humorous personality to his workshop, garage, or relaxation room.",
+      ],
+    },
+    {
+      id: "funny-gift-for-dad-men",
+      heading: "20. Best Unique/Novelty: Funny Gift for Dad — $17",
+      productId: "funny-gift-for-dad-men",
+      body: [
+        "Another hilarious gift option for the dad who loves to laugh.",
+        "Delivers instant humor while serving a fun practical purpose in his daily routine.",
+      ],
+    },
+    {
+      id: "drive-safe-keychain-dad-gift",
+      heading: "21. Best Stocking Stuffer: Drive Safe Keychain — $4",
+      productId: "drive-safe-keychain-dad-gift",
+      body: [
+        "A small, meaningful keychain with a heartfelt message. At $4, it's the perfect stocking stuffer.",
+        "Stamped on heavy-duty stainless steel that won't rust or bend, reminding him every day how much he means to the family.",
+      ],
+    },
+    {
+      id: "awesome-like-my-daughter-tshirt-dad",
+      heading: '22. Best for Proud Dad: "Awesome Like My Daughter" T-Shirt — $14',
+      productId: "awesome-like-my-daughter-tshirt-dad",
+      body: [
+        "A proud dad t-shirt with a funny, sarcastic saying. Perfect for the dad who loves showing off his kids.",
+        "Printed on ultra-soft ring-spun cotton with durable, wash-resistant ink that keeps its bold color year after year.",
+      ],
+    },
+    {
+      id: "toilet-timer-shark-tank-gag-gift",
+      heading: "23. Best Unique/Novelty: Toilet Timer (As Seen on Shark Tank) — $16",
+      productId: "toilet-timer-shark-tank-gag-gift",
+      body: [
+        "A hilarious, functional gadget that times his bathroom breaks. As seen on Shark Tank — it's a real conversation starter.",
+        "Simply rotate the sand timer 360 degrees to start a 5-minute countdown that gently reminds him it's time to get off his phone.",
+      ],
+    },
+    {
+      id: "engraved-acrylic-puzzle-keepsake-dad",
+      heading: "24. Best Sentimental: Engraved Acrylic Block Puzzle Keepsake — $9",
+      productId: "engraved-acrylic-puzzle-keepsake-dad",
+      body: [
+        "A beautiful engraved puzzle block with a heartfelt message. A small, affordable keepsake.",
+        "Features crystal-clear optical acrylic with laser-cut smooth edges that stands securely on any desk, bookshelf, or nightstand.",
+      ],
+    },
+    {
+      id: "whiskey-decanter-set-dad-gift",
+      heading: "25. Best for Whiskey Lover: Whiskey Decanter Set with 2 Glasses — $29",
+      productId: "whiskey-decanter-set-dad-gift",
+      body: [
+        "Another classic decanter set — elegant, practical, and perfect for his home bar.",
+        "Complete with an airtight crystal stopper to preserve spirits aroma and pair of matching lowball glasses for memorable toasts.",
+      ],
+    },
+    {
+      id: "what-to-consider-before-buying-thoughtful-gifts",
+      heading: "What to Consider Before Buying Dad a Thoughtful Gift",
+      body: [
+        "When picking out a meaningful Christmas gift for Dad, focus on the emotion you want to create:\n\n1. **Does it match his daily habits?** If he's a griller, the rolling basket or Kaluns tool set will get immediate use. If he works at a desk, the TESLYAR dock keeps him organized.\n2. **Is he sentimental or humor-driven?** Some dads treasure the deep reflection of the Life Story Journal, while others will laugh hardest at the Toilet Timer or Dad Joke Button.\n3. **Will it reduce clutter?** Thoughtful gifts don't collect dust — they serve a dedicated functional or emotional role in his home.\n\nIf you're still deciding, take a look at our complementary guides on [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff) and [17 practical Christmas gifts for dad who has everything](/article/17-practical-christmas-gifts-for-dad-who-has-everything).",
+      ],
+    },
+  ],
+
+  products: [
+    {
+      id: "whiskey-gun-decanter-set",
+      name: "Whiskey Gun Decanter Set with Bullet Glasses",
+      price: "$29.00",
+      image: whiskeyGunDecanter,
+      imageAlt: "Novelty gun shaped whiskey decanter set with bullet embedded glasses",
+      rating: 4.8,
+      badge: "Best Unique/Novelty",
+      bestFor: "Dads who love whiskey and unique barware decor",
+      why: "Shaped like a firearm with handcrafted bullet glasses for an unforgettable home bar conversation piece.",
+      amazonUrl: "https://amzn.com/dp/B08VWGUN01?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Hand-blown borosilicate glass decanter with airtight seal",
+        "Includes matching bullet-embedded old fashioned glasses",
+        "Sturdy wooden display stand included",
+      ],
+      keyDetails: ["Custom molded glass firearm design with matching bullet tumbler glassware"],
+    },
+    {
+      id: "kaluns-grilling-accessories-set",
+      name: "Kaluns Stainless Steel Grilling Accessories Set",
+      price: "$27.00",
+      image: kalunsGrillSet,
+      imageAlt: "Heavy duty stainless steel BBQ grilling tool set in carrying case",
+      rating: 4.8,
+      badge: "Best for Grill Master",
+      bestFor: "Backyard barbecue enthusiasts and weekend grillers",
+      why: "Heavy-duty stainless steel tools with elongated heat-resistant grips in a zip-up organizer case.",
+      amazonUrl: "https://amzn.com/dp/B07T8GRILL?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Rust-resistant food-grade stainless steel construction",
+        "Includes chef spatula, tongs, basting brush, and skewers",
+        "Heavy-duty aluminum carrying case for easy storage",
+      ],
+      keyDetails: ["Complete multi-piece stainless steel barbecue set with heavy-duty travel case"],
+    },
+    {
+      id: "teslyar-wood-phone-docking-station",
+      name: "TESLYAR Solid Wood Phone & Watch Desk Docking Station",
+      price: "$39.00",
+      image: teslyarPhoneDock,
+      imageAlt: "Natural ash wood desk docking station for phone, watch, wallet and keys",
+      rating: 4.7,
+      badge: "Best for Home Office",
+      bestFor: "Dads who work from home or want a tidy office desk",
+      why: "Handcrafted from solid natural ash wood with dedicated charging slots for his everyday carry gear.",
+      amazonUrl: "https://amzn.com/dp/B07H8DOCK1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Solid natural ash wood with non-toxic protective finish",
+        "Compatible with all smartphones and smartwatches",
+        "Built-in compartments for keys, wallet, and pens",
+      ],
+      keyDetails: ["Natural solid ash wood organizer with integrated cable management channels"],
+    },
+    {
+      id: "rolling-grill-basket",
+      name: "Stainless Steel Rolling Grill Basket with Handle",
+      price: "$23.00",
+      image: rollingGrillBasket,
+      imageAlt:
+        "Rolling wire mesh cylinder grill basket for grilling chopped vegetables and seafood",
+      rating: 4.6,
+      badge: "Best Grill Tool",
+      bestFor: "Dads who love roasting veggies, shrimp, and delicate barbecue items",
+      why: "Allows 360-degree rolling on grill grates for even searing without small food dropping through.",
+      amazonUrl: "https://amzn.com/dp/B0BRGRILL1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "304 stainless steel mesh with secure locking latch",
+        "Detachable heat-resistant wooden handle",
+        "Dishwasher safe for effortless cleanup",
+      ],
+      keyDetails: [
+        "360-degree rotating cylinder basket that stops food from falling through grates",
+      ],
+    },
+    {
+      id: "dad-is-not-sleeping-blanket",
+      name: '"Dad is Not Sleeping" Cozy Plush Throw Blanket',
+      price: "$21.00",
+      image: dadNotSleepingBlanket,
+      imageAlt: "Soft throw blanket printed with I'm not sleeping I'm just resting my eyes",
+      rating: 4.8,
+      badge: "Best Funny / Cozy",
+      bestFor: "Dads who always fall asleep on the couch watching TV",
+      why: "Ultra-soft flannel fleece printed with the universal dad nap motto that brings a smile every evening.",
+      amazonUrl: "https://amzn.com/dp/B09BLANKET1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Super soft 300 GSM microfiber flannel fleece",
+        "Machine washable and fade-resistant printing",
+        "Generous 50x60 inch cozy couch throw size",
+      ],
+      keyDetails: ["Ultra-soft 300 GSM microfiber fleece featuring hilarious dad nap quote"],
+    },
+    {
+      id: "whiskey-decanter-globe-set",
+      name: "Hand-Blown Whiskey Decanter Globe Set with Glasses",
+      price: "$59.00",
+      image: whiskeyGlobeSet,
+      imageAlt: "Etched glass globe whiskey decanter with internal glass ship and chilling stones",
+      rating: 4.9,
+      badge: "Best Premium Keepsake",
+      bestFor: "Whiskey connoisseurs, travelers, and home bar collectors",
+      why: "Hand-etched antique globe decanter featuring an internal glass ship on a rich wooden cradle.",
+      amazonUrl: "https://amzn.com/dp/B07GLOBE01?tag=celebratio0f9-20",
+      keyFeatures: [
+        "850ml lead-free hand-blown etched globe decanter",
+        "Includes 2 etched globe glasses and 9 chilling whiskey stones",
+        "Mahogany-finished solid wood display stand",
+      ],
+      keyDetails: ["Hand-etched 850ml glass globe with antique ship and whiskey stones set"],
+    },
+    {
+      id: "teslyar-wood-docking-station-nightstand",
+      name: "TESLYAR Compact Wood Nightstand Organizer",
+      price: "$26.00",
+      image: teslyarNightstandDock,
+      imageAlt: "Compact bedside table wood charging stand and glasses organizer",
+      rating: 4.7,
+      badge: "Best for Organization",
+      bestFor: "Dads needing a clutter-free bedside nightstand",
+      why: "Space-saving natural wood valet tray designed specifically for bedside tables and daily morning essentials.",
+      amazonUrl: "https://amzn.com/dp/B08NIGHT01?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Compact footprint fits any nightstand or dresser",
+        "Natural wood grain with smooth satin lacquer",
+        "Easy 2-piece slide assembly with zero screws",
+      ],
+      keyDetails: ["Compact natural wood bedside tray for phone, reading glasses, and keys"],
+    },
+    {
+      id: "rak-magnetic-wristband-tools-dad",
+      name: "RAK Magnetic Wristband with 10 Powerful Magnets",
+      price: "$19.00",
+      image: rakWristband,
+      imageAlt: "Magnetic tool wristband holding screws and nails for DIY projects",
+      rating: 4.8,
+      badge: "Best for Handy Dad",
+      bestFor: "DIY dads, carpenters, electricians, and mechanics",
+      why: "Embedded with strong neodymium magnets to hold screws, nails, bolts, and drill bits right on his wrist.",
+      amazonUrl: "https://amzn.com/dp/B01H7058HK?tag=celebratio0f9-20",
+      keyFeatures: [
+        "10 strong neodymium magnets embedded throughout band",
+        "Breathable lightweight ballistic polyester mesh",
+        "Adjustable velcro strap fits all wrist sizes comfortably",
+      ],
+      keyDetails: ["10 neodymium magnets embedded in ballistic nylon for hands-free DIY work"],
+    },
+    {
+      id: "whiskey-decanter-set-2-glasses",
+      name: "Classic Cut Crystal Whiskey Decanter with 2 Glasses",
+      price: "$29.00",
+      image: whiskeySet2Glasses,
+      imageAlt: "Cut crystal glass whiskey decanter with two matching tumbler glasses",
+      rating: 4.8,
+      badge: "Best for Whiskey Lover",
+      bestFor: "Dads who enjoy evening bourbon pours and bar entertaining",
+      why: "Timeless lead-free crystal glass craftsmanship that elevates any evening pour with exceptional clarity.",
+      amazonUrl: "https://amzn.com/dp/B08DEC2GLS?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Heavy-weighted base for stability and luxury hand feel",
+        "28 oz decanter capacity with matching 10 oz glasses",
+        "Precision-crafted airtight ground glass stopper",
+      ],
+      keyDetails: ["28 oz lead-free cut crystal decanter paired with heavy-base rocks glasses"],
+    },
+    {
+      id: "dad-candle-best-dad-gift",
+      name: 'Natural Soy "Best Dad Ever" Scented Candle',
+      price: "$9.00",
+      image: dadCandle,
+      imageAlt: "Aromatherapy soy candle jar with best dad ever label",
+      rating: 4.6,
+      badge: "Best Budget Pick",
+      bestFor: "Dads who appreciate cozy relaxation and calming home aromas",
+      why: "Clean-burning soy wax infused with masculine cedar and vanilla notes featuring a heartfelt label.",
+      amazonUrl: "https://amzn.com/dp/B09CANDLE1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "100% natural soy wax with pure cotton wick",
+        "Rich amber, cedarwood, and vanilla fragrance blend",
+        "50+ hours of clean, soot-free burn time",
+      ],
+      keyDetails: [
+        "100% natural soy candle infused with warm cedarwood and vanilla essential oils",
+      ],
+    },
+    {
+      id: "dad-jokes-button-75-plus",
+      name: "The Official 75+ Funny Dad Jokes Sound Button",
+      price: "$19.00",
+      image: dadJokesButton,
+      imageAlt: "Red push button that plays audio dad jokes and puns out loud",
+      rating: 4.7,
+      badge: "Best Fun / Gag",
+      bestFor: "Dads who love telling corny one-liners and puns",
+      why: "Plays over 75 professionally recorded, hilarious dad jokes with crisp audio at the push of a big red button.",
+      amazonUrl: "https://amzn.com/dp/B08DADJOKE?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Over 75 unique dad jokes with studio voice acting",
+        "Loud, crystal-clear built-in speaker",
+        "Batteries included and pre-installed for immediate fun",
+      ],
+      keyDetails: ["Loud desktop sound button loaded with over 75 hilarious classic dad jokes"],
+    },
+    {
+      id: "funny-gag-gifts-men-boyfriend",
+      name: "Funny Novelty Gag Gift for Dad",
+      price: "$6.00",
+      image: funnyGagGiftsMen,
+      imageAlt: "Humorous novelty gift for dad holiday stocking stuffer",
+      rating: 4.5,
+      badge: "Best Stocking Stuffer",
+      bestFor: "Dads who appreciate witty banter and stocking surprises",
+      why: "An inexpensive laugh-out-loud stocking stuffer that delivers instant holiday cheer without breaking the bank.",
+      amazonUrl: "https://amzn.com/dp/B09GAG0001?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Ultra-affordable stocking stuffer under $10",
+        "Delivers instant humor and laughter on Christmas morning",
+        "Compact size fits easily into holiday gift bags",
+      ],
+      keyDetails: ["Pocket-sized comedic stocking stuffer designed for instant holiday laughter"],
+    },
+    {
+      id: "super-universal-socket-tools-set",
+      name: "Super Universal Self-Adjusting Socket Tool",
+      price: "$9.00",
+      image: universalSocket,
+      imageAlt: "Universal socket grip tool adapter fitting nuts and bolts from 7mm to 19mm",
+      rating: 4.7,
+      badge: "Best Tool Value",
+      bestFor: "Handymen, DIYers, and dads who love practical workshop tools",
+      why: "Features 54 spring-loaded chrome steel pins that instantly grip hex nuts, hooks, eye screws, and stripped bolts.",
+      amazonUrl: "https://amzn.com/dp/B07SOCKET1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "54 hardened chrome-vanadium steel internal pins",
+        'Fits standard 1/4" to 3/4" and metric 7mm to 19mm nuts',
+        'Includes 3/8" power drill socket adapter',
+      ],
+      keyDetails: ["54 spring-loaded steel rods that automatically grip any size or shape bolt"],
+    },
+    {
+      id: "dad-white-elephant-gift-birthday",
+      name: "Dad White Elephant & Holiday Gag Gift",
+      price: "$9.00",
+      image: dadWhiteElephant,
+      imageAlt: "Playful white elephant gift for dad holiday party",
+      rating: 4.6,
+      badge: "Best White Elephant",
+      bestFor: "Holiday gift swaps, white elephant games, and stocking stuffers",
+      why: "Lighthearted and fun, guaranteed to be the most memorable item swapped during family holiday gatherings.",
+      amazonUrl: "https://amzn.com/dp/B08WHTELPH?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Perfect budget price point for party gift rules",
+        "Universal appeal that works for all dad humor styles",
+        "Sturdy and durable novelty build quality",
+      ],
+      keyDetails: ["Party-ready white elephant novelty gift under $10 that gets everyone laughing"],
+    },
+    {
+      id: "dads-life-story-journal-keepsake",
+      name: '"Dad, I Want to Hear Your Story" Guided Memory Journal',
+      price: "$24.00",
+      image: dadLifeStoryJournal,
+      imageAlt: "Hardcover guided keepsake journal for dad to write his memories and life story",
+      rating: 4.9,
+      badge: "Best Sentimental Keepsake",
+      bestFor: "Preserving family memories, stories, and generational wisdom",
+      why: "Over 250 guided prompts asking about childhood, career, life lessons, and values for a priceless family heirloom.",
+      amazonUrl: "https://amzn.com/dp/1952568039?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Over 250 structured writing prompts across life stages",
+        "Elegant hardcover with thick archival bleed-proof paper",
+        "Creates an enduring family legacy to pass down for generations",
+      ],
+      keyDetails: ["Guided hardcover memory book with over 250 heirloom storytelling prompts"],
+    },
+    {
+      id: "legendary-whitetails-flannel-shirt-dad",
+      name: "Legendary Whitetails Buck Camp Heavy Flannel Shirt",
+      price: "$36.00",
+      image: legendaryFlannel,
+      imageAlt: "Men's plaid heavyweight cotton flannel shirt with corduroy collar",
+      rating: 4.8,
+      badge: "Best Practical Everyday",
+      bestFor: "Dads who love outdoor comfort, rugged warmth, and casual flannel style",
+      why: "Made from 100% soft brushed cotton flannel with corduroy-lined collar and cuffs that stay comfortable all winter.",
+      amazonUrl: "https://amzn.com/dp/B00EK17Z0Q?tag=celebratio0f9-20",
+      keyFeatures: [
+        "100% soft-brushed heavyweight cotton flannel",
+        "Signature corduroy-lined inner collar and cuffs",
+        "Durable double-stitched seams with button flap pockets",
+      ],
+      keyDetails: ["100% heavyweight brushed cotton flannel with corduroy collar lining"],
+    },
+    {
+      id: "alcohol-infusion-kit-whiskey-gin",
+      name: "DIY Craft Alcohol & Cocktail Infusion Botanical Kit",
+      price: "$18.00",
+      image: alcoholInfusionKit,
+      imageAlt: "Cocktail infusion jar with dried botanicals and spices for whiskey and gin",
+      rating: 4.7,
+      badge: "Best for Foodie Dad",
+      bestFor: "Mixology enthusiasts, cocktail hobbyists, and craft drink lovers",
+      why: "Includes real botanicals, dried citrus, spices, and glass infusion bottle to transform ordinary liquor into gourmet cocktails.",
+      amazonUrl: "https://amzn.com/dp/B08INFUSE1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "All-natural dried herbs, spices, and dehydrated fruits",
+        "Includes reusable glass infusion bottle with stainless steel strainer",
+        "Works with bourbon, vodka, tequila, or gin",
+      ],
+      keyDetails: ["All-natural botanical blends with infusion bottle for custom craft cocktails"],
+    },
+    {
+      id: "wooden-clock-dad-gift-birthday",
+      name: 'Engraved Solid Wood Desk Clock with "Best Dad" Plaque',
+      price: "$19.00",
+      image: woodenClock,
+      imageAlt: "Natural wood desk clock with sentimental engraved message for dad",
+      rating: 4.8,
+      badge: "Best Sentimental Decor",
+      bestFor: "Office desks, bedside tables, and home mantels",
+      why: "Handcrafted wooden clock mechanism with laser-engraved appreciation message that sits elegantly on his desk or mantel.",
+      amazonUrl: "https://amzn.com/dp/B09WOODCLK?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Solid natural wood casing with smooth beveled edges",
+        "Silent sweep quartz clock movement (non-ticking)",
+        "Heartfelt laser-engraved appreciation sentiment",
+      ],
+      keyDetails: ["Solid natural wood casing with silent non-ticking quartz desk clock movement"],
+    },
+    {
+      id: "funny-dad-birthday-gift",
+      name: "Funny Dad Humor Novelty Keepsake",
+      price: "$19.00",
+      image: funnyDadGift,
+      imageAlt: "Witty dad humor novelty gift for Christmas and birthday",
+      rating: 4.6,
+      badge: "Best Novelty Humor",
+      bestFor: "Dads with a great sense of humor who love playful family jokes",
+      why: "High-quality novelty gift combining tongue-in-cheek humor with genuine usefulness.",
+      amazonUrl: "https://amzn.com/dp/B08DADHMR1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "High-contrast durable humorous print",
+        "Practical design that gets daily use",
+        "Great conversation starter around family and friends",
+      ],
+      keyDetails: ["Durable novelty gift celebrating playful family dad humor and banter"],
+    },
+    {
+      id: "funny-gift-for-dad-men",
+      name: "Quirky & Practical Dad Humor Essential",
+      price: "$17.00",
+      image: funnyGiftMen,
+      imageAlt: "Hilarious and quirky holiday gift for dad",
+      rating: 4.6,
+      badge: "Best Everyday Laugh",
+      bestFor: "Dads who enjoy quirky, lighthearted holiday surprises",
+      why: "Fun, functional everyday item that puts a smile on his face every single time he uses it.",
+      amazonUrl: "https://amzn.com/dp/B09FUNNY01?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Witty graphic that elicits genuine smiles",
+        "Quality materials built for everyday use",
+        "Priced comfortably under $20 for easy gifting",
+      ],
+      keyDetails: ["Everyday essential packed with witty personality and reliable utility"],
+    },
+    {
+      id: "drive-safe-keychain-dad-gift",
+      name: 'Engraved Stainless Steel "Drive Safe Dad" Keychain',
+      price: "$4.00",
+      image: driveSafeKeychain,
+      imageAlt: "Stainless steel engraved keychain with drive safe message for dad",
+      rating: 4.9,
+      badge: "Best Budget Token",
+      bestFor: "Commuters, truck drivers, road trippers, and traveling dads",
+      why: "Sturdy polished stainless steel charm stamped with a daily loving reminder to return home safely.",
+      amazonUrl: "https://amzn.com/dp/B07KEYCHN1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "High-polish surgical grade stainless steel",
+        "Deep laser engraving that will never scratch or fade",
+        "Lightweight on key rings with sturdy split ring",
+      ],
+      keyDetails: ["High-polish surgical stainless steel keychain stamped with loving message"],
+    },
+    {
+      id: "awesome-like-my-daughter-tshirt-dad",
+      name: '"Awesome Like My Daughter" Graphic Tee for Dad',
+      price: "$14.00",
+      image: awesomeDaughterTshirt,
+      imageAlt: "Men's cotton t-shirt with proud dad of an awesome daughter graphic",
+      rating: 4.8,
+      badge: "Best for Proud Dad",
+      bestFor: "Proud fathers with daughters who love sarcastic banter",
+      why: "Breathable pre-shrunk cotton t-shirt with durable screen-printed humor that holds up across countless laundry cycles.",
+      amazonUrl: "https://amzn.com/dp/B08TSHIRT1?tag=celebratio0f9-20",
+      keyFeatures: [
+        "100% pre-shrunk breathable cotton fabric",
+        "Tear-away neck tag for itch-free comfort",
+        "High-density screen printing that won't crack or peel",
+      ],
+      keyDetails: ["100% pre-shrunk cotton graphic tee with high-density durable screen print"],
+    },
+    {
+      id: "toilet-timer-shark-tank-gag-gift",
+      name: "The Original Toilet Timer (Shark Tank Winner)",
+      price: "$16.00",
+      image: toiletTimer,
+      imageAlt: "5 minute funny sand timer gag gift for bathroom breaks as seen on Shark Tank",
+      rating: 4.7,
+      badge: "Shark Tank Novelty",
+      bestFor: "Dads who spend 45 minutes on their phone in the bathroom",
+      why: "A hilarious sand timer that passes sand in exactly 5 minutes with a fun rotating character animation.",
+      amazonUrl: "https://amzn.com/dp/B07L2N4N4G?tag=celebratio0f9-20",
+      keyFeatures: [
+        "As seen on ABC's Shark Tank",
+        "Precise 5-minute sand flow duration",
+        "Spins 360 degrees to reset instantly without batteries",
+      ],
+      keyDetails: ["Shark Tank-winning 5-minute rotational bathroom sand timer gag gift"],
+    },
+    {
+      id: "engraved-acrylic-puzzle-keepsake-dad",
+      name: '"You Are The Piece That Holds Us Together" Acrylic Block',
+      price: "$9.00",
+      image: acrylicPuzzleKeepsake,
+      imageAlt: "Clear acrylic puzzle plaque with engraved sentimental message for dad",
+      rating: 4.8,
+      badge: "Best Sentimental Token",
+      bestFor: "Dads who appreciate heartwarming desk decor and family tokens",
+      why: "Crystal-clear freestanding acrylic block engraved with a jigsaw puzzle graphic and touching sentiment.",
+      amazonUrl: "https://amzn.com/dp/B09ACRYLIC?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Thick shatter-resistant optical acrylic with polished edges",
+        "Freestanding design needs no easel or frame",
+        "Heartfelt laser engraved tribute to family unity",
+      ],
+      keyDetails: ["Thick optical-grade acrylic puzzle keepsake plaque for desk or nightstand"],
+    },
+    {
+      id: "whiskey-decanter-set-dad-gift",
+      name: 'Custom Etched "Best Dad" Whiskey Decanter & Tumblers',
+      price: "$29.00",
+      image: whiskeyDecanterSetDad,
+      imageAlt: "Heavy glass whiskey decanter with twin old fashioned glasses set",
+      rating: 4.8,
+      badge: "Best Barware Gift",
+      bestFor: "Dads who love evening whiskey, bourbon, and entertaining",
+      why: "Includes heavy-base engraved whiskey decanter with airtight glass stopper and twin old-fashioned glasses.",
+      amazonUrl: "https://amzn.com/dp/B08BARWARE?tag=celebratio0f9-20",
+      keyFeatures: [
+        "Lead-free thick-walled glass with airtight geometric stopper",
+        "Includes two matching 11 oz lowball whiskey glasses",
+        "Packaged in a secure gift-ready presentation box",
+      ],
+      keyDetails: ["Thick-walled lead-free whiskey decanter paired with twin matching tumblers"],
+    },
+  ],
+
+  faqs: [
+    {
+      q: "What's the best thoughtful gift for dad under $30?",
+      a: "The Dad's Life Story Journal ($24) and Wooden Clock ($19) are both meaningful, sentimental gifts under $30 that he will treasure for years to come.",
+    },
+    {
+      q: "What's a good gift for a dad who loves whiskey?",
+      a: "Any of the whiskey decanter sets ($29-$59) or the DIY Alcohol Infusion Kit ($18) make exceptional barware gifts for bourbon and scotch lovers.",
+    },
+    {
+      q: "What's a good stocking stuffer for dad?",
+      a: "The Drive Safe Keychain ($4), Funny Gag Gift ($6), Super Universal Socket ($9), or Best Dad Candle ($9) are all budget-friendly stocking stuffers that pack huge personality.",
+    },
+    {
+      q: "What's the funniest gift for dad?",
+      a: "The Toilet Timer ($16) from Shark Tank and the 75+ Dad Jokes Button ($19) are guaranteed to make him laugh out loud on Christmas morning.",
+    },
+    {
+      q: "What's a good sentimental gift for dad?",
+      a: "The Dad's Life Story Journal ($24) and the Engraved Acrylic Block Puzzle ($9) are deeply heartfelt keepsakes that express genuine family appreciation.",
+    },
+  ],
+};
+
+export default article;

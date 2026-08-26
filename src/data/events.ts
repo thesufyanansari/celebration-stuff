@@ -54,6 +54,7 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     month: 12,
     day: 25,
     relatedArticles: [
+      "25-thoughtful-christmas-gifts-for-dad",
       "23-unique-christmas-gifts-for-dad-practical",
       "20-christmas-gifts-for-dad-under-50",
       "18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",
@@ -130,6 +131,7 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     month: 6,
     floatingType: "fathers-day",
     relatedArticles: [
+      "25-thoughtful-christmas-gifts-for-dad",
       "23-unique-christmas-gifts-for-dad-practical",
       "20-christmas-gifts-for-dad-under-50",
       "18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",

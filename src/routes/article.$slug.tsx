@@ -178,42 +178,44 @@ function ArticlePage() {
       {/* Top of Article Leaderboard Ad */}
       <ArticleAd placement="top" />
 
-      {/* 2. MAIN 2-COLUMN GRID LAYOUT (Bounded sticky container) */}
-      <div className="relative grid gap-12 lg:grid-cols-12">
-        {/* Main Editorial Content Column (8 Cols) */}
+      {/* 2. UPPER INTRODUCTORY ARTICLE CONTEXT (Comfortable Reading Width) */}
+      <div className="mx-auto max-w-4xl my-8">
+        {/* Mobile Collapsible Table of Contents */}
+        <ArticleTableOfContents isMobileDrawer />
+
+        {/* Introductory Context Sections */}
+        {introSections.map((section, idx) => {
+          const secId =
+            section.id ||
+            `intro-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
+          return (
+            <section key={secId} id={secId} className="mb-8 scroll-mt-24">
+              <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                {section.heading}
+              </h2>
+              <div className="space-y-3">
+                {section.body.map((para, pIdx) => (
+                  <ArticleContentRenderer key={pIdx} text={para} />
+                ))}
+              </div>
+            </section>
+          );
+        })}
+
+        {/* In-Article Ad After Intro */}
+        <ArticleAd placement="after-intro" />
+      </div>
+
+      {/* 3. WIDE TOP PICKS SHOPPING MODULE (Full Container Width max-w-7xl) */}
+      {enhancedProducts.length > 0 && <TopProductPicks products={enhancedProducts} />}
+
+      {/* 4. DETAILED PRODUCT REVIEWS WITH RIGHT SIDEBAR (2-Column Grid) */}
+      <div className="relative my-10 grid gap-10 lg:gap-12 lg:grid-cols-12">
+        {/* Main Editorial Review Column (8 Cols) */}
         <main className="lg:col-span-8 min-w-0">
           <article>
-            {/* Mobile Collapsible Table of Contents */}
-            <ArticleTableOfContents isMobileDrawer />
-
-            {/* Introductory Context Sections */}
-            {introSections.map((section, idx) => {
-              const secId =
-                section.id ||
-                `intro-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
-
-              return (
-                <section key={secId} id={secId} className="mb-8 scroll-mt-24">
-                  <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                    {section.heading}
-                  </h2>
-                  <div className="space-y-3">
-                    {section.body.map((para, pIdx) => (
-                      <ArticleContentRenderer key={pIdx} text={para} />
-                    ))}
-                  </div>
-                </section>
-              );
-            })}
-
-            {/* In-Article Ad After Intro */}
-            <ArticleAd placement="after-intro" />
-
-            {/* Quick Picks / Top Recommendations Shopping Grid */}
-            {enhancedProducts.length > 0 && <TopProductPicks products={enhancedProducts} />}
-
-            {/* Detailed Product Reviews Flow */}
-            <div className="my-10 flex flex-col gap-12">
+            <div className="flex flex-col gap-12">
               {enhancedProducts.map((product, idx) => {
                 const matchingSection = article.sections.find(
                   (s) =>
@@ -224,7 +226,7 @@ function ArticlePage() {
 
                 const showInlineCard1 = idx === 2 && inlineRelatedSlug1;
                 const showInlineCard2 = idx === 8 && inlineRelatedSlug2;
-                // Place an ad after every 2 products (after Product 2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+                // Place an ad after every 2 products
                 const showBetweenProductsAd = (idx + 1) % 2 === 0;
 
                 return (
@@ -255,65 +257,6 @@ function ArticlePage() {
                 );
               })}
             </div>
-
-            {/* Product Comparison Table */}
-            {enhancedProducts.length > 0 && <ComparisonTable products={enhancedProducts} />}
-
-            {/* Closing Editorial & Decision Sections */}
-            {closingSections.map((section, idx) => {
-              const secId =
-                section.id ||
-                `guide-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
-
-              return (
-                <section
-                  key={secId}
-                  id={secId}
-                  className="my-10 scroll-mt-24 rounded-3xl border border-border/80 bg-surface p-6 shadow-card sm:p-8"
-                >
-                  <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                    {section.heading}
-                  </h2>
-                  <div className="space-y-3">
-                    {section.body.map((para, pIdx) => (
-                      <ArticleContentRenderer key={pIdx} text={para} />
-                    ))}
-                  </div>
-                </section>
-              );
-            })}
-
-            {/* In-Article Ad Before FAQs & Editorial Standards */}
-            <ArticleAd placement="mid-article" />
-
-            {/* Editorial Testing & Quality Standards Box */}
-            <div className="my-10 rounded-3xl border border-primary/20 bg-gradient-to-br from-surface to-primary-soft/30 p-6 shadow-card sm:p-8">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">
-                <ShieldCheck className="h-4 w-4 text-emerald-600" />
-                <span>Our Editorial Standards</span>
-              </div>
-              <h3 className="mt-2 font-display text-xl font-bold text-foreground">
-                How We Choose & Verify Every Recommendation
-              </h3>
-              <p className="mt-2 text-xs leading-relaxed text-foreground-muted sm:text-sm">
-                Every product featured on <em>Celebration Stuff</em> is curated through extensive
-                research, genuine utility assessment, price-to-value analysis, and feedback from
-                real buyers. We continuously monitor price updates and stock availability to ensure
-                our gift guides remain genuinely helpful when you need them.
-              </p>
-            </div>
-
-            {/* Buyer FAQs */}
-            {article.faqs && article.faqs.length > 0 && <ArticleFAQ faqs={article.faqs} />}
-
-            {/* Author Box */}
-            {author && <AuthorBox author={author} />}
-
-            {/* Pinterest Share & Comments */}
-            <div className="mt-12 space-y-10">
-              <PinterestCta />
-              <CommentsSection articleSlug={article.slug} />
-            </div>
           </article>
         </main>
 
@@ -323,15 +266,77 @@ function ArticlePage() {
         </div>
       </div>
 
-      {/* Ad Before Related Articles */}
-      <ArticleAd placement="before-related" />
+      {/* 5. WIDE LOWER ARTICLE CONTENT AREA: FROM COMPARISON GUIDE DOWNWARD (Full Container max-w-7xl) */}
+      <div className="my-14 flex flex-col gap-12">
+        {/* A. Comparison Table Decision Guide */}
+        {enhancedProducts.length > 0 && <ComparisonTable products={enhancedProducts} />}
 
-      {/* 3. MORE IDEAS YOU'LL LOVE (Related Article Cards) */}
-      {moreArticles.length > 0 && <RelatedArticles articles={moreArticles} />}
+        {/* B. Buying Guide / Budget / Additional Decision Sections (Wide Container) */}
+        {closingSections.map((section, idx) => {
+          const secId =
+            section.id ||
+            `guide-${idx}-${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
-      {/* 4. FOOTER NEWSLETTER */}
-      <div className="mt-16">
-        <Newsletter compact />
+          return (
+            <section
+              key={secId}
+              id={secId}
+              className="scroll-mt-24 rounded-3xl border border-border/80 bg-surface p-6 sm:p-8 lg:p-10 shadow-card"
+            >
+              <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
+                {section.heading}
+              </h2>
+              <div className="space-y-4 max-w-4xl">
+                {section.body.map((para, pIdx) => (
+                  <ArticleContentRenderer key={pIdx} text={para} />
+                ))}
+              </div>
+            </section>
+          );
+        })}
+
+        {/* C. In-Article Mid Ad */}
+        <ArticleAd placement="mid-article" />
+
+        {/* D. Editorial Testing & Quality Standards Box (Wide) */}
+        <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-surface via-primary-soft/20 to-surface p-6 sm:p-8 lg:p-10 shadow-card">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">
+            <ShieldCheck className="h-4 w-4 text-emerald-600" />
+            <span>Our Editorial Standards</span>
+          </div>
+          <h3 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">
+            How We Choose & Verify Every Recommendation
+          </h3>
+          <p className="mt-2 text-xs sm:text-sm leading-relaxed text-foreground-muted max-w-4xl">
+            Every product featured on <em>Celebration Stuff</em> is curated through extensive
+            research, genuine utility assessment, price-to-value analysis, and feedback from real
+            buyers. We continuously monitor price updates and stock availability to ensure our gift
+            guides remain genuinely helpful when you need them.
+          </p>
+        </div>
+
+        {/* E. Buyer FAQs (Wide) */}
+        {article.faqs && article.faqs.length > 0 && <ArticleFAQ faqs={article.faqs} />}
+
+        {/* F. Author Box (Wide) */}
+        {author && <AuthorBox author={author} />}
+
+        {/* G. Pinterest CTA & Reader Comments (Wide) */}
+        <div className="space-y-10">
+          <PinterestCta />
+          <CommentsSection articleSlug={article.slug} />
+        </div>
+
+        {/* H. Ad Before Related Articles */}
+        <ArticleAd placement="before-related" />
+
+        {/* I. Related Articles Grid (Wide) */}
+        {moreArticles.length > 0 && <RelatedArticles articles={moreArticles} />}
+
+        {/* J. Footer Newsletter (Wide) */}
+        <div className="mt-8">
+          <Newsletter compact />
+        </div>
       </div>
     </div>
   );
