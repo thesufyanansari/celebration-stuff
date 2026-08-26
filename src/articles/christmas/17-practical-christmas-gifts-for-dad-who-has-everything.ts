@@ -1,7 +1,7 @@
 import type { Article } from "@/data/articles";
 
 // Image Imports from assets
-import featuredImage from "@/assets/practical-christmas-gifts-for-dad-who-has-everything-featured.jpg";
+import featuredImage from "@/assets/practical-christmas-gifts-for-dad-who-has-everything-featured.png";
 import personalizedTravelCase from "@/assets/personalized-leather-travel-case.jpg";
 import leatherToiletryBag from "@/assets/leather-toiletry-bag-men.jp.jpg";
 import hostFreezeGlasses from "@/assets/host-freeze-beer-glasses-set.jpg";
