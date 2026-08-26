@@ -44,14 +44,14 @@ export function ProductFeature({ product, index, narrativeParagraphs = [] }: Pro
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-4">
         <div className="flex flex-wrap items-center gap-2">
           {product.badge && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-primary px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-sm">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-sm whitespace-nowrap">
               <Sparkles className="h-3 w-3" />
               <span>{product.badge}</span>
             </span>
           )}
           {product.bestFor && (
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground-muted">
-              <Heart className="h-3 w-3 text-rose-500" />
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-background-subtle/60 px-3.5 py-1 text-xs font-semibold text-foreground-muted">
+              <Heart className="h-3.5 w-3.5 text-rose-500" />
               <span>Best for: {product.bestFor}</span>
             </span>
           )}
@@ -66,24 +66,24 @@ export function ProductFeature({ product, index, narrativeParagraphs = [] }: Pro
       </div>
 
       {/* Main 2-Column Product Showcase */}
-      <div className="mt-6 grid gap-8 lg:grid-cols-12 items-start">
-        {/* Left Column: Product Image & Gallery */}
+      <div className="mt-6 grid gap-8 lg:grid-cols-12 items-center">
+        {/* Left Column: Product Image & Gallery with Fixed Canvas */}
         <div className="lg:col-span-5 flex flex-col gap-3">
-          <div className="group relative aspect-square w-full overflow-hidden rounded-2xl border border-border/70 bg-background-subtle">
+          <div className="group relative aspect-square w-full overflow-hidden rounded-2xl border border-border/80 bg-gradient-to-b from-background-subtle/80 via-surface to-background-subtle/50 p-4 sm:p-6 flex items-center justify-center shadow-inner">
             {images.length > 0 ? (
               <img
                 src={images[activeImageIdx]}
-                alt={product.imageAlt || `${product.name} Christmas gift for dad`}
+                alt={product.imageAlt || `${product.name} gift recommendation`}
                 loading={index < 2 ? "eager" : "lazy"}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center text-xs text-foreground-muted">
                 <ShoppingBag className="h-8 w-8 text-primary/40" />
               </div>
             )}
-            <span className="absolute bottom-3 left-3 rounded-md bg-foreground/80 px-2 py-0.5 text-[0.68rem] font-medium text-white backdrop-blur-sm">
-              Verified Product
+            <span className="absolute bottom-3 left-3 rounded-md bg-foreground/80 px-2 py-0.5 text-[0.68rem] font-semibold text-white backdrop-blur-sm shadow-sm">
+              Verified Pick
             </span>
           </div>
 
@@ -95,13 +95,13 @@ export function ProductFeature({ product, index, narrativeParagraphs = [] }: Pro
                   key={i}
                   type="button"
                   onClick={() => setActiveImageIdx(i)}
-                  className={`h-14 w-14 shrink-0 overflow-hidden rounded-xl border transition-all ${
+                  className={`h-14 w-14 shrink-0 overflow-hidden rounded-xl border p-1 bg-background-subtle flex items-center justify-center transition-all ${
                     activeImageIdx === i
-                      ? "border-primary ring-2 ring-primary/30 scale-105"
+                      ? "border-primary ring-2 ring-primary/30 scale-105 bg-surface"
                       : "border-border opacity-70 hover:opacity-100"
                   }`}
                 >
-                  <img src={img} alt="" className="h-full w-full object-cover" />
+                  <img src={img} alt="" className="max-h-full max-w-full object-contain" />
                 </button>
               ))}
             </div>

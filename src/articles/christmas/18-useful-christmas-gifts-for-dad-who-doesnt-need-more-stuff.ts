@@ -317,7 +317,7 @@ export const article: Article = {
         "Your dad doesn't want more stuff — but he does want to feel appreciated and remembered during the holidays. The secret is simply giving him something that adds genuine daily value without claiming permanent storage space in his house.",
         'Every gift on this list was chosen because it passes the "would Dad actually use this?" test with flying colors. Whether you choose an everyday carry tool, a grooming upgrade, a relaxing heating pad, or a high-precision laser measure, he\'ll appreciate the thought behind it.',
         "Take a moment to match your pick to his specific routine and hobbies, check current holiday availability, and make his Christmas morning genuinely useful.",
-        "Explore our other guides on [17 practical Christmas gifts for dad who has everything](/article/17-practical-christmas-gifts-for-dad-who-has-everything) and [20 Christmas gift ideas for dad](/article/20-christmas-gift-ideas-for-dad-useful-picks) for even more holiday inspiration.",
+        "Explore our other guides on [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical), [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50), [17 practical Christmas gifts for dad who has everything](/article/17-practical-christmas-gifts-for-dad-who-has-everything), and [20 Christmas gift ideas for dad](/article/20-christmas-gift-ideas-for-dad-useful-picks) for even more holiday inspiration.",
       ],
     },
   ],

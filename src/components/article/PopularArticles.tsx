@@ -25,33 +25,35 @@ export function PopularArticles({ currentSlug, limit = 10 }: PopularArticlesProp
         <span>Most Popular Right Now</span>
       </div>
 
-      <ul className="mt-3.5 flex flex-col gap-3">
+      <ul className="mt-4 flex flex-col gap-3.5">
         {visibleArticles.map((item, idx) => (
           <li key={item.slug}>
             <Link
               to="/article/$slug"
               params={{ slug: item.slug }}
-              className="group flex items-center gap-3 rounded-xl p-1 transition-colors hover:bg-surface-hover/80 text-xs"
+              className="group flex items-start gap-3 rounded-2xl p-2 transition-all duration-200 hover:bg-surface-hover/90"
             >
               {/* Number Rank Badge */}
-              <span className="font-display text-sm font-bold text-foreground-muted/50 group-hover:text-primary transition-colors shrink-0 w-4 text-center">
+              <span className="mt-1 font-display text-sm font-bold text-foreground-muted/40 group-hover:text-primary transition-colors shrink-0 w-4 text-center">
                 {String(idx + 1).padStart(2, "0")}
               </span>
 
               {item.image && (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  loading="lazy"
-                  className="h-12 w-16 shrink-0 rounded-lg object-cover border border-border/40 transition-transform duration-300 group-hover:scale-105"
-                />
+                <div className="relative h-20 w-24 sm:h-20 sm:w-28 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-background-subtle shadow-sm">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
               )}
-              <div className="flex flex-col justify-between py-0.5 min-w-0">
-                <h4 className="font-semibold text-foreground leading-snug line-clamp-2 transition-colors group-hover:text-primary">
+              <div className="flex flex-1 flex-col justify-between py-0.5 min-w-0">
+                <h4 className="font-display text-xs sm:text-sm font-bold text-foreground leading-snug line-clamp-2 transition-colors group-hover:text-primary">
                   {item.title}
                 </h4>
-                <div className="mt-1 flex items-center gap-2 text-[0.68rem] text-foreground-muted">
-                  <span className="font-medium text-primary">{item.event || "Guide"}</span>
+                <div className="mt-2 flex items-center gap-2 text-[0.72rem] text-foreground-muted">
+                  <span className="font-semibold text-primary">{item.event || "Guide"}</span>
                   <span>•</span>
                   <span className="inline-flex items-center gap-1">
                     <Eye className="h-3 w-3" />

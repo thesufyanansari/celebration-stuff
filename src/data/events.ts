@@ -54,6 +54,10 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     month: 12,
     day: 25,
     relatedArticles: [
+      "23-unique-christmas-gifts-for-dad-practical",
+      "20-christmas-gifts-for-dad-under-50",
+      "18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",
+      "17-practical-christmas-gifts-for-dad-who-has-everything",
       "20-christmas-gift-ideas-for-dad-useful-picks",
       "10-best-christmas-gifts-for-mom",
       "best-christmas-gifts-for-mom-2026",
@@ -126,6 +130,10 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     month: 6,
     floatingType: "fathers-day",
     relatedArticles: [
+      "23-unique-christmas-gifts-for-dad-practical",
+      "20-christmas-gifts-for-dad-under-50",
+      "18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",
+      "17-practical-christmas-gifts-for-dad-who-has-everything",
       "20-christmas-gift-ideas-for-dad-useful-picks",
       "gift-ideas-for-people-who-want-nothing",
     ],
@@ -327,9 +335,10 @@ export function getNextUpcomingEvent(
   referenceDate = new Date(),
 ): { event: SeasonalEvent; daysLeft: number } | null {
   const upcoming = getUpcomingEvents(1, referenceDate);
-  if (upcoming.length === 0) return null;
+  const nextEvent = upcoming[0];
+  if (!nextEvent) return null;
   return {
-    event: upcoming[0],
-    daysLeft: upcoming[0].daysRemaining,
+    event: nextEvent,
+    daysLeft: nextEvent.daysRemaining,
   };
 }

@@ -43,7 +43,7 @@ export const article: Article = {
       heading: "Category three: shared time",
       body: [
         "A pottery class, a two-hour boat rental, tickets to something small and local. Book it for a specific date and put it in both calendars — an unbooked experience gift quietly becomes homework.",
-        "If you're specifically shopping for family members, explore our dedicated guides to [12 Christmas gifts for Mom](/article/12-christmas-gifts-for-mom-she-will-actually-love) and [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff) for more thoughtful, clutter-free inspiration.",
+        "If you're specifically shopping for family members, explore our dedicated guides to [12 Christmas gifts for Mom](/article/12-christmas-gifts-for-mom-she-will-actually-love), [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50), and [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff) for more thoughtful, clutter-free inspiration.",
       ],
     },
     {

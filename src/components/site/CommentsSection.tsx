@@ -47,6 +47,80 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
+  "20-christmas-gifts-for-dad-under-50": [
+    {
+      id: "c-dad50-1",
+      author: "PracticalShopper",
+      date: "December 16, 2026",
+      text: "I was worried about finding something useful under $50, but the Ryker tool bag is perfect for my dad. He's always complaining about his messy toolbox. Thanks for the great recommendation!",
+      status: "approved",
+    },
+    {
+      id: "c-dad50-2",
+      author: "GrillMasterSon",
+      date: "December 15, 2026",
+      text: "The 31-piece BBQ set is incredible! My dad hosts cookouts all summer and he's going to love this. Quality looks great for the price.",
+      status: "approved",
+    },
+    {
+      id: "c-dad50-3",
+      author: "SentimentalDaughter",
+      date: "December 14, 2026",
+      text: "I got the Dear Dad blanket for my father and he teared up when he opened it. It's so soft and the message is beautiful. This is exactly what I was looking for.",
+      status: "approved",
+    },
+    {
+      id: "c-dad50-4",
+      author: "TechSavvyKid",
+      date: "December 13, 2026",
+      text: "The JTEMAN phone stand with Bluetooth speaker is awesome. I got one for myself too — it's surprisingly good quality for under $50. My dad loves it!",
+      status: "approved",
+    },
+    {
+      id: "c-dad50-5",
+      author: "OutdoorEnthusiast",
+      date: "December 12, 2026",
+      text: "The AMACOOL waist fan is a lifesaver! My dad works outside in the heat and he said it's the best gift he's ever received. Game-changer.",
+      status: "approved",
+    },
+  ],
+  "23-unique-christmas-gifts-for-dad-practical": [
+    {
+      id: "c-dad23-1",
+      author: "CuriousGeorge",
+      date: "December 18, 2026",
+      text: "The Tesla coil speaker is the coolest thing I've ever seen! My dad is a huge tech nerd and he absolutely lost his mind when he opened it. Thank you for this list!",
+      status: "approved",
+    },
+    {
+      id: "c-dad23-2",
+      author: "HandyHelper",
+      date: "December 17, 2026",
+      text: "The screw extractor set saved my dad's weekend project. He stripped a screw and was about to give up — then he remembered this gift. He said it's the best $9 he never spent!",
+      status: "approved",
+    },
+    {
+      id: "c-dad23-3",
+      author: "GardenGuru",
+      date: "December 16, 2026",
+      text: "My dad loves his garden, so I got him the solar gnome. He thinks it's hilarious and it actually looks great at night. Win-win!",
+      status: "approved",
+    },
+    {
+      id: "c-dad23-4",
+      author: "GadgetQueen",
+      date: "December 15, 2026",
+      text: "The endoscope camera is so cool. My dad used it to check inside his wall for a leak and was amazed at how clear the image was. Such a unique gift!",
+      status: "approved",
+    },
+    {
+      id: "c-dad23-5",
+      author: "GrillMasterDaughter",
+      date: "December 14, 2026",
+      text: "The meat thermometer is a game-changer. My dad used to overcook everything — now his steaks are perfect every time. Highly recommend!",
+      status: "approved",
+    },
+  ],
 };
 
 const GENERIC_DEFAULT_COMMENTS: CommentItem[] = [

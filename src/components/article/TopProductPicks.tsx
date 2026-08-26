@@ -33,7 +33,7 @@ export function TopProductPicks({
   const topPicks = products.slice(0, 4);
 
   return (
-    <section className="my-10 rounded-3xl border border-primary/20 bg-gradient-to-br from-surface to-accent-soft/20 p-6 shadow-card sm:p-8">
+    <section className="my-10 rounded-3xl border border-primary/25 bg-gradient-to-br from-surface via-primary-soft/10 to-surface p-6 shadow-card sm:p-8 lg:p-9">
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/70 pb-4">
         <div>
@@ -69,22 +69,22 @@ export function TopProductPicks({
               key={product.id || product.name}
               className="group flex flex-col justify-between rounded-2xl border border-border/80 bg-surface p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-card"
             >
-              {/* Top part: Image + Badge */}
+              {/* Top part: Fixed Image Canvas + Badge */}
               <div>
-                <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-background-subtle border border-border/40">
+                <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gradient-to-b from-background-subtle to-surface border border-border/60 p-3.5 flex items-center justify-center shadow-inner">
                   {product.image ? (
                     <img
                       src={product.image}
                       alt={product.imageAlt || product.name}
                       loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center text-xs text-foreground-muted">
                       Product Visual
                     </div>
                   )}
-                  <span className="absolute left-2.5 top-2.5 rounded-full bg-primary px-2.5 py-0.5 text-[0.68rem] font-bold uppercase tracking-wider text-primary-foreground shadow-sm">
+                  <span className="absolute left-2.5 top-2.5 rounded-full bg-primary px-2.5 py-0.5 text-[0.68rem] font-bold uppercase tracking-wider text-primary-foreground shadow-sm whitespace-nowrap">
                     {badge}
                   </span>
                 </div>
@@ -117,7 +117,9 @@ export function TopProductPicks({
               <div className="mt-4 border-t border-border/50 pt-3">
                 <div className="mb-2.5 flex items-baseline justify-between">
                   <span className="text-xs text-foreground-muted">Price:</span>
-                  <span className="text-sm font-bold text-primary">{product.price}</span>
+                  <span className="text-sm font-bold text-primary font-display">
+                    {product.price}
+                  </span>
                 </div>
 
                 {targetUrl ? (
