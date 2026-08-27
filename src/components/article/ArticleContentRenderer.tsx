@@ -18,7 +18,9 @@ export function ArticleContentRenderer({ text, className = "" }: ContentRenderer
   let match: RegExpExecArray | null;
 
   while ((match = linkRegex.exec(text)) !== null) {
-    const [fullMatch, linkText, rawUrl] = match;
+    const fullMatch = match[0];
+    const linkText = match[1] || "";
+    const rawUrl = match[2] || "";
     const matchIndex = match.index;
 
     // Push preceding plain text
@@ -48,8 +50,7 @@ export function ArticleContentRenderer({ text, className = "" }: ContentRenderer
       parts.push(
         <Link
           key={`${matchIndex}-${linkText}`}
-          // @ts-expect-error tanstack dynamic route
-          to={routePath}
+          to={routePath as string}
           className="font-semibold text-primary underline decoration-primary/40 underline-offset-2 transition-colors hover:decoration-primary"
         >
           {linkText}

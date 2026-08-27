@@ -11,6 +11,9 @@ import article9 from "./christmas/18-useful-christmas-gifts-for-dad-who-doesnt-n
 import article10 from "./christmas/20-christmas-gifts-for-dad-under-50";
 import article11 from "./christmas/23-unique-christmas-gifts-for-dad-practical";
 import article12 from "./christmas/25-thoughtful-christmas-gifts-for-dad";
+import article13 from "./christmas/15-christmas-gift-ideas-for-dad-based-on-his-hobbies";
+import article14 from "./christmas/10-last-minute-christmas-gifts-for-dad-online";
+import article15 from "./christmas/20-christmas-gifts-for-dad-who-loves-gadgets-and-tech";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -29,6 +32,9 @@ export const registryArticles: Article[] = [
   article10,
   article11,
   article12,
+  article13,
+  article14,
+  article15,
 ];
 
 export default registryArticles;

@@ -48,7 +48,7 @@ export function ArticleTableOfContents({
 
     setHeadings(items);
 
-    if (items.length > 0 && !activeId) {
+    if (items.length > 0 && items[0] && !activeId) {
       setActiveId(items[0].id);
     }
 
@@ -66,7 +66,7 @@ export function ArticleTableOfContents({
     headingElements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, [selector]);
+  }, [selector, activeId]);
 
   if (headings.length === 0) return null;
 
@@ -130,7 +130,7 @@ export function ArticleTableOfContents({
       </div>
 
       <ul className="mt-3.5 flex max-h-[50vh] flex-col gap-1.5 overflow-y-auto pr-1 text-xs">
-        {headings.map((item, idx) => {
+        {headings.map((item) => {
           const isActive = activeId === item.id;
 
           return (

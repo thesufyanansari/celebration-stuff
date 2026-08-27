@@ -82,7 +82,7 @@ export const article: Article = {
       body: [
         "Dads are notoriously practical. They don't need flashy gadgets or extravagant gestures — they appreciate things that make their daily lives easier, more comfortable, or more enjoyable.",
         "The $50 price point is ideal because it's affordable enough to feel guilt-free, but generous enough to buy something with real quality. It's the sweet spot where value meets thoughtfulness.",
-        "If you're looking for even more inspiration across all budgets, check out our guide on [25 thoughtful Christmas gifts for dad that show you know him](/article/25-thoughtful-christmas-gifts-for-dad), our curated list of [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical), and [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff).",
+        "If you're looking for even more inspiration across all budgets, check out our guide on [20 Christmas gifts for dad who loves gadgets and tech](/article/20-christmas-gifts-for-dad-who-loves-gadgets-and-tech), [10 last-minute Christmas gifts for dad you can order online](/article/10-last-minute-christmas-gifts-for-dad-online), [15 Christmas gift ideas for dad based on his hobbies](/article/15-christmas-gift-ideas-for-dad-based-on-his-hobbies), and [25 thoughtful Christmas gifts for dad that show you know him](/article/25-thoughtful-christmas-gifts-for-dad).",
       ],
     },
     {

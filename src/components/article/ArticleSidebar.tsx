@@ -6,6 +6,7 @@ import { categories } from "@/data/site";
 import { PinterestIcon } from "@/components/site/icons";
 import { SidebarAd } from "@/components/ads/AdSlot";
 import { ArticleTableOfContents } from "./ArticleTableOfContents";
+import { SidebarRelatedProducts } from "./SidebarRelatedProducts";
 import { TopicArticles } from "./TopicArticles";
 import { PopularArticles } from "./PopularArticles";
 import { NewsletterCard } from "./NewsletterCard";
@@ -30,19 +31,22 @@ export function ArticleSidebar({ currentArticle }: ArticleSidebarProps) {
 
   return (
     <aside className="flex flex-col gap-6">
-      {/* 1. Dynamic Table of Contents (Scrolls naturally with initial content) */}
+      {/* 1. Dynamic Table of Contents (Scrolls naturally) */}
       <ArticleTableOfContents />
 
-      {/* 2. Contextual Topic-Specific Articles (e.g. More Christmas Ideas) */}
+      {/* 2. Contextual Related Products (Compact Sidebar Master Cards) */}
+      <SidebarRelatedProducts currentArticle={currentArticle} limit={3} />
+
+      {/* 3. Contextual Topic-Specific Articles (e.g. More Christmas Ideas) */}
       <TopicArticles currentArticle={currentArticle} limit={10} />
 
-      {/* 3. Most Popular & Trending Gift Guides */}
+      {/* 4. Most Popular & Trending Gift Guides */}
       <PopularArticles currentSlug={currentArticle.slug} limit={10} />
 
-      {/* 4. Newsletter Signup CTA */}
+      {/* 5. Newsletter Signup CTA */}
       <NewsletterCard />
 
-      {/* 5. Quick Share / Save Card */}
+      {/* 6. Quick Share / Save Card */}
       <div className="rounded-3xl border border-border/80 bg-surface p-5 shadow-card">
         <div className="flex items-center gap-2 border-b border-border/60 pb-3 font-display text-sm font-bold text-foreground">
           <Share2 className="h-4 w-4 text-primary" />
@@ -73,7 +77,7 @@ export function ArticleSidebar({ currentArticle }: ArticleSidebarProps) {
         </div>
       </div>
 
-      {/* 6 & 7: BOTTOM STICKY LOCK UNIT (Locks/freezes cleanly at top-24 with Display Ad) */}
+      {/* 7. BOTTOM STICKY LOCK UNIT (Locks/freezes cleanly at top-24 with Display Ad) */}
       <div className="sticky top-24 flex flex-col gap-6 z-10">
         {/* Explore More Categories */}
         <div className="rounded-3xl border border-border/80 bg-surface p-5 shadow-card">

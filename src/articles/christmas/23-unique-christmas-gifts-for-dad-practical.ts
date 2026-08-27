@@ -86,7 +86,7 @@ export const article: Article = {
         "Most dads have reached a point in life where they buy what they need when they need it. That's why they always say, \"I don't need anything.\"",
         "But here's the thing: \"don't need\" doesn't mean \"wouldn't appreciate.\" It just means they don't want more clutter.",
         "That's why unique-but-practical gifts are the holy grail. They're interesting enough to spark joy and curiosity. They're useful enough to earn a permanent spot in his life. And they're unusual enough that he probably hasn't bought them for himself.",
-        "If you're looking for additional options tailored to your dad's personality, explore our guides on [25 thoughtful Christmas gifts for dad that show you know him](/article/25-thoughtful-christmas-gifts-for-dad) and [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50).",
+        "If you're looking for additional options tailored to your dad's personality, explore our guides on [20 Christmas gifts for dad who loves gadgets and tech](/article/20-christmas-gifts-for-dad-who-loves-gadgets-and-tech), [15 Christmas gift ideas for dad based on his hobbies](/article/15-christmas-gift-ideas-for-dad-based-on-his-hobbies), [25 thoughtful Christmas gifts for dad that show you know him](/article/25-thoughtful-christmas-gifts-for-dad), and [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50).",
       ],
     },
     {

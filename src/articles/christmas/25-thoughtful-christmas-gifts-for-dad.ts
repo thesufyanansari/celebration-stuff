@@ -94,7 +94,7 @@ export const article: Article = {
         "You know your dad better than anyone. You know his quirks, his hobbies, his sense of humor, and the things that make him smile.",
         "So why does buying him a gift still feel so hard? Because most gift guides are generic. They recommend the same boring items to everyone. But your dad isn't everyone — he's *your* dad.",
         "Your dad doesn't care how much you spend. He cares that you *thought* about him. A $6 gag gift that makes him laugh is worth more than a $100 generic gift card. A $9 candle that says \"Best Dad\" means more than an expensive sweater he'll never wear.",
-        "The gifts on this list are all under $60 — most are under $30. But every single one shows that you paid attention to who he is. For more curated ideas, check out our guides on [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical) and [20 Christmas gifts for dad under $50 he'll put to good use](/article/20-christmas-gifts-for-dad-under-50).",
+        "The gifts on this list are all under $60 — most are under $30. But every single one shows that you paid attention to who he is. For more curated ideas, check out our guides on [10 last-minute Christmas gifts for dad you can order online](/article/10-last-minute-christmas-gifts-for-dad-online), [15 Christmas gift ideas for dad based on his hobbies](/article/15-christmas-gift-ideas-for-dad-based-on-his-hobbies), and [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical).",
       ],
     },
     {

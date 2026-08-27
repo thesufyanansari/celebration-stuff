@@ -80,7 +80,7 @@ export const article: Article = {
         "Let's be honest — your dad probably already owns the basics. He has clothes. He has tools. He has gadgets. And when you ask him what he wants, he genuinely means it when he says 'nothing.'",
         "The problem isn't that he doesn't appreciate gifts. It's that he's reached a point in life where he buys what he needs when he needs it. So by the time Christmas rolls around, there's nothing obvious left.",
         "The solution? Think beyond the obvious. Think about small upgrades, organization, comfort, and items that make his daily routine just a little better. That's exactly what this list delivers.",
-        "Also be sure to explore our companion guides on [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical), [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50), [20 Christmas gift ideas for dad he'll actually use](/article/20-christmas-gift-ideas-for-dad-useful-picks), and [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff) for additional inspiration!",
+        "Also be sure to explore our companion guides on [10 last-minute Christmas gifts for dad you can order online](/article/10-last-minute-christmas-gifts-for-dad-online), [23 unique Christmas gift ideas for dad that are still practical](/article/23-unique-christmas-gifts-for-dad-practical), [20 Christmas gifts for dad under $50](/article/20-christmas-gifts-for-dad-under-50), and [18 useful Christmas gifts for dad who doesn't need more stuff](/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff) for additional inspiration!",
       ],
     },
     {
