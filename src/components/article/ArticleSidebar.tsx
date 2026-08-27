@@ -30,20 +30,20 @@ export function ArticleSidebar({ currentArticle }: ArticleSidebarProps) {
   const shareTitle = encodeURIComponent(currentArticle.title);
 
   return (
-    <aside className="flex flex-col gap-6">
-      {/* 1. Dynamic Table of Contents (Scrolls naturally) */}
+    <div className="flex flex-col gap-6">
+      {/* 1. Dynamic Table of Contents */}
       <ArticleTableOfContents />
 
-      {/* 2. Contextual Related Products (Compact Sidebar Master Cards) */}
+      {/* 2. Contextual Related Products (Compact Cards) */}
       <SidebarRelatedProducts currentArticle={currentArticle} limit={3} />
 
-      {/* 3. Contextual Topic-Specific Articles (e.g. More Christmas Ideas) */}
-      <TopicArticles currentArticle={currentArticle} limit={10} />
+      {/* 3. Contextual Topic-Specific Articles */}
+      <TopicArticles currentArticle={currentArticle} limit={8} />
 
       {/* 4. Most Popular & Trending Gift Guides */}
-      <PopularArticles currentSlug={currentArticle.slug} limit={10} />
+      <PopularArticles currentSlug={currentArticle.slug} limit={8} />
 
-      {/* 5. Newsletter Signup CTA */}
+      {/* 5. Newsletter Signup Card */}
       <NewsletterCard />
 
       {/* 6. Quick Share / Save Card */}
@@ -77,31 +77,30 @@ export function ArticleSidebar({ currentArticle }: ArticleSidebarProps) {
         </div>
       </div>
 
-      {/* 7. BOTTOM STICKY LOCK UNIT (Locks/freezes cleanly at top-24 with Display Ad) */}
-      <div className="sticky top-24 flex flex-col gap-6 z-10">
-        {/* Explore More Categories */}
-        <div className="rounded-3xl border border-border/80 bg-surface p-5 shadow-card">
-          <div className="flex items-center gap-2 border-b border-border/60 pb-3 font-display text-sm font-bold text-foreground">
-            <Tag className="h-4 w-4 text-primary" />
-            <span>Explore More Categories</span>
-          </div>
-          <div className="mt-3.5 flex flex-wrap gap-1.5">
-            {categories.slice(0, 10).map((cat) => (
-              <Link
-                key={cat.slug}
-                to="/category/$slug"
-                params={{ slug: cat.slug }}
-                className="rounded-full border border-border bg-surface px-3 py-1 text-[0.72rem] font-semibold text-foreground-muted transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
-              >
-                {cat.name}
-              </Link>
-            ))}
-          </div>
+      {/* 7. Explore More Categories */}
+      <div className="rounded-3xl border border-border/80 bg-surface p-5 shadow-card">
+        <div className="flex items-center gap-2 border-b border-border/60 pb-3 font-display text-sm font-bold text-foreground">
+          <Tag className="h-4 w-4 text-primary" />
+          <span>Explore More Categories</span>
         </div>
-
-        {/* Display Ad Locked at the Bottom */}
-        <SidebarAd />
+        <div className="mt-3.5 flex flex-wrap gap-1.5">
+          {categories.slice(0, 10).map((cat) => (
+            <Link
+              key={cat.slug}
+              to="/category/$slug"
+              params={{ slug: cat.slug }}
+              className="rounded-full border border-border bg-surface px-3 py-1 text-[0.72rem] font-semibold text-foreground-muted transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+            >
+              {cat.name}
+            </Link>
+          ))}
+        </div>
       </div>
-    </aside>
+
+      {/* 8. Display Ad */}
+      <SidebarAd />
+    </div>
   );
 }
+
+export default ArticleSidebar;

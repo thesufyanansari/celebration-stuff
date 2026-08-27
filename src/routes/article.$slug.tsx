@@ -10,8 +10,7 @@ import {
   ArticleHeader,
   ArticleSidebar,
   ArticleTableOfContents,
-  TopProductPicks,
-  ProductFeature,
+  ArticleProductCard,
   InternalArticleCard,
   ArticleFAQ,
   AuthorBox,
@@ -141,7 +140,7 @@ function ArticlePage() {
         : idx === 1
           ? "Best Budget Value"
           : idx === 2
-            ? "Best Premium Gift"
+            ? "Best Premium Pick"
             : "Top Recommendation"),
     bestFor: p.bestFor || (idx === 0 ? "Top Recommendation" : "Practical Choice"),
     whyWeLoveIt: p.whyWeLoveIt || p.why,
@@ -177,11 +176,11 @@ function ArticlePage() {
       {/* Top of Article Leaderboard Ad */}
       <ArticleAd placement="top" />
 
-      {/* 2. CONTINUOUS 2-COLUMN EDITORIAL GRID (Main Content 8 Cols + Right Sidebar 4 Cols) */}
-      <div className="relative my-8 grid gap-10 lg:gap-12 lg:grid-cols-12">
+      {/* 2. CONTINUOUS 2-COLUMN EDITORIAL GRID (Main Content 8 Cols + Sticky Right Sidebar 4 Cols) */}
+      <div className="relative my-8 grid gap-8 lg:gap-10 lg:grid-cols-12 items-start">
         {/* Main Editorial Article Column (8 Cols) */}
         <main className="lg:col-span-8 min-w-0">
-          <article className="flex flex-col gap-10">
+          <article className="flex flex-col gap-8 sm:gap-10">
             {/* Mobile Collapsible Table of Contents */}
             <ArticleTableOfContents isMobileDrawer />
 
@@ -193,7 +192,7 @@ function ArticlePage() {
 
               return (
                 <section key={secId} id={secId} className="scroll-mt-24">
-                  <h2 className="mb-4 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  <h2 className="mb-3 font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                     {section.heading}
                   </h2>
                   <div className="space-y-3">
@@ -208,11 +207,8 @@ function ArticlePage() {
             {/* In-Article Ad After Intro */}
             <ArticleAd placement="after-intro" />
 
-            {/* 3. OUR TOP PICKS AT A GLANCE (Master Product Card System Quick Overview) */}
-            {enhancedProducts.length > 0 && <TopProductPicks products={enhancedProducts} />}
-
-            {/* 4. DETAILED PRODUCT RECOMMENDATIONS (All using Master Product Card System) */}
-            <div className="flex flex-col gap-8">
+            {/* 3. DETAILED PRODUCT RECOMMENDATIONS (Horizontal Cards with Section Narrative) */}
+            <div className="flex flex-col gap-8 sm:gap-10">
               {enhancedProducts.map((product, idx) => {
                 const matchingSection = article.sections.find(
                   (s) =>
@@ -223,28 +219,45 @@ function ArticlePage() {
 
                 const showInlineCard1 = idx === 2 && inlineRelatedSlug1;
                 const showInlineCard2 = idx === 8 && inlineRelatedSlug2;
-                const showBetweenProductsAd = (idx + 1) % 3 === 0;
+                const showBetweenProductsAd = (idx + 1) % 4 === 0;
 
                 return (
-                  <div key={product.id || idx} className="flex flex-col gap-8">
-                    <ProductFeature
-                      product={product}
-                      index={idx}
-                      narrativeParagraphs={matchingSection?.body}
-                    />
+                  <div key={product.id || idx} className="flex flex-col gap-4">
+                    {/* If matching section has heading & body, render narrative context */}
+                    {matchingSection && (
+                      <div className="space-y-2">
+                        <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-foreground">
+                          {matchingSection.heading}
+                        </h2>
+                        {matchingSection.body && matchingSection.body.length > 0 && (
+                          <div className="space-y-2 text-xs sm:text-sm text-foreground-muted leading-relaxed">
+                            {matchingSection.body.map((para, pIdx) => (
+                              <ArticleContentRenderer key={pIdx} text={para} />
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
 
-                    {/* Contextual Inline Recommendation Card */}
+                    {/* Horizontal Product Card */}
+                    <ArticleProductCard product={product} index={idx} showPickNumber={true} />
+
+                    {/* Contextual Inline Recommendation Cards */}
                     {showInlineCard1 && (
-                      <InternalArticleCard
-                        slug={inlineRelatedSlug1}
-                        calloutText="Trending Holiday Inspiration"
-                      />
+                      <div className="my-2">
+                        <InternalArticleCard
+                          slug={inlineRelatedSlug1}
+                          calloutText="Trending Holiday Inspiration"
+                        />
+                      </div>
                     )}
                     {showInlineCard2 && (
-                      <InternalArticleCard
-                        slug={inlineRelatedSlug2}
-                        calloutText="You Might Also Enjoy"
-                      />
+                      <div className="my-2">
+                        <InternalArticleCard
+                          slug={inlineRelatedSlug2}
+                          calloutText="You Might Also Enjoy"
+                        />
+                      </div>
                     )}
 
                     {/* In-Article Ad between product batches */}
@@ -257,7 +270,7 @@ function ArticlePage() {
             {/* In-Article Mid Ad */}
             <ArticleAd placement="mid-article" />
 
-            {/* 5. BUYING GUIDE / BUDGET / ADDITIONAL DECISION SECTIONS */}
+            {/* 4. BUYING GUIDE / BUDGET / ADDITIONAL DECISION SECTIONS */}
             {closingSections.map((section, idx) => {
               const secId =
                 section.id ||
@@ -281,7 +294,7 @@ function ArticlePage() {
               );
             })}
 
-            {/* 6. EDITORIAL TESTING & QUALITY STANDARDS BOX */}
+            {/* 5. EDITORIAL TESTING & QUALITY STANDARDS BOX */}
             <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-surface via-primary-soft/20 to-surface p-6 sm:p-8 shadow-card">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">
                 <ShieldCheck className="h-4 w-4 text-emerald-600" />
@@ -298,13 +311,13 @@ function ArticlePage() {
               </p>
             </div>
 
-            {/* 7. BUYER FAQS */}
+            {/* 6. BUYER FAQS */}
             {article.faqs && article.faqs.length > 0 && <ArticleFAQ faqs={article.faqs} />}
 
-            {/* 8. AUTHOR BOX */}
+            {/* 7. AUTHOR BOX */}
             {author && <AuthorBox author={author} />}
 
-            {/* 9. PINTEREST CTA & READER COMMENTS */}
+            {/* 8. PINTEREST CTA & READER COMMENTS */}
             <div className="space-y-8">
               <PinterestCta />
               <CommentsSection articleSlug={article.slug} />
@@ -312,13 +325,15 @@ function ArticlePage() {
           </article>
         </main>
 
-        {/* Bounded Desktop Right Sidebar Column (4 Cols) */}
-        <div className="hidden lg:col-span-4 lg:block relative">
-          <ArticleSidebar currentArticle={article} />
-        </div>
+        {/* Bounded Desktop Right Sidebar Column (4 Cols) — Sticky on Desktop */}
+        <aside className="hidden lg:col-span-4 lg:block">
+          <div className="sticky top-20 max-h-[calc(100vh-5.5rem)] overflow-y-auto pr-1.5 scrollbar-thin">
+            <ArticleSidebar currentArticle={article} />
+          </div>
+        </aside>
       </div>
 
-      {/* 10. FULL CONTAINER WIDTH BOTTOM AREA (Ad, Related Articles Grid, Newsletter) */}
+      {/* 9. FULL CONTAINER WIDTH BOTTOM AREA (Ad, Related Articles Grid, Newsletter) */}
       <div className="my-12 flex flex-col gap-10">
         <ArticleAd placement="before-related" />
         {moreArticles.length > 0 && <RelatedArticles articles={moreArticles} />}
@@ -329,3 +344,5 @@ function ArticlePage() {
     </div>
   );
 }
+
+export default ArticlePage;
