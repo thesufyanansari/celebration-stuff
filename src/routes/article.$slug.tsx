@@ -325,11 +325,9 @@ function ArticlePage() {
           </article>
         </main>
 
-        {/* Bounded Desktop Right Sidebar Column (4 Cols) — Sticky on Desktop */}
+        {/* Desktop Right Sidebar Column (4 Cols) — Unlocked natural scrolling */}
         <aside className="hidden lg:col-span-4 lg:block">
-          <div className="sticky top-20 max-h-[calc(100vh-5.5rem)] overflow-y-auto pr-1.5 scrollbar-thin">
-            <ArticleSidebar currentArticle={article} />
-          </div>
+          <ArticleSidebar currentArticle={article} />
         </aside>
       </div>
 
