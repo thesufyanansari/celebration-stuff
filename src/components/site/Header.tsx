@@ -22,8 +22,9 @@ const occasions = [
 ];
 
 const holidays = [
-  { slug: "christmas-gifts", name: "Christmas Gifts" },
+  { slug: "halloween", name: "Halloween Ideas" },
   { slug: "thanksgiving", name: "Thanksgiving" },
+  { slug: "christmas-gifts", name: "Christmas Gifts" },
   { slug: "eid-ramadan", name: "Eid & Ramadan" },
 ];
 

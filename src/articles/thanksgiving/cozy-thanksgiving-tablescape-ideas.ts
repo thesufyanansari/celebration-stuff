@@ -47,6 +47,7 @@ export const article: Article = {
       heading: "One accent per place setting",
       body: [
         "A sprig of rosemary tied with twine, a hand-written name card, or a single persimmon on the plate. Choose one and repeat it — restraint is what separates editorial from cluttered.",
+        "If you are hosting families with little ones this fall, coordinating festive family moments alongside our favorite [baby Halloween costume ideas](/article/best-baby-halloween-costume-ideas-boys-girls-twins) and autumn celebration ideas brings joyful warmth to your seasonal gathering.",
       ],
     },
   ],

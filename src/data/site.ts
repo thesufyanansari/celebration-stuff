@@ -53,6 +53,13 @@ export const categories: Category[] = [
     group: "general",
   },
   {
+    slug: "decor-ideas",
+    name: "Decor Ideas",
+    description:
+      "Creative holiday decorating guides, festive mantel styling, seasonal tablescapes, and celebration decoration ideas.",
+    group: "general",
+  },
+  {
     slug: "life-events",
     name: "Life Events",
     description:
@@ -153,6 +160,14 @@ export const categories: Category[] = [
   },
 
   // Holidays
+  {
+    slug: "halloween",
+    name: "Halloween Ideas & Costumes",
+    description:
+      "Spooky and cute Halloween costume ideas, front porch decor, pumpkin displays, and festive celebration inspiration.",
+    group: "holidays",
+    parentSlug: "holidays",
+  },
   {
     slug: "christmas-gifts",
     name: "Christmas & Holiday Gifts",

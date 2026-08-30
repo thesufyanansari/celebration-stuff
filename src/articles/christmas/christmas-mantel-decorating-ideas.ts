@@ -45,6 +45,7 @@ export const article: Article = {
       heading: "Finish with texture, not more colour",
       body: [
         "Dried orange slices, pinecones, brass bells and knit stockings add richness while keeping the palette calm. If you want colour, pick one — a single red ribbon repeated three times.",
+        "For more seasonal celebration inspiration spanning early autumn through the winter holidays, browse our curated roundup of [baby Halloween costume ideas](/article/best-baby-halloween-costume-ideas-boys-girls-twins) for picture-perfect memories.",
       ],
     },
   ],
