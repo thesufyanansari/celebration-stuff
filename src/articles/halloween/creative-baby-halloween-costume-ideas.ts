@@ -1,7 +1,7 @@
 import type { Article } from "@/data/articles";
 
 // Image Imports from assets
-import featuredImage from "@/assets/cute-comfy-baby-halloween-costumes-sensitive-skin-featured.jpg";
+import featuredImage from "@/assets/creative-baby-halloween-costumes-ideas-featured.jpg";
 import bubbleTeaImg from "@/assets/baby-animal-fruits-costume-romper.jpg";
 import dinoTigerImg from "@/assets/baby-dinosaur-tiger-romper-costume.jpg";
 import pumpkinImg from "@/assets/baby-pumpkin-costume-romper.jpg";
