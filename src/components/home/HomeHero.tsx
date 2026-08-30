@@ -49,14 +49,16 @@ export function HomeHero({ featuredArticle }: HomeHeroProps) {
 
       {/* Right Column: Visual Hero Banner with Glass Overlay */}
       <div className="lg:col-span-6">
-        <div className="group relative overflow-hidden rounded-3xl border border-border/80 bg-surface shadow-card">
+        <div className="group relative aspect-16/9 w-full overflow-hidden rounded-3xl border border-border/80 bg-surface shadow-card">
           <img
             src={featuredArticle.image}
             alt={featuredArticle.featuredImageAlt || featuredArticle.title}
             width={featuredArticle.imageWidth || 1200}
-            height={featuredArticle.imageHeight || 800}
+            height={featuredArticle.imageHeight || 675}
+            loading="eager"
             fetchPriority="high"
-            className="aspect-16/9 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            decoding="async"
+            className="aspect-16/9 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 flex flex-col justify-end">

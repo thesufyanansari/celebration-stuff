@@ -9,7 +9,7 @@ export function TrendingEditorsPicks() {
   if (editorPicks.length === 0) return null;
 
   return (
-    <section className="my-16 rounded-3xl border border-border/80 bg-surface p-6 shadow-card sm:p-8">
+    <section className="my-16 cv-auto rounded-3xl border border-border/80 bg-surface p-6 shadow-card sm:p-8">
       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary mb-2">
         <Award className="h-4 w-4" />
         <span>Editorial Highlights</span>
@@ -21,12 +21,17 @@ export function TrendingEditorsPicks() {
             key={pick.slug}
             className="flex flex-col sm:flex-row gap-5 items-start rounded-2xl border border-border/60 bg-background-subtle/50 p-5 transition-all hover:border-primary/40 hover:shadow-sm"
           >
-            <img
-              src={pick.image}
-              alt={pick.title}
-              loading="lazy"
-              className="h-32 w-full sm:w-36 shrink-0 rounded-xl object-cover shadow-sm"
-            />
+            <div className="relative h-32 w-full sm:w-36 shrink-0 overflow-hidden rounded-xl bg-background-subtle shadow-sm">
+              <img
+                src={pick.image}
+                alt={pick.title}
+                width={300}
+                height={200}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+            </div>
             <div className="flex flex-col justify-between">
               <div>
                 <span className="text-[0.68rem] font-bold text-primary uppercase tracking-wider">

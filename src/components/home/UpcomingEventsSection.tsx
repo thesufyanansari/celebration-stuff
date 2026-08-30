@@ -42,8 +42,11 @@ export function UpcomingEventsSection() {
                   <img
                     src={evt.heroImage}
                     alt={evt.name}
+                    width={800}
+                    height={450}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    decoding="async"
+                    className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1 text-[0.7rem] font-bold text-white backdrop-blur-sm shadow">
                     <Clock className="h-3 w-3 text-primary-soft" />

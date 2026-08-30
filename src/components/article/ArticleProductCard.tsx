@@ -62,7 +62,10 @@ export function ArticleProductCard({
             <img
               src={currentImage}
               alt={product.imageAlt || product.name}
+              width={400}
+              height={400}
               loading={index < 2 ? "eager" : "lazy"}
+              decoding="async"
               className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-sm"
             />
           ) : (

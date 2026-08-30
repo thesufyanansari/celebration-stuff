@@ -92,6 +92,10 @@ export function ArticleSidebar({ currentArticle }: { currentArticle: Article }) 
                 <img
                   src={a.image}
                   alt={a.title}
+                  width={64}
+                  height={48}
+                  loading="lazy"
+                  decoding="async"
                   className="h-12 w-16 shrink-0 rounded-lg object-cover"
                 />
                 <div>

@@ -54,7 +54,7 @@ export const recipientsList: RecipientCard[] = [
 
 export function GiftIdeasByPerson() {
   return (
-    <section className="my-16">
+    <section className="my-16 cv-auto">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">

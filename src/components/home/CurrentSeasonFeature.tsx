@@ -20,7 +20,7 @@ export function CurrentSeasonFeature() {
   if (eventArticles.length === 0) return null;
 
   return (
-    <section className="my-16 rounded-3xl border border-primary/25 bg-gradient-to-br from-primary-soft/30 via-surface to-accent-soft/30 p-6 shadow-card sm:p-8">
+    <section className="my-16 cv-auto rounded-3xl border border-primary/25 bg-gradient-to-br from-primary-soft/30 via-surface to-accent-soft/30 p-6 shadow-card sm:p-8">
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-4 border-b border-border/70 pb-4">
         <div>
@@ -58,8 +58,11 @@ export function CurrentSeasonFeature() {
                 <img
                   src={art.image}
                   alt={art.title}
+                  width={art.imageWidth || 600}
+                  height={art.imageHeight || 338}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  decoding="async"
+                  className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute left-3 top-3 rounded-full bg-primary px-2.5 py-0.5 text-[0.65rem] font-bold text-primary-foreground shadow">
                   {currentEvent.name}

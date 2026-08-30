@@ -30,6 +30,10 @@ export function InternalArticleCard({
             <img
               src={article.image}
               alt={article.title}
+              width={96}
+              height={80}
+              loading="lazy"
+              decoding="async"
               className="h-16 w-20 shrink-0 rounded-xl object-cover border border-border/50 shadow-sm sm:h-20 sm:w-24"
             />
           )}

@@ -51,6 +51,9 @@ export function Header() {
           <img
             src="/logo.png"
             alt="Celebration Stuff Logo"
+            width={36}
+            height={36}
+            decoding="async"
             className="h-9 w-9 rounded-full object-cover shadow-sm transition-transform duration-300 hover:scale-105"
           />
           <span className="font-display text-lg font-semibold tracking-tight">

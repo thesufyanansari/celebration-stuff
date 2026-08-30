@@ -14,7 +14,7 @@ export function FreshlyPublished({ limit = 6 }: FreshlyPublishedProps) {
   if (latestArticles.length === 0) return null;
 
   return (
-    <section className="my-16">
+    <section className="my-16 cv-auto">
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-border/60 pb-4">
         <div>
@@ -51,8 +51,11 @@ export function FreshlyPublished({ limit = 6 }: FreshlyPublishedProps) {
                   <img
                     src={art.image}
                     alt={art.title}
+                    width={art.imageWidth || 600}
+                    height={art.imageHeight || 338}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    decoding="async"
+                    className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {category && (
                     <span className="absolute left-3 top-3 rounded-full bg-surface/90 px-3 py-0.5 text-[0.7rem] font-bold text-foreground backdrop-blur-sm shadow-sm">

@@ -120,6 +120,7 @@ export function AdSlot({
     <div
       ref={adRef}
       className={`my-8 flex flex-col items-center justify-center rounded-2xl border border-border/60 bg-surface/50 p-3 text-center shadow-sm ${slotMeta.minHeight} ${className}`}
+      style={{ contain: "layout", minHeight: undefined }}
       aria-label={finalLabel}
     >
       <span className="mb-2 block text-[0.65rem] font-bold uppercase tracking-wider text-foreground-muted/70">

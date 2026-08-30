@@ -76,7 +76,10 @@ export function SidebarRelatedProducts({ currentArticle, limit = 3 }: SidebarRel
                   <img
                     src={product.image}
                     alt={product.imageAlt || product.name}
+                    width={300}
+                    height={300}
                     loading="lazy"
+                    decoding="async"
                     className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105 filter drop-shadow-sm"
                   />
                 ) : (

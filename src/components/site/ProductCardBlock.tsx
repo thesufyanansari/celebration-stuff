@@ -133,12 +133,15 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
         {/* Product Image & Gallery */}
         <div className="lg:col-span-5 flex flex-col gap-3">
           {images.length > 0 ? (
-            <div className="overflow-hidden rounded-2xl border border-border bg-background-subtle">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-border bg-background-subtle">
               <img
                 src={images[activeImageIndex]}
                 alt={product.imageAlt || `${product.name} Amazon gift idea`}
+                width={400}
+                height={400}
                 loading={index === 0 ? "eager" : "lazy"}
-                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                className="aspect-square h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           ) : (
@@ -163,7 +166,15 @@ export function ProductCardBlock({ product, index }: { product: EnhancedProduct;
                       : "border-border opacity-70"
                   }`}
                 >
-                  <img src={img} alt="" className="h-full w-full object-cover" />
+                  <img
+                    src={img}
+                    alt=""
+                    width={56}
+                    height={56}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
                 </button>
               ))}
             </div>

@@ -30,13 +30,14 @@ export function ArticleCard({
           params={{ slug: article.slug }}
           className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-card transition-all duration-300 ease-[var(--ease-editorial)] hover:-translate-y-1 hover:shadow-lift focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:flex-row"
         >
-          <div className="overflow-hidden sm:w-2/5 shrink-0">
+          <div className="relative aspect-16/9 overflow-hidden sm:w-2/5 shrink-0 bg-background-subtle">
             <img
               src={article.image}
               alt={article.title}
-              width={article.imageWidth}
-              height={article.imageHeight}
+              width={article.imageWidth || 600}
+              height={article.imageHeight || 338}
               loading={priority ? "eager" : "lazy"}
+              decoding="async"
               className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 ease-[var(--ease-editorial)] group-hover:scale-105"
             />
           </div>
@@ -59,7 +60,7 @@ export function ArticleCard({
                 {author?.initials}
               </span>
               <span>{author?.name}</span>
-              <span className="ml-auto inline-flex items-center gap-1">
+              <span className="ml-auto inline-flex items-center gap-1 font-mono">
                 <Eye className="h-3.5 w-3.5" />
                 {formatViews(views)}
               </span>
@@ -77,14 +78,15 @@ export function ArticleCard({
         params={{ slug: article.slug }}
         className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-card transition-all duration-300 ease-[var(--ease-editorial)] hover:-translate-y-1 hover:shadow-lift focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
       >
-        <div className="overflow-hidden">
+        <div className="relative aspect-16/9 w-full overflow-hidden bg-background-subtle">
           <img
             src={article.image}
             alt={article.title}
-            width={article.imageWidth}
-            height={article.imageHeight}
+            width={article.imageWidth || 600}
+            height={article.imageHeight || 338}
             loading={priority ? "eager" : "lazy"}
-            className="aspect-16/9 w-full object-cover transition-transform duration-500 ease-[var(--ease-editorial)] group-hover:scale-105"
+            decoding="async"
+            className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 ease-[var(--ease-editorial)] group-hover:scale-105"
           />
         </div>
         <div className="flex flex-1 flex-col justify-between p-5">

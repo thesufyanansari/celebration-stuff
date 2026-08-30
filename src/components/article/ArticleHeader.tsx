@@ -169,14 +169,16 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
       </div>
 
       {/* Large Featured Image with Pinterest Overlay */}
-      <div className="group relative mt-6 overflow-hidden rounded-3xl border border-border/60 bg-surface shadow-card">
+      <div className="group relative mt-6 aspect-16/9 w-full overflow-hidden rounded-3xl border border-border/60 bg-surface shadow-card">
         <img
           src={article.image}
           alt={article.featuredImageAlt || article.title}
           width={article.imageWidth || 1200}
-          height={article.imageHeight || 800}
+          height={article.imageHeight || 675}
+          loading="eager"
           fetchPriority="high"
-          className="aspect-16/9 w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+          decoding="async"
+          className="aspect-16/9 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
         />
         <a
           href={`https://pinterest.com/pin/create/button/?url=${shareUrl}&description=${shareTitle}&media=${encodeURIComponent(article.image)}`}

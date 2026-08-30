@@ -9,7 +9,7 @@ export function HomePopularArticles({ limit = 6 }: { limit?: number }) {
   if (popular.length === 0) return null;
 
   return (
-    <section className="my-16">
+    <section className="my-16 cv-auto">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-border/60 pb-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600">
@@ -43,8 +43,11 @@ export function HomePopularArticles({ limit = 6 }: { limit?: number }) {
                   <img
                     src={art.image}
                     alt={art.title}
+                    width={art.imageWidth || 600}
+                    height={art.imageHeight || 338}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    decoding="async"
+                    className="aspect-16/9 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* Big Number Badge */}
                   <span className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-xl bg-black/80 font-display text-xs font-bold text-white backdrop-blur-sm shadow">
