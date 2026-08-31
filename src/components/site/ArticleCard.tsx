@@ -119,12 +119,20 @@ export function ArticleCard({
   );
 }
 
-export function BlogGrid({ articles, columns = 3 }: { articles: Article[]; columns?: 2 | 3 }) {
+export function BlogGrid({
+  articles,
+  columns = 3,
+  priority = false,
+}: {
+  articles: Article[];
+  columns?: 2 | 3;
+  priority?: boolean;
+}) {
   const colClass = columns === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3";
   return (
     <div className={`grid gap-6 ${colClass}`}>
       {articles.map((a, i) => (
-        <ArticleCard key={a.slug} article={a} priority={i < 2} />
+        <ArticleCard key={a.slug} article={a} priority={priority && i === 0} />
       ))}
     </div>
   );

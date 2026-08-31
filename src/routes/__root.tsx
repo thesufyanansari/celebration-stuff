@@ -124,16 +124,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           rel: "stylesheet",
           href: appCss,
         },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
         {
           rel: "preload",
-          as: "style",
-          href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap",
+          href: "/fonts/dm-sans/dmsans-latin.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossOrigin: "anonymous",
         },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap",
+          rel: "preload",
+          href: "/fonts/fraunces/fraunces-latin.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossOrigin: "anonymous",
         },
         { rel: "icon", href: "/favicon.png", type: "image/png" },
         { rel: "apple-touch-icon", href: "/favicon.png" },
@@ -151,17 +154,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 import { NewsletterPopup } from "@/components/site/NewsletterPopup";
-
 import { adConfig } from "@/components/ads/AdConfig";
-
-import { VisitorArrivalExperience } from "@/components/site/VisitorArrivalExperience";
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
         <HeadContent />
-        {adConfig.enabled && !adConfig.isDevelopment && (
+        {adConfig.isRealAdSenseActive && (
           <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adConfig.publisherId}`}
@@ -170,7 +170,6 @@ function RootShell({ children }: { children: ReactNode }) {
         )}
       </head>
       <body>
-        <VisitorArrivalExperience durationSeconds={1.5} />
         {children}
         <NewsletterPopup delaySeconds={10} />
         <Scripts />

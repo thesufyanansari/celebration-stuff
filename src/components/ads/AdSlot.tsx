@@ -101,7 +101,7 @@ export function AdSlot({
   const isEligible = adConfig.enabled && wordCount >= minWordCount;
 
   useEffect(() => {
-    if (isEligible && !adConfig.isDevelopment && !pushedRef.current) {
+    if (isEligible && adConfig.isRealAdSenseActive && !pushedRef.current) {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushedRef.current = true;
@@ -119,19 +119,15 @@ export function AdSlot({
   return (
     <div
       ref={adRef}
-      className={`my-8 flex flex-col items-center justify-center rounded-2xl border border-border/60 bg-surface/50 p-3 text-center shadow-sm ${slotMeta.minHeight} ${className}`}
-      style={{ contain: "layout", minHeight: undefined }}
+      className={`my-8 flex flex-col items-center justify-center rounded-2xl border border-dashed border-border/70 bg-background-subtle/40 p-4 text-center ${slotMeta.minHeight} ${className}`}
+      style={{ contain: "layout" }}
       aria-label={finalLabel}
     >
-      <span className="mb-2 block text-[0.65rem] font-bold uppercase tracking-wider text-foreground-muted/70">
+      <span className="mb-2 block text-[0.65rem] font-bold uppercase tracking-wider text-foreground-muted/60">
         {finalLabel}
       </span>
 
-      {adConfig.isDevelopment ? (
-        <div className="flex h-full w-full min-h-[90px] items-center justify-center rounded-xl border border-dashed border-border/80 bg-background-subtle/70 px-4 text-xs font-semibold text-foreground-muted">
-          <span>AdSense Placement [{type}]</span>
-        </div>
-      ) : (
+      {adConfig.isRealAdSenseActive ? (
         <ins
           className="adsbygoogle block w-full"
           data-ad-client={adConfig.publisherId}
@@ -139,6 +135,10 @@ export function AdSlot({
           data-ad-format={finalFormat}
           data-full-width-responsive="true"
         />
+      ) : (
+        <div className="flex h-full w-full min-h-[70px] items-center justify-center rounded-xl bg-surface/60 px-4 text-xs font-medium text-foreground-muted/60">
+          <span>Ad Placeholder [{type}]</span>
+        </div>
       )}
     </div>
   );
