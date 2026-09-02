@@ -1,0 +1,747 @@
+import type { Article } from "@/data/articles";
+
+// Image Imports from assets
+import featuredImage from "@/assets/halloween-porch-decor-daylight-featured.jpg";
+import metalCatImg from "@/assets/haunted-hill-farm-led-metal-cat.jpg";
+import stackedGhostImg from "@/assets/haunted-hill-farm-metal-stacked-ghost.jpg";
+import catGhostLanternImg from "@/assets/haunted-hill-farm-cat-ghost-pillar-lantern.jpg";
+import candleBlowMoldImg from "@/assets/haunted-hill-farm-led-candle-blow-mold.jpg";
+import hauntedHouseFlatbackImg from "@/assets/haunted-hill-farm-led-haunted-house-flatback.jpg";
+import ghostSignImg from "@/assets/haunted-hill-farm-led-ghost-happy-halloween-sign.jpg";
+import witchPotionImg from "@/assets/haunted-hill-farm-witch-pouring-potion.jpg";
+import metalScarecrowImg from "@/assets/haunted-hill-farm-led-metal-scarecrow.jpg";
+import flockedPumpkinImg from "@/assets/haunted-hill-farm-flocked-pumpkin-stack.jpg";
+import hauntedHouseSetImg from "@/assets/haunted-hill-farm-led-haunted-house-set.jpg";
+import spookyTreeOwlImg from "@/assets/haunted-hill-farm-led-spooky-tree-owl.jpg";
+import pumpkinFlatbackImg from "@/assets/haunted-hill-farm-led-pumpkin-flatback.jpg";
+import ghostFamilyImg from "@/assets/haunted-hill-farm-ghost-family.jpg";
+import girlUmbrellaImg from "@/assets/haunted-hill-farm-girl-with-umbrella.jpg";
+import spookyJackOSetImg from "@/assets/haunted-hill-farm-spooky-jack-o-set.jpg";
+import ledSkeletonImg from "@/assets/haunted-hill-farm-led-skeleton-decoration.jpg";
+import neonBatImg from "@/assets/haunted-hill-farm-neon-purple-led-bat.jpg";
+import bearRockingHorseImg from "@/assets/haunted-hill-farm-bear-rocking-horse.jpg";
+
+export const article: Article = {
+  slug: "halloween-porch-decor-daylight",
+  title: "19 Halloween Porch Decor That Actually Looks Great in the Daylight Too",
+  excerpt:
+    "Don't let your porch look like deflated plastic all afternoon. 19 daytime-ready Halloween porch decorations with sculpted silhouettes, quality metal, and rich textures that shine at noon and midnight.",
+  answer:
+    "Daylight-friendly Halloween decor relies on strong physical silhouettes, premium structural materials like powder-coated steel and textured resin, and clean sculptural lines that command attention before the sun sets.",
+  category: "holidays",
+  event: "Halloween",
+  season: "Fall",
+  tags: [
+    "Halloween Decorations",
+    "Outdoor Decor",
+    "Porch Decor",
+    "Halloween",
+    "Home & Garden",
+    "daylight-decor",
+    "curb-appeal",
+    "all-day-decor",
+  ],
+  author: "sarah-linden",
+  published: "2026-09-02",
+  updated: "2026-09-02",
+  views: 37400,
+  readingMinutes: 14,
+  image: featuredImage,
+  imageWidth: 1266,
+  imageHeight: 707,
+  featured: false,
+
+  // Extended SEO & Content Metadata
+  metaTitle: "19 Halloween Porch Decorations That Look Great in Daylight | Celebration Stuff",
+  metaDescription:
+    "Keep your front porch looking polished 24/7. 19 Halloween decorations designed with metal silhouettes, textured finishes, and rich detail that look stunning in daylight.",
+  canonicalUrl: "https://celebrationstuff.com/article/halloween-porch-decor-daylight",
+  featuredImageAlt:
+    "Bright autumn sunlight illuminating an elegant Halloween front porch with metal silhouettes and pumpkins",
+  primaryKeyword: "halloween porch decor looks great daylight",
+  secondaryKeywords: [
+    "daytime halloween porch decorations",
+    "outdoor halloween decor 24/7 curb appeal",
+    "all day halloween front door decor",
+    "halloween decorations that look good in daytime",
+  ],
+  focusTopic: "24/7 Curb Appeal: Daytime-Visible & Nighttime-Illuminated Halloween Porch Styling",
+  recipient: ["homeowners", "hosts", "busy-parents"],
+  occasion: ["halloween", "home-makeover"],
+  holiday: ["halloween"],
+  giftStyle: ["outdoor-decor", "daylight-friendly", "curb-appeal"],
+
+  sections: [
+    {
+      id: "introduction",
+      heading: "19 Halloween Porch Decor That Actually Looks Great in the Daylight Too",
+      body: [
+        "Here's a problem that doesn't get talked about enough: most Halloween decorations look great at night, but kind of sad during the day.",
+        "You know what I mean. Those inflatables that look amazing lit up but just look like deflated plastic bags in the afternoon. Those string lights that are magical after dark but invisible before sunset. Those decorations that rely entirely on glow and don't have any visual presence when the sun is up. To compare with full yard arrangements, check out our master guide on [17 outdoor Halloween decorations that actually impress the neighbors](/article/outdoor-halloween-decorations-impress-neighbors).",
+        "The best porch decorations are the ones that look just as beautiful in broad daylight as they do under the glow of a full moon. They have strong design, quality materials, and visible detail that works at any hour. To see how these compare with yard-scale solutions, read our guide on [19 outdoor Halloween decorations that work for both day and night](/article/halloween-decor-day-night).",
+        "We've rounded up 19 Halloween porch decorations that look great in the daylight too. These pieces use beautiful silhouettes, quality materials, and thoughtful design to create a porch that looks polished from morning until night.",
+      ],
+    },
+    {
+      id: "quick-picks",
+      heading: "Quick Picks — Best Daylight-Friendly Porch Decorations",
+      body: [
+        "| Idea | Product | Why It Looks Great in Daylight |\n|---|---|---|\n| **The Sleek Cat** | Haunted Hill Farm 3-Ft. White LED Metal Cat | Beautiful metal silhouette |\n| **The Creative Ghost** | Haunted Hill Farm 2.7-Ft. White LED Metal Stacked Ghost | Visible creative design |\n| **The Elegant Lantern** | Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Lantern | Clean pillar silhouette |\n| **The Vintage Candle** | Haunted Hill Farm 3.3-Ft. Warm White LED Candle | Classic retro design |\n| **The Architectural House** | Haunted Hill Farm 2-Ft. LED Haunted House Flatback | Detailed facade |",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-metal-cat",
+      heading:
+        "1. The Sleek Silhouette — Haunted Hill Farm 3-Ft. White LED Metal Cat Halloween Decoration",
+      productId: "haunted-hill-farm-metal-cat",
+      body: [
+        "This cat is a statement piece in any light.",
+        "During the day, the sleek metal silhouette is sophisticated and modern. The arched-back posture and clean lines make it look like a piece of art. It's visible, it's beautiful, and it doesn't need electricity to look great.",
+        "At night, the warm glow is an added bonus. But even without it, this cat is a standout. For more designer-grade options, explore [13 Halloween porch decorations that look high-end](/article/high-end-halloween-porch-decorations).",
+        "**Why it looks great in daylight:** Beautiful metal silhouette that stands on its own.",
+        "[Check the current price on Amazon →](https://amzn.to/4wUg7BP)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-stacked-ghost",
+      heading:
+        "2. The Creative Stack — Haunted Hill Farm 2.7-Ft. White LED Metal Stacked Ghost Halloween Décor",
+      productId: "haunted-hill-farm-stacked-ghost",
+      body: [
+        "This ghost is visible, creative, and beautiful in any light.",
+        "During the day, the stacked ghost silhouette is clearly visible. The creative design is eye-catching and memorable. The metal construction looks premium and intentional.",
+        "At night, the LED glow adds warmth. But even in broad daylight, this piece holds its own.",
+        "**Why it looks great in daylight:** Creative visible design + premium metal construction.",
+        "[Check the current price on Amazon →](https://amzn.to/45Y2G8U)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-cat-ghost-lantern",
+      heading:
+        "3. The Elegant Lantern — Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Halloween Lantern",
+      productId: "haunted-hill-farm-cat-ghost-lantern",
+      body: [
+        "A pillar that's visible, elegant, and perfectly proportioned.",
+        "During the day, the clean pillar silhouette is unmistakable. The cat and ghost designs are visible and charming. The size is substantial enough to be noticed.",
+        "At night, the warm glow adds atmosphere. But in daylight, it's still a beautiful piece of decor. For welcoming hospitality styling, see [11 Halloween porch decorations that welcome guests with style](/article/stylish-halloween-porch-decorations).",
+        "**Why it looks great in daylight:** Clean lines + visible silhouettes + beautiful proportions.",
+        "[Check the current price on Amazon →](https://amzn.to/4xwgUKk)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-candle-blow-mold",
+      heading:
+        "4. The Vintage Classic — Haunted Hill Farm 3.3-Ft. Warm White LED Candle Halloween Blow Mold",
+      productId: "haunted-hill-farm-candle-blow-mold",
+      body: [
+        "Blow molds are designed to be visible — and this one is stunning.",
+        "During the day, the 3.3-foot candle is unmistakable. The classic design is retro and charming. The white exterior is clean and visible against any backdrop.",
+        "At night, the warm glow adds magic. But during the day, it's still a striking vintage piece. If you appreciate nostalgic design, explore our [15 vintage Halloween decor ideas](/article/vintage-halloween-yard-decor-ideas).",
+        "**Why it looks great in daylight:** Classic retro design + substantial size + clean white finish.",
+        "[Check the current price on Amazon →](https://amzn.to/4wZhAH2)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-haunted-house-flatback",
+      heading:
+        "5. The Architectural House — Haunted Hill Farm 2-Ft. LED Haunted House Flatback Halloween Decoration",
+      productId: "haunted-hill-farm-haunted-house-flatback",
+      body: [
+        "A house that's visible and detailed in any light.",
+        "During the day, the architectural detail — windows, door, roofline — is clearly visible. The design looks like a miniature piece of Gothic architecture.",
+        "At night, the glowing windows add atmosphere. But in daylight, it's still a beautiful architectural accent. For small stoops and narrow doorways, read [12 Halloween yard decorations ideas for small spaces](/article/small-space-halloween-yard-ideas).",
+        "**Why it looks great in daylight:** Visible architectural detail + beautiful proportions.",
+        "[Check the current price on Amazon →](https://amzn.to/4cP1UPa)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-ghost-sign",
+      heading: "6. The Friendly Ghost — Haunted Hill Farm 2-Ft. LED Ghost Happy Halloween Sign",
+      productId: "haunted-hill-farm-ghost-sign",
+      body: [
+        "A sign that's cheerful and visible any time of day.",
+        'During the day, the friendly ghost design and "Happy Halloween" message are clear and inviting. The sign is substantial enough to be noticed.',
+        "At night, the warm glow adds charm. But the sign looks just as cheerful in the afternoon sun.",
+        "**Why it looks great in daylight:** Clear design + friendly message + substantial size.",
+        "[Check the current price on Amazon →](https://amzn.to/4hZl5JC)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-witch-potion",
+      heading:
+        "7. The Playful Witch — Haunted Hill Farm 1.8-Ft. Witch Pouring Potion Tabletop Animatronic",
+      productId: "haunted-hill-farm-witch-potion",
+      body: [
+        "This witch has personality in any light.",
+        "During the day, her detailed design — cauldron, potion, hat — is clearly visible. The playful concept is charming and eye-catching.",
+        "At night, the animatronic movement adds life. But in daylight, she's still a character. For more playful storybook accents, read our [15 Halloween porch decorations for people who love whimsy](/article/whimsical-halloween-porch-decorations).",
+        "**Why it looks great in daylight:** Detailed visible design + charming character concept.",
+        "[Check the current price on Amazon →](https://amzn.to/4iBZGX4)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-metal-scarecrow",
+      heading:
+        "8. The Modern Scarecrow — Haunted Hill Farm 3-Ft. LED Metal Scarecrow Halloween Decoration",
+      productId: "haunted-hill-farm-metal-scarecrow",
+      body: [
+        "A scarecrow that looks like art in daylight.",
+        "During the day, the metal construction is sleek and modern. The design feels both traditional and contemporary. The size is substantial and visible.",
+        "At night, the LED glow adds warmth. But even without it, this scarecrow is a standout. Pair it with straw bales as seen in our [17 Halloween porch ideas combining pumpkins and hay bales](/article/pumpkin-hay-bale-porch-ideas).",
+        "**Why it looks great in daylight:** Metal construction + contemporary design + visible size.",
+        "[Check the current price on Amazon →](https://amzn.to/4zOJic3)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-flocked-pumpkin",
+      heading:
+        "9. The Pumpkin Stack — Haunted Hill Farm 2.4-Ft. Flocked Pumpkin Stack Halloween Decor",
+      productId: "haunted-hill-farm-flocked-pumpkin",
+      body: [
+        "Soft, visible, and beautifully textured in daylight.",
+        "During the day, the flocked finish is clearly visible. The soft texture adds visual interest. The stacked design is creative and eye-catching.",
+        "At night, it still looks beautiful. But in daylight, the texture and detail shine. For more understated styling, browse [11 minimalist Halloween yard ideas to keep it simple and stylish](/article/minimalist-halloween-yard-ideas).",
+        "**Why it looks great in daylight:** Visible texture + creative stacking + soft natural tones.",
+        "[Check the current price on Amazon →](https://amzn.to/4gCB4wh)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-haunted-house-set",
+      heading: "10. The Haunted House Set — Haunted Hill Farm LED Spooky Haunted House Set 3 pc.",
+      productId: "haunted-hill-farm-haunted-house-set",
+      body: [
+        "Three houses. Visible detail. Architectural beauty.",
+        "During the day, the detailed facades are clearly visible. The set creates a complete scene that looks intentional and polished.",
+        "At night, the glowing windows add atmosphere. But in daylight, the architecture stands on its own.",
+        "**Why it looks great in daylight:** Visible architectural detail + complete scene + polished design.",
+        "[Check the current price on Amazon →](https://amzn.to/46yvbtS)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-spooky-tree-owl",
+      heading:
+        "11. The Owl Tree — Haunted Hill Farm 2-Ft. LED Spooky Tree with Owl Halloween Decoration",
+      productId: "haunted-hill-farm-spooky-tree-owl",
+      body: [
+        "A tree with visible charm in any light.",
+        "During the day, the detailed tree design and perched owl are clearly visible. The design is charming and atmospheric.",
+        "At night, the warm glow adds magic. But in daylight, the tree is still a beautiful accent.",
+        "**Why it looks great in daylight:** Visible detailed design + charming owl + natural aesthetic.",
+        "[Check the current price on Amazon →](https://amzn.to/4xucW4J)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-pumpkin-flatback",
+      heading:
+        "12. The Pumpkin Flatback — Haunted Hill Farm 1.8-Ft. LED Pumpkin Flatback Halloween Decoration",
+      productId: "haunted-hill-farm-pumpkin-flatback",
+      body: [
+        "A pumpkin that's classic and visible in any light.",
+        "During the day, the pumpkin design is recognizable and familiar. The flatback fit makes it sit flush against surfaces.",
+        "At night, the warm glow adds charm. But in daylight, it's a perfect seasonal accent. If you need super fast setup, see [12 easy Halloween porch decor ideas you can set up in 30 minutes](/article/quick-easy-halloween-porch-decor).",
+        "**Why it looks great in daylight:** Classic recognizable design + clean fit.",
+        "[Check the current price on Amazon →](https://amzn.to/4xnZmzQ)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-ghost-family",
+      heading:
+        "13. The Ghost Family — Haunted Hill Farm 5.3-Ft. Ghost Family Halloween Animatronic",
+      productId: "haunted-hill-farm-ghost-family",
+      body: [
+        "A ghost family that's visible and charming in daylight.",
+        "During the day, the ghost figures are clearly visible. The family theme is warm and inviting. The design is detailed and charming.",
+        "At night, the animatronic movement adds life. But in daylight, the figures still make an impression. For more kid-friendly yard pieces, check out [13 Halloween yard ideas perfect for families with young kids](/article/family-friendly-halloween-yard-ideas).",
+        "**Why it looks great in daylight:** Visible ghost figures + charming family theme.",
+        "[Check the current price on Amazon →](https://amzn.to/4i4mzCw)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-girl-umbrella",
+      heading:
+        "14. The Girl with Umbrella — Haunted Hill Farm 3.3-Ft. Girl with Umbrella Animatronic",
+      productId: "haunted-hill-farm-girl-umbrella",
+      body: [
+        "She's visible, curious, and beautiful in daylight.",
+        "During the day, her detailed design is clearly visible. The umbrella, dress, and expression are all charming. She's curious and memorable.",
+        "At night, the animatronic movement adds life. But in daylight, she's a standout character.",
+        "**Why it looks great in daylight:** Detailed visible design + curious character concept.",
+        "[Check the current price on Amazon →](https://amzn.to/4x1O2Zh)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-spooky-jack-o-set",
+      heading:
+        "15. The Jack O Lantern Set — Haunted Hill Farm Warm White LED Spooky Jack O Set Lantern 3 pc.",
+      productId: "haunted-hill-farm-spooky-jack-o-set",
+      body: [
+        "Classic lanterns that are visible in any light.",
+        "During the day, the jack-o-lantern faces are visible and recognizable. The lantern design is classic. The set creates a complete look.",
+        "At night, the warm glow adds magic. But in daylight, they're still charming decorations.",
+        "**Why it looks great in daylight:** Visible classic faces + complete set.",
+        "[Check the current price on Amazon →](https://amzn.to/4y2E8Y4)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-cat-ghost-lantern-alt",
+      heading:
+        "16. The Cat & Ghost Duo — Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Halloween Lantern",
+      productId: "haunted-hill-farm-cat-ghost-lantern-alt",
+      body: [
+        "Charming silhouettes visible in any light.",
+        "During the day, the cat and ghost silhouettes are clearly visible. The pillar design is elegant. The proportions are beautiful.",
+        "At night, the warm glow adds atmosphere. But in daylight, the silhouettes stand on their own.",
+        "**Why it looks great in daylight:** Visible charming silhouettes + elegant pillar design.",
+        "[Check the current price on Amazon →](https://amzn.to/4xwgUKk)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-led-skeleton",
+      heading:
+        "17. The White LED Skeleton — Haunted Hill Farm 2.3-Ft. White LED Skeleton Halloween Decoration",
+      productId: "haunted-hill-farm-led-skeleton",
+      body: [
+        "A skeleton that's visible and classic in daylight.",
+        "During the day, the white skeleton stands out against any backdrop. The detailed design is recognizable. The size is substantial.",
+        "At night, the LED glow adds drama. But in daylight, it's a classic skeleton. For night-lighting impact, see [16 Halloween yard decorations that light up the night](/article/halloween-yard-decorations-light-up-night).",
+        "**Why it looks great in daylight:** White color stands out + visible detailed design.",
+        "[Check the current price on Amazon →](https://amzn.to/4gu19xh)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-neon-bat",
+      heading:
+        "18. The Neon Bat — Haunted Hill Farm 0.6-Ft. Neon Purple LED Bat Halloween Wall Decoration",
+      productId: "haunted-hill-farm-neon-bat",
+      body: [
+        "Small but visible — the neon effect works day and night.",
+        "During the day, the vibrant purple neon is eye-catching. The bat design is recognizable. The small size fits anywhere.",
+        "At night, the neon glow is even more dramatic. But in daylight, it's still a bold accent.",
+        "**Why it looks great in daylight:** Vibrant color + recognizable design + modern appeal.",
+        "[Check the current price on Amazon →](https://amzn.to/4gFy29b)",
+      ],
+    },
+    {
+      id: "haunted-hill-farm-bear-rocking-horse",
+      heading:
+        "19. The Bear on a Horse — Haunted Hill Farm 2.1-Ft. Bear Riding Rocking Horse Halloween Animatronic",
+      productId: "haunted-hill-farm-bear-rocking-horse",
+      body: [
+        "A bear that's visible, playful, and charming in daylight.",
+        "During the day, the bear and rocking horse are clearly visible. The playful concept is eye-catching. The detailed design is charming.",
+        "At night, the animatronic movement adds life. But in daylight, the bear is still a standout.",
+        "**Why it looks great in daylight:** Visible playful concept + detailed charming design.",
+        "[Check the current price on Amazon →](https://amzn.to/4ybKvs7)",
+      ],
+    },
+    {
+      id: "create-porch-great-in-any-light",
+      heading: "Create a Porch That Looks Great in Any Light",
+      body: [
+        "The best Halloween porches don't wait for the sun to go down to look beautiful. They use strong design, quality materials, and visible silhouettes to create a display that looks polished and intentional at any hour.",
+        "Choose pieces that stand on their own in daylight. Add lighting for nighttime atmosphere. And enjoy a porch that looks beautiful from morning until night.",
+      ],
+    },
+  ],
+
+  products: [
+    {
+      id: "haunted-hill-farm-metal-cat",
+      name: "Haunted Hill Farm 3-Ft. White LED Metal Cat Halloween Decoration",
+      image: metalCatImg,
+      imageAlt: "Haunted Hill Farm 3-Ft White LED Metal Cat Decoration",
+      price: "$49.99",
+      why: "Laser-cut black steel cat silhouette that looks like a gallery art piece in bright afternoon sun.",
+      keyDetails: [
+        "Heavy laser-cut black steel silhouette",
+        "Warm white backlit perimeter halo",
+        "Arched-back dramatic cat posture",
+        "Zero electricity required to look stunning at 2 PM",
+      ],
+      consider: "Stands out sharply against light siding or brick.",
+      amazonUrl: "https://amzn.to/4wUg7BP",
+      bestFor: "Daytime sculptural art",
+      badge: "Best Metal Silhouette",
+      rating: 4.9,
+    },
+    {
+      id: "haunted-hill-farm-stacked-ghost",
+      name: "Haunted Hill Farm 2.7-Ft. White LED Metal Stacked Ghost Halloween Décor",
+      image: stackedGhostImg,
+      imageAlt: "Haunted Hill Farm 2.7-Ft White LED Metal Stacked Ghost",
+      price: "$28.99",
+      why: "Powder-coated white steel ghost totem that stands out cleanly against front porch steps all day.",
+      keyDetails: [
+        "Bright white powder-coated steel frame",
+        "Stacked totem of 3 friendly ghost silhouettes",
+        "Clean modern aesthetic without cords visible",
+        "Soft integrated LED glow takes over at dusk",
+      ],
+      consider: "Position next to dark planters for contrast.",
+      amazonUrl: "https://amzn.to/45Y2G8U",
+      bestFor: "Daytime monochrome curb appeal",
+      badge: "Best White Silhouette",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-cat-ghost-lantern",
+      name: "Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Halloween Lantern",
+      image: catGhostLanternImg,
+      imageAlt: "Haunted Hill Farm 2.7-Ft Cat & Ghost Pillar Lantern",
+      price: "$44.99",
+      why: "Substantial architectural pillar lantern with visible laser-cut silhouettes before the light is turned on.",
+      keyDetails: [
+        "Laser-cut cat and ghost silhouette panels",
+        "Substantial 2.7-foot columnar presence",
+        "Weatherproof matte resin construction",
+        "Flickering flameless candle lights up after dark",
+      ],
+      consider: "Looks like high-end outdoor lighting fixtures.",
+      amazonUrl: "https://amzn.to/4xwgUKk",
+      bestFor: "Architectural daytime columns",
+      badge: "Best Column Lantern",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-candle-blow-mold",
+      name: "Haunted Hill Farm 3.3-Ft. Warm White LED Candle Halloween Blow Mold",
+      image: candleBlowMoldImg,
+      imageAlt: "Haunted Hill Farm 3.3-Ft Warm White LED Candle Blow Mold",
+      price: "$59.99",
+      why: "Crisp white retro blow mold candle standing 3.3 feet tall that commands attention in full sunlight.",
+      keyDetails: [
+        "Crisp white retro blow mold exterior",
+        "Substantial 3.3-foot vertical height",
+        "Sculpted faux flame tip",
+        "Warm internal LED amber glow at night",
+      ],
+      consider: "Pure nostalgic retro charm day and night.",
+      amazonUrl: "https://amzn.to/4wZhAH2",
+      bestFor: "Retro daytime visibility",
+      badge: "Best Retro Candle",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-haunted-house-flatback",
+      name: "Haunted Hill Farm 2-Ft. LED Haunted House Flatback Halloween Decoration",
+      image: hauntedHouseFlatbackImg,
+      imageAlt: "Haunted Hill Farm 2-Ft LED Haunted House Flatback",
+      price: "$36.99",
+      why: "Detailed Victorian gothic manor facade with visible gingerbread trim and arched windows by day.",
+      keyDetails: [
+        "Victorian gothic architectural facade",
+        "Visible architectural rooflines and window arches",
+        "Flatback design hangs cleanly on siding or door",
+        "Warm amber window backlighting after dark",
+      ],
+      consider: "Zero floor footprint on porch stoops.",
+      amazonUrl: "https://amzn.to/4cP1UPa",
+      bestFor: "Architectural wall art",
+      badge: "Best Facade Accent",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-ghost-sign",
+      name: "Haunted Hill Farm 2-Ft. LED Ghost Happy Halloween Sign",
+      image: ghostSignImg,
+      imageAlt: "Haunted Hill Farm 2-Ft LED Ghost Happy Halloween Sign",
+      price: "$34.99",
+      why: "Crisp graphic ghost design with bold typography that delivers clear greeting power in bright daylight.",
+      keyDetails: [
+        "Friendly smiling ghost character design",
+        "Crisp readable Happy Halloween lettering",
+        "Substantial 2-foot graphic presence",
+        "Warm golden LED perimeter backlighting at dusk",
+      ],
+      consider: "Instant welcoming curb appeal.",
+      amazonUrl: "https://amzn.to/4hZl5JC",
+      bestFor: "Daytime door greeting",
+      badge: "Best Greeting Sign",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-witch-potion",
+      name: "Haunted Hill Farm 1.8-Ft. Witch Pouring Potion Tabletop Animatronic",
+      image: witchPotionImg,
+      imageAlt: "Haunted Hill Farm 1.8-Ft Witch Pouring Potion Animatronic",
+      price: "$69.99",
+      why: "Detailed storybook sculpt with purple velvet robes and potion flask that delights daytime porch guests.",
+      keyDetails: [
+        "Richly textured fabrics and hat sculpt",
+        "Detailed bubbling cauldron prop",
+        "Motorized potion pouring motion",
+        "Compact 1.8-foot tabletop scale",
+      ],
+      consider: "Sets neatly on a bistro table or plant stand.",
+      amazonUrl: "https://amzn.to/4iBZGX4",
+      bestFor: "Tabletop character detail",
+      badge: "Best Storybook Sculpt",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-metal-scarecrow",
+      name: "Haunted Hill Farm 3-Ft. LED Metal Scarecrow Halloween Decoration",
+      image: metalScarecrowImg,
+      imageAlt: "Haunted Hill Farm 3-Ft LED Metal Scarecrow",
+      price: "$39.99",
+      why: "Solid laser-cut steel scarecrow silhouette with rich burnished bronze finish that shines in natural sunlight.",
+      keyDetails: [
+        "Laser-cut heavy gauge steel plate",
+        "Rich burnished powder-coated finish",
+        "Substantial 3-foot freestanding height",
+        "Integrated warm white LED lights for night",
+      ],
+      consider: "Looks like a custom craft-fair metal sculpture.",
+      amazonUrl: "https://amzn.to/4zOJic3",
+      bestFor: "Artisan metalwork",
+      badge: "Best Metal Scarecrow",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-flocked-pumpkin",
+      name: "Haunted Hill Farm 2.4-Ft. Flocked Pumpkin Stack Halloween Decor",
+      image: flockedPumpkinImg,
+      imageAlt: "Haunted Hill Farm 2.4-Ft Flocked Pumpkin Stack",
+      price: "$44.99",
+      why: "Velvety flocked texture and muted natural tones that look best under natural, bright outdoor light.",
+      keyDetails: [
+        "Tactile velvety flocked finish",
+        "Muted creamy neutral color palette",
+        "2.4-foot graduated stacked form",
+        "Weatherproof resin construction",
+      ],
+      consider: "No glowing bulbs needed to look luxurious.",
+      amazonUrl: "https://amzn.to/4gCB4wh",
+      bestFor: "Daytime tactile texture",
+      badge: "Best Natural Texture",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-haunted-house-set",
+      name: "Haunted Hill Farm LED Spooky Haunted House Set 3 pc.",
+      image: hauntedHouseSetImg,
+      imageAlt: "Haunted Hill Farm LED Spooky Haunted House Set 3 pc",
+      price: "$69.99",
+      why: "Trio of architectural silhouettes with visible Victorian roof cresting and porch pillars in daylight.",
+      keyDetails: [
+        "Set of 3 distinct Victorian manor silhouettes",
+        "Visible architectural details and steep gables",
+        "Freestanding bases for steps or benches",
+        "Warm LED backlighting through window panes at night",
+      ],
+      consider: "Group together like a miniature historic district.",
+      amazonUrl: "https://amzn.to/46yvbtS",
+      bestFor: "Daytime village staging",
+      badge: "Best Miniature Village",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-spooky-tree-owl",
+      name: "Haunted Hill Farm 2-Ft. LED Spooky Tree with Owl Halloween Decoration",
+      image: spookyTreeOwlImg,
+      imageAlt: "Haunted Hill Farm 2-Ft LED Spooky Tree with Owl",
+      price: "$29.99",
+      why: "Gothic sculpted branch structure with a watchful perched owl that adds natural botanical interest.",
+      keyDetails: [
+        "Sculpted black metal branches",
+        "Detailed watchful owl silhouette",
+        "Under $30 accessible boutique accent",
+        "Warm amber micro-LED fairy lights after dark",
+      ],
+      consider: "Pairs cleanly beside real potted autumn mums.",
+      amazonUrl: "https://amzn.to/4xucW4J",
+      bestFor: "Daytime botanical accents",
+      badge: "Best Tree Accent",
+      rating: 4.7,
+    },
+    {
+      id: "haunted-hill-farm-pumpkin-flatback",
+      name: "Haunted Hill Farm 1.8-Ft. LED Pumpkin Flatback Halloween Decoration",
+      image: pumpkinFlatbackImg,
+      imageAlt: "Haunted Hill Farm 1.8-Ft LED Pumpkin Flatback",
+      price: "$32.99",
+      why: "Vibrant orange carved pumpkin profile that adds unmistakable seasonal color to porch railings by day.",
+      keyDetails: [
+        "Vibrant pumpkin orange all-weather resin",
+        "Traditional carved smiling face",
+        "Flat profile rests flush against siding or railings",
+        "Warm golden LED internal glow at night",
+      ],
+      consider: "Never rots or shrivels in autumn weather.",
+      amazonUrl: "https://amzn.to/4xnZmzQ",
+      bestFor: "Classic daytime pumpkin color",
+      badge: "Best Classic Pumpkin",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-ghost-family",
+      name: "Haunted Hill Farm 5.3-Ft. Ghost Family Halloween Animatronic",
+      image: ghostFamilyImg,
+      imageAlt: "Haunted Hill Farm 5.3-Ft Ghost Family Animatronic",
+      price: "$139.99",
+      why: "Layered white gauze shrouds that catch the autumn afternoon breeze with gentle, natural movement.",
+      keyDetails: [
+        "Flowing white gauze fabrics that billow in wind",
+        "Tiered family heights up to 5.3 feet",
+        "Friendly smiling expressions visible in sunlight",
+        "Motorized swaying and spectral LED faces at night",
+      ],
+      consider: "Softens the harvest scene for neighborhood toddlers.",
+      amazonUrl: "https://amzn.to/4i4mzCw",
+      bestFor: "Daytime wind motion",
+      badge: "Best Family Ghosts",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-girl-umbrella",
+      name: "Haunted Hill Farm 3.3-Ft. Girl with Umbrella Animatronic",
+      image: girlUmbrellaImg,
+      imageAlt: "Haunted Hill Farm 3.3-Ft Girl with Umbrella Animatronic",
+      price: "$89.99",
+      why: "Detailed Victorian lace dress, curly hair sculpt, and vintage umbrella that look like high-end doll art.",
+      keyDetails: [
+        "Detailed Victorian lace dress and parasol",
+        "Sweetly curious face sculpt",
+        "Gentle motorized parasol rotation",
+        "Tinkling music box soundtrack",
+      ],
+      consider: "Curious and sweet rather than startling.",
+      amazonUrl: "https://amzn.to/4x1O2Zh",
+      bestFor: "Storybook character art",
+      badge: "Most Enchanting Sculpt",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-spooky-jack-o-set",
+      name: "Haunted Hill Farm Warm White LED Spooky Jack O Set Lantern 3 pc.",
+      image: spookyJackOSetImg,
+      imageAlt: "Haunted Hill Farm Warm White LED Spooky Jack O Set Lantern 3 pc",
+      price: "$99.99",
+      why: "Three graduated pumpkins with deep realistic carved relief that look authentically hand-carved in daylight.",
+      keyDetails: [
+        "Deeply sculpted carved relief faces",
+        "Set of 3 graduated round pumpkin heights",
+        "Sturdy resin stands securely on porch steps",
+        "Warm candle-flicker LED illumination at dusk",
+      ],
+      consider: "Step guidance in sunlight and total darkness.",
+      amazonUrl: "https://amzn.to/4y2E8Y4",
+      bestFor: "Step guidance day and night",
+      badge: "Best Step Lanterns",
+      rating: 4.9,
+    },
+    {
+      id: "haunted-hill-farm-cat-ghost-lantern-alt",
+      name: "Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Lantern",
+      image: catGhostLanternImg,
+      imageAlt: "Haunted Hill Farm 2.7-Ft Cat & Ghost Pillar Lantern Alt",
+      price: "$44.99",
+      why: "Matching second pillar lantern to achieve perfect doorway balance and symmetry before sunset.",
+      keyDetails: [
+        "Creates formal symmetry flanking front doors",
+        "Laser-cut silhouette panels visible in sunlight",
+        "Flickering flameless LED candle interior",
+        "Weatherproof matte black resin",
+      ],
+      consider: "Symmetrical doorway staging is a classic designer trick.",
+      amazonUrl: "https://amzn.to/4xwgUKk",
+      bestFor: "Symmetrical doorway framing",
+      badge: "Best Symmetry Lantern",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-led-skeleton",
+      name: "Haunted Hill Farm 2.3-Ft. White LED Skeleton Halloween Decoration",
+      image: ledSkeletonImg,
+      imageAlt: "Haunted Hill Farm 2.3-Ft White LED Skeleton",
+      price: "$34.99",
+      why: "Crisp white bone sculpt that stands out sharply against dark brick, porch siding, or greenery.",
+      keyDetails: [
+        "Crisp white skeletal anatomy sculpt",
+        "2.3-foot substantial size",
+        "High contrast visibility against dark surfaces",
+        "Internal LED glow illuminates ribs at night",
+      ],
+      consider: "Classic Halloween motif that never goes out of style.",
+      amazonUrl: "https://amzn.to/4gu19xh",
+      bestFor: "High-contrast daylight visibility",
+      badge: "Best Classic Skeleton",
+      rating: 4.7,
+    },
+    {
+      id: "haunted-hill-farm-neon-bat",
+      name: "Haunted Hill Farm 0.6-Ft. Neon Purple LED Bat Halloween Wall Decoration",
+      image: neonBatImg,
+      imageAlt: "Haunted Hill Farm 0.6-Ft Neon Purple LED Bat Wall Decoration",
+      price: "$19.99",
+      why: "Vivid violet silicone tubing that functions as vibrant graphic wall art even when powered off.",
+      keyDetails: [
+        "Vivid violet modern silicone tubing",
+        "Clean graphic bat silhouette",
+        "Lightweight for easy door or siding hanging",
+        "Brilliant neon purple glow after sunset",
+      ],
+      consider: "Adds a pop of modern color to exterior walls.",
+      amazonUrl: "https://amzn.to/4gFy29b",
+      bestFor: "Pop art daylight accents",
+      badge: "Best Graphic Pop",
+      rating: 4.7,
+    },
+    {
+      id: "haunted-hill-farm-bear-rocking-horse",
+      name: "Haunted Hill Farm 2.1-Ft. Bear Riding Rocking Horse Halloween Animatronic",
+      image: bearRockingHorseImg,
+      imageAlt: "Haunted Hill Farm 2.1-Ft Bear Riding Rocking Horse Animatronic",
+      price: "$79.99",
+      why: "Nostalgic teddy bear sculpt rocking gently on a wooden horse that brings storybook warmth to daytime porch guests.",
+      keyDetails: [
+        "Detailed teddy bear and wooden rocking horse sculpt",
+        "Continuous motorized rocking motion",
+        "Nostalgic distressed toy aesthetic",
+        "Delights trick-or-treaters arriving before dark",
+      ],
+      consider: "Brings pure smiles to preschool visitors.",
+      amazonUrl: "https://amzn.to/4ybKvs7",
+      bestFor: "Daytime storybook charm",
+      badge: "Most Playful Sculpt",
+      rating: 4.8,
+    },
+  ],
+
+  faqs: [
+    {
+      q: "What makes a Halloween decoration look good in daylight?",
+      a: "Strong visible design, quality structural materials (metal, resin, wood), recognizable shapes, and clear silhouettes. Decorations that rely solely on illumination look weak in daylight — but pieces with solid sculptural design stand on their own.",
+    },
+    {
+      q: "What materials look best in daylight?",
+      a: "Metal and textured resin are the best materials for daylight appeal. They have weight, texture, and visual presence that thin inflatable vinyl lacks. The White LED Metal Cat and Metal Scarecrow are excellent examples.",
+    },
+    {
+      q: "Can I make my porch look good in daylight without spending a lot?",
+      a: "Yes! The White LED Metal Stacked Ghost is under $30 and looks beautiful in daylight. The LED Pumpkin Flatback and Ghost Sign are also affordable, graphic, and highly visible.",
+    },
+    {
+      q: "What's the most important element for daylight appeal?",
+      a: "Silhouette is the most important element. A piece with a beautiful, sharp silhouette (like the White LED Metal Cat or Stacked Ghost) looks good in any light because the physical contour itself is visually striking.",
+    },
+    {
+      q: "Are there any decorations that only work at night?",
+      a: "Thin inflatable decorations often look weak in daylight because they lose internal contrast and reveal power cords. If you want 24/7 appeal, choose solid sculptural pieces that don't rely on lighting.",
+    },
+    {
+      q: "What's the best way to test if a decoration works in daylight?",
+      a: "Look at it without the power turned on. If it still looks interesting, textured, and well-designed, it works in daylight. If it looks like a deflated or shapeless prop without the lights, it's a nighttime-only piece.",
+    },
+    {
+      q: "Can I combine daytime and nighttime pieces?",
+      a: "Absolutely! Use strong daylight pieces (like the White LED Metal Cat and Flocked Pumpkin Stack) as your structural base, and add nighttime-focused lighting (like candle blow molds and lanterns) for dramatic atmosphere after sunset.",
+    },
+    {
+      q: "What's the most versatile piece for day and night?",
+      a: "The White LED Metal Cat is extremely versatile — it looks like high-end gallery sculpture at noon and casts a dramatic glowing halo after midnight. The Cat & Ghost Pillar Lantern is also versatile.",
+    },
+  ],
+};
+
+export default article;

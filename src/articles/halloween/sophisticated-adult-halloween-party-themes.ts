@@ -1,0 +1,423 @@
+import type { Article } from "@/data/articles";
+
+// Image Imports from assets
+import featuredImage from "@/assets/sophisticated-adult-halloween-party-themes-featured.jpg";
+import metalCatImg from "@/assets/haunted-hill-farm-led-metal-cat.jpg";
+import candleBlowMoldImg from "@/assets/haunted-hill-farm-led-candle-blow-mold.jpg";
+import ghostFamilyImg from "@/assets/haunted-hill-farm-ghost-family.jpg";
+import spookyTreeOwlImg from "@/assets/haunted-hill-farm-led-spooky-tree-owl.jpg";
+import hauntedHouseSetImg from "@/assets/haunted-hill-farm-led-haunted-house-set.jpg";
+import catGhostLanternImg from "@/assets/haunted-hill-farm-cat-ghost-pillar-lantern.jpg";
+import flockedPumpkinImg from "@/assets/haunted-hill-farm-flocked-pumpkin-stack.jpg";
+import girlUmbrellaImg from "@/assets/haunted-hill-farm-girl-with-umbrella.jpg";
+
+export const article: Article = {
+  slug: "sophisticated-adult-halloween-party-themes",
+  title: "13 Halloween Party Theme Ideas for Adults Who Want Something Sophisticated",
+  excerpt:
+    "Elevate Halloween beyond plastic novelties. 13 sophisticated adult Halloween party themes featuring gothic masquerade balls, vampire speakeasies, Victorian séances, and moody black-and-gold aesthetics.",
+  answer:
+    "A sophisticated adult Halloween party relies on formal dress codes (masquerade masks, dark velvet, vintage black-tie), artisanal craft cocktails, dim candlelit shadow play, and curated architectural decor that evokes gothic romance rather than juvenile gore.",
+  category: "holidays",
+  event: "Halloween",
+  season: "Fall",
+  tags: [
+    "Halloween Party",
+    "Adult Halloween",
+    "Party Themes",
+    "Halloween",
+    "Entertaining",
+    "sophisticated-halloween",
+    "gothic-glam",
+    "cocktail-party",
+  ],
+  author: "sarah-linden",
+  published: "2026-09-02",
+  updated: "2026-09-02",
+  views: 45100,
+  readingMinutes: 14,
+  image: featuredImage,
+  imageWidth: 1266,
+  imageHeight: 707,
+  featured: false,
+
+  // Extended SEO & Content Metadata
+  metaTitle: "13 Sophisticated Adult Halloween Party Themes | Celebration Stuff",
+  metaDescription:
+    "Host an elegant, elevated Halloween soirée. 13 sophisticated adult party themes with gothic masquerades, vampire speakeasies, curated cocktails, and luxury decor.",
+  canonicalUrl: "https://celebrationstuff.com/article/sophisticated-adult-halloween-party-themes",
+  featuredImageAlt:
+    "Gothically elegant adult Halloween cocktail lounge with candle chandeliers, dark florals, and masquerade masks",
+  primaryKeyword: "sophisticated adult halloween party themes ideas",
+  secondaryKeywords: [
+    "classy adult halloween party ideas",
+    "elegant halloween party themes for adults",
+    "grown up halloween dinner party ideas",
+    "gothic chic halloween party decor",
+  ],
+  focusTopic: "Gothic Elegance, Adult Halloween Entertaining, Curated Menus & High-End Decor",
+  recipient: ["adults", "hosts", "couples", "cocktail-lovers"],
+  occasion: ["halloween", "dinner-party", "parties-celebrations"],
+  holiday: ["halloween"],
+  giftStyle: ["party-decor", "gothic-glam", "cocktail-accessories", "lighting"],
+
+  sections: [
+    {
+      id: "introduction",
+      heading: "13 Halloween Party Theme Ideas for Adults Who Want Something Sophisticated",
+      body: [
+        "Let's be candid: not every adult wants to spend Halloween surrounded by neon plastic skeletons, sticky punch bowls, or cheap novelty costumes.",
+        "Many of us crave something elevated. An evening rich with atmosphere, candlelit mystery, and timeless style. An occasion where the cocktails are thoughtfully crafted, the music is dark and evocative, and the ambiance feels like an exclusive private salon rather than a chaotic party store. To see how these curated themes compare to high-energy outdoor yard displays, explore our cornerstone guide on [17 outdoor Halloween decorations that actually impress the neighbors](/article/outdoor-halloween-decorations-impress-neighbors).",
+        "Sophisticated Halloween entertaining is anchored in mood, restraint, and gothic romance. It celebrates the darker, poetic beauty of autumn without resorting to cartoonish gore. For more expansive party planning ideas, browse our [17 Halloween party themes that will make your party unforgettable](/article/unforgettable-halloween-party-themes).",
+        "We've curated 13 sophisticated Halloween party themes designed specifically for adults who appreciate elegance, drama, and unforgettable hospitality.",
+      ],
+    },
+    {
+      id: "quick-picks",
+      heading: "Quick Picks — Best Sophisticated Halloween Party Themes",
+      body: [
+        "| Theme | Vibe | Best For |\n|---|---|---|\n| **Haunted Masquerade Ball** | Gothic glam, mysterious, refined | Dress-up lovers, formal gatherings |\n| **Vampire Speakeasy** | Luxe, seductive, dangerous | Cocktail lovers, dark interiors |\n| **Witchy Woodland** | Enchanted, magical, earthy | Outdoor parties, mystical vibes |\n| **Fancy Spooky (Black & Gold)** | Elevated, elegant, glamour | Upscale dinners, formal parties |\n| **Victorian Séance** | Historic, atmospheric, eerie | Paranormal fans, intimate groups |\n| **Burlesque & Boos** | Glamorous, playful, vintage-inspired | Show lovers, theatrical crowds |",
+      ],
+    },
+    {
+      id: "haunted-masquerade-ball",
+      heading: "1. Haunted Masquerade Ball — Venetian Mystery & Gothic Glam",
+      productId: "haunted-hill-farm-metal-cat",
+      body: [
+        "Gothic glamour meets theatrical intrigue. This is the crown jewel of sophisticated adult Halloween parties.",
+        "Guests arrive concealed behind elaborate filigree masks, velvet dinner jackets, and dramatic capes. Candelabras flicker across mirrored surfaces as dark classical string quartets provide an alluring soundtrack. At midnight, gather everyone for a synchronized unmasking ceremony.",
+        "**Costumes:** Ornate Venetian masks, black velvet tuxedos, lace gowns, and masquerade wands.",
+        "**Decor:** Candelabras with dripping black wax, deep crimson baccara roses, and the sleek modern silhouette of the White LED Metal Cat anchoring the ballroom foyer. For daytime curb appeal, see [19 Halloween porch decor that looks great in daylight](/article/halloween-porch-decor-daylight).",
+        "**Signature Drink:** The Venetian Phantom — prosecco, blackberry liqueur, and edible dark shimmer.",
+        "[Check the current price on Amazon →](https://amzn.to/4wUg7BP)",
+      ],
+    },
+    {
+      id: "vampire-speakeasy",
+      heading: "2. Vampire Speakeasy — Prohibition Seduction & Dark Jazz",
+      productId: "haunted-hill-farm-candle-blow-mold",
+      body: [
+        "Think an underground 1920s prohibition club run by immortal aristocrats: luxurious, seductive, and dangerous.",
+        "**Costumes:** 1920s flappers and tailored gangsters with fangs, dark oxblood lips, and velvet opera cloaks.",
+        "**Decor:** Deep amber and crimson perimeter lighting, heavy velvet curtain partitions, and tall Warm White LED Candle Blow Molds casting moody speakeasy shadows across vintage barware.",
+        "**Signature Drink:** The Immortal Sazerac — rye whiskey, absinthe rinse, and blood orange bitters.",
+        "[Check the current price on Amazon →](https://amzn.to/4wZhAH2)",
+      ],
+    },
+    {
+      id: "witchy-woodland-soiree",
+      heading: "3. Witchy Woodland Soirée — Cottagecore Coven & Herbal Magic",
+      productId: "haunted-hill-farm-ghost-family",
+      body: [
+        "An enchanting autumn celebration inspired by herbalism, lunar folklore, and wild forest botanicals.",
+        "**Costumes:** Modern witches in dark linen dresses, dried wildflower crowns, and layered crystal jewelry.",
+        "**Decor:** Moss table runners, hanging bundles of sage and dried lavender, and the gentle swaying Ghost Family creating an ethereal, floating coven presence on the patio.",
+        "**Signature Drink:** Midnight Moon Brew — gin, elderflower liqueur, butterfly pea flower tea, and fresh lemon.",
+        "[Check the current price on Amazon →](https://amzn.to/4i4mzCw)",
+      ],
+    },
+    {
+      id: "fancy-spooky-black-gold",
+      heading: "4. Fancy Spooky (Black & Gold) — High-Gloss Luxury Dining",
+      productId: "haunted-hill-farm-spooky-tree-owl",
+      body: [
+        "For decorators who love black-tie glamour, a black and gold theme transforms Halloween into an upscale gala.",
+        "**Costumes:** Black-tie formalwear accented with gilded skull cufflinks, gold masks, or metallic headpieces.",
+        "**Decor:** Black velvet tablecloths, gold hammered chargers, matte black dinnerware, and the LED Spooky Tree with Owl casting golden micro-light reflections. For more refined statement ideas, read [19 Halloween porch decorations that make a statement without being over-the-top](/article/halloween-porch-decor-statement-not-over-the-top).",
+        "**Signature Drink:** 24K French 75 — champagne, gin, lemon juice, and edible gold dust.",
+        "[Check the current price on Amazon →](https://amzn.to/4xucW4J)",
+      ],
+    },
+    {
+      id: "victorian-seance",
+      heading: "5. Victorian Séance — Parlor Intimacy & Spiritualist Lore",
+      productId: "haunted-hill-farm-haunted-house-set",
+      body: [
+        "An intimate, atmospheric evening centered around late 19th-century spiritualism and psychological suspense.",
+        "**Costumes:** Victorian mourning attire, dark lace collars, waistcoat vests, and antique pocket watches.",
+        "**Decor:** Heavy lace tablecloths, antique Ouija boards, crystal decanters, and the illuminated Haunted House Set creating a ghostly manor backdrop on the mantle.",
+        "**Signature Drink:** Spirit World Manhattan — dark vermouth, bourbon, smoked rosemary, and brandied cherries.",
+        "[Check the current price on Amazon →](https://amzn.to/46yvbtS)",
+      ],
+    },
+    {
+      id: "burlesque-and-boos",
+      heading: "6. Burlesque & Boos — Vintage Cabaret with a Sinister Twist",
+      productId: "haunted-hill-farm-cat-ghost-lantern",
+      body: [
+        "Theatrical, glamorous, and playful: Moulin Rouge meets gothic ghost story.",
+        "**Costumes:** Feather boas, corsetry, fishnets, vintage top hats, and dramatic stage makeup.",
+        "**Decor:** Deep red drapery, vintage vanity trunks, velvet banquettes, and Cat & Ghost Pillar Lanterns setting footlight stage ambiance. For welcoming hospitality, see [11 Halloween porch decorations that welcome guests with style](/article/stylish-halloween-porch-decorations).",
+        "**Signature Drink:** The Absinthe Frappé — absinthe, mint, simple syrup, and crushed ice.",
+        "[Check the current price on Amazon →](https://amzn.to/4xwgUKk)",
+      ],
+    },
+    {
+      id: "midnight-garden-party",
+      heading: "7. The Midnight Garden Party — Autumnal Moonlit Patio",
+      productId: "haunted-hill-farm-flocked-pumpkin",
+      body: [
+        "An outdoor evening gathering nestled among fire pits, fallen leaves, and dark floral arrangements.",
+        "**Costumes:** Dark romantic attire, velvet overcoats, and embroidered floral shawls.",
+        "**Decor:** Wrought-iron garden benches, hurricane lanterns, fairy lights in barren tree branches, and velvety Flocked Pumpkin Stacks in creamy neutral tones. For harvest styling, see [19 vintage Halloween decorations for a nostalgic harvest celebration](/article/vintage-harvest-halloween-decorations).",
+        "**Signature Drink:** Spiced Spumoni Punch — spiced rum, pomegranate juice, and prosecco.",
+        "[Check the current price on Amazon →](https://amzn.to/4gCB4wh)",
+      ],
+    },
+    {
+      id: "gothic-wedding-anniversary",
+      heading: "8. Gothic Wedding Anniversary — Dark Romantic Celebration",
+      productId: "haunted-hill-farm-metal-cat-pair",
+      body: [
+        "Celebrate enduring love with dark, dramatic elegance and theatrical candlelight.",
+        "**Costumes:** Black bridal gowns, dark floral boutonnieres, velvet tuxedos, and antique jewelry.",
+        "**Decor:** Black lace table runners, cascading dark calla lilies, and laser-cut black steel cat sculptures framing the head table.",
+        "**Signature Drink:** Till Death Do Us Part — mezcal, blackberry syrup, lime, and activated charcoal.",
+        "[Check the current price on Amazon →](https://amzn.to/4wUg7BP)",
+      ],
+    },
+    {
+      id: "dark-art-gallery",
+      heading: "9. The Dark Art Gallery — Curated Macabre Salon",
+      productId: "haunted-hill-farm-girl-umbrella",
+      body: [
+        "For creative communities: transform your home into an avant-garde salon of dark romantic art and photography.",
+        "**Costumes:** Bohemian chic with dark edge, artist smocks, or living interpretations of classic paintings.",
+        "**Decor:** Empty gilded black frames, gallery track spotlights, and the enigmatic Girl with Umbrella serving as a living sculpture.",
+        "**Signature Drink:** The Cubist Crimson — Campari, sweet vermouth, mezcal, and blood orange.",
+        "[Check the current price on Amazon →](https://amzn.to/4x1O2Zh)",
+      ],
+    },
+    {
+      id: "coven-dinner",
+      heading: "10. The Coven Dinner — Multi-Course Harvest Feast",
+      productId: "haunted-hill-farm-ghost-family-pair",
+      body: [
+        "An intimate seated dinner party for 8 to 12 close friends featuring seasonal roasted ingredients and rich wines.",
+        "**Costumes:** Flowing silk and velvet garments, antique rings, and understated elegance.",
+        "**Decor:** Candelabras down the center of the long dining table, dark stoneware plates, and the ethereal Ghost Family standing guard.",
+        "**Signature Drink:** Black Magic Sangria — Cabernet Sauvignon, brandy, blackberries, and cinnamon sticks.",
+        "[Check the current price on Amazon →](https://amzn.to/4i4mzCw)",
+      ],
+    },
+    {
+      id: "phantom-of-the-opera",
+      heading: "11. Phantom of the Opera — Dramatic Parisian Theatrics",
+      productId: "haunted-hill-farm-candle-blow-mold-pair",
+      body: [
+        "High-drama opulence celebrating the grand Paris Opera House.",
+        "**Costumes:** Half-face porcelain masks, opera cloaks, ruffled cravats, and ballgowns.",
+        "**Decor:** Sheet music runners, gold candelabras, heavy red velvet drapes, and candle blow molds casting grand theatrical shadows.",
+        "**Signature Drink:** The Angel of Music — cognac, amaretto, and dark roast espresso.",
+        "[Check the current price on Amazon →](https://amzn.to/4wZhAH2)",
+      ],
+    },
+    {
+      id: "edgar-allan-poe-night",
+      heading: "12. Edgar Allan Poe Night — Literary Gothic Horror",
+      productId: "haunted-hill-farm-cat-ghost-lantern-pair",
+      body: [
+        "A literary salon celebrating the father of gothic suspense.",
+        "**Costumes:** 19th-century scholars, Victorian poets, or characters inspired by 'The Raven' and 'The Fall of the House of Usher.'",
+        "**Decor:** Leatherbound book stacks, feather quills, antique inkwells, and Cat & Ghost Pillar Lanterns casting eerie gaslight shadows. For antique found-object styling, explore [16 vintage Halloween decor ideas using repurposed antiques](/article/vintage-repurposed-halloween-decor).",
+        "**Signature Drink:** The Tell-Tale Heart — rye whiskey, cherry heering, and aromatic bitters.",
+        "[Check the current price on Amazon →](https://amzn.to/4xwgUKk)",
+      ],
+    },
+    {
+      id: "devils-ball",
+      heading: "13. The Devil's Ball — High-Fashion Seductive Drama",
+      productId: "haunted-hill-farm-metal-cat-trio",
+      body: [
+        "For bold, glamorous crowds: an unapologetically dramatic red-and-black gala.",
+        "**Costumes:** High-fashion crimson gowns, sharply tailored black suits with red silk pocket squares, and subtle horned headpieces.",
+        "**Decor:** Deep crimson velvet, fiery ember lanterns, smoked mirrors, and laser-cut black steel silhouettes. For party flow ideas, read [19 Halloween house party ideas that keep guests entertained all night](/article/halloween-house-party-entertainment-ideas).",
+        "**Signature Drink:** El Diablo — reposado tequila, creme de cassis, fresh lime, and ginger beer.",
+        "[Check the current price on Amazon →](https://amzn.to/4wUg7BP)",
+      ],
+    },
+    {
+      id: "sophisticated-planning-checklist",
+      heading: "Sophisticated Party Host Planning Checklist",
+      body: [
+        "| Element | Recommended Approach |\n|---|---|\n| **Lighting** | Dim, warm (2200K–2700K) candle-flicker illumination; 100% no overhead fixtures |\n| **Bar Staging** | One batchable craft cocktail, one sparkling wine, one bold red, and one non-alcoholic herbal elixir |\n| **Music** | Dark jazz, moody neo-classical strings, or vintage French cabaret playlists on low volume |\n| **Dress Code** | Clearly state the dress code on invitations with visual mood board references |\n| **Pacing** | Schedule one curated highlight at 9:30 PM (e.g., midnight toast, unmasking, or costume awards) |",
+      ],
+    },
+  ],
+
+  products: [
+    {
+      id: "haunted-hill-farm-metal-cat",
+      name: "Haunted Hill Farm 3-Ft. White LED Metal Cat Halloween Decoration",
+      image: metalCatImg,
+      imageAlt: "Haunted Hill Farm 3-Ft White LED Metal Cat",
+      price: "$49.99",
+      why: "Sleek arched cat sculpture in black steel that adds sophisticated drama to masquerade balls.",
+      keyDetails: [
+        "Heavy laser-cut black steel silhouette",
+        "Warm white backlit perimeter halo",
+        "Arched-back dramatic cat posture",
+        "Solid welded freestanding base",
+      ],
+      consider: "Substantial metal weight prevents tipping in wind.",
+      amazonUrl: "https://amzn.to/4wUg7BP",
+      bestFor: "Gothic masquerade ball accents",
+      badge: "Best Metal Silhouette",
+      rating: 4.9,
+    },
+    {
+      id: "haunted-hill-farm-candle-blow-mold",
+      name: "Haunted Hill Farm 3.3-Ft. Warm White LED Candle Halloween Blow Mold",
+      image: candleBlowMoldImg,
+      imageAlt: "Haunted Hill Farm 3.3-Ft Warm White LED Candle Blow Mold",
+      price: "$59.99",
+      why: "Atmospheric amber blow mold candle that channels the moody, decadent lighting of a vampire speakeasy.",
+      keyDetails: [
+        "Authentic hollow blow mold construction",
+        "Warm internal amber LED lighting",
+        "Substantial 3.3-foot vertical stature",
+        "Weatherproof all-season plastic",
+      ],
+      consider: "Brings instant childhood warmth to front steps.",
+      amazonUrl: "https://amzn.to/4wZhAH2",
+      bestFor: "Vampire speakeasy ambiance",
+      badge: "Best Blow Mold",
+      rating: 4.9,
+    },
+    {
+      id: "haunted-hill-farm-ghost-family",
+      name: "Haunted Hill Farm 5.3-Ft. Ghost Family Halloween Animatronic",
+      image: ghostFamilyImg,
+      imageAlt: "Haunted Hill Farm 5.3-Ft Ghost Family Animatronic",
+      price: "$139.99",
+      why: "A family trio of gentle specters with synchronized swaying and glowing ghostly faces.",
+      keyDetails: [
+        "Gentle motorized swaying motion",
+        "Soft internal spectral LED face illumination",
+        "Tiered family heights up to 5.3 feet",
+        "Friendly presentation welcomed by small children",
+      ],
+      consider: "Delights older generations and toddlers alike.",
+      amazonUrl: "https://amzn.to/4i4mzCw",
+      bestFor: "Witchy woodland coven scenes",
+      badge: "Best Family Ghosts",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-spooky-tree-owl",
+      name: "Haunted Hill Farm 2-Ft. LED Spooky Tree with Owl Halloween Decoration",
+      image: spookyTreeOwlImg,
+      imageAlt: "Haunted Hill Farm 2-Ft LED Spooky Tree with Owl",
+      price: "$29.99",
+      why: "Twisted metal branches and warm fairy lights that reflect gorgeously against gold and black party tables.",
+      keyDetails: [
+        "Sculpted black metal branches",
+        "Detailed watchful owl silhouette",
+        "Under $30 accessible boutique accent",
+        "Warm amber micro-LED fairy lights",
+      ],
+      consider: "Brings folk-art charm to your entryway.",
+      amazonUrl: "https://amzn.to/4xucW4J",
+      bestFor: "Black & gold dining centerpieces",
+      badge: "Best Tree Accent",
+      rating: 4.7,
+    },
+    {
+      id: "haunted-hill-farm-haunted-house-set",
+      name: "Haunted Hill Farm LED Spooky Haunted House Set 3 pc.",
+      image: hauntedHouseSetImg,
+      imageAlt: "Haunted Hill Farm LED Spooky Haunted House Set 3 pc",
+      price: "$69.99",
+      why: "Trio of illuminated Victorian mansions that creates a captivating focal scene on party tables.",
+      keyDetails: [
+        "Set of 3 distinct Victorian manor silhouettes",
+        "Warm LED backlighting through window panes",
+        "Freestanding bases for steps or benches",
+        "Creates a charming miniature illuminated village",
+      ],
+      consider: "Feels like a collectible holiday village display.",
+      amazonUrl: "https://amzn.to/46yvbtS",
+      bestFor: "Victorian séance parlor backdrops",
+      badge: "Best Village Set",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-cat-ghost-lantern",
+      name: "Haunted Hill Farm 2.7-Ft. Cat & Ghost Pillar Halloween Lantern",
+      image: catGhostLanternImg,
+      imageAlt: "Haunted Hill Farm 2.7-Ft Cat & Ghost Pillar Lantern",
+      price: "$44.99",
+      why: "Heavy architectural column with laser-cut silhouettes that casts soft flickering candlelight across party rooms.",
+      keyDetails: [
+        "Laser-cut cat and ghost silhouette panels",
+        "Flickering flameless LED candle interior",
+        "2.7-foot substantial height fits entryway steps",
+        "Matte weatherproof black resin finish",
+      ],
+      consider: "Looks like an heirloom porch fixture.",
+      amazonUrl: "https://amzn.to/4xwgUKk",
+      bestFor: "Burlesque & cabaret mood lighting",
+      badge: "Best Column Lantern",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-flocked-pumpkin",
+      name: "Haunted Hill Farm 2.4-Ft. Flocked Pumpkin Stack Halloween Decor",
+      image: flockedPumpkinImg,
+      imageAlt: "Haunted Hill Farm 2.4-Ft Flocked Pumpkin Stack",
+      price: "$44.99",
+      why: "Velvety flocked stack in muted tones that brings macabre sophistication to Addams Family dinner tables.",
+      keyDetails: [
+        "Tactile velvety flocked finish",
+        "Muted creamy neutral color palette",
+        "2.4-foot graduated stacked form",
+        "Resin construction endures rain and cold",
+      ],
+      consider: "Cozy farmhouse nostalgia for front steps.",
+      amazonUrl: "https://amzn.to/4gCB4wh",
+      bestFor: "Midnight garden patio styling",
+      badge: "Best Flocked Finish",
+      rating: 4.8,
+    },
+    {
+      id: "haunted-hill-farm-girl-umbrella",
+      name: "Haunted Hill Farm 3.3-Ft. Girl with Umbrella Animatronic",
+      image: girlUmbrellaImg,
+      imageAlt: "Haunted Hill Farm 3.3-Ft Girl with Umbrella Animatronic",
+      price: "$89.99",
+      why: "Storybook Victorian schoolgirl holding an umbrella with gentle turning motion and tinkling music box tunes.",
+      keyDetails: [
+        "Detailed Victorian lace dress and parasol",
+        "Sweetly curious face sculpt",
+        "Gentle motorized parasol rotation",
+        "Tinkling music box soundtrack",
+      ],
+      consider: "Curious and sweet rather than startling.",
+      amazonUrl: "https://amzn.to/4x1O2Zh",
+      bestFor: "Dark art gallery salon props",
+      badge: "Most Enchanting Character",
+      rating: 4.8,
+    },
+  ],
+
+  faqs: [
+    {
+      q: "What differentiates a sophisticated adult Halloween party from a standard party?",
+      a: "Sophisticated parties focus on mood, restraint, and sensory curation. They replace cheap plastic novelties with heavy steel, warm blow molds, and real botanical accents. Lighting is kept dim and warm, and cocktails are handcrafted rather than served from punch packets.",
+    },
+    {
+      q: "How can I encourage guests to adhere to a sophisticated dress code?",
+      a: "State the dress code clearly on the invitation (e.g., 'Gothic Black-Tie Optional' or 'Venetian Masquerade'). Providing a simple Pinterest mood board link gives guests visual inspiration and removes guesswork.",
+    },
+    {
+      q: "What music playlist best suits an elegant Halloween party?",
+      a: "Curate a playlist featuring dark jazz, vintage French cabaret (Edith Piaf, Jacques Brel), or modern covers by string quartets (such as Vitamin String Quartet). Keep volume low enough for effortless dinner conversation.",
+    },
+    {
+      q: "What is the best way to handle food for an adult Halloween soirée?",
+      a: "Focus on elevated, bite-sized hors d'oeuvres that can be enjoyed with a drink in hand: artisanal charcuterie with dark grapes and fig jam, mini quiches, truffled deviled eggs, and dark chocolate desserts.",
+    },
+  ],
+};
+
+export default article;
