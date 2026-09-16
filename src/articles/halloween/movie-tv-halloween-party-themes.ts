@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "16 Movie & TV Show Halloween Party Themes | Celebration Stuff",
   metaDescription:
     "Turn screen favorites into unforgettable parties. 16 movie and TV Halloween party themes with costume guides, themed drink recipes, and iconic decor staging.",
-  canonicalUrl: "https://celebrationstuff.com/article/movie-tv-halloween-party-themes",
+  canonicalUrl: "https://celebrationsstuff.com/article/movie-tv-halloween-party-themes",
   featuredImageAlt:
     "Atmospheric cinematic Halloween party with guests in iconic movie and TV costumes surrounded by themed props",
   primaryKeyword: "movie tv show halloween party themes ideas",

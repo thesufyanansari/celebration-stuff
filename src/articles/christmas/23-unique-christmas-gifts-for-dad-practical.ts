@@ -60,7 +60,7 @@ export const article: Article = {
   metaTitle: "23 Unique Christmas Gift Ideas for Dad That Are Still Practical | Celebration Stuff",
   metaDescription:
     "Discover 23 unique yet practical Christmas gift ideas for Dad. From musical Tesla coils and endoscope cameras to LED gloves and smart tools he'll actually use.",
-  canonicalUrl: "https://celebrationstuff.com/article/23-unique-christmas-gifts-for-dad-practical",
+  canonicalUrl: "https://celebrationsstuff.com/article/23-unique-christmas-gifts-for-dad-practical",
   featuredImageAlt:
     "Curated collection of unique and practical Christmas gifts for dad featuring clever gadgets and problem-solving tools.",
   primaryKeyword: "unique Christmas gift ideas for dad",

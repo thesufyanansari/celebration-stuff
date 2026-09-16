@@ -44,10 +44,17 @@ export function parseInline(text: string): React.ReactNode[] {
         }
       }
 
-      const isInternal = cleanUrl.startsWith("/") || cleanUrl.includes("celebrationstuff.com");
+      const isInternal =
+        cleanUrl.startsWith("/") ||
+        cleanUrl.includes("celebrationsstuff.com") ||
+        cleanUrl.includes("celebrationstuff.com");
 
       if (isInternal) {
-        const routePath = cleanUrl.replace("https://celebrationstuff.com", "");
+        const routePath = cleanUrl
+          .replace("https://celebrationsstuff.com", "")
+          .replace("https://celebrationstuff.com", "")
+          .replace("http://celebrationsstuff.com", "")
+          .replace("http://celebrationstuff.com", "");
         parts.push(
           <Link
             key={`${matchIndex}-link-${linkText}`}

@@ -72,7 +72,7 @@ export const article: Article = {
   metaDescription:
     "Discover 24 sweet and adorable baby Halloween costume ideas for the cutest little trick-or-treater. From cuddly animals to cute characters!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater",
   featuredImageAlt:
     "24 sweet baby Halloween costume ideas for the cutest little trick-or-treater including fluffy lambs, Disney characters, and cute animal onesies.",
   primaryKeyword: "Baby Halloween costume ideas for the sweetest little trick-or-treater",

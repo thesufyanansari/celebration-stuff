@@ -53,7 +53,8 @@ export const article: Article = {
   metaTitle: "20 Christmas Gift Ideas for Dad He'll Actually Use | Celebration Stuff",
   metaDescription:
     "Discover 20 practical, useful Christmas gifts for Dad — from tech gadgets and outdoor gear to cozy comforts and gourmet finds. Find the perfect gift he'll actually use.",
-  canonicalUrl: "https://celebrationstuff.com/article/20-christmas-gift-ideas-for-dad-useful-picks",
+  canonicalUrl:
+    "https://celebrationsstuff.com/article/20-christmas-gift-ideas-for-dad-useful-picks",
   featuredImageAlt:
     "Warm Christmas gift scene featuring practical and useful gifts for dad arranged on a wooden table with subtle holiday decor.",
   primaryKeyword: "Christmas gift ideas for dad",

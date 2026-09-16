@@ -1,6 +1,6 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { articles as allArticles } from "@/data/articles";
-import { getAuthor, site } from "@/data/site";
+import { getAuthor, site, SITE_URL } from "@/data/site";
 import { BlogGrid } from "@/components/site/ArticleCard";
 
 export const Route = createFileRoute("/author/$slug")({
@@ -14,15 +14,18 @@ export const Route = createFileRoute("/author/$slug")({
       return { meta: [{ title: "Author unavailable" }, { name: "robots", content: "noindex" }] };
     }
     const { author } = loaderData;
+    const canonicalUrl = `${SITE_URL}/author/${author.slug}`;
     return {
       meta: [
         { title: `${author.name} — ${site.name}` },
         { name: "description", content: author.bio.slice(0, 155) },
         { property: "og:title", content: `${author.name}, ${author.role}` },
         { property: "og:description", content: author.bio.slice(0, 155) },
+        { property: "og:url", content: canonicalUrl },
         { property: "og:type", content: "profile" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
     };
   },
   component: AuthorPage,

@@ -34,7 +34,7 @@ export const article: Article = {
   metaDescription:
     "Discover 12 thoughtful Christmas gifts for Mom she'll actually love — from personalized keepsakes to practical upgrades, at every budget.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/12-christmas-gifts-for-mom-she-will-actually-love",
+    "https://celebrationsstuff.com/article/12-christmas-gifts-for-mom-she-will-actually-love",
   featuredImageAlt:
     "Beautifully wrapped Christmas gifts arranged with seasonal decor and a handwritten 'For Mom' gift tag.",
   primaryKeyword: "Christmas gifts for Mom",

@@ -57,7 +57,7 @@ export const article: Article = {
     "19 Outdoor Halloween Decorations That Work for Both Day and Night | Celebration Stuff",
   metaDescription:
     "Don't let your yard disappear after dark or look sad in daylight. 19 dual-appeal outdoor Halloween decorations that look stunning 24/7.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-decor-day-night",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-decor-day-night",
   featuredImageAlt:
     "Outdoor Halloween decorations that look great during the day and glow brightly at night",
   primaryKeyword: "outdoor halloween decorations day and night",

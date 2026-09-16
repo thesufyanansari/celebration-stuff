@@ -52,7 +52,7 @@ export const article: Article = {
   metaTitle: "15 Versatile Indoor-Outdoor Halloween Decorations | Celebration Stuff",
   metaDescription:
     "Save money and storage space. 15 dual-purpose Halloween decor pieces that look equally stunning on your front porch or living room fireplace mantel.",
-  canonicalUrl: "https://celebrationstuff.com/article/indoor-outdoor-halloween-decor-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/indoor-outdoor-halloween-decor-ideas",
   featuredImageAlt:
     "Seamless indoor-outdoor Halloween entryway connecting porch pumpkins and indoor mantel candle decor",
   primaryKeyword: "indoor outdoor halloween decor versatile ideas",

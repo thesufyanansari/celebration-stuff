@@ -81,7 +81,7 @@ export const article: Article = {
   metaDescription:
     "Discover 30 adorable baby Halloween costume ideas for the cutest look ever. From animals to Disney characters, find the perfect costume for your little one!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/best-baby-halloween-costume-ideas-cutest-look",
+    "https://celebrationsstuff.com/article/best-baby-halloween-costume-ideas-cutest-look",
   featuredImageAlt:
     "30 adorable baby Halloween costume ideas including flamingos, Disney Moana Pua, glowing octopus, and cute food rompers.",
   primaryKeyword: "Best baby Halloween costume ideas for the cutest look",

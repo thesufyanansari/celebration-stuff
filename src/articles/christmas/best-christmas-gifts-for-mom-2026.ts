@@ -26,7 +26,7 @@ export const article: Article = {
   metaTitle: "25 Best Christmas Gifts for Mom (2026) | Unique Amazon Finds",
   metaDescription:
     "Looking for the perfect present? Discover 25 thoughtful and unique Christmas gifts for Mom, all available on Amazon. From personalized keepsakes to cozy must-haves.",
-  canonicalUrl: "https://celebrationstuff.com/article/best-christmas-gifts-for-mom-2026",
+  canonicalUrl: "https://celebrationsstuff.com/article/best-christmas-gifts-for-mom-2026",
   featuredImageAlt:
     "A collage of top Christmas gifts for Mom including a smart mug, blanket, jewelry, and candles.",
   primaryKeyword: "Christmas gifts for Mom",

@@ -49,7 +49,7 @@ export const article: Article = {
   metaTitle: "12 Halloween Yard Decorations Ideas for Small Spaces | Celebration Stuff",
   metaDescription:
     "Make tiny yards, townhouse stoops, and small porches look incredible. 12 compact, vertical, and wall-mounted Halloween decorations that maximize small spaces.",
-  canonicalUrl: "https://celebrationstuff.com/article/small-space-halloween-yard-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/small-space-halloween-yard-ideas",
   featuredImageAlt:
     "Small space Halloween outdoor decor on a cozy front porch with glowing lanterns and wall decorations",
   primaryKeyword: "halloween yard decorations ideas small spaces",

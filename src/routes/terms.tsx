@@ -1,22 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/site/LegalPage";
-import { site } from "@/data/site";
+import { site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/terms")({
-  head: () => ({
-    meta: [
-      { title: `Terms of Use — ${site.name}` },
-      {
-        name: "description",
-        content:
-          "The terms that govern your use of Celebration Stuff, including content ownership and liability.",
-      },
-      { property: "og:title", content: `Terms of Use — ${site.name}` },
-      { property: "og:description", content: "Terms governing your use of this site." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/terms`;
+    return {
+      meta: [
+        { title: `Terms of Use — ${site.name}` },
+        {
+          name: "description",
+          content:
+            "The terms that govern your use of Celebration Stuff, including content ownership and liability.",
+        },
+        { property: "og:title", content: `Terms of Use — ${site.name}` },
+        { property: "og:description", content: "Terms governing your use of this site." },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: () => (
     <LegalPage title="Terms of use" updated="August 2026">
       <p>

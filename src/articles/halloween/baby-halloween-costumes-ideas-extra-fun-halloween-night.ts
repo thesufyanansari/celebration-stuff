@@ -74,7 +74,7 @@ export const article: Article = {
   metaDescription:
     "Discover 29 fun and playful baby Halloween costume ideas that bring extra fun to Halloween night. From interactive costumes to hilarious designs!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-extra-fun-halloween-night",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-extra-fun-halloween-night",
   featuredImageAlt:
     "29 baby Halloween costume ideas that bring extra fun to Halloween night including funny avocados, glow-in-the-dark octopuses, and Disney favorites.",
   primaryKeyword: "Baby Halloween costume ideas that bring extra fun",

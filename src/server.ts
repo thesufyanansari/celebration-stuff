@@ -47,6 +47,37 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const url = new URL(request.url);
+      const host =
+        request.headers.get("x-forwarded-host") || request.headers.get("host") || url.host;
+      const proto = request.headers.get("x-forwarded-proto") || url.protocol.replace(":", "");
+
+      // Avoid redirecting local development or test hosts
+      const isLocal =
+        host.includes("localhost") ||
+        host.includes("127.0.0.1") ||
+        host.includes("::1") ||
+        host.endsWith(".local");
+
+      if (!isLocal) {
+        const isNonCanonicalHost =
+          host.toLowerCase() === "www.celebrationsstuff.com" ||
+          host.toLowerCase() === "celebrationstuff.com" ||
+          host.toLowerCase() === "www.celebrationstuff.com";
+
+        const isHttp = proto === "http";
+
+        if (isNonCanonicalHost || isHttp) {
+          const targetUrl = `https://celebrationsstuff.com${url.pathname}${url.search}`;
+          return new Response(null, {
+            status: 301,
+            headers: {
+              Location: targetUrl,
+            },
+          });
+        }
+      }
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);

@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "12 Low-Prep Halloween Party Ideas (Fast 30-Min Setup) | Celebration Stuff",
   metaDescription:
     "Host a stress-free Halloween party. 12 low-prep ideas requiring 30 minutes or less with zero-assembly decor, quick movie nights, trivia, and simple DIY stations.",
-  canonicalUrl: "https://celebrationstuff.com/article/low-prep-halloween-party-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/low-prep-halloween-party-ideas",
   featuredImageAlt:
     "Cozy, low-prep Halloween movie night and party lounge with glowing pumpkins and casual party snacks",
   primaryKeyword: "low prep halloween party ideas quick setup",

@@ -67,7 +67,7 @@ export const article: Article = {
   metaTitle: "28 Creative Baby Halloween Costumes Ideas for Your Little One",
   metaDescription:
     "Discover 28 creative baby Halloween costume ideas that stand out. From DIY designs to unique themes, find the perfect imaginative costume for your little one.",
-  canonicalUrl: "https://celebrationstuff.com/article/creative-baby-halloween-costume-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/creative-baby-halloween-costume-ideas",
   featuredImageAlt:
     "28 creative baby Halloween costume ideas including DIY bubble tea, pop culture icons, and imaginative family themes.",
   primaryKeyword: "Creative baby Halloween costume ideas",

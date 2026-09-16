@@ -59,7 +59,7 @@ export const article: Article = {
   metaDescription:
     "Looking for tech gifts for Dad? Discover 20 cool, practical gadget gifts for Dad — from magnetic levitating speakers and endoscopes to jet engine fans under $99.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/20-christmas-gifts-for-dad-who-loves-gadgets-and-tech",
+    "https://celebrationsstuff.com/article/20-christmas-gifts-for-dad-who-loves-gadgets-and-tech",
   featuredImageAlt:
     "20 Christmas tech and gadget gift ideas for dad including levitating speakers, air dusters, and smart tools.",
   primaryKeyword: "Christmas gifts for dad who loves gadgets",

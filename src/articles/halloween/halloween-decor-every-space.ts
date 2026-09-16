@@ -57,7 +57,7 @@ export const article: Article = {
   metaTitle: "25 Halloween Decor Ideas for Every Space (Porch to Parlor) | Celebration Stuff",
   metaDescription:
     "Transform every corner of your home. 25 tailored Halloween decor ideas organized by space: front porch, open yard, cozy living room, and entryway.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-decor-every-space",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-decor-every-space",
   featuredImageAlt:
     "Comprehensive home Halloween makeover showing connected decor across front porch, yard, entryway, and living room",
   primaryKeyword: "halloween decor every space porch yard living room entryway",

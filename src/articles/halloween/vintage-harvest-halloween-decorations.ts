@@ -55,7 +55,7 @@ export const article: Article = {
   metaTitle: "19 Vintage Harvest Halloween Decorations (Nostalgic Fall) | Celebration Stuff",
   metaDescription:
     "Rediscover the warm charm of old-fashioned autumn. 19 vintage harvest Halloween decorations featuring blow mold candles, metal scarecrows, and rustic pumpkin stacks.",
-  canonicalUrl: "https://celebrationstuff.com/article/vintage-harvest-halloween-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/vintage-harvest-halloween-decorations",
   featuredImageAlt:
     "Nostalgic vintage harvest Halloween porch with glowing candles, metal scarecrows, and pumpkins",
   primaryKeyword: "vintage harvest halloween decorations nostalgic fall",

@@ -49,7 +49,7 @@ export const article: Article = {
   metaTitle: "12 Quick Halloween Porch Decor Ideas (30-Minute Setup) | Celebration Stuff",
   metaDescription:
     "Transform your front porch in 30 minutes or less. 12 easy, tool-free Halloween decorations that plug in and look professionally styled with minimal effort.",
-  canonicalUrl: "https://celebrationstuff.com/article/quick-easy-halloween-porch-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/quick-easy-halloween-porch-decor",
   featuredImageAlt:
     "Fast and easy Halloween porch setup with glowing lanterns, ghost sign, and flatback pumpkin",
   primaryKeyword: "quick easy halloween porch decor 30 minutes",

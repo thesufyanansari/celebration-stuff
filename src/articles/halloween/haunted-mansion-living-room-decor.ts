@@ -51,7 +51,7 @@ export const article: Article = {
   metaTitle: "15 Haunted Mansion Living Room Decor Ideas | Celebration Stuff",
   metaDescription:
     "Turn your living room into an eerie Victorian manor. 15 haunted mansion Halloween party decorations featuring candle blow molds, gothic lanterns, and ghost animatronics.",
-  canonicalUrl: "https://celebrationstuff.com/article/haunted-mansion-living-room-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/haunted-mansion-living-room-decor",
   featuredImageAlt:
     "Atmospheric haunted mansion living room with candle chandeliers, antique furniture, and gothic Halloween decorations",
   primaryKeyword: "haunted mansion living room decor halloween party",

@@ -48,7 +48,7 @@ export const article: Article = {
   metaTitle: "11 Photogenic Halloween Decor Pieces (Stunning Photos) | Celebration Stuff",
   metaDescription:
     "Take viral, magazine-worthy Halloween party photos. 11 photogenic decor pieces with warm flattering lighting, high-contrast silhouettes, and storybook props.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-photo-stunning-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-photo-stunning-decor",
   featuredImageAlt:
     "Glamorous, highly photogenic Halloween party photo booth with warm lighting, gothic lanterns, and posing guests",
   primaryKeyword: "halloween decor party photos stunning ideas",

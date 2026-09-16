@@ -69,7 +69,7 @@ export const article: Article = {
   metaDescription:
     "Discover 25 baby Halloween costume ideas inspired by cute, classic, and creative looks. Find the perfect outfit for your little one's Halloween style!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-cute-classic-creative",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-cute-classic-creative",
   featuredImageAlt:
     "25 baby Halloween costume ideas inspired by cute, classic, and creative looks including flamingos, Mickey Mouse, and glowing octopuses.",
   primaryKeyword: "Baby Halloween costume ideas cute classic creative",

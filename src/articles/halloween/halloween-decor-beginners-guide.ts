@@ -60,7 +60,7 @@ export const article: Article = {
     "23 Outdoor Halloween Decor for Beginners: Where to Start Without Overwhelm | Celebration Stuff",
   metaDescription:
     "New to decorating? Explore 23 easy, stress-free outdoor Halloween decorations for beginners. Simple setup, budget-friendly options, and porch styling tips.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-decor-beginners-guide",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-decor-beginners-guide",
   featuredImageAlt:
     "Beginner outdoor Halloween decorations featuring friendly pumpkins, ghosts, and simple yard pieces",
   primaryKeyword: "outdoor halloween decor for beginners",

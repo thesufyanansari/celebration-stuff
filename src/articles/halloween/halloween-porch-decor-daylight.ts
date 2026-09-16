@@ -55,7 +55,7 @@ export const article: Article = {
   metaTitle: "19 Halloween Porch Decorations That Look Great in Daylight | Celebration Stuff",
   metaDescription:
     "Keep your front porch looking polished 24/7. 19 Halloween decorations designed with metal silhouettes, textured finishes, and rich detail that look stunning in daylight.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-porch-decor-daylight",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-porch-decor-daylight",
   featuredImageAlt:
     "Bright autumn sunlight illuminating an elegant Halloween front porch with metal silhouettes and pumpkins",
   primaryKeyword: "halloween porch decor looks great daylight",

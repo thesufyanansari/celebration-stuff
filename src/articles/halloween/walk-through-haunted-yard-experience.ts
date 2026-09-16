@@ -55,7 +55,7 @@ export const article: Article = {
     "17 Halloween Yard Ideas to Create a Walk-Through Haunted Experience | Celebration Stuff",
   metaDescription:
     "Transform your lawn into an interactive haunted walkthrough. 17 essential ideas for pathway lighting, atmospheric animatronics, and unforgettable jump scares.",
-  canonicalUrl: "https://celebrationstuff.com/article/walk-through-haunted-yard-experience",
+  canonicalUrl: "https://celebrationsstuff.com/article/walk-through-haunted-yard-experience",
   featuredImageAlt:
     "Walk-through haunted yard experience with illuminated pathway, animatronics, and spooky graveyard scene",
   primaryKeyword: "walk-through haunted yard experience",

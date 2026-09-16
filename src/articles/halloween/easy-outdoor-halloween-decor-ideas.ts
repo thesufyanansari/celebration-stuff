@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "13 Easy Outdoor Halloween Decor Ideas for People Who Hate DIY | Celebration Stuff",
   metaDescription:
     "Skip the messy crafts. These 13 easy outdoor Halloween decorations set up in minutes with zero DIY skills required. Plug-and-play porch and yard decor.",
-  canonicalUrl: "https://celebrationstuff.com/article/easy-outdoor-halloween-decor-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/easy-outdoor-halloween-decor-ideas",
   featuredImageAlt:
     "Easy outdoor Halloween decorations for people who hate DIY featuring quick plug-and-play yard pieces",
   primaryKeyword: "easy outdoor halloween decor",

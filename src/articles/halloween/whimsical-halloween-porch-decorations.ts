@@ -52,7 +52,7 @@ export const article: Article = {
   metaTitle: "15 Whimsical Halloween Porch Decorations for Playful Curb Appeal | Celebration Stuff",
   metaDescription:
     "Skip the blood and gore. 15 charming, magical, and whimsical Halloween porch decorations that turn your entryway into an enchanting autumn storybook.",
-  canonicalUrl: "https://celebrationstuff.com/article/whimsical-halloween-porch-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/whimsical-halloween-porch-decorations",
   featuredImageAlt:
     "Whimsical Halloween porch decorated with playful glowing characters, lanterns, and friendly ghosts",
   primaryKeyword: "whimsical halloween porch decorations",

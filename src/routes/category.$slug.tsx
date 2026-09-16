@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { byCategory } from "@/data/articles";
-import { categories, getCategory, site } from "@/data/site";
+import { categories, getCategory, site, SITE_URL } from "@/data/site";
 import { BlogGrid } from "@/components/site/ArticleCard";
 import { Newsletter } from "@/components/site/Newsletter";
 
@@ -16,18 +16,18 @@ export const Route = createFileRoute("/category/$slug")({
       return { meta: [{ title: "Category unavailable" }, { name: "robots", content: "noindex" }] };
     }
     const { category } = loaderData;
-    const canonicalUrl = `https://celebrationstuff.com/category/${category.slug}`;
+    const canonicalUrl = `${SITE_URL}/category/${category.slug}`;
 
     const jsonLdBreadcrumb = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://celebrationstuff.com" },
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
         {
           "@type": "ListItem",
           position: 2,
           name: "Categories",
-          item: "https://celebrationstuff.com/explore",
+          item: `${SITE_URL}/explore`,
         },
         { "@type": "ListItem", position: 3, name: category.name, item: canonicalUrl },
       ],

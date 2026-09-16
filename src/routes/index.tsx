@@ -15,6 +15,8 @@ import {
   TrendingEditorsPicks,
 } from "@/components/home";
 
+import { SITE_URL } from "@/data/site";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -33,8 +35,10 @@ export const Route = createFileRoute("/")({
         content: "Curated gift guides and holiday inspiration for every celebration.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: `${SITE_URL}/` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
   }),
   component: Index,
 });

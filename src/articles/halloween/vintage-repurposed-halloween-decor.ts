@@ -54,7 +54,7 @@ export const article: Article = {
   metaTitle: "16 Repurposed Vintage Halloween Decor Ideas (Found Objects) | Celebration Stuff",
   metaDescription:
     "Transform thrift store finds into spooky front porch magic. 16 vintage Halloween decor ideas using repurposed wooden ladders, crates, old books, and glowing lanterns.",
-  canonicalUrl: "https://celebrationstuff.com/article/vintage-repurposed-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/vintage-repurposed-halloween-decor",
   featuredImageAlt:
     "Rustic front porch with repurposed wooden ladder, vintage apple crates, and glowing Halloween lanterns",
   primaryKeyword: "vintage repurposed halloween decor antiques found objects",

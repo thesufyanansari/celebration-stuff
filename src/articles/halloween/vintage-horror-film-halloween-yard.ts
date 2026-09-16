@@ -51,7 +51,7 @@ export const article: Article = {
   metaTitle: "13 Vintage 1920s Horror Film Halloween Yard Decor Pieces | Celebration Stuff",
   metaDescription:
     "Turn your front yard into an authentic silent horror film set. 13 expressionist, gothic vintage Halloween decorations that craft cinematic suspense and eerie shadows.",
-  canonicalUrl: "https://celebrationstuff.com/article/vintage-horror-film-halloween-yard",
+  canonicalUrl: "https://celebrationsstuff.com/article/vintage-horror-film-halloween-yard",
   featuredImageAlt:
     "Cinematic 1920s German expressionist Halloween yard scene with dramatic shadows and glowing lanterns",
   primaryKeyword: "vintage halloween decor 1920s horror film yard",

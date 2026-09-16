@@ -80,7 +80,7 @@ export const article: Article = {
   metaDescription:
     "Discover 30 showstopping baby Halloween costume ideas that will make your little one the star of Halloween. From adorable animals to Disney favorites!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-star-of-halloween",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-star-of-halloween",
   featuredImageAlt:
     "30 baby Halloween costume ideas designed to make your little one the star of Halloween including flamingos, Disney characters, and glowing octopus tentacles.",
   primaryKeyword: "Baby Halloween costume ideas to make your little one the star",

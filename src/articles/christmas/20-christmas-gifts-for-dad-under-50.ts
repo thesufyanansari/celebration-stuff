@@ -57,7 +57,7 @@ export const article: Article = {
   metaTitle: "20 Christmas Gifts for Dad Under $50 He'll Put to Good Use | Celebration Stuff",
   metaDescription:
     "Discover 20 practical, thoughtful Christmas gifts for Dad under $50. From rugged tool bags and grill sets to cozy fleece and smart gadgets he'll actually use.",
-  canonicalUrl: "https://celebrationstuff.com/article/20-christmas-gifts-for-dad-under-50",
+  canonicalUrl: "https://celebrationsstuff.com/article/20-christmas-gifts-for-dad-under-50",
   featuredImageAlt:
     "Curated holiday gift collection of practical Christmas gifts for dad under $50 displayed with warm festive accents.",
   primaryKeyword: "Christmas gifts for dad under $50",

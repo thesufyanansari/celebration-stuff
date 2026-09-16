@@ -50,7 +50,7 @@ export const article: Article = {
   metaDescription:
     "Need a gift for Dad fast? Explore 10 last-minute Christmas gifts for Dad with fast shipping — from smart digital frames and tire inflators to sentimental keepsakes under $60.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/10-last-minute-christmas-gifts-for-dad-online",
+    "https://celebrationsstuff.com/article/10-last-minute-christmas-gifts-for-dad-online",
   featuredImageAlt:
     "10 last-minute Christmas gifts for dad that you can order online with fast delivery.",
   primaryKeyword: "last-minute Christmas gifts for dad",

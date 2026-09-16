@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "11 Halloween Porch Decorations That Welcome Guests With Style | Celebration Stuff",
   metaDescription:
     "Greet trick-or-treaters and dinner guests with curb appeal. 11 stylish, elegant, and welcoming Halloween porch decorations that feel warm, festive, and intentional.",
-  canonicalUrl: "https://celebrationstuff.com/article/stylish-halloween-porch-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/stylish-halloween-porch-decorations",
   featuredImageAlt:
     "Stylish and welcoming Halloween front porch decorated with warm lanterns and glowing pumpkins",
   primaryKeyword: "stylish halloween porch decorations",

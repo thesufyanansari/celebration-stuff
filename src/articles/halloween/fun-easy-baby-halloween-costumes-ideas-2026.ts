@@ -74,7 +74,7 @@ export const article: Article = {
   metaTitle: "24 Fun and Easy Baby Halloween Costumes Ideas for 2026",
   metaDescription:
     "Discover 24 fun and easy baby Halloween costume ideas for 2026. From animals to Disney characters, find easy-to-wear costumes your baby will love!",
-  canonicalUrl: "https://celebrationstuff.com/article/fun-easy-baby-halloween-costumes-ideas-2026",
+  canonicalUrl: "https://celebrationsstuff.com/article/fun-easy-baby-halloween-costumes-ideas-2026",
   featuredImageAlt:
     "24 fun and easy baby Halloween costume ideas for 2026 including zip-up rompers, Disney characters, and cute animal outfits.",
   primaryKeyword: "Fun and easy baby Halloween costume ideas 2026",

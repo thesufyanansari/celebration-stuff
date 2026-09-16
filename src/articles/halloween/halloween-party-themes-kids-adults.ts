@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "11 Halloween Party Themes for Kids and Adults | Celebration Stuff",
   metaDescription:
     "Plan a party everyone will love. 11 Halloween party themes that work for both kids and adults, featuring shared crafts, mocktail/cocktail bars, and friendly decor.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-party-themes-kids-adults",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-party-themes-kids-adults",
   featuredImageAlt:
     "Festive multi-generational Halloween party with children and adults celebrating in themed costumes with autumn treats",
   primaryKeyword: "halloween party themes both kids and adults",

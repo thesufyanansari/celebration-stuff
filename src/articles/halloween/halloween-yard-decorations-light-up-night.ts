@@ -53,7 +53,7 @@ export const article: Article = {
   metaTitle: "16 Halloween Yard Decorations That Light Up the Night | Celebration Stuff",
   metaDescription:
     "Transform your lawn after dark. 16 glowing outdoor Halloween decorations including warm LED pathway lanterns, neon bats, lighted specters, and glowing blow molds.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-yard-decorations-light-up-night",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-yard-decorations-light-up-night",
   featuredImageAlt: "Illuminated outdoor Halloween yard decorations glowing brightly after dark",
   primaryKeyword: "halloween yard decorations light up night",
   secondaryKeywords: [

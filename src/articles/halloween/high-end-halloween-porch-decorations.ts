@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "13 High-End Halloween Porch Decorations on a Budget | Celebration Stuff",
   metaDescription:
     "Upgrade your curb appeal with 13 elegant Halloween porch decorations that look expensive. Designer metal silhouettes, warm lighting, and textured pumpkin stacks.",
-  canonicalUrl: "https://celebrationstuff.com/article/high-end-halloween-porch-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/high-end-halloween-porch-decorations",
   featuredImageAlt:
     "High-end designer Halloween porch decorated with sleek metal silhouettes, pillar lanterns, and flocked pumpkins",
   primaryKeyword: "high end halloween porch decorations",

@@ -53,7 +53,7 @@ export const article: Article = {
   metaTitle: "17 Halloween Porch Ideas With Pumpkins & Hay Bales | Celebration Stuff",
   metaDescription:
     "Create a cozy, rustic autumn entrance with 17 Halloween porch ideas combining pumpkins, straw hay bales, warm lanterns, and friendly animated props.",
-  canonicalUrl: "https://celebrationstuff.com/article/pumpkin-hay-bale-porch-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/pumpkin-hay-bale-porch-ideas",
   featuredImageAlt:
     "Rustic Halloween porch styled with stacked hay bales, glowing pumpkins, and lanterns",
   primaryKeyword: "halloween porch ideas pumpkins hay bales",

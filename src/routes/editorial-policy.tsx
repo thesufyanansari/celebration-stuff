@@ -1,22 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/site/LegalPage";
-import { site } from "@/data/site";
+import { site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/editorial-policy")({
-  head: () => ({
-    meta: [
-      { title: `Editorial Policy — ${site.name}` },
-      {
-        name: "description",
-        content:
-          "How Celebration Stuff researches, reviews, updates and corrects its celebration guides.",
-      },
-      { property: "og:title", content: `Editorial Policy — ${site.name}` },
-      { property: "og:description", content: "How we research, review and correct our guides." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/editorial-policy`;
+    return {
+      meta: [
+        { title: `Editorial Policy — ${site.name}` },
+        {
+          name: "description",
+          content:
+            "How Celebration Stuff researches, reviews, updates and corrects its celebration guides.",
+        },
+        { property: "og:title", content: `Editorial Policy — ${site.name}` },
+        { property: "og:description", content: "How we research, review and correct our guides." },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: () => (
     <LegalPage title="Editorial policy" updated="August 2026">
       <p>

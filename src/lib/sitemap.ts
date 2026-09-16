@@ -1,39 +1,48 @@
 import { articles } from "@/data/articles";
-import { categories } from "@/data/site";
-
-const BASE_URL = "https://celebrationstuff.com";
+import { categories, authors, SITE_URL } from "@/data/site";
 
 export function generateSitemapXml(): string {
   const staticRoutes = [
-    "",
-    "/explore",
-    "/about",
-    "/contact",
-    "/privacy",
-    "/terms",
-    "/affiliate-disclosure",
-    "/editorial-policy",
+    { path: "", lastmod: null },
+    { path: "/explore", lastmod: null },
+    { path: "/about", lastmod: null },
+    { path: "/contact", lastmod: null },
+    { path: "/privacy", lastmod: "2026-08-01" },
+    { path: "/terms", lastmod: "2026-08-01" },
+    { path: "/affiliate-disclosure", lastmod: "2026-08-01" },
+    { path: "/editorial-policy", lastmod: "2026-08-01" },
   ];
 
-  const categoryRoutes = categories.map((c) => `/category/${c.slug}`);
-  const articleRoutes = articles.map((a) => `/article/${a.slug}`);
+  const categoryRoutes = categories.map((c) => ({
+    path: `/category/${c.slug}`,
+    lastmod: null,
+  }));
 
-  const allUrls = [...staticRoutes, ...categoryRoutes, ...articleRoutes];
+  const authorRoutes = authors.map((a) => ({
+    path: `/author/${a.slug}`,
+    lastmod: null,
+  }));
 
-  const urlEntries = allUrls
-    .map(
-      (path) => `
-  <url>
-    <loc>${BASE_URL}${path}</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>${path === "" ? "1.0" : path.startsWith("/article/") ? "0.8" : "0.6"}</priority>
-  </url>`,
-    )
-    .join("");
+  const articleRoutes = articles.map((a) => ({
+    path: `/article/${a.slug}`,
+    lastmod: a.updated || a.published || null,
+  }));
+
+  const allEntries = [...staticRoutes, ...categoryRoutes, ...authorRoutes, ...articleRoutes];
+
+  const urlEntries = allEntries
+    .map(({ path, lastmod }) => {
+      const loc = `${SITE_URL}${path === "" ? "/" : path}`;
+      const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
+      return `  <url>
+    <loc>${loc}</loc>${lastmodTag}
+  </url>`;
+    })
+    .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
 ${urlEntries}
-</urlset>`;
+</urlset>
+`;
 }

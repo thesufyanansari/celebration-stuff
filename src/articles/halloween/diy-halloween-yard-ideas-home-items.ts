@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "14 Halloween Yard Ideas Using Items You Already Have at Home | Celebration Stuff",
   metaDescription:
     "Craft a memorable Halloween yard on a dime. 14 easy DIY ideas using sheets, jars, and branches — plus clever shortcuts to give your yard an instant upgrade.",
-  canonicalUrl: "https://celebrationstuff.com/article/diy-halloween-yard-ideas-home-items",
+  canonicalUrl: "https://celebrationsstuff.com/article/diy-halloween-yard-ideas-home-items",
   featuredImageAlt:
     "DIY Halloween yard decorations made from household items with glowing shortcuts",
   primaryKeyword: "halloween yard ideas using items at home",

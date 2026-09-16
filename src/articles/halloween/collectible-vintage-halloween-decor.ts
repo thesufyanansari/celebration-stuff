@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "12 Collectible Vintage Halloween Decor Items (True Heirlooms) | Celebration Stuff",
   metaDescription:
     "Discover 12 heirloom-grade vintage Halloween decorations serious collectors cherish. Heavy blow molds, steel silhouettes, and collectible haunted house sets.",
-  canonicalUrl: "https://celebrationstuff.com/article/collectible-vintage-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/collectible-vintage-halloween-decor",
   featuredImageAlt:
     "Curated collection of authentic vintage Halloween blow mold candles, lanterns, and metal silhouettes",
   primaryKeyword: "vintage halloween decor items collectors pieces",

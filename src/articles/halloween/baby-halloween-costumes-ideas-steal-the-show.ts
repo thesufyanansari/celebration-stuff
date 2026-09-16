@@ -72,7 +72,8 @@ export const article: Article = {
   metaTitle: "21 Baby Halloween Costumes Ideas That Will Steal the Show",
   metaDescription:
     "Discover 21 showstopping baby Halloween costume ideas that will steal the show. From adorable animals to Disney favorites, your baby will be the star!",
-  canonicalUrl: "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-steal-the-show",
+  canonicalUrl:
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-steal-the-show",
   featuredImageAlt:
     "21 baby Halloween costume ideas that will steal the show including flamingos, glowing octopuses, and Disney favorites.",
   primaryKeyword: "Baby Halloween costume ideas that will steal the show",

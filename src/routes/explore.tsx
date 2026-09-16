@@ -1,28 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { articles } from "@/data/articles";
-import { categories } from "@/data/site";
+import { categories, SITE_URL } from "@/data/site";
 import { MasonryGrid } from "@/components/site/ArticleCard";
 import { Newsletter } from "@/components/site/Newsletter";
 
 export const Route = createFileRoute("/explore")({
-  head: () => ({
-    meta: [
-      { title: "Explore Celebration Ideas — Celebration Stuff" },
-      {
-        name: "description",
-        content:
-          "Search every Celebration Stuff guide: holidays, gifts, parties, seasonal decor and hosting ideas.",
-      },
-      { property: "og:title", content: "Explore Celebration Ideas" },
-      {
-        property: "og:description",
-        content: "Search holidays, gifts, parties, seasonal decor and hosting guides.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/explore`;
+    return {
+      meta: [
+        { title: "Explore Celebration Ideas — Celebration Stuff" },
+        {
+          name: "description",
+          content:
+            "Search every Celebration Stuff guide: holidays, gifts, parties, seasonal decor and hosting ideas.",
+        },
+        { property: "og:title", content: "Explore Celebration Ideas" },
+        {
+          property: "og:description",
+          content: "Search holidays, gifts, parties, seasonal decor and hosting guides.",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: ExplorePage,
 });
 

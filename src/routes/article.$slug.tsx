@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ShieldCheck } from "lucide-react";
 import { getArticle, getRelatedArticles } from "@/data/articles";
-import { getAuthor, site } from "@/data/site";
+import { getAuthor, site, SITE_URL } from "@/data/site";
 import { CommentsSection } from "@/components/site/CommentsSection";
 import { PinterestCta } from "@/components/site/PinterestCta";
 import { Newsletter } from "@/components/site/Newsletter";
@@ -32,10 +32,11 @@ export const Route = createFileRoute("/article/$slug")({
       };
     }
     const { article } = loaderData;
-    const canonicalUrl =
-      article.canonicalUrl || `https://celebrationstuff.com/article/${article.slug}`;
+    const canonicalUrl = `${SITE_URL}/article/${article.slug}`;
     const pageTitle = article.metaTitle || `${article.title} | ${site.name}`;
     const pageDescription = article.metaDescription || article.excerpt;
+    const authorObj = getAuthor(article.author);
+    const authorName = authorObj?.name || article.author;
 
     const jsonLdArticle = {
       "@context": "https://schema.org",
@@ -47,12 +48,13 @@ export const Route = createFileRoute("/article/$slug")({
       dateModified: article.updated || article.published,
       author: {
         "@type": "Person",
-        name: article.author,
+        name: authorName,
+        url: `${SITE_URL}/author/${article.author}`,
       },
       publisher: {
         "@type": "Organization",
         name: site.name,
-        url: "https://celebrationstuff.com",
+        url: SITE_URL,
       },
       mainEntityOfPage: {
         "@type": "WebPage",
@@ -64,12 +66,12 @@ export const Route = createFileRoute("/article/$slug")({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://celebrationstuff.com" },
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
         {
           "@type": "ListItem",
           position: 2,
           name: "Gift Guides",
-          item: "https://celebrationstuff.com/explore",
+          item: `${SITE_URL}/explore`,
         },
         { "@type": "ListItem", position: 3, name: article.title, item: canonicalUrl },
       ],
@@ -109,6 +111,8 @@ export const Route = createFileRoute("/article/$slug")({
         { property: "og:image", content: article.image },
         { property: "og:url", content: canonicalUrl },
         { property: "og:type", content: "article" },
+        { property: "article:published_time", content: article.published },
+        { property: "article:modified_time", content: article.updated || article.published },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: pageTitle },
         { name: "twitter:description", content: pageDescription },

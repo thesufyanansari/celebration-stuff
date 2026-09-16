@@ -49,7 +49,7 @@ export const article: Article = {
     "11 Outdoor Halloween Decorations That Still Look Classy (Not Tacky) | Celebration Stuff",
   metaDescription:
     "Elevate your Halloween curb appeal with 11 sophisticated outdoor decorations that look tasteful, not tacky. Elegant metal, warm LEDs, and upscale accents.",
-  canonicalUrl: "https://celebrationstuff.com/article/classy-outdoor-halloween-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/classy-outdoor-halloween-decorations",
   featuredImageAlt:
     "Classy outdoor Halloween decorations featuring sophisticated porch and yard decor that avoids tacky looks",
   primaryKeyword: "classy outdoor halloween decorations",

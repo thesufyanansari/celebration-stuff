@@ -56,7 +56,7 @@ export const article: Article = {
   metaTitle: "19 Outdoor Halloween Decor & Party Combos (Max Impact) | Celebration Stuff",
   metaDescription:
     "Discover high-impact pairings. 19 outdoor Halloween decor and party combos matching illuminated lanterns, giant animatronics, and gothic silhouettes.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-decor-party-combos",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-decor-party-combos",
   featuredImageAlt:
     "Curated high-impact Halloween porch and yard display combining glowing jack-o'-lanterns, pillar lanterns, and animatronics",
   primaryKeyword: "outdoor halloween decor party combos maximize impact",

@@ -53,7 +53,7 @@ export const article: Article = {
     "Outdoor Halloween Decor on a Budget: 15 Ideas That Look Expensive | Celebration Stuff",
   metaDescription:
     "Discover 15 budget-friendly outdoor Halloween decorations that look expensive without the high price tag. High-impact yard and porch ideas under $50.",
-  canonicalUrl: "https://celebrationstuff.com/article/outdoor-halloween-decor-budget-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-budget-ideas",
   featuredImageAlt:
     "Outdoor Halloween decor on a budget featuring stylish affordable decorations that look expensive",
   primaryKeyword: "outdoor halloween decor on a budget",

@@ -1,24 +1,29 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { authors, site } from "@/data/site";
+import { authors, site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: `About ${site.name} — Our Editorial Team` },
-      {
-        name: "description",
-        content:
-          "Meet the editors behind Celebration Stuff and how we research holiday, gift, party and decorating ideas.",
-      },
-      { property: "og:title", content: `About ${site.name}` },
-      {
-        property: "og:description",
-        content: "Meet the editors behind our holiday, gift and party guides.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/about`;
+    return {
+      meta: [
+        { title: `About ${site.name} — Our Editorial Team` },
+        {
+          name: "description",
+          content:
+            "Meet the editors behind Celebration Stuff and how we research holiday, gift, party and decorating ideas.",
+        },
+        { property: "og:title", content: `About ${site.name}` },
+        {
+          property: "og:description",
+          content: "Meet the editors behind our holiday, gift and party guides.",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: AboutPage,
 });
 

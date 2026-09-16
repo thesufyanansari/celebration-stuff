@@ -56,7 +56,7 @@ export const article: Article = {
   metaDescription:
     "Transform your yard with 17 standout outdoor Halloween decorations that actually impress the neighbors. Inflatables, animatronics, lighting, and yard ideas.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/outdoor-halloween-decorations-impress-neighbors",
+    "https://celebrationsstuff.com/article/outdoor-halloween-decorations-impress-neighbors",
   featuredImageAlt:
     "17 outdoor Halloween decorations that actually impress the neighbors featuring inflatables, animatronics, and spooky front yard displays",
   primaryKeyword: "outdoor halloween decorations",

@@ -57,7 +57,7 @@ export const article: Article = {
   metaDescription:
     "Catch every neighbor's eye without crossing into tacky territory. 19 statement Halloween porch decorations that feel bold, memorable, and impeccably styled.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/halloween-porch-decor-statement-not-over-the-top",
+    "https://celebrationsstuff.com/article/halloween-porch-decor-statement-not-over-the-top",
   featuredImageAlt:
     "Elegantly styled front porch with striking, refined Halloween statement decorations",
   primaryKeyword: "halloween porch decor statement not over the top",

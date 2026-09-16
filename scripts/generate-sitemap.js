@@ -1,47 +1,81 @@
 import fs from "fs";
+import path from "path";
 
-// Read articles/index.ts
+const BASE_URL = "https://celebrationsstuff.com";
+
+// 1. Read categories strictly from categories array in src/data/site.ts
+const siteTs = fs.readFileSync("src/data/site.ts", "utf8");
+const catBlockMatch = siteTs.match(/export const categories:\s*Category\[\]\s*=\s*\[([\s\S]*?)\];/);
+const catSlugs = catBlockMatch
+  ? [...catBlockMatch[1].matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1])
+  : [];
+
+// 2. Read authors strictly from authors array in src/data/site.ts
+const authorBlockMatch = siteTs.match(/export const authors:\s*Author\[\]\s*=\s*\[([\s\S]*?)\];/);
+const authorSlugs = authorBlockMatch
+  ? [...authorBlockMatch[1].matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1])
+  : [];
+
+// 3. Static routes
+const staticRoutes = [
+  { path: "", lastmod: null },
+  { path: "/explore", lastmod: null },
+  { path: "/about", lastmod: null },
+  { path: "/contact", lastmod: null },
+  { path: "/privacy", lastmod: "2026-08-01" },
+  { path: "/terms", lastmod: "2026-08-01" },
+  { path: "/affiliate-disclosure", lastmod: "2026-08-01" },
+  { path: "/editorial-policy", lastmod: "2026-08-01" },
+];
+
+const categoryRoutes = [...new Set(catSlugs)].map((c) => ({
+  path: `/category/${c}`,
+  lastmod: null,
+}));
+
+const authorRoutes = [...new Set(authorSlugs)].map((a) => ({
+  path: `/author/${a}`,
+  lastmod: null,
+}));
+
+// 4. Read articles and their genuine dates
 const articlesIndex = fs.readFileSync("src/articles/index.ts", "utf8");
 const articleImports = articlesIndex.match(/import article\d+ from "\.\/([^"]+)"/g) || [];
-const articleSlugs = articleImports
+
+const articleEntries = articleImports
   .map((imp) => {
-    const match = imp.match(/import article\d+ from "\.\/(?:[^/]+\/)?([^"]+)"/);
-    return match ? match[1] : null;
+    const match = imp.match(/import article\d+ from "\.\/([^"]+)"/);
+    if (!match) return null;
+    const relPath = match[1];
+    const fullPath = path.join("src/articles", `${relPath}.ts`);
+    if (!fs.existsSync(fullPath)) return null;
+
+    const content = fs.readFileSync(fullPath, "utf8");
+    const slugMatch = content.match(/slug:\s*"([^"]+)"/);
+    const updatedMatch = content.match(/updated:\s*"([^"]+)"/);
+    const publishedMatch = content.match(/published:\s*"([^"]+)"/);
+
+    const slug = slugMatch ? slugMatch[1] : path.basename(relPath);
+    const lastmod =
+      (updatedMatch ? updatedMatch[1] : null) || (publishedMatch ? publishedMatch[1] : null);
+
+    return {
+      path: `/article/${slug}`,
+      lastmod,
+    };
   })
   .filter(Boolean);
 
-// Read categories from site.ts
-const siteTs = fs.readFileSync("src/data/site.ts", "utf8");
-const catMatches = [...siteTs.matchAll(/slug:\s*"([^"]+)"/g)];
-const catSlugs = catMatches.map((m) => m[1]);
+const allEntries = [...staticRoutes, ...categoryRoutes, ...authorRoutes, ...articleEntries];
 
-const staticRoutes = [
-  "",
-  "/explore",
-  "/about",
-  "/contact",
-  "/privacy",
-  "/terms",
-  "/affiliate-disclosure",
-  "/editorial-policy",
-];
-
-const BASE_URL = "https://celebrationstuff.com";
-const categoryRoutes = [...new Set(catSlugs)].map((c) => `/category/${c}`);
-const articleRoutes = articleSlugs.map((a) => `/article/${a}`);
-
-const allUrls = [...staticRoutes, ...categoryRoutes, ...articleRoutes];
-const today = new Date().toISOString().split("T")[0];
-
-const urlEntries = allUrls
-  .map(
-    (p) => `  <url>
-    <loc>${BASE_URL}${p}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>${p === "" ? "1.0" : p.startsWith("/article/") ? "0.8" : "0.6"}</priority>
-  </url>`,
-  )
+const urlEntries = allEntries
+  .map(({ path: p, lastmod }) => {
+    const loc = `${BASE_URL}${p === "" ? "/" : p}`;
+    const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
+    return `  <url>
+    <loc>${loc}</loc>${lastmodTag}
+  </url>`;
+  })
   .join("\n");
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -51,7 +85,6 @@ ${urlEntries}
 `;
 
 fs.writeFileSync("public/sitemap.xml", xml);
-console.log(`Generated public/sitemap.xml with ${allUrls.length} URLs.`);
 console.log(
-  `Includes new article: ${xml.includes("outdoor-halloween-decorations-impress-neighbors")}`,
+  `Generated public/sitemap.xml with ${allEntries.length} canonical URLs under ${BASE_URL}.`,
 );

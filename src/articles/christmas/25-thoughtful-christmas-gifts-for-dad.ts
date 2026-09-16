@@ -62,7 +62,7 @@ export const article: Article = {
   metaTitle: "25 Thoughtful Christmas Gifts for Dad That Show You Know Him | Celebration Stuff",
   metaDescription:
     "Looking for a meaningful present for Dad? Explore 25 thoughtful Christmas gifts for Dad that prove you actually know him. From guided journals to barware under $60.",
-  canonicalUrl: "https://celebrationstuff.com/article/25-thoughtful-christmas-gifts-for-dad",
+  canonicalUrl: "https://celebrationsstuff.com/article/25-thoughtful-christmas-gifts-for-dad",
   featuredImageAlt:
     "Thoughtful Christmas gift ideas for dad arranged on a festive holiday background with wooden keepsakes and barware.",
   primaryKeyword: "thoughtful Christmas gifts for dad",

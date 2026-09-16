@@ -57,7 +57,7 @@ export const article: Article = {
   metaTitle: "21 Outdoor Halloween Decor Ideas for Every Vibe | Celebration Stuff",
   metaDescription:
     "Find your Halloween aesthetic with 21 outdoor decorations organized by vibe: Classic Spooky, Whimsical, Modern Sleek, Retro Nostalgic, and Premium Statement.",
-  canonicalUrl: "https://celebrationstuff.com/article/outdoor-halloween-decor-every-vibe",
+  canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-every-vibe",
   featuredImageAlt:
     "Outdoor Halloween decor ideas for every vibe including spooky, whimsical, modern, and vintage yards",
   primaryKeyword: "outdoor halloween decor every vibe",

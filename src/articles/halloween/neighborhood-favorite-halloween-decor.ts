@@ -53,7 +53,7 @@ export const article: Article = {
     "15 Outdoor Halloween Decor Pieces That Make Your House the Neighborhood Favorite | Celebration Stuff",
   metaDescription:
     "Make your home the neighborhood Halloween destination. 15 showstopping outdoor decorations: giant inflatables, cinema-quality animatronics, and interactive scares.",
-  canonicalUrl: "https://celebrationstuff.com/article/neighborhood-favorite-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/neighborhood-favorite-halloween-decor",
   featuredImageAlt:
     "Neighborhood favorite Halloween house decorated with showstopping inflatables, animatronics, and lights",
   primaryKeyword: "neighborhood favorite halloween decor",

@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "11 Haunted House Party Ideas for Home (Walkthrough Haunt) | Celebration Stuff",
   metaDescription:
     "Transform your living room or yard into a genuine haunted attraction. 11 home haunted house party ideas with creepy entrances, jump scares, and atmospheric lighting.",
-  canonicalUrl: "https://celebrationstuff.com/article/haunted-house-party-at-home-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/haunted-house-party-at-home-ideas",
   featuredImageAlt:
     "Thrilling home haunted house walkway with glowing jack-o'-lanterns, animatronics, and mysterious fog",
   primaryKeyword: "haunted house party ideas home walkthrough",

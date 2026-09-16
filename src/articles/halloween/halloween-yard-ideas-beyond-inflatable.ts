@@ -62,7 +62,7 @@ export const article: Article = {
   metaTitle: "25 Halloween Yard Ideas That Go Beyond the Inflatable Ghost | Celebration Stuff",
   metaDescription:
     "Move past generic lawn blow-ups with 25 unique, theatrical, and artistic Halloween yard ideas that make your property stand out on the block.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-yard-ideas-beyond-inflatable",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-yard-ideas-beyond-inflatable",
   featuredImageAlt:
     "Creative and artistic outdoor Halloween yard decorations that go beyond standard inflatables",
   primaryKeyword: "halloween yard ideas beyond inflatable ghost",

@@ -54,7 +54,7 @@ export const article: Article = {
   metaDescription:
     "Discover 17 thoughtful, practical Christmas gifts for the dad who has everything — from personalized leather goods and whiskey decanters to smart docking stations and tech gadgets.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/17-practical-christmas-gifts-for-dad-who-has-everything",
+    "https://celebrationsstuff.com/article/17-practical-christmas-gifts-for-dad-who-has-everything",
   featuredImageAlt:
     "Curated collection of practical and luxury Christmas gifts for a dad who has everything arranged on a warm festive background.",
   primaryKeyword: "Christmas gifts for dad who has everything",

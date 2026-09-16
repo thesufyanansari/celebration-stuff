@@ -64,7 +64,7 @@ export const article: Article = {
   metaTitle: "27 Authentic Vintage Halloween Decor Ideas (Not Cheap) | Celebration Stuff",
   metaDescription:
     "Discover 27 authentic vintage Halloween decorations that look genuine and expensive. Heavy blow molds, steel silhouettes, and detailed character props.",
-  canonicalUrl: "https://celebrationstuff.com/article/authentic-vintage-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/authentic-vintage-halloween-decor",
   featuredImageAlt:
     "Authentic vintage Halloween front yard display with blow molds, lanterns, and antique character animatronics",
   primaryKeyword: "vintage halloween decor authentic not cheap",

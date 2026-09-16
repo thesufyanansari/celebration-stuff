@@ -70,7 +70,7 @@ export const article: Article = {
   metaDescription:
     "Discover 20 baby Halloween costume ideas that are almost too cute to spook. From adorable animals to sweet characters, these costumes are pure cuteness!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-too-cute-to-spook",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-too-cute-to-spook",
   featuredImageAlt:
     "20 baby Halloween costume ideas that are almost too cute to spook including fluffy lambs, flamingos, and Disney characters.",
   primaryKeyword: "Baby Halloween costume ideas too cute to spook",

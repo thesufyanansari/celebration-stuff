@@ -55,7 +55,7 @@ export const article: Article = {
   metaDescription:
     "Discover 15 thoughtful Christmas gift ideas for Dad based on his hobbies. From golf practice nets and gaming headsets to BBQ sets and coffee kits under $90.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/15-christmas-gift-ideas-for-dad-based-on-his-hobbies",
+    "https://celebrationsstuff.com/article/15-christmas-gift-ideas-for-dad-based-on-his-hobbies",
   featuredImageAlt:
     "15 hobby-based Christmas gifts for dad including golf nets, BBQ accessories, coffee gift sets, and tech gadgets.",
   primaryKeyword: "Christmas gift ideas for dad based on hobbies",

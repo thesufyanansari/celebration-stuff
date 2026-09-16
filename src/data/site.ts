@@ -1,5 +1,13 @@
+export const SITE_URL = "https://celebrationsstuff.com";
+
+export function getCanonicalUrl(path = ""): string {
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return cleanPath === "/" ? `${SITE_URL}/` : `${SITE_URL}${cleanPath}`;
+}
+
 export const site = {
   name: "Celebration Stuff",
+  url: SITE_URL,
   tagline: "Celebration ideas for every moment",
   description:
     "Inspiration for holidays, parties, gifts, seasonal decorating, and life's special occasions.",
@@ -8,7 +16,7 @@ export const site = {
     instagram: "https://www.instagram.com/celebrationstuff/",
     facebook: "https://www.facebook.com/celebrationstuff/",
   },
-  email: "hello@celebrationstuff.com",
+  email: "hello@celebrationsstuff.com",
 };
 
 export type CategoryGroup =

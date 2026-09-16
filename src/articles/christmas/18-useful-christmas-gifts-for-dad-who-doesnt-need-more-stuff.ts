@@ -56,7 +56,7 @@ export const article: Article = {
   metaDescription:
     "Discover 18 clutter-free, practical Christmas gifts for the dad who doesn't need more stuff — from handy EDC tools and laser measures to grooming kits and daily upgrades.",
   canonicalUrl:
-    "https://celebrationstuff.com/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",
+    "https://celebrationsstuff.com/article/18-useful-christmas-gifts-for-dad-who-doesnt-need-more-stuff",
   featuredImageAlt:
     "Curated collection of useful, practical, and clutter-free Christmas gifts for a dad who doesn't need more stuff arranged on a festive background.",
   primaryKeyword: "Christmas gifts for dad who doesn't need more stuff",

@@ -55,7 +55,7 @@ export const article: Article = {
     "17 Best Outdoor Halloween Decor for Every Style: Modern, Vintage, Spooky, Whimsical | Celebration Stuff",
   metaDescription:
     "Discover 17 top outdoor Halloween decorations tailored to your aesthetic: Modern, Vintage, Spooky, and Whimsical styles for front yards and porches.",
-  canonicalUrl: "https://celebrationstuff.com/article/outdoor-halloween-decor-every-style",
+  canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-every-style",
   featuredImageAlt:
     "Outdoor Halloween decor for every style comparing modern, vintage, spooky, and whimsical yard styling",
   primaryKeyword: "outdoor halloween decor every style",

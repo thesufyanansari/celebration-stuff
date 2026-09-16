@@ -70,14 +70,16 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+import { SITE_URL } from "@/data/site";
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => {
     const jsonLdOrg = {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "Celebration Stuff",
-      url: "https://celebrationstuff.com",
-      logo: "https://celebrationstuff.com/favicon.ico",
+      url: SITE_URL,
+      logo: `${SITE_URL}/favicon.png`,
       sameAs: [
         "https://www.pinterest.com/celebrationstuff/",
         "https://www.instagram.com/celebrationstuff/",
@@ -89,10 +91,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Celebration Stuff",
-      url: "https://celebrationstuff.com",
+      url: SITE_URL,
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://celebrationstuff.com/explore?q={search_term_string}",
+        target: `${SITE_URL}/explore?q={search_term_string}`,
         "query-input": "required name=search_term_string",
       },
     };
@@ -115,11 +117,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "Editorial gift guides and celebration inspiration for holidays, birthdays, anniversaries, moms, dads, and special moments.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://celebrationstuff.com" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [
-        { rel: "canonical", href: "https://celebrationstuff.com" },
         {
           rel: "stylesheet",
           href: appCss,

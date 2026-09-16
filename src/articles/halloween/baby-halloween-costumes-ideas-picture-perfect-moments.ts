@@ -75,7 +75,7 @@ export const article: Article = {
   metaDescription:
     "Discover 28 photogenic baby Halloween costume ideas for picture-perfect moments. From adorable animals to Disney favorites, create memories that last!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-picture-perfect-moments",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-picture-perfect-moments",
   featuredImageAlt:
     "28 baby Halloween costume ideas for picture-perfect moments including flamingos, giraffes, and Disney characters.",
   primaryKeyword: "Baby Halloween costume ideas for picture-perfect moments",

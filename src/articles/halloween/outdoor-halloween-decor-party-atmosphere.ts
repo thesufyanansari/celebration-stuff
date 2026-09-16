@@ -59,7 +59,7 @@ export const article: Article = {
   metaTitle: "23 Outdoor Halloween Decorations That Enhance Party Atmosphere | Celebration Stuff",
   metaDescription:
     "Turn your yard into an immersive event. 23 outdoor Halloween decorations that double as party atmosphere enhancers, photo backdrops, pathway guides, and interactive scares.",
-  canonicalUrl: "https://celebrationstuff.com/article/outdoor-halloween-decor-party-atmosphere",
+  canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-party-atmosphere",
   featuredImageAlt:
     "Vibrant outdoor Halloween party yard with glowing pathway jack-o'-lanterns, animatronics, and atmospheric lighting",
   primaryKeyword: "outdoor halloween decorations party atmosphere enhancers",

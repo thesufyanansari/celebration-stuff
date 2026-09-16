@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "17 Unforgettable Halloween Party Themes (Complete Guide) | Celebration Stuff",
   metaDescription:
     "Turn your Halloween bash into an iconic night. 17 creative Halloween party themes with costume guides, moody decor ideas, food menus, and budget planning tips.",
-  canonicalUrl: "https://celebrationstuff.com/article/unforgettable-halloween-party-themes",
+  canonicalUrl: "https://celebrationsstuff.com/article/unforgettable-halloween-party-themes",
   featuredImageAlt:
     "Atmospheric Halloween party room with candlelight, themed cocktails, and elegant gothic decorations",
   primaryKeyword: "halloween party themes unforgettable ideas",

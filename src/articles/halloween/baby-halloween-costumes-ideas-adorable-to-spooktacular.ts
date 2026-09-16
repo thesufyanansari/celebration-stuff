@@ -75,7 +75,7 @@ export const article: Article = {
   metaDescription:
     "Discover 27 baby Halloween costume ideas ranging from adorable to spooktacular. Find the perfect outfit for your little one's Halloween look!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-adorable-to-spooktacular",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-adorable-to-spooktacular",
   featuredImageAlt:
     "27 baby Halloween costume ideas from adorable cuddly animals to spooktacular glowing monsters and cute bats.",
   primaryKeyword: "Baby Halloween costume ideas from adorable to spooktacular",

@@ -13,7 +13,7 @@ export const article: Article = {
   season: "Winter",
   tags: ["christmas", "mantel", "garland", "decorating"],
   author: "sarah-linden",
-  published: "2026-11-02",
+  published: "2026-07-29",
   updated: "2026-07-29",
   views: 71540,
   readingMinutes: 7,

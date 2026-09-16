@@ -76,7 +76,7 @@ export const article: Article = {
   metaDescription:
     "Discover 20 adorable baby Halloween costume ideas for boys, girls, and twins. From animals to Disney characters, find the perfect costume for your little ones!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/best-baby-halloween-costume-ideas-boys-girls-twins",
+    "https://celebrationsstuff.com/article/best-baby-halloween-costume-ideas-boys-girls-twins",
   featuredImageAlt:
     "20 adorable baby Halloween costume ideas for boys, girls, and twins including cute animals, Disney favorites, and matching sets.",
   primaryKeyword: "Best baby Halloween costume ideas for boys, girls, and twins",

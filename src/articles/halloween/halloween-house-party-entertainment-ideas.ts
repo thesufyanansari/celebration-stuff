@@ -51,7 +51,7 @@ export const article: Article = {
   metaTitle: "19 Halloween House Party Entertainment Ideas (All Night Fun) | Celebration Stuff",
   metaDescription:
     "Never let the energy drop. 19 Halloween house party ideas including spooky scavenger hunts, murder mysteries, costume runway shows, and potion stations.",
-  canonicalUrl: "https://celebrationstuff.com/article/halloween-house-party-entertainment-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/halloween-house-party-entertainment-ideas",
   featuredImageAlt:
     "Lively Halloween house party with guests enjoying costume contests, themed drinks, and interactive games",
   primaryKeyword: "halloween house party ideas entertained all night",

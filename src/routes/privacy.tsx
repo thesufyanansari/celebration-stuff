@@ -1,22 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/site/LegalPage";
-import { site } from "@/data/site";
+import { site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title: `Privacy Policy — ${site.name}` },
-      {
-        name: "description",
-        content:
-          "How Celebration Stuff collects, uses and protects your data, including analytics and newsletter sign-ups.",
-      },
-      { property: "og:title", content: `Privacy Policy — ${site.name}` },
-      { property: "og:description", content: "How we collect, use and protect your data." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/privacy`;
+    return {
+      meta: [
+        { title: `Privacy Policy — ${site.name}` },
+        {
+          name: "description",
+          content:
+            "How Celebration Stuff collects, uses and protects your data, including analytics and newsletter sign-ups.",
+        },
+        { property: "og:title", content: `Privacy Policy — ${site.name}` },
+        { property: "og:description", content: "How we collect, use and protect your data." },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: () => (
     <LegalPage title="Privacy policy" updated="August 2026">
       <p>

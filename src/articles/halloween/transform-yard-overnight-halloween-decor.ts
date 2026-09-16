@@ -63,7 +63,7 @@ export const article: Article = {
     "25 Outdoor Halloween Decor Ideas to Transform Your Yard Overnight | Celebration Stuff",
   metaDescription:
     "Turn your front yard into an unforgettable Halloween destination in one afternoon. 25 instant-impact animatronics, giant inflatables, and lighting sets.",
-  canonicalUrl: "https://celebrationstuff.com/article/transform-yard-overnight-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/transform-yard-overnight-halloween-decor",
   featuredImageAlt:
     "Yard transformed overnight for Halloween with dramatic lighting, towering animatronics, and inflatables",
   primaryKeyword: "transform yard overnight halloween decor",

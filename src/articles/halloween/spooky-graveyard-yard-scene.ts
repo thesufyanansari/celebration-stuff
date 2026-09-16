@@ -57,7 +57,7 @@ export const article: Article = {
   metaTitle: "21 Halloween Yard Ideas to Create a Spooky Graveyard Scene | Celebration Stuff",
   metaDescription:
     "Create a cinematic cemetery in your front yard. 21 spooky graveyard ideas including rising zombies, towering grim reapers, animated tombstones, and eerie props.",
-  canonicalUrl: "https://celebrationstuff.com/article/spooky-graveyard-yard-scene",
+  canonicalUrl: "https://celebrationsstuff.com/article/spooky-graveyard-yard-scene",
   featuredImageAlt:
     "Spooky Halloween graveyard yard scene with tombstones, rising zombies, and reapers",
   primaryKeyword: "spooky graveyard yard scene halloween ideas",

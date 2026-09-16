@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "13 Spooky (Not Scary) Halloween Decorations | Celebration Stuff",
   metaDescription:
     "Delight kids and impress adults. 13 spooky not scary Halloween decorations featuring friendly ghost families, glowing jack-o'-lanterns, and whimsical animatronics.",
-  canonicalUrl: "https://celebrationstuff.com/article/spooky-not-scary-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/spooky-not-scary-halloween-decor",
   featuredImageAlt:
     "Charming family-friendly Halloween front yard with smiling jack-o'-lanterns, friendly ghosts, and warm amber lights",
   primaryKeyword: "halloween decorations spooky adults not scary kids",

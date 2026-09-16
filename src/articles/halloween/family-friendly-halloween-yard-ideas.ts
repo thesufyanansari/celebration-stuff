@@ -50,7 +50,7 @@ export const article: Article = {
   metaTitle: "13 Family-Friendly Halloween Yard Ideas for Young Kids | Celebration Stuff",
   metaDescription:
     "Celebrate Halloween without terrifying the little ones. 13 charming, whimsical, and non-scary outdoor yard ideas perfect for toddlers and neighborhood families.",
-  canonicalUrl: "https://celebrationstuff.com/article/family-friendly-halloween-yard-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/family-friendly-halloween-yard-ideas",
   featuredImageAlt:
     "Family-friendly Halloween yard decorations with friendly ghosts, warm pumpkins, and whimsical accents",
   primaryKeyword: "family friendly halloween yard ideas",

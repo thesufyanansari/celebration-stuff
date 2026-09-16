@@ -45,7 +45,7 @@ export const article: Article = {
   metaTitle: "13 Sophisticated Adult Halloween Party Themes | Celebration Stuff",
   metaDescription:
     "Host an elegant, elevated Halloween soirée. 13 sophisticated adult party themes with gothic masquerades, vampire speakeasies, curated cocktails, and luxury decor.",
-  canonicalUrl: "https://celebrationstuff.com/article/sophisticated-adult-halloween-party-themes",
+  canonicalUrl: "https://celebrationsstuff.com/article/sophisticated-adult-halloween-party-themes",
   featuredImageAlt:
     "Gothically elegant adult Halloween cocktail lounge with candle chandeliers, dark florals, and masquerade masks",
   primaryKeyword: "sophisticated adult halloween party themes ideas",

@@ -1,22 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/site/LegalPage";
-import { site } from "@/data/site";
+import { site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/affiliate-disclosure")({
-  head: () => ({
-    meta: [
-      { title: `Affiliate Disclosure — ${site.name}` },
-      {
-        name: "description",
-        content:
-          "How Celebration Stuff earns commission from product links and why it never changes our recommendations.",
-      },
-      { property: "og:title", content: `Affiliate Disclosure — ${site.name}` },
-      { property: "og:description", content: "How we earn from product links." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
+  head: () => {
+    const canonicalUrl = `${SITE_URL}/affiliate-disclosure`;
+    return {
+      meta: [
+        { title: `Affiliate Disclosure — ${site.name}` },
+        {
+          name: "description",
+          content:
+            "How Celebration Stuff earns commission from product links and why it never changes our recommendations.",
+        },
+        { property: "og:title", content: `Affiliate Disclosure — ${site.name}` },
+        { property: "og:description", content: "How we earn from product links." },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: canonicalUrl },
+        { name: "twitter:card", content: "summary" },
+      ],
+      links: [{ rel: "canonical", href: canonicalUrl }],
+    };
+  },
   component: () => (
     <LegalPage title="Affiliate disclosure" updated="August 2026">
       <p>

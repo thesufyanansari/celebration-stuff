@@ -25,7 +25,7 @@ export const article: Article = {
   metaTitle: "10 Best Christmas Gifts for Mom She'll Actually Love | Celebration Stuff",
   metaDescription:
     "Discover 10 thoughtful Christmas gift ideas for Mom, from personalized keepsakes to cozy and practical gifts she'll cherish all year.",
-  canonicalUrl: "https://celebrationstuff.com/article/10-best-christmas-gifts-for-mom",
+  canonicalUrl: "https://celebrationsstuff.com/article/10-best-christmas-gifts-for-mom",
   featuredImageAlt:
     "Thoughtfully wrapped Christmas gifts for Mom arranged beside warm festive holiday decorations",
   primaryKeyword: "Christmas gifts for Mom",

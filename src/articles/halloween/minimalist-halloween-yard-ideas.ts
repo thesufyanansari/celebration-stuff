@@ -48,7 +48,7 @@ export const article: Article = {
   metaTitle: "11 Minimalist Halloween Yard Ideas: Simple & Stylish | Celebration Stuff",
   metaDescription:
     "Skip the yard clutter. 11 tasteful, modern, and minimalist outdoor Halloween decorations featuring sleek metals, warm lighting, and architectural silhouettes.",
-  canonicalUrl: "https://celebrationstuff.com/article/minimalist-halloween-yard-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/minimalist-halloween-yard-ideas",
   featuredImageAlt:
     "Minimalist and stylish outdoor Halloween yard decor with glowing metal cat and warm lanterns",
   primaryKeyword: "minimalist halloween yard ideas",

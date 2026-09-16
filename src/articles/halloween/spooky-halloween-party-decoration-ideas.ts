@@ -52,7 +52,7 @@ export const article: Article = {
   metaTitle: "15 Spooky Halloween Party Decoration Ideas (Mood Staging) | Celebration Stuff",
   metaDescription:
     "Elevate your Halloween party ambiance. 15 spooky decoration ideas with warm flickering lanterns, illuminated village sets, and elegant gothic character accents.",
-  canonicalUrl: "https://celebrationstuff.com/article/spooky-halloween-party-decoration-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/spooky-halloween-party-decoration-ideas",
   featuredImageAlt:
     "Warmly lit Halloween party room with glowing candle blow molds, gothic lanterns, and spooky vignettes",
   primaryKeyword: "halloween party decoration ideas spooky mood",

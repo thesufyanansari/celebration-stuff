@@ -53,7 +53,7 @@ export const article: Article = {
   metaTitle: "15 Nostalgic Vintage Halloween Yard Decor Ideas | Celebration Stuff",
   metaDescription:
     "Transport your yard back in time with 15 vintage Halloween decor ideas. Retro blow mold candles, classic jack-o'-lantern sets, and nostalgic autumn silhouettes.",
-  canonicalUrl: "https://celebrationstuff.com/article/vintage-halloween-yard-decor-ideas",
+  canonicalUrl: "https://celebrationsstuff.com/article/vintage-halloween-yard-decor-ideas",
   featuredImageAlt:
     "Nostalgic vintage Halloween front yard with glowing blow mold candles and retro pumpkins",
   primaryKeyword: "vintage halloween yard decor ideas nostalgia",

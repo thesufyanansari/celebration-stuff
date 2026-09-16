@@ -47,7 +47,7 @@ export const article: Article = {
   metaTitle: "21 Extra Halloween Party Themes (Maximalist Ideas) | Celebration Stuff",
   metaDescription:
     "Don't do Halloween by half measures. 21 bold, maximalist Halloween party themes with immersive room staging, elaborate costumes, signature drinks, and activities.",
-  canonicalUrl: "https://celebrationstuff.com/article/extra-halloween-party-themes",
+  canonicalUrl: "https://celebrationsstuff.com/article/extra-halloween-party-themes",
   featuredImageAlt:
     "Maximalist, lavishly decorated Halloween party room with candelabras, dramatic masquerade guests, and gothic decor",
   primaryKeyword: "halloween party theme ideas being extra maximalist",

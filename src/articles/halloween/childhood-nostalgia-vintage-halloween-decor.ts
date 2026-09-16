@@ -48,7 +48,7 @@ export const article: Article = {
   metaTitle: "10 Nostalgic Vintage Halloween Decorations (Childhood Magic) | Celebration Stuff",
   metaDescription:
     "Step back in time to simpler Halloweens. 10 vintage Halloween decorations featuring glowing blow mold candles, retro jack-o'-lanterns, and storybook ghosts.",
-  canonicalUrl: "https://celebrationstuff.com/article/childhood-nostalgia-vintage-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/childhood-nostalgia-vintage-halloween-decor",
   featuredImageAlt:
     "Cozy, nostalgic front porch with glowing retro blow mold candle and vintage carved pumpkins",
   primaryKeyword: "vintage halloween decorations childhood nostalgia",

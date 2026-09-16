@@ -13,7 +13,7 @@ export const article: Article = {
   season: "Fall",
   tags: ["thanksgiving", "tablescape", "hosting", "candles"],
   author: "sarah-linden",
-  published: "2026-09-18",
+  published: "2026-08-04",
   updated: "2026-08-04",
   views: 48210,
   readingMinutes: 8,

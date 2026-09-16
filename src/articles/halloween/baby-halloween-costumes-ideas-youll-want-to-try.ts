@@ -67,7 +67,7 @@ export const article: Article = {
   metaDescription:
     "Discover 22 adorable baby Halloween costume ideas you'll want to try this year. From fluffy animals to Disney characters, find the sweetest Halloween looks for baby!",
   canonicalUrl:
-    "https://celebrationstuff.com/article/baby-halloween-costumes-ideas-youll-want-to-try",
+    "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-youll-want-to-try",
   featuredImageAlt:
     "22 baby Halloween costume ideas you will want to try including flamingos, Disney characters, and cute animal onesies.",
   primaryKeyword: "Baby Halloween costumes ideas you'll want to try",

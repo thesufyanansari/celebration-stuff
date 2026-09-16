@@ -58,7 +58,7 @@ export const article: Article = {
   metaTitle: "21 Ideas to Mix Old and New Vintage Halloween Decor | Celebration Stuff",
   metaDescription:
     "Create a timeless, curated front porch. 21 vintage Halloween decor ideas blending retro blow molds and antique silhouettes with modern LED lighting and steel accents.",
-  canonicalUrl: "https://celebrationstuff.com/article/mix-old-new-vintage-halloween-decor",
+  canonicalUrl: "https://celebrationsstuff.com/article/mix-old-new-vintage-halloween-decor",
   featuredImageAlt:
     "Stylishly curated front porch blending retro blow molds with sleek modern steel Halloween silhouettes",
   primaryKeyword: "vintage halloween decor mix old and new unique look",

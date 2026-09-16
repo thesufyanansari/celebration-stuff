@@ -49,7 +49,7 @@ export const article: Article = {
   metaTitle: "11 Creepy Vintage Halloween Decorations (Old-Fashioned Vibe) | Celebration Stuff",
   metaDescription:
     "Channel eerie, atmospheric gothic dread. 11 creepy vintage Halloween decorations featuring flickering candle blow molds, haunted village facades, and spectral figures.",
-  canonicalUrl: "https://celebrationstuff.com/article/creepy-vintage-halloween-decorations",
+  canonicalUrl: "https://celebrationsstuff.com/article/creepy-vintage-halloween-decorations",
   featuredImageAlt:
     "Eerie old-fashioned vintage Halloween front yard with glowing candles and gothic haunted houses",
   primaryKeyword: "creepy vintage halloween decorations old fashioned vibe",
