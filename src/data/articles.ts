@@ -24,7 +24,8 @@ export type Product = {
 export type Section = {
   id?: string;
   heading: string;
-  body: string[];
+  body?: string[];
+  content?: string;
   productId?: string;
   product?: Product;
 };
@@ -50,7 +51,8 @@ export type Article = {
   imageHeight: number;
   featured?: boolean;
   sections: Section[];
-  products: Product[];
+  products?: Product[];
+  items?: Product[];
   faqs: Faq[];
   // Extended SEO & Content Metadata
   metaTitle?: string;

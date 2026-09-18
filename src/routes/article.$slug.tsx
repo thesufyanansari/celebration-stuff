@@ -130,8 +130,9 @@ function ArticlePage() {
   const author = getAuthor(article.author);
   const moreArticles = getRelatedArticles(article, 6);
 
-  // Normalize products with full fallback metadata
-  const enhancedProducts: EnhancedProduct[] = (article.products || []).map((p, idx) => ({
+  // Normalize products with full fallback metadata (supports both products and legacy items)
+  const rawProducts = article.products || article.items || [];
+  const enhancedProducts: EnhancedProduct[] = rawProducts.map((p, idx) => ({
     ...p,
     image: p.image || article.image,
     imageAlt: p.imageAlt || p.name,
@@ -200,7 +201,7 @@ function ArticlePage() {
                     {section.heading}
                   </h2>
                   <div className="space-y-3">
-                    {section.body.map((para, pIdx) => (
+                    {(section.body || (section.content ? section.content.split('\n\n') : [])).map((para, pIdx) => (
                       <ArticleContentRenderer key={pIdx} text={para} />
                     ))}
                   </div>
@@ -233,9 +234,9 @@ function ArticlePage() {
                         <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                           {matchingSection.heading}
                         </h2>
-                        {matchingSection.body && matchingSection.body.length > 0 && (
+                        {(matchingSection.body || matchingSection.content) && (
                           <div className="space-y-2 text-xs sm:text-sm text-foreground-muted leading-relaxed">
-                            {matchingSection.body.map((para, pIdx) => (
+                            {(matchingSection.body || (matchingSection.content ? matchingSection.content.split('\n\n') : [])).map((para, pIdx) => (
                               <ArticleContentRenderer key={pIdx} text={para} />
                             ))}
                           </div>
@@ -290,7 +291,7 @@ function ArticlePage() {
                     {section.heading}
                   </h2>
                   <div className="space-y-4">
-                    {section.body.map((para, pIdx) => (
+                    {(section.body || (section.content ? section.content.split('\n\n') : [])).map((para, pIdx) => (
                       <ArticleContentRenderer key={pIdx} text={para} />
                     ))}
                   </div>

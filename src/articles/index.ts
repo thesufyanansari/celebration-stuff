@@ -77,6 +77,54 @@ import article75 from "./halloween/halloween-photo-stunning-decor";
 import article76 from "./halloween/halloween-decor-party-combos";
 import article77 from "./halloween/halloween-decor-every-space";
 import article78 from "./halloween/spooky-not-scary-halloween-decor";
+import article79 from "./halloween/outdoor-halloween-decorations";
+import article80 from "./halloween/halloween-yard-ideas-after-dark";
+import article81 from "./halloween/outdoor-halloween-decor-spooky-entrance";
+import article82 from "./halloween/halloween-front-yard-ideas-trick-or-treaters";
+import article83 from "./halloween/halloween-yard-decorations-big-first-impression";
+import article84 from "./halloween/outdoor-halloween-decorations-under-50";
+import article85 from "./halloween/creepy-outdoor-halloween-decor-haunted-house-look";
+import article86 from "./halloween/halloween-yard-ideas-small-front-yards";
+import article87 from "./halloween/outdoor-halloween-decor-day-and-night";
+import article88 from "./halloween/halloween-front-yard-ideas-without-gore";
+import article89 from "./halloween/scary-halloween-yard-decorations-nightmare-setup";
+import article90 from "./halloween/easy-outdoor-halloween-decorations-afternoon";
+import article91 from "./halloween/halloween-yard-ideas-skeletons-ghosts-gravestones";
+import article92 from "./halloween/outdoor-halloween-decorations-apartments-patios-small-spaces";
+import article93 from "./halloween/halloween-front-yard-decor-classic-haunted-cemetery";
+import article94 from "./halloween/halloween-porch-decorations-spooky-welcome";
+import article95 from "./halloween/halloween-porch-decorating-ideas-cute-to-creepy";
+import article96 from "./halloween/halloween-porch-decorations-under-50";
+import article97 from "./halloween/vintage-halloween-porch-decor-old-school-spooky-look";
+import article98 from "./halloween/halloween-porch-ideas-pumpkins-lanterns-skeletons";
+import article99 from "./halloween/scary-halloween-porch-decorations-brave-trick-or-treaters";
+import article100 from "./halloween/cute-halloween-porch-decorations-family-friendly-entrance";
+import article101 from "./halloween/halloween-front-porch-ideas-that-look-great-in-photos";
+import article102 from "./halloween/vintage-halloween-decor-ideas-old-school-spooky-charm";
+import article103 from "./halloween/vintage-halloween-decorations-classic-october-style";
+import article104 from "./halloween/retro-halloween-decor-nostalgic-october-home";
+import article105 from "./halloween/vintage-halloween-decor-porch-mantel-entryway";
+import article106 from "./halloween/vintage-halloween-decorations-treasures-from-the-past";
+import article107 from "./halloween/vintage-halloween-decor-under-50-nostalgic-seasonal-look";
+import article108 from "./halloween/black-cats-witches-pumpkins-classic-vintage-halloween-decor";
+import article109 from "./halloween/vintage-halloween-party-decor-old-fashioned-october-night";
+import article110 from "./halloween/spooky-vintage-halloween-decor-without-modern-horror-look";
+import article111 from "./halloween/mix-vintage-halloween-decor-with-modern-halloween-decorations";
+import article112 from "./halloween/halloween-house-party-ideas-spooky-night-at-home";
+import article113 from "./halloween/halloween-house-party-ideas-for-adults";
+import article114 from "./halloween/halloween-house-party-ideas-for-kids";
+import article115 from "./halloween/halloween-house-party-ideas-on-a-budget";
+import article116 from "./halloween/halloween-house-party-decorations-living-room";
+import article117 from "./halloween/halloween-house-party-ideas-small-group-friends";
+import article118 from "./halloween/last-minute-halloween-house-party-ideas";
+import article119 from "./halloween/halloween-party-themes-that-make-decorating-easier";
+import article120 from "./halloween/halloween-party-theme-ideas-for-adults";
+import article121 from "./halloween/halloween-party-themes-for-kids-not-too-scary";
+import article122 from "./halloween/halloween-themed-party-ideas-haunted-house-night";
+import article123 from "./halloween/halloween-party-decorations-complete-haunted-house-setup";
+import article124 from "./halloween/vintage-halloween-party-theme-ideas-retro-spooky-charm";
+import article125 from "./halloween/halloween-party-theme-ideas-small-spaces-apartments";
+import article126 from "./halloween/halloween-party-decorations-under-50-budget";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -161,6 +209,54 @@ export const registryArticles: Article[] = [
   article76,
   article77,
   article78,
+  article79,
+  article80,
+  article81,
+  article82,
+  article83,
+  article84,
+  article85,
+  article86,
+  article87,
+  article88,
+  article89,
+  article90,
+  article91,
+  article92,
+  article93,
+  article94,
+  article95,
+  article96,
+  article97,
+  article98,
+  article99,
+  article100,
+  article101,
+  article102,
+  article103,
+  article104,
+  article105,
+  article106,
+  article107,
+  article108,
+  article109,
+  article110,
+  article111,
+  article112,
+  article113,
+  article114,
+  article115,
+  article116,
+  article117,
+  article118,
+  article119,
+  article120,
+  article121,
+  article122,
+  article123,
+  article124,
+  article125,
+  article126,
 ];
 
 export default registryArticles;

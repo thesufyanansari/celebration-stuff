@@ -75,7 +75,7 @@ export const article: Article = {
       body: [
         "Here's a truth about Halloween decorating: during the day, your display is competing with everything else. Trees, cars, mailboxes — it all blends together.",
         "But at night? At night, the yard belongs to you.",
-        "When the sun goes down, lighting transforms an ordinary display into something magical. The warm glow of LEDs, the ethereal shimmer of neon, the dramatic shadows of animatronics — this is when your yard truly comes alive. To see how these pieces compare during daylight hours, read our companion guide on [19 outdoor Halloween decorations that work for both day and night](/article/halloween-decor-day-night).",
+        "When the sun goes down, lighting transforms an ordinary display into something magical. The warm glow of LEDs, the ethereal shimmer of neon, the dramatic shadows of animatronics — this is when your yard truly comes alive. For 18 curated props specifically chosen for nighttime illumination, explore [18 Halloween yard ideas that look completely different after dark](/article/halloween-yard-ideas-after-dark). To see how these pieces compare during daylight hours, read our companion guide on [19 outdoor Halloween decorations that work for both day and night](/article/halloween-decor-day-night).",
         "The best night-time decorations don't just light up — they create atmosphere, guide visitors, and make your display feel immersive and intentional.",
         "We've rounded up 16 outdoor Halloween decorations designed to shine after dark. From warm path lighting to dramatic glowing animatronics, these pieces will make your yard the brightest spot on the block after sunset.",
       ],
