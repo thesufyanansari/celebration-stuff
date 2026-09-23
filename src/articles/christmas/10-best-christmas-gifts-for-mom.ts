@@ -119,7 +119,7 @@ export const article: Article = {
     {
       heading: "More Christmas Gift Ideas for Mom",
       body: [
-        "Beyond our top 10 picks, consider experience gifts such as a weekend spa getaway, cooking masterclass subscription, or custom framed family portrait. Pair any gift with a heartfelt handwritten card for maximum impact.",
+        "Beyond our top 10 picks, consider experience gifts such as a weekend spa getaway, cooking masterclass subscription, or custom framed family portrait. If you are searching for versatile presents she'll cherish every day, explore our in-depth curated guides on [25 Christmas Gift Ideas for Women She Will Actually Use](/article/25-christmas-gift-ideas-for-women-she-will-actually-use) and [30 Christmas Gifts for Her That Feel Thoughtful, Not Generic](/article/30-christmas-gifts-for-her-that-feel-thoughtful-not-generic). Pair any gift with a heartfelt handwritten card for maximum impact.",
       ],
     },
   ],

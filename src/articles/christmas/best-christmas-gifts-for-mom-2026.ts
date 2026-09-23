@@ -144,7 +144,7 @@ export const article: Article = {
     {
       heading: "Wrapping It Up with a Personal Touch",
       body: [
-        "While these products are fantastic, the magic is in the presentation. Pair your Amazon find with a heartfelt, handwritten letter expressing your love and gratitude. This simple gesture transforms a great gift into an unforgettable memory. For even more inspiration, explore our dedicated guides to gifts for Mom.",
+        "While these products are fantastic, the magic is in the presentation. Pair your gift with a heartfelt, handwritten letter expressing your love and gratitude. This simple gesture transforms a great gift into an unforgettable memory. For more curated holiday inspiration, browse our ultimate collections of [25 Christmas Gift Ideas for Women She Will Actually Use](/article/25-christmas-gift-ideas-for-women-she-will-actually-use) and [40 Christmas Gift Ideas for Women at Every Price Point](/article/40-christmas-gift-ideas-for-women-at-every-price-point).",
       ],
     },
   ],

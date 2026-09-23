@@ -125,6 +125,16 @@ import article123 from "./halloween/halloween-party-decorations-complete-haunted
 import article124 from "./halloween/vintage-halloween-party-theme-ideas-retro-spooky-charm";
 import article125 from "./halloween/halloween-party-theme-ideas-small-spaces-apartments";
 import article126 from "./halloween/halloween-party-decorations-under-50-budget";
+import article127 from "./christmas/25-christmas-gift-ideas-for-women-she-will-actually-use";
+import article128 from "./christmas/30-christmas-gifts-for-her-that-feel-thoughtful-not-generic";
+import article129 from "./christmas/40-christmas-gift-ideas-for-women-at-every-price-point";
+import article130 from "./christmas/20-christmas-gifts-for-her-she-wont-already-own";
+import article131 from "./christmas/35-christmas-present-ideas-for-women-from-small-to-splurge";
+import article132 from "./christmas/22-christmas-gifts-for-women-under-25";
+import article133 from "./christmas/28-christmas-gifts-for-her-under-50";
+import article134 from "./christmas/18-christmas-gifts-for-women-under-20-that-dont-look-cheap";
+import article135 from "./christmas/32-affordable-christmas-gifts-for-women-that-still-feel-special";
+import article136 from "./christmas/24-christmas-gifts-for-her-under-100-when-you-want-to-splurge-a-little";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -257,6 +267,16 @@ export const registryArticles: Article[] = [
   article124,
   article125,
   article126,
+  article127,
+  article128,
+  article129,
+  article130,
+  article131,
+  article132,
+  article133,
+  article134,
+  article135,
+  article136,
 ];
 
 export default registryArticles;

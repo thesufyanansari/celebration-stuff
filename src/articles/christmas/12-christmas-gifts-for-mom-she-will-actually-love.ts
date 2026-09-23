@@ -181,7 +181,7 @@ export const article: Article = {
       id: "christmas-gifts-for-mom-by-budget-and-personality",
       heading: "Christmas Gifts for Mom by Budget & Personality",
       body: [
-        "Shopping on a budget doesn't mean compromising on sentiment. Under $50, focus on thoughtful self-care treats or artisanal candles. Between $50 and $100, cozy weighted blankets and smart mugs offer the perfect balance of quality and utility. Over $100, luxury leather goods and custom gold jewelry make unforgettable statements.",
+        "Shopping on a budget doesn't mean compromising on sentiment. Under $50, focus on thoughtful self-care treats or artisanal candles (check out our complete guide to [28 Christmas Gifts for Her Under $50 That Feel Genuinely Luxurious](/article/28-christmas-gifts-for-her-under-50)). Between $50 and $100, cozy weighted blankets and smart mugs offer the perfect balance of quality and utility—or browse our [24 Christmas Gifts for Her Under $100 When You Want to Splurge a Little](/article/24-christmas-gifts-for-her-under-100-when-you-want-to-splurge-a-little). Over $100, luxury leather goods and custom gold jewelry make unforgettable statements.",
         "For the sentimental Mom, lean toward customized keepsakes. For the practical Mom, choose daily upgrades. For the cozy Mom, prioritize warmth and home relaxation.",
       ],
     },

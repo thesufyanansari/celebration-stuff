@@ -49,7 +49,7 @@ export const article: Article = {
     {
       heading: "What to skip",
       body: [
-        "Decorative objects with no function, novelty kitchen gadgets, and anything monogrammed unless you are certain. These are the three most common items in post-holiday donation bins.",
+        "Decorative objects with no function, novelty kitchen gadgets, and anything monogrammed unless you are certain. These are the three most common items in post-holiday donation bins. If you are shopping for a woman who insists she doesn't need a thing, consult our guide to [20 Christmas Gifts for Her She Won't Already Own](/article/20-christmas-gifts-for-her-she-wont-already-own) for genuinely original ideas.",
       ],
     },
   ],
