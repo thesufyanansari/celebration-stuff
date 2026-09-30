@@ -30,8 +30,7 @@ export function HomeHero({ featuredArticle }: HomeHeroProps) {
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Link
-            to="/article/$slug"
-            params={{ slug: featuredArticle.slug }}
+            to="/article/$slug" params={{ slug: featuredArticle.slug }}
             className="inline-flex h-12 items-center gap-2 rounded-full bg-primary px-6 text-sm font-bold text-primary-foreground shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg"
           >
             <span>Explore Featured Guide</span>
@@ -74,8 +73,7 @@ export function HomeHero({ featuredArticle }: HomeHeroProps) {
             </div>
 
             <Link
-              to="/article/$slug"
-              params={{ slug: featuredArticle.slug }}
+              to="/article/$slug" params={{ slug: featuredArticle.slug }}
               className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-white hover:text-primary-soft transition-colors line-clamp-2 leading-tight"
             >
               {featuredArticle.title}

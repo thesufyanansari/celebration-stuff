@@ -82,8 +82,7 @@ export function Header() {
                 {giftsForPeople.map((item) => (
                   <Link
                     key={item.slug}
-                    to="/category/$slug"
-                    params={{ slug: item.slug }}
+                    to="/category/$slug" params={{ slug: item.slug }}
                     className="block rounded-xl px-3 py-2 text-xs font-medium text-foreground-muted hover:bg-surface-hover hover:text-foreground"
                   >
                     {item.name}
@@ -108,8 +107,7 @@ export function Header() {
                 {occasions.map((item) => (
                   <Link
                     key={item.slug}
-                    to="/category/$slug"
-                    params={{ slug: item.slug }}
+                    to="/category/$slug" params={{ slug: item.slug }}
                     className="block rounded-xl px-3 py-2 text-xs font-medium text-foreground-muted hover:bg-surface-hover hover:text-foreground"
                   >
                     {item.name}
@@ -134,8 +132,7 @@ export function Header() {
                 {holidays.map((item) => (
                   <Link
                     key={item.slug}
-                    to="/category/$slug"
-                    params={{ slug: item.slug }}
+                    to="/category/$slug" params={{ slug: item.slug }}
                     className="block rounded-xl px-3 py-2 text-xs font-medium text-foreground-muted hover:bg-surface-hover hover:text-foreground"
                   >
                     {item.name}
@@ -160,8 +157,7 @@ export function Header() {
                 {collections.map((item) => (
                   <Link
                     key={item.slug}
-                    to="/category/$slug"
-                    params={{ slug: item.slug }}
+                    to="/category/$slug" params={{ slug: item.slug }}
                     className="block rounded-xl px-3 py-2 text-xs font-medium text-foreground-muted hover:bg-surface-hover hover:text-foreground"
                   >
                     {item.name}
@@ -214,8 +210,7 @@ export function Header() {
             {giftsForPeople.map((item) => (
               <Link
                 key={item.slug}
-                to="/category/$slug"
-                params={{ slug: item.slug }}
+                to="/category/$slug" params={{ slug: item.slug }}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-2 text-xs font-medium text-foreground-muted hover:bg-surface-hover hover:text-foreground"
               >

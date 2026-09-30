@@ -26,8 +26,7 @@ export function ArticleCard({
     return (
       <article className="group">
         <Link
-          to="/article/$slug"
-          params={{ slug: article.slug }}
+          to="/article/$slug" params={{ slug: article.slug }}
           className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-card transition-all duration-300 ease-[var(--ease-editorial)] hover:-translate-y-1 hover:shadow-lift focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:flex-row"
         >
           <div className="relative aspect-16/9 overflow-hidden sm:w-2/5 shrink-0 bg-background-subtle">
@@ -74,8 +73,7 @@ export function ArticleCard({
   return (
     <article className="group flex h-full flex-col">
       <Link
-        to="/article/$slug"
-        params={{ slug: article.slug }}
+        to="/article/$slug" params={{ slug: article.slug }}
         className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-card transition-all duration-300 ease-[var(--ease-editorial)] hover:-translate-y-1 hover:shadow-lift focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
       >
         <div className="relative aspect-16/9 w-full overflow-hidden bg-background-subtle">

@@ -85,8 +85,7 @@ export function ArticleSidebar({ currentArticle }: { currentArticle: Article }) 
           {popularArticles.map((a) => (
             <li key={a.slug}>
               <Link
-                to="/article/$slug"
-                params={{ slug: a.slug }}
+                to="/article/$slug" params={{ slug: a.slug }}
                 className="group flex gap-3 text-xs"
               >
                 <img
@@ -122,8 +121,7 @@ export function ArticleSidebar({ currentArticle }: { currentArticle: Article }) 
           {categories.slice(0, 8).map((c) => (
             <Link
               key={c.slug}
-              to="/category/$slug"
-              params={{ slug: c.slug }}
+              to="/category/$slug" params={{ slug: c.slug }}
               className="rounded-full border border-border px-3 py-1 text-[0.75rem] font-medium text-foreground-muted transition-colors hover:bg-surface-hover hover:text-foreground"
             >
               {c.name}

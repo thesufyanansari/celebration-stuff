@@ -76,8 +76,7 @@ function CategoryPage() {
           {childCategories.map((child) => (
             <Link
               key={child.slug}
-              to="/category/$slug"
-              params={{ slug: child.slug }}
+              to="/category/$slug" params={{ slug: child.slug }}
               className="rounded-full border border-border px-4 py-1.5 text-xs font-medium text-foreground-muted transition-colors hover:bg-surface-hover hover:text-foreground"
             >
               {child.name}

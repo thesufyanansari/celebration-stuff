@@ -48,8 +48,7 @@ function AboutPage() {
               </span>
               <div>
                 <Link
-                  to="/author/$slug"
-                  params={{ slug: a.slug }}
+                  to="/author/$slug" params={{ slug: a.slug }}
                   className="font-display font-semibold hover:text-primary"
                 >
                   {a.name}

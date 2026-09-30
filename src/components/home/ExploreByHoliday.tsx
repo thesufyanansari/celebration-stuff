@@ -66,8 +66,7 @@ export function ExploreByHoliday() {
         {holidayList.map((hol) => (
           <Link
             key={hol.slug}
-            to="/category/$slug"
-            params={{ slug: hol.slug }}
+            to="/category/$slug" params={{ slug: hol.slug }}
             className="group flex flex-col justify-between rounded-2xl border border-border/80 bg-surface p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-card"
           >
             <div>

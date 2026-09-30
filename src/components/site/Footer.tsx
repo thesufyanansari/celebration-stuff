@@ -71,11 +71,7 @@ export function Footer() {
           <Link to="/category/$slug" params={{ slug: "anniversary-gifts" }} className="footer-link">
             Anniversary Gifts
           </Link>
-          <Link
-            to="/category/$slug"
-            params={{ slug: "housewarming-gifts" }}
-            className="footer-link"
-          >
+          <Link to="/category/$slug" params={{ slug: "housewarming-gifts" }} className="footer-link">
             Housewarming Gifts
           </Link>
         </FooterColumn>

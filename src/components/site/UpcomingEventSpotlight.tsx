@@ -51,8 +51,7 @@ export function UpcomingEventSpotlight() {
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
-              to="/category/$slug"
-              params={{ slug: event.categorySlug }}
+              to="/category/$slug" params={{ slug: event.categorySlug }}
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <span>Explore {event.name} Gifts</span>
@@ -61,8 +60,7 @@ export function UpcomingEventSpotlight() {
 
             {relatedArticleObj && (
               <Link
-                to="/article/$slug"
-                params={{ slug: relatedArticleObj.slug }}
+                to="/article/$slug" params={{ slug: relatedArticleObj.slug }}
                 className="text-xs font-semibold text-primary hover:underline"
               >
                 Read Featured Guide →

@@ -74,8 +74,7 @@ export function UpcomingEventsSection() {
 
                   <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary leading-snug">
                     <Link
-                      to="/category/$slug"
-                      params={{ slug: evt.categorySlug }}
+                      to="/category/$slug" params={{ slug: evt.categorySlug }}
                       className="hover:underline"
                     >
                       {evt.name}
@@ -91,8 +90,7 @@ export function UpcomingEventsSection() {
               {/* Bottom CTA Link */}
               <div className="border-t border-border/50 px-5 py-3 bg-background-subtle/50">
                 <Link
-                  to="/category/$slug"
-                  params={{ slug: evt.categorySlug }}
+                  to="/category/$slug" params={{ slug: evt.categorySlug }}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-primary transition-transform group-hover:translate-x-1"
                 >
                   <span>Explore {evt.name} Ideas</span>

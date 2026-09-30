@@ -87,8 +87,7 @@ export function ArticleSidebar({ currentArticle }: ArticleSidebarProps) {
           {categories.slice(0, 10).map((cat) => (
             <Link
               key={cat.slug}
-              to="/category/$slug"
-              params={{ slug: cat.slug }}
+              to="/category/$slug" params={{ slug: cat.slug }}
               className="rounded-full border border-border bg-surface px-3 py-1 text-[0.72rem] font-semibold text-foreground-muted transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
             >
               {cat.name}

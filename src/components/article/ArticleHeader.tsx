@@ -45,11 +45,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         {category && (
           <>
             <span className="text-border">/</span>
-            <Link
-              to="/category/$slug"
-              params={{ slug: category.slug }}
-              className="transition-colors hover:text-primary"
-            >
+            <Link to="/category/$slug" params={{ slug: category.slug }} className="transition-colors hover:text-primary">
               {category.name}
             </Link>
           </>
@@ -64,8 +60,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
       <div className="mb-3 flex flex-wrap items-center gap-2">
         {category && (
           <Link
-            to="/category/$slug"
-            params={{ slug: category.slug }}
+            to="/category/$slug" params={{ slug: category.slug }}
             className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
           >
             {category.name}
@@ -95,8 +90,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
           {author && (
             <Link
-              to="/author/$slug"
-              params={{ slug: author.slug }}
+              to="/author/$slug" params={{ slug: author.slug }}
               className="group flex items-center gap-2 font-medium text-foreground hover:text-primary"
             >
               <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary ring-1 ring-primary/20">

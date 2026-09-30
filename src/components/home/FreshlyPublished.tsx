@@ -95,8 +95,7 @@ export function FreshlyPublished({ limit = 6 }: FreshlyPublishedProps) {
               {/* Bottom CTA */}
               <div className="border-t border-border/50 px-5 py-3.5 bg-background-subtle/30">
                 <Link
-                  to="/article/$slug"
-                  params={{ slug: art.slug }}
+                  to="/article/$slug" params={{ slug: art.slug }}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-primary transition-transform group-hover:translate-x-1"
                 >
                   <span>Read Full Guide</span>

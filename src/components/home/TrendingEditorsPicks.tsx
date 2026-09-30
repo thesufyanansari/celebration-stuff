@@ -49,8 +49,7 @@ export function TrendingEditorsPicks() {
 
               <div className="mt-3">
                 <Link
-                  to="/article/$slug"
-                  params={{ slug: pick.slug }}
+                  to="/article/$slug" params={{ slug: pick.slug }}
                   className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline"
                 >
                   <span>Explore Guide</span>

@@ -37,8 +37,7 @@ export function TopicArticles({ currentArticle, limit = 10 }: TopicArticlesProps
         {visibleArticles.map((item) => (
           <li key={item.slug}>
             <Link
-              to="/article/$slug"
-              params={{ slug: item.slug }}
+              to="/article/$slug" params={{ slug: item.slug }}
               className="group flex items-start gap-3 rounded-2xl p-2 transition-all duration-200 hover:bg-surface-hover/90"
             >
               {item.image && (

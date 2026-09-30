@@ -27,8 +27,7 @@ export function AuthorBox({ author }: AuthorBoxProps) {
               </span>
               <h3 className="font-display text-xl font-bold text-foreground sm:text-2xl">
                 <Link
-                  to="/author/$slug"
-                  params={{ slug: author.slug }}
+                  to="/author/$slug" params={{ slug: author.slug }}
                   className="hover:text-primary transition-colors"
                 >
                   {author.name}
@@ -51,8 +50,7 @@ export function AuthorBox({ author }: AuthorBoxProps) {
                 </a>
               )}
               <Link
-                to="/author/$slug"
-                params={{ slug: author.slug }}
+                to="/author/$slug" params={{ slug: author.slug }}
                 className="inline-flex items-center gap-1 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:bg-surface-hover hover:text-primary"
               >
                 <span>View Bio</span>

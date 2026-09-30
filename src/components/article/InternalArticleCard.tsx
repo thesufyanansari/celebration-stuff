@@ -39,8 +39,7 @@ export function InternalArticleCard({
           )}
           <div>
             <Link
-              to="/article/$slug"
-              params={{ slug: article.slug }}
+              to="/article/$slug" params={{ slug: article.slug }}
               className="font-display text-base font-bold leading-snug text-foreground hover:text-primary sm:text-lg"
             >
               {article.title}
@@ -52,8 +51,7 @@ export function InternalArticleCard({
         </div>
 
         <Link
-          to="/article/$slug"
-          params={{ slug: article.slug }}
+          to="/article/$slug" params={{ slug: article.slug }}
           className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-full bg-primary/10 px-4 py-2 text-xs font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
         >
           <span>Read Guide</span>

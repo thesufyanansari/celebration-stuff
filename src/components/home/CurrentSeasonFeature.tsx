@@ -37,8 +37,7 @@ export function CurrentSeasonFeature() {
         </div>
 
         <Link
-          to="/category/$slug"
-          params={{ slug: currentEvent.categorySlug }}
+          to="/category/$slug" params={{ slug: currentEvent.categorySlug }}
           className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
         >
           <span>All {currentEvent.name} Guides</span>
@@ -83,8 +82,7 @@ export function CurrentSeasonFeature() {
 
             <div className="border-t border-border/40 px-5 py-3 bg-background-subtle/40">
               <Link
-                to="/article/$slug"
-                params={{ slug: art.slug }}
+                to="/article/$slug" params={{ slug: art.slug }}
                 className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline"
               >
                 <span>Read Full Guide</span>
