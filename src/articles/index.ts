@@ -135,6 +135,36 @@ import article133 from "./christmas/28-christmas-gifts-for-her-under-50";
 import article134 from "./christmas/18-christmas-gifts-for-women-under-20-that-dont-look-cheap";
 import article135 from "./christmas/32-affordable-christmas-gifts-for-women-that-still-feel-special";
 import article136 from "./christmas/24-christmas-gifts-for-her-under-100-when-you-want-to-splurge-a-little";
+import article137 from "./christmas/20-last-minute-christmas-gifts-for-women-under-30";
+import article138 from "./christmas/christmas-gifts-for-her-27-ideas-shell-remember-long-after-december";
+import article139 from "./christmas/26-christmas-eve-gift-ideas-for-women";
+import article140 from "./christmas/21-stocking-stuffers-for-women-that-arent-filler";
+import article141 from "./christmas/christmas-morning-gifts-for-her-19-ideas-shell-open-first";
+import article142 from "./christmas/33-christmas-gifts-for-the-women-in-your-life-one-list-every-relationship";
+import article143 from "./christmas/23-christmas-gifts-for-your-wife-that-arent-boring";
+import article144 from "./christmas/29-christmas-gifts-for-your-girlfriend-shell-brag-about";
+import article145 from "./christmas/21-christmas-gifts-for-your-mom-she-wont-return";
+import article146 from "./christmas/25-christmas-gifts-for-your-sister-based-on-her-actual-personality";
+import article147 from "./christmas/19-christmas-gifts-for-your-best-friend-who-deserves-more-than-a-gift-card";
+import article148 from "./christmas/24-christmas-gifts-for-your-mother-in-law-yes-really";
+import article149 from "./christmas/20-christmas-gifts-for-your-daughter-from-teen-to-adult";
+import article150 from "./christmas/27-christmas-gifts-for-coworkers-and-female-friends";
+import article151 from "./christmas/22-christmas-gifts-for-the-woman-who-has-everything";
+import article152 from "./christmas/26-christmas-gifts-for-women-who-love-cozy-things";
+import article153 from "./christmas/20-christmas-gifts-for-the-fitness-loving-woman";
+import article154 from "./christmas/24-christmas-gifts-for-women-who-love-to-cook-and-bake";
+import article155 from "./christmas/18-christmas-gifts-for-the-book-loving-woman";
+import article156 from "./christmas/23-christmas-gifts-for-women-who-love-to-travel";
+import article157 from "./christmas/21-christmas-gifts-for-the-beauty-and-skincare-obsessed";
+import article158 from "./christmas/25-christmas-gifts-for-moms-and-home-decor-lovers";
+import article159 from "./christmas/19-christmas-gifts-for-the-modern-woman";
+import article160 from "./christmas/27-christmas-gifts-for-women-who-would-rather-stay-in";
+import article161 from "./christmas/30-christmas-gifts-for-the-woman-whos-impossible-to-shop-for";
+import article162 from "./christmas/20-thoughtful-christmas-gifts-for-women-when-youre-out-of-ideas";
+import article163 from "./christmas/24-christmas-gifts-for-women-who-dont-want-more-clutter";
+import article164 from "./christmas/21-christmas-gifts-for-a-woman-going-through-a-hard-year";
+import article165 from "./christmas/26-christmas-gifts-for-women-that-wont-end-up-in-a-drawer";
+import article166 from "./christmas/18-christmas-gifts-for-women-on-a-tight-budget-this-year";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -277,6 +307,36 @@ export const registryArticles: Article[] = [
   article134,
   article135,
   article136,
+  article137,
+  article138,
+  article139,
+  article140,
+  article141,
+  article142,
+  article143,
+  article144,
+  article145,
+  article146,
+  article147,
+  article148,
+  article149,
+  article150,
+  article151,
+  article152,
+  article153,
+  article154,
+  article155,
+  article156,
+  article157,
+  article158,
+  article159,
+  article160,
+  article161,
+  article162,
+  article163,
+  article164,
+  article165,
+  article166,
 ];
 
 export default registryArticles;

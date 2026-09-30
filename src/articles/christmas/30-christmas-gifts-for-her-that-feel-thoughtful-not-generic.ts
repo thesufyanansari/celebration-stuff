@@ -90,7 +90,7 @@ export const article: Article = {
         "The fear is specific. You hand her a wrapped box, she opens it, and you catch that subtle micro-expression — she is smiling politely. It is not that she hates it. It is that it could have been purchased for literally anyone on your holiday list. Nothing about it says, 'I noticed you.'",
         "That is the problem with mass-market generic gifts. They aren't offensive; they're just completely forgettable. And forgettable gifts quietly migrate to back closets and donation boxes by mid-January.",
         "This guide operates under a different filter: **what makes her feel seen?** Every item below either connects to an activity she already loves, features custom personalization, or represents a small luxury she'd adore but hesitate to justify buying for herself.",
-        "Need practical daily utility or strict budget tiers? Check out our anchor guide to [25 Christmas gift ideas for women she'll actually use](/article/25-christmas-gift-ideas-for-women-she-will-actually-use) and our curated list of [28 Christmas gifts for her under $50](/article/28-christmas-gifts-for-her-under-50).",
+        "Need relationship-specific advice? Explore [29 Christmas gifts for your girlfriend she'll brag about](/article/29-christmas-gifts-for-your-girlfriend-shell-brag-about), our all-in-one guide to [33 Christmas gifts for the women in your life](/article/33-christmas-gifts-for-the-women-in-your-life-one-list-every-relationship), and personality-matched picks in [25 Christmas gifts for your sister](/article/25-christmas-gifts-for-your-sister-based-on-her-actual-personality).",
       ],
     },
     {
@@ -368,7 +368,7 @@ export const article: Article = {
       heading: "What Makes a Gift Feel Generic (And How to Avoid It)",
       body: [
         "A fast reality check on the warning signs of a generic present:",
-        "1. **No identifiable connection to her:** If the gift could just as easily belong to any stranger, find a way to personalize it with an initial, birthstone, or favorite scent note.\n2. **Season-only novelty:** Novelty Christmas socks or Santa-themed mugs are fun on December 25th, but awkward in March. Choose items that transition seamlessly into the New Year.\n3. **Over-apologizing with sheer quantity:** A giant basket stuffed with cheap filler items feels far less thoughtful than one single, beautifully chosen gift she will genuinely cherish.",
+        "1. **No identifiable connection to her:** If the gift could just as easily belong to any stranger, find a way to personalize it with an initial, birthstone, or favorite scent note.\n2. **Season-only novelty:** Novelty Christmas socks or Santa-themed mugs are fun on December 25th, but awkward in March. Choose items that transition seamlessly into the New Year.\n3. **Over-apologizing with sheer quantity:** A giant basket stuffed with cheap filler items feels far less thoughtful than one single, beautifully chosen gift she will genuinely cherish.\n\nWhen you are completely out of ideas, check our curated guide to [20 thoughtful Christmas gifts for women when you're out of ideas](/article/20-thoughtful-christmas-gifts-for-women-when-youre-out-of-ideas) or explore [21 Christmas gifts for the beauty and skincare obsessed](/article/21-christmas-gifts-for-the-beauty-and-skincare-obsessed).",
       ],
     },
   ],

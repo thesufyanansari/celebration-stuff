@@ -79,7 +79,7 @@ export const article: Article = {
       body: [
         "Twenty-five dollars is the threshold where holiday shopping either becomes effortless or goes completely wrong. It is plenty of money to buy something genuine, but not enough that you can afford to buy careless filler.",
         "Spend $25 on fake, shiny costume jewelry that discolors within days, and it feels cheap. But spend $25 on an embroidered initial tote, a restorative beeswax hand repair set, or a custom birthstone pendant, and it lands like a gift twice the price.",
-        "Below are 22 tested gifts for women that stay strictly under $25. Want to explore even tighter price points? Read our guide to [18 Christmas gifts for women under $20 that don't look cheap](/article/18-christmas-gifts-for-women-under-20-that-dont-look-cheap) or step up to [28 Christmas gifts for her under $50](/article/28-christmas-gifts-for-her-under-50).",
+        "Below are 22 tested gifts for women that stay strictly under $25. Want to explore even tighter price points? Read our guide to [18 Christmas gifts for women on a tight budget this year](/article/18-christmas-gifts-for-women-on-a-tight-budget-this-year), [18 Christmas gifts for women under $20 that don't look cheap](/article/18-christmas-gifts-for-women-under-20-that-dont-look-cheap), small gifts in [21 stocking stuffers for women that aren't filler](/article/21-stocking-stuffers-for-women-that-arent-filler), and cozy tradition ideas in [26 Christmas Eve gift ideas for women](/article/26-christmas-eve-gift-ideas-for-women).",
       ],
     },
     {
