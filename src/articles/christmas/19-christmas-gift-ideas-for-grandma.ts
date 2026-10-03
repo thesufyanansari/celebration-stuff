@@ -111,7 +111,7 @@ export const article: Article = {
       id: "cisyino-grandkids-picture-frames",
       heading: "6. Sweetest Display: Malden Grandkids Script Sentiments Picture Frame",
       productId: "malden-grandkids-script-sentiments-picture-frame",
-      body: ["If there is one thing every grandma loves showing off, it is her grandkids — and this Malden picture frame was made exactly for that. The white MDF frame holds a 4x6 photo and carries the heartfelt message "Grandkids are the greatest gift your heart will ever know" screenprinted right on it, so the frame itself says what words sometimes cannot.",
+      body: ["If there is one thing every grandma loves showing off, it is her grandkids — and this Malden picture frame was made exactly for that. The white MDF frame holds a 4x6 photo and carries the heartfelt message \"Grandkids are the greatest gift your heart will ever know\" screenprinted right on it, so the frame itself says what words sometimes cannot.",
         "It stands on a shelf or mantel with its easel back, or you can hang it on the wall with the included hardware. Pop in a favorite grandkids photo before wrapping it, and watch her eyes light up the moment she opens it."],
     },
     {
