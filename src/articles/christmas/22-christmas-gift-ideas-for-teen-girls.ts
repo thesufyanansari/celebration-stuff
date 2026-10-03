@@ -29,8 +29,8 @@ export const article: Article = {
   views: 0,
   readingMinutes: 9,
   image: featuredImage,
-  imageWidth: 900,
-  imageHeight: 1200,
+  imageWidth: 1376,
+  imageHeight: 768,
   featured: true,
   metaTitle: "22 Christmas Gift Ideas for Teen Girls | Celebration Stuff",
   metaDescription:

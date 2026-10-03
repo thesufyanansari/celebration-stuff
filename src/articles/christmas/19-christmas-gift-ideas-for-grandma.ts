@@ -29,8 +29,8 @@ export const article: Article = {
   views: 0,
   readingMinutes: 8,
   image: featuredImage,
-  imageWidth: 900,
-  imageHeight: 1200,
+  imageWidth: 1376,
+  imageHeight: 768,
   featured: true,
   metaTitle: "19 Christmas Gift Ideas for Grandma | Celebration Stuff",
   metaDescription:
