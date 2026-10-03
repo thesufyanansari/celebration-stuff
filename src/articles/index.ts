@@ -165,6 +165,13 @@ import article163 from "./christmas/24-christmas-gifts-for-women-who-dont-want-m
 import article164 from "./christmas/21-christmas-gifts-for-a-woman-going-through-a-hard-year";
 import article165 from "./christmas/26-christmas-gifts-for-women-that-wont-end-up-in-a-drawer";
 import article166 from "./christmas/18-christmas-gifts-for-women-on-a-tight-budget-this-year";
+import article167 from "./halloween/21-halloween-gift-ideas-for-kids";
+import article168 from "./thanksgiving/18-thanksgiving-gift-ideas-for-mom";
+import article169 from "./thanksgiving/17-thanksgiving-hostess-gift-ideas";
+import article170 from "./christmas/22-christmas-gift-ideas-for-teen-girls";
+import article171 from "./christmas/19-christmas-gift-ideas-for-grandma";
+import article172 from "./new-year/21-new-year-gift-ideas-for-couples";
+import article173 from "./new-year/18-new-year-party-decor-ideas";
 
 /**
  * Article Registry: Lightweight aggregator of all individual article TSX files.
@@ -337,6 +344,13 @@ export const registryArticles: Article[] = [
   article164,
   article165,
   article166,
+  article167,
+  article168,
+  article169,
+  article170,
+  article171,
+  article172,
+  article173,
 ];
 
 export default registryArticles;
