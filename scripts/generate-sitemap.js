@@ -35,7 +35,10 @@ const authorRoutes = [...new Set(authorSlugs)].map((a) => ({
 
 // 4. Read articles and their genuine dates + taxonomy
 const articlesIndex = fs.readFileSync("src/articles/index.ts", "utf8");
-const articleImports = articlesIndex.match(/import article\d+ from "\.\/([^"]+)"/g) || [];
+const articleImports = articlesIndex
+  .split("\n")
+  .map((line) => line.trim())
+  .filter((line) => line.startsWith("import article"));
 
 const activeCategorySlugs = new Set();
 

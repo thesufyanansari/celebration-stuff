@@ -8,9 +8,12 @@ export const article: Article = {
     "Layered linens, candlelight and foraged greenery — a warm Thanksgiving table without a florist budget.",
   answer:
     "The easiest cozy Thanksgiving table uses three layers: a neutral runner, a low green garland, and mixed-height taper candles. Add one seasonal accent per place setting and stop there.",
-  category: "holidays",
+  category: "thanksgiving",
   event: "Thanksgiving",
   season: "Fall",
+  holiday: ["thanksgiving"],
+  occasion: ["thanksgiving", "family-gathering"],
+  primaryKeyword: "cozy Thanksgiving tablescape ideas",
   tags: ["thanksgiving", "tablescape", "hosting", "candles"],
   author: "sarah-linden",
   published: "2026-08-04",

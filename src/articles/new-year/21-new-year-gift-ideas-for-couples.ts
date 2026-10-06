@@ -62,7 +62,7 @@ export const article: Article = {
       body: [
         "Shopping for a couple is tricky: you are really shopping for two people and the relationship between them. The safest New Year gifts are ones they can enjoy together — a shared experience, something for their home, or a small ritual they can repeat through the year.",
         "Every pick below was chosen with that in mind. You will find date-night kits, matching mugs, champagne-ready glassware, cozy blankets, and games designed for two, across a range of budgets.",
-        "For more inspiration, see [Christmas Gifts for Your Best Friend](/article/19-christmas-gifts-for-your-best-friend-who-deserves-more-than-a-gift-card) and [Best Christmas Gifts for Mom](/article/10-best-christmas-gifts-for-mom).",
+        "For more inspiration, see [Christmas Gifts for Your Best Friend](/article/19-christmas-gifts-for-your-best-friend-who-deserves-more-than-a-gift-card) and [Best Christmas Gifts for Mom](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
       ],
     },
     {

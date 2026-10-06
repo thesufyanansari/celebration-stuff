@@ -312,7 +312,7 @@ export const article: Article = {
       heading: "Final Thoughts: Thoughtful, Useful Gifts That Won't Break the Bank",
       body: [
         "Buying a meaningful Christmas gift for Dad doesn't require an extravagant budget. By focusing on everyday utility, quality materials, and items tailored to his actual interests, you can find a present under $50 that he will genuinely use and appreciate for years to come.",
-        "Looking for gifts for other members of the family? Explore our curated guides to [thoughtful Christmas gifts for Mom](/article/10-best-christmas-gifts-for-mom) and our [12 Christmas gifts for mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
+        "Looking for gifts for other members of the family? Explore our curated guides to [28 Christmas gifts for her under $50](/article/28-christmas-gifts-for-her-under-50) and our [12 Christmas gifts for mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
       ],
     },
   ],

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { articles } from "@/data/articles";
+import { articles, isArticleRelevantToCategory } from "@/data/articles";
 import { categories, SITE_URL } from "@/data/site";
 import { MasonryGrid } from "@/components/site/ArticleCard";
 import { Newsletter } from "@/components/site/Newsletter";
@@ -49,14 +49,7 @@ function ExplorePage() {
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
     return articles.filter((a) => {
-      const inCat =
-        cat === "all" ||
-        a.category === cat ||
-        a.recipient?.includes(cat) ||
-        a.occasion?.includes(cat) ||
-        a.holiday?.includes(cat) ||
-        a.lifeEvent?.includes(cat) ||
-        a.giftStyle?.includes(cat);
+      const inCat = cat === "all" || isArticleRelevantToCategory(a, cat);
       const inTerm =
         !term ||
         a.title.toLowerCase().includes(term) ||

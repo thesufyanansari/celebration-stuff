@@ -120,7 +120,7 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
-  "outdoor-halloween-decor-every-style": [
+  "outdoor-halloween-decor-every-vibe": [
     {
       id: "c-style-1",
       author: "VintageLover_88",
@@ -440,7 +440,7 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
-  "creepy-vintage-halloween-decorations": [
+  "vintage-horror-film-halloween-yard": [
     {
       id: "c-creepyvintage-1",
       author: "GothicFolklore_Val",
@@ -935,7 +935,7 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
-  "baby-halloween-costumes-ideas-steal-the-show": [
+  "baby-halloween-costumes-ideas-picture-perfect-moments": [
     {
       id: "c-baby-steal-1",
       author: "ShowMom",
@@ -972,7 +972,7 @@ const DEFAULT_COMMENTS_MAP: Record<string, CommentItem[]> = {
       status: "approved",
     },
   ],
-  "baby-halloween-costumes-ideas-too-cute-to-spook": [
+  "baby-halloween-costumes-ideas-sweetest-trick-or-treater": [
     {
       id: "c-baby-toocute-1",
       author: "CuteMom",

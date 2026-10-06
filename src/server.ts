@@ -56,9 +56,19 @@ const LEGACY_PATH_REDIRECTS: Record<string, string> = {
   "/category/$slug": "/explore",
   "/article/$slug": "/explore",
   "/author/$slug": "/about",
-  "/article": "/explore",
   "/category": "/explore",
   "/author": "/about",
+
+  // High-Confidence Content Consolidations (301 Redirect to Winning Canonical URLs)
+  "/article/outdoor-halloween-decor-every-style": "/article/outdoor-halloween-decor-every-vibe",
+  "/article/baby-halloween-costumes-ideas-steal-the-show":
+    "/article/baby-halloween-costumes-ideas-picture-perfect-moments",
+  "/article/baby-halloween-costumes-ideas-too-cute-to-spook":
+    "/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater",
+  "/article/creepy-vintage-halloween-decorations":
+    "/article/vintage-horror-film-halloween-yard",
+  "/article/10-best-christmas-gifts-for-mom":
+    "/article/12-christmas-gifts-for-mom-she-will-actually-love",
 };
 
 export default {
@@ -126,7 +136,7 @@ export default {
       const isHttp = !isLocal && proto === "http";
 
       // If host, protocol, or path requires normalization, issue a single 301 Permanent Redirect
-      if (isNonCanonicalHost || isHttp || (pathChanged && !isLocal)) {
+      if (isNonCanonicalHost || isHttp || pathChanged) {
         const targetOrigin = isLocal ? `${url.protocol}//${rawHost}` : CANONICAL_ORIGIN;
         const targetUrl = `${targetOrigin}${normalizedPath}${url.search}`;
 

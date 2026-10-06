@@ -65,7 +65,7 @@ export const article: Article = {
   ],
   focusTopic: "Rustic Autumn Harvest Front Porch Staging With Hay Bales & Pumpkins",
   recipient: ["homeowners", "families", "fall-enthusiasts"],
-  occasion: ["halloween", "family-gathering", "thanksgiving"],
+  occasion: ["halloween", "family-gathering", "fall-harvest"],
   holiday: ["halloween"],
   giftStyle: ["outdoor-decor", "rustic", "harvest"],
 

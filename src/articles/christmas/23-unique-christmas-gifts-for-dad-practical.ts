@@ -346,7 +346,7 @@ export const article: Article = {
       heading: "Final Thoughts: Surprise Dad with Something He'll Actually Use",
       body: [
         "You don't have to settle for predictable socks or generic gift cards just because Dad says he doesn't need anything. By selecting gifts that combine unusual concepts with genuine daily practicality, you give him something memorable that will earn an ongoing spot in his life.",
-        "For even more gift inspiration for the entire family, explore our companion guides to [20 Christmas gift ideas for dad he'll actually use](/article/20-christmas-gift-ideas-for-dad-useful-picks), [10 best Christmas gifts for Mom](/article/10-best-christmas-gifts-for-mom), and [12 Christmas gifts for mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
+        "For even more gift inspiration for the entire family, explore our companion guides to [20 Christmas gift ideas for dad he'll actually use](/article/20-christmas-gift-ideas-for-dad-useful-picks), [28 Christmas gifts for her under $50](/article/28-christmas-gifts-for-her-under-50), and [12 Christmas gifts for mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
       ],
     },
   ],

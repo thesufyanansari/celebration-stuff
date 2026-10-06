@@ -169,7 +169,7 @@ export const article: Article = {
       body: [
         "Let's be honest — dads who 'have everything' are the hardest to buy for. This eye massager is the kind of product he probably doesn't own but would genuinely appreciate.",
         "It combines heat, vibration, and air pressure to relieve eye strain and headaches — perfect for dads who spend hours staring at screens. The remote control makes it easy to use, and the sleep mask design blocks out light for maximum relaxation.",
-        "Best for: The dad who spends long hours on computers, drives a lot, or just needs help relaxing. If you need more inspiration for mothers as well, see our guide on [thoughtful Christmas gifts for Mom](/article/10-best-christmas-gifts-for-mom).",
+        "Best for: The dad who spends long hours on computers, drives a lot, or just needs help relaxing. If you need more inspiration for mothers as well, see our guide on [thoughtful Christmas gifts for Mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
       ],
     },
     {

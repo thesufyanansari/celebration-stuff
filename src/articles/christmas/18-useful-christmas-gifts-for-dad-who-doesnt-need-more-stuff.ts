@@ -101,7 +101,7 @@ export const article: Article = {
         "2. **Does it solve a genuine everyday problem or add real value?**",
         "3. **Will it get used up or reached for regularly?**",
         "4. **Is it something he probably doesn't already own in this form?**",
-        "We also prioritized durability, smart engineering, and clutter-free utility. If you're shopping for other family members too, our guide to [20 Christmas gift ideas for dad](/article/20-christmas-gift-ideas-for-dad-useful-picks) and our list of [Christmas gifts for Mom](/article/10-best-christmas-gifts-for-mom) offer additional curated options.",
+        "We also prioritized durability, smart engineering, and clutter-free utility. If you're shopping for other family members too, our guide to [20 Christmas gift ideas for dad](/article/20-christmas-gift-ideas-for-dad-useful-picks) and our list of [Christmas gifts for Mom she will actually love](/article/12-christmas-gifts-for-mom-she-will-actually-love) offer additional curated options.",
       ],
     },
     {

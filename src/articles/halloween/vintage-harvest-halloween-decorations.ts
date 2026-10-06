@@ -67,7 +67,7 @@ export const article: Article = {
   ],
   focusTopic: "Nostalgic Harvest Folk Traditions & Farmhouse Outdoor Halloween Staging",
   recipient: ["homeowners", "families", "harvest-enthusiasts"],
-  occasion: ["halloween", "thanksgiving", "family-gathering"],
+  occasion: ["halloween", "fall-harvest", "family-gathering"],
   holiday: ["halloween"],
   giftStyle: ["outdoor-decor", "vintage", "harvest", "rustic"],
 

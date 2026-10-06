@@ -75,7 +75,7 @@ export const article: Article = {
       body: [
         "There's a reason silent horror films from the 1920s still haunt us today.",
         "It's not the special effects — they were practically non-existent. It's the atmosphere. The shadows. The eerie, gothic quality that makes you feel like you're watching something you shouldn't be seeing. Expressionist cinema gave us some of the most enduring horror imagery of all time — and it's the perfect inspiration for a Halloween display. To see how these atmospheric touches compare to giant neighborhood centerpieces, read our pillar guide on [17 outdoor Halloween decorations that actually impress the neighbors](/article/outdoor-halloween-decorations-impress-neighbors).",
-        "Think flickering candlelight. Creeping shadows. Gothic silhouettes. Haunted houses with glowing windows. And a sense of dread that's more about mood than gore. For more antique folklore styling, explore [11 vintage Halloween decorations for a creepy old-fashioned vibe](/article/creepy-vintage-halloween-decorations).",
+        "Think flickering candlelight. Creeping shadows. Gothic silhouettes. Haunted houses with glowing windows. And a sense of dread that's more about mood than gore. For more antique styling, explore [11 vintage repurposed Halloween decor ideas with retro charm](/article/vintage-repurposed-halloween-decor).",
         "We've rounded up 13 vintage Halloween decor pieces that will make your yard look like it stepped straight out of a 1920s horror film. These decorations are atmospheric, gothic, and designed to create a cinematic sense of dread.",
       ],
     },

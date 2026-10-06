@@ -74,17 +74,119 @@ export const articles: Article[] = [...registryArticles];
 
 export const getArticle = (slug: string) => articles.find((a) => a.slug === slug);
 
-export const byCategory = (slug: string) =>
-  articles.filter(
-    (a) =>
-      a.category === slug ||
-      a.recipient?.includes(slug) ||
-      a.occasion?.includes(slug) ||
-      a.holiday?.includes(slug) ||
-      a.lifeEvent?.includes(slug) ||
-      a.giftStyle?.includes(slug) ||
-      a.tags.includes(slug),
+/**
+ * Strict Centralized Taxonomy Matching Function
+ *
+ * An article may appear in a category ONLY if it has an explicit, legitimate
+ * taxonomy relationship to that category.
+ *
+ * Rules:
+ * 1. Holiday categories (thanksgiving, halloween, christmas-gifts, eid-ramadan)
+ *    require explicit holiday membership and strictly forbid cross-holiday contamination.
+ * 2. Recipient categories (gifts-for-mom, gifts-for-dad, etc.) require explicit
+ *    recipient taxonomy or primary category match.
+ * 3. Occasion & style categories require matching occasion, style, or tag taxonomy.
+ */
+export function isArticleRelevantToCategory(article: Article, categorySlug: string): boolean {
+  if (!article || !categorySlug) return false;
+
+  // 1. Specific Holiday Category Rules
+  const HOLIDAY_MAP: Record<string, string[]> = {
+    thanksgiving: ["thanksgiving", "thanksgiving-gifts", "thanksgiving-ideas"],
+    halloween: ["halloween", "halloween-ideas", "halloween-decor"],
+    "christmas-gifts": ["christmas", "christmas-gifts", "holiday-gifts"],
+    christmas: ["christmas", "christmas-gifts", "holiday-gifts"],
+    "eid-ramadan": ["eid-ramadan", "eid", "ramadan"],
+  };
+
+  if (categorySlug in HOLIDAY_MAP) {
+    const validHolidayIdentifiers = HOLIDAY_MAP[categorySlug];
+
+    // Check if the article legitimately belongs to this specific holiday
+    const matchesHoliday =
+      article.category === categorySlug ||
+      (article.event && validHolidayIdentifiers.includes(article.event.toLowerCase())) ||
+      article.holiday?.some((h) => validHolidayIdentifiers.includes(h.toLowerCase()));
+
+    if (!matchesHoliday) return false;
+
+    // Strict Cross-Holiday Mutual Exclusion:
+    if (categorySlug === "thanksgiving") {
+      // Thanksgiving must NEVER display Halloween or Christmas articles
+      const isHalloween =
+        article.category === "halloween" ||
+        article.holiday?.some((h) => h.includes("halloween")) ||
+        article.event?.toLowerCase() === "halloween";
+      const isChristmas =
+        article.category === "christmas" ||
+        article.category === "christmas-gifts" ||
+        article.holiday?.some((h) => h.includes("christmas")) ||
+        article.event?.toLowerCase() === "christmas";
+
+      if (isHalloween || isChristmas) return false;
+    } else if (categorySlug === "halloween") {
+      // Halloween must NEVER display Thanksgiving or Christmas articles
+      const isThanksgiving =
+        article.category === "thanksgiving" ||
+        article.holiday?.some((h) => h.includes("thanksgiving")) ||
+        article.event?.toLowerCase() === "thanksgiving";
+      const isChristmas =
+        article.category === "christmas" ||
+        article.category === "christmas-gifts" ||
+        article.holiday?.some((h) => h.includes("christmas")) ||
+        article.event?.toLowerCase() === "christmas";
+
+      if (isThanksgiving || isChristmas) return false;
+    } else if (categorySlug === "christmas-gifts" || categorySlug === "christmas") {
+      // Christmas must NEVER display Halloween or Thanksgiving articles
+      const isHalloween =
+        article.category === "halloween" ||
+        article.holiday?.some((h) => h.includes("halloween")) ||
+        article.event?.toLowerCase() === "halloween";
+      const isThanksgiving =
+        article.category === "thanksgiving" ||
+        article.holiday?.some((h) => h.includes("thanksgiving")) ||
+        article.event?.toLowerCase() === "thanksgiving";
+
+      if (isHalloween || isThanksgiving) return false;
+    }
+
+    return true;
+  }
+
+  // 2. People / Recipient Categories
+  if (categorySlug.startsWith("gifts-for-")) {
+    const recipientKey = categorySlug.replace("gifts-for-", "");
+    return (
+      article.category === categorySlug ||
+      article.recipient?.includes(categorySlug) ||
+      article.recipient?.includes(recipientKey) ||
+      article.recipient?.includes(`gifts-for-${recipientKey}`) ||
+      (recipientKey === "women" &&
+        (article.recipient?.includes("mom") ||
+          article.recipient?.includes("women") ||
+          article.recipient?.includes("her"))) ||
+      (recipientKey === "men" &&
+        (article.recipient?.includes("dad") ||
+          article.recipient?.includes("men") ||
+          article.recipient?.includes("him")))
+    );
+  }
+
+  // 3. General & Occasion Categories
+  return (
+    article.category === categorySlug ||
+    article.occasion?.includes(categorySlug) ||
+    article.recipient?.includes(categorySlug) ||
+    article.lifeEvent?.includes(categorySlug) ||
+    article.giftStyle?.includes(categorySlug) ||
+    article.holiday?.includes(categorySlug) ||
+    article.tags?.includes(categorySlug)
   );
+}
+
+export const byCategory = (slug: string): Article[] =>
+  articles.filter((a) => isArticleRelevantToCategory(a, slug));
 
 /**
  * Returns latest published articles sorted chronologically (newest first).

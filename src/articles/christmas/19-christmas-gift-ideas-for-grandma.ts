@@ -59,7 +59,7 @@ export const article: Article = {
       body: [
         "Shopping for grandma can feel tricky. She insists she does not need anything, and the usual scented candle feels impersonal by now. The gifts that land best are the ones that make her daily life a little softer or give her a new way to stay close to the family.",
         "This list leans into both. You will find cozy picks for cold evenings, sentimental keepsakes that honor her role in the family, and a few practical upgrades she would never buy for herself. Every item is a real product you can order on Amazon, and each one was chosen with a grandmother's lifestyle in mind.",
-        "You may also like [Best Christmas Gifts for Mom](/article/10-best-christmas-gifts-for-mom) and [Christmas Gifts Mom Will Actually Love](/article/12-christmas-gifts-for-mom-she-will-actually-love).",
+        "You may also like [Christmas Gifts Mom Will Actually Love](/article/12-christmas-gifts-for-mom-she-will-actually-love) and [28 Christmas Gifts for Her Under $50](/article/28-christmas-gifts-for-her-under-50).",
       ],
     },
     {

@@ -2,7 +2,8 @@ import type { Article } from "@/data/articles";
 import article1 from "./gifts/gift-ideas-for-people-who-want-nothing";
 import article2 from "./thanksgiving/cozy-thanksgiving-tablescape-ideas";
 import article3 from "./christmas/christmas-mantel-decorating-ideas";
-import article4 from "./christmas/10-best-christmas-gifts-for-mom";
+// Merged into article6 (12-christmas-gifts-for-mom-she-will-actually-love) -> 301 redirect
+// import article4 from "./christmas/10-best-christmas-gifts-for-mom";
 import article5 from "./christmas/best-christmas-gifts-for-mom-2026";
 import article6 from "./christmas/12-christmas-gifts-for-mom-she-will-actually-love";
 import article7 from "./christmas/20-christmas-gift-ideas-for-dad-useful-picks";
@@ -22,8 +23,10 @@ import article20 from "./halloween/baby-halloween-costumes-ideas-youll-want-to-t
 import article21 from "./halloween/baby-halloween-costumes-ideas-adorable-to-spooktacular";
 import article22 from "./halloween/baby-halloween-costumes-ideas-star-of-halloween";
 import article23 from "./halloween/baby-halloween-costumes-ideas-sweetest-trick-or-treater";
-import article24 from "./halloween/baby-halloween-costumes-ideas-too-cute-to-spook";
-import article25 from "./halloween/baby-halloween-costumes-ideas-steal-the-show";
+// Merged into article23 (baby-halloween-costumes-ideas-sweetest-trick-or-treater) -> 301 redirect
+// import article24 from "./halloween/baby-halloween-costumes-ideas-too-cute-to-spook";
+// Merged into article26 (baby-halloween-costumes-ideas-picture-perfect-moments) -> 301 redirect
+// import article25 from "./halloween/baby-halloween-costumes-ideas-steal-the-show";
 import article26 from "./halloween/baby-halloween-costumes-ideas-picture-perfect-moments";
 import article27 from "./halloween/baby-halloween-costumes-ideas-cute-classic-creative";
 import article28 from "./halloween/baby-halloween-costumes-ideas-extra-fun-halloween-night";
@@ -33,7 +36,8 @@ import article31 from "./halloween/easy-outdoor-halloween-decor-ideas";
 import article32 from "./halloween/outdoor-halloween-decor-every-vibe";
 import article33 from "./halloween/classy-outdoor-halloween-decorations";
 import article34 from "./halloween/transform-yard-overnight-halloween-decor";
-import article35 from "./halloween/outdoor-halloween-decor-every-style";
+// Merged into article32 (outdoor-halloween-decor-every-vibe) -> 301 redirect
+// import article35 from "./halloween/outdoor-halloween-decor-every-style";
 import article36 from "./halloween/neighborhood-favorite-halloween-decor";
 import article37 from "./halloween/halloween-decor-beginners-guide";
 import article38 from "./halloween/halloween-decor-day-night";
@@ -53,7 +57,8 @@ import article51 from "./halloween/halloween-porch-decor-daylight";
 import article52 from "./halloween/quick-easy-halloween-porch-decor";
 import article53 from "./halloween/halloween-porch-decor-statement-not-over-the-top";
 import article54 from "./halloween/vintage-halloween-yard-decor-ideas";
-import article55 from "./halloween/creepy-vintage-halloween-decorations";
+// Merged into article56 (vintage-horror-film-halloween-yard) -> 301 redirect
+// import article55 from "./halloween/creepy-vintage-halloween-decorations";
 import article56 from "./halloween/vintage-horror-film-halloween-yard";
 import article57 from "./halloween/vintage-harvest-halloween-decorations";
 import article58 from "./halloween/authentic-vintage-halloween-decor";
@@ -181,7 +186,7 @@ export const registryArticles: Article[] = [
   article1,
   article2,
   article3,
-  article4,
+  // article4, // merged -> 301
   article5,
   article6,
   article7,
@@ -201,8 +206,8 @@ export const registryArticles: Article[] = [
   article21,
   article22,
   article23,
-  article24,
-  article25,
+  // article24, // merged -> 301
+  // article25, // merged -> 301
   article26,
   article27,
   article28,
@@ -212,7 +217,7 @@ export const registryArticles: Article[] = [
   article32,
   article33,
   article34,
-  article35,
+  // article35, // merged -> 301
   article36,
   article37,
   article38,
@@ -232,7 +237,7 @@ export const registryArticles: Article[] = [
   article52,
   article53,
   article54,
-  article55,
+  // article55, // merged -> 301
   article56,
   article57,
   article58,

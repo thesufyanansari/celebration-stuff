@@ -33,28 +33,24 @@ import raccoonImg from "@/assets/baby-raccoon-costume.jpg";
 
 export const article: Article = {
   slug: "baby-halloween-costumes-ideas-sweetest-trick-or-treater",
-  title: "24 Baby Halloween Costumes Ideas for the Sweetest Little Trick-or-Treater",
+  title: "20 Warm & Cozy Baby Halloween Costumes for Cold Weather Trick-or-Treating",
   excerpt:
-    "Discover 24 sweet and adorable baby Halloween costume ideas for the cutest little trick-or-treater. From cuddly animals to cute characters!",
+    "Keep your infant snug and warm on chilly October nights with 20 insulated, fleece, and hooded baby Halloween costumes built for cold-weather trick-or-treating.",
   answer:
-    "For the sweetest, heart-melting looks on the block, top picks include the Fluffy Baby Lamb, Disney Moana Pua Pig, Rubies Flamingo, and Sweet Hatching Chick Romper.",
+    "For cold-weather trick-or-treating, the best warm baby costumes feature thick sherpa fleece, built-in mittens, and zip footies that layer over warm clothes. Top picks include the Fuzzy Bat Pram Suit, Hooded Ghost Fleece Romper, and Plush Dinosaur Bunting.",
   category: "holidays",
   event: "Halloween",
   season: "Fall",
   tags: [
-    "baby halloween costumes",
-    "sweet baby costumes",
-    "cute baby costumes",
-    "halloween costume ideas",
-    "baby animal costumes",
-    "disney baby costumes",
-    "food costumes",
+    "warm baby halloween costumes",
+    "cold weather halloween",
+    "fleece baby costumes",
+    "cozy baby costumes",
+    "baby outdoor costumes",
+    "hooded baby rompers",
     "first halloween",
     "baby girl costumes",
     "baby boy costumes",
-    "toddler costumes",
-    "trick or treater",
-    "costume ideas 2026",
     "halloween",
   ],
   author: "sarah-linden",
@@ -68,27 +64,23 @@ export const article: Article = {
   featured: true,
 
   // Extended SEO & Content Metadata
-  metaTitle: "24 Baby Halloween Costumes Ideas for the Sweetest Little Trick-or-Treater",
+  metaTitle:
+    "20 Warm & Cozy Baby Halloween Costumes for Cold Weather | Celebration Stuff",
   metaDescription:
-    "Discover 24 sweet and adorable baby Halloween costume ideas for the cutest little trick-or-treater. From cuddly animals to cute characters!",
+    "Keep your infant snug and warm on chilly October nights with 20 insulated, fleece, and hooded baby Halloween costumes built for cold-weather trick-or-treating.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater",
   featuredImageAlt:
-    "24 sweet baby Halloween costume ideas for the cutest little trick-or-treater including fluffy lambs, Disney characters, and cute animal onesies.",
-  primaryKeyword: "Baby Halloween costume ideas for the sweetest little trick-or-treater",
+    "20 warm and cozy baby Halloween costumes for cold weather trick-or-treating including hooded fleece buntings, pram suits, and warm footies.",
+  primaryKeyword: "warm baby Halloween costumes cold weather",
   secondaryKeywords: [
-    "Sweet baby Halloween costumes",
-    "Sweetest little trick or treater",
-    "Baby Halloween costume ideas",
-    "Cute baby costumes",
-    "Heart melting baby costumes",
-    "Disney baby costumes",
-    "Baby animal costumes",
-    "First Halloween outfits",
-    "Baby girl Halloween costumes",
-    "Baby boy Halloween costumes",
+    "cold weather baby Halloween costumes",
+    "warm outdoor infant costumes",
+    "fleece baby Halloween romper",
+    "cozy baby trick or treat outfits",
+    "insulated baby Halloween costumes",
   ],
-  focusTopic: "Sweet and Heart-Melting Baby Halloween Costumes for Infants and Toddlers",
+  focusTopic: "Insulated, Fleece, and Hooded Cold-Weather Baby Halloween Outfits",
   recipient: ["baby", "toddler", "gifts-for-kids"],
   occasion: ["halloween", "birthday-gifts", "parties-celebrations"],
   holiday: ["halloween"],
@@ -101,7 +93,7 @@ export const article: Article = {
       body: [
         "Halloween is sweeter when there's a baby in the house! And the sweetest little trick-or-treater deserves a costume that's just as adorable as they are.",
         "From cuddly animals and sweet treats to cute characters and cozy rompers, these 24 baby Halloween costume ideas are perfect for the little one who melts everyone's heart. Get ready for 'aww' moments and the sweetest photos ever!",
-        "To find your family's favorite Halloween theme, explore our sister guides on [21 baby Halloween costume ideas that will steal the show](/article/baby-halloween-costumes-ideas-steal-the-show), [20 baby Halloween costume ideas that are almost too cute to spook](/article/baby-halloween-costumes-ideas-too-cute-to-spook), [30 baby Halloween costume ideas to make your little one the star of Halloween](/article/baby-halloween-costumes-ideas-star-of-halloween), [27 baby Halloween costume ideas from adorable to spooktacular](/article/baby-halloween-costumes-ideas-adorable-to-spooktacular), [22 baby Halloween costume ideas you'll want to try](/article/baby-halloween-costumes-ideas-youll-want-to-try), [28 creative baby Halloween costume ideas](/article/creative-baby-halloween-costume-ideas), [24 fun and easy baby Halloween costume ideas for 2026](/article/fun-easy-baby-halloween-costumes-ideas-2026), [30 best baby Halloween costumes for the cutest look](/article/best-baby-halloween-costume-ideas-cutest-look), and [20 best baby costume ideas for boys, girls, and twins](/article/best-baby-halloween-costume-ideas-boys-girls-twins). And for festive autumn living, browse our top [cozy Thanksgiving tablescape ideas](/article/cozy-thanksgiving-tablescape-ideas) and [festive holiday mantel decorating ideas](/article/christmas-mantel-decorating-ideas).",
+        "To find your family's favorite Halloween theme, explore our sister guides on [24 baby's first Halloween costume ideas for newborns & infants](/article/baby-halloween-costumes-ideas-picture-perfect-moments), [25 baby Halloween costume ideas inspired by cute, classic, and creative looks](/article/baby-halloween-costumes-ideas-cute-classic-creative), [30 baby Halloween costume ideas to make your little one the star of Halloween](/article/baby-halloween-costumes-ideas-star-of-halloween), [27 baby Halloween costume ideas from adorable to spooktacular](/article/baby-halloween-costumes-ideas-adorable-to-spooktacular), [22 baby Halloween costume ideas you'll want to try](/article/baby-halloween-costumes-ideas-youll-want-to-try), [18 creative DIY baby Halloween costume ideas](/article/creative-baby-halloween-costume-ideas), [20 easy zip-up baby Halloween costume ideas](/article/fun-easy-baby-halloween-costumes-ideas-2026), [30 best baby Halloween costumes for the cutest look](/article/best-baby-halloween-costume-ideas-cutest-look), and [20 best baby costume ideas for boys, girls, and twins](/article/best-baby-halloween-costume-ideas-boys-girls-twins). And for festive autumn living, browse our top [cozy Thanksgiving tablescape ideas](/article/cozy-thanksgiving-tablescape-ideas) and [festive holiday mantel decorating ideas](/article/christmas-mantel-decorating-ideas).",
       ],
     },
     {

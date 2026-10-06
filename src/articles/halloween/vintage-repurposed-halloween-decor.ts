@@ -215,7 +215,7 @@ export const article: Article = {
       productId: "haunted-hill-farm-led-skeleton",
       body: [
         "Lean an ornate antique mirror with a distressed or clouded silver backing against the porch wall.",
-        "Position the White LED Skeleton so its illuminated ribs reflect in the glass. The double image creates a spine-tingling illusion of a phantom trapped inside the looking glass. For gothic horror atmosphere, check out [11 vintage Halloween decorations for a creepy old-fashioned vibe](/article/creepy-vintage-halloween-decorations).",
+        "Position the White LED Skeleton so its illuminated ribs reflect in the glass. The double image creates a spine-tingling illusion of a phantom trapped inside the looking glass. For gothic horror atmosphere, check out [1920s vintage horror film yard decorations](/article/vintage-horror-film-halloween-yard).",
         "**What you need:** Old framed mirror + White LED Skeleton.",
         "[Check the current price on Amazon →](https://amzn.to/4gu19xh)",
       ],

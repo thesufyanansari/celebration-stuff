@@ -26,9 +26,10 @@ import coatrackMonsterImg from "@/assets/haunted-hill-farm-coatrack-monster-tekk
 
 export const article: Article = {
   slug: "outdoor-halloween-decor-every-vibe",
-  title: "21 Outdoor Halloween Decor Ideas for Every Vibe",
+  title:
+    "21 Outdoor Halloween Decor Ideas for Every Style & Vibe: Modern, Vintage, Spooky & Whimsical",
   excerpt:
-    "Explore 21 outdoor Halloween decorations categorized by aesthetic vibe — from Classic Spooky and Whimsical to Modern Sleek, Retro, and Premium Statement.",
+    "Explore 21 outdoor Halloween decorations categorized by design style and aesthetic vibe — from Modern Sleek and Vintage to Spooky Haunted and Storybook Whimsical.",
   answer:
     "Whether your outdoor Halloween decor aesthetic is terrifying, whimsical, design-forward, nostalgic, or cinema-grade, there is a dedicated decor vibe. Top picks range from the Haunted Hill Farm Hunchback Witch to the Modern White LED Metal Cat and Tekky Soul Harvester.",
   category: "holidays",
@@ -38,6 +39,7 @@ export const article: Article = {
     "Halloween Decorations",
     "Outdoor Decor",
     "Yard Ideas",
+    "decor-styles",
     "Halloween",
     "Home & Garden",
     "seasonal-decor",
@@ -54,14 +56,17 @@ export const article: Article = {
   featured: false,
 
   // Extended SEO & Content Metadata
-  metaTitle: "21 Outdoor Halloween Decor Ideas for Every Vibe | Celebration Stuff",
+  metaTitle:
+    "21 Outdoor Halloween Decor Ideas for Every Style & Vibe | Celebration Stuff",
   metaDescription:
-    "Find your Halloween aesthetic with 21 outdoor decorations organized by vibe: Classic Spooky, Whimsical, Modern Sleek, Retro Nostalgic, and Premium Statement.",
+    "Explore 21 outdoor Halloween decorations categorized by design style and aesthetic vibe — from Modern Sleek and Vintage to Spooky Haunted and Storybook Whimsical.",
   canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-every-vibe",
   featuredImageAlt:
-    "Outdoor Halloween decor ideas for every vibe including spooky, whimsical, modern, and vintage yards",
-  primaryKeyword: "outdoor halloween decor every vibe",
+    "Outdoor Halloween decor ideas for every style and vibe including spooky, whimsical, modern, and vintage yards",
+  primaryKeyword: "outdoor halloween decor by style and vibe",
   secondaryKeywords: [
+    "outdoor halloween decor every style",
+    "outdoor halloween decor every vibe",
     "halloween decor styles",
     "spooky outdoor halloween decorations",
     "modern halloween yard ideas",

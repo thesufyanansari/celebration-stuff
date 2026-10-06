@@ -37,27 +37,24 @@ import hatchingChickImg from "@/assets/baby-hatching-chicken-costume-romper.jpg"
 
 export const article: Article = {
   slug: "baby-halloween-costumes-ideas-picture-perfect-moments",
-  title: "28 Baby Halloween Costumes Ideas for Picture-Perfect Halloween Moments",
+  title: "24 Baby's First Halloween Costume Ideas for Newborns & Infants (0–6 Months)",
   excerpt:
-    "Discover 28 photogenic baby Halloween costume ideas for picture-perfect moments. From adorable animals to Disney favorites, create memories that last!",
+    "Celebrate baby's first Halloween with 24 ultra-soft, comfortable costume ideas designed specifically for newborns and infants 0 to 6 months old.",
   answer:
-    "For picture-perfect Halloween memories, the best photogenic baby costumes include the Rubies Pink Flamingo, Glowing Octopus Skirt, Disney Pua Pig, and Classic Pumpkin Romper.",
+    "For baby's first Halloween, the best newborn costumes prioritize breathable cotton fabrics, snap diaper access, and car-seat safety. Top picks include the soft Pumpkin Romper, Baby Ghost Fleece Bunting, and Disney Pua Pig Footie.",
   category: "holidays",
   event: "Halloween",
   season: "Fall",
   tags: [
-    "baby halloween costumes",
-    "picture-perfect moments",
-    "photogenic baby costumes",
-    "halloween costume ideas",
-    "baby animal costumes",
-    "disney baby costumes",
-    "photo shoot costumes",
+    "newborn halloween costumes",
+    "baby first halloween",
+    "infant halloween costumes",
+    "soft baby costumes",
+    "baby costume ideas",
     "first halloween",
+    "photo shoot costumes",
     "baby girl costumes",
     "baby boy costumes",
-    "toddler costumes",
-    "costume ideas 2026",
     "halloween",
   ],
   author: "sarah-linden",
@@ -71,26 +68,23 @@ export const article: Article = {
   featured: true,
 
   // Extended SEO & Content Metadata
-  metaTitle: "28 Baby Halloween Costumes Ideas for Picture-Perfect Halloween Moments",
+  metaTitle:
+    "24 Baby's First Halloween Costume Ideas for Newborns (0–6 Months) | Celebration Stuff",
   metaDescription:
-    "Discover 28 photogenic baby Halloween costume ideas for picture-perfect moments. From adorable animals to Disney favorites, create memories that last!",
+    "Celebrate baby's first Halloween with 24 ultra-soft, comfortable costume ideas for newborns and infants, featuring swaddle outfits, soft rompers, and photoshoot ideas.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/baby-halloween-costumes-ideas-picture-perfect-moments",
   featuredImageAlt:
-    "28 baby Halloween costume ideas for picture-perfect moments including flamingos, giraffes, and Disney characters.",
-  primaryKeyword: "Baby Halloween costume ideas for picture-perfect moments",
+    "24 baby's first Halloween costume ideas for newborns and infants including plush rompers, swaddles, and photoshoot outfits.",
+  primaryKeyword: "newborn baby Halloween costumes",
   secondaryKeywords: [
-    "Picture-perfect baby costumes",
-    "Photogenic baby Halloween costumes",
-    "Baby Halloween costume ideas",
-    "Cute baby Halloween costumes",
-    "Disney baby costumes",
-    "First Halloween photo outfits",
-    "Unique baby costumes",
-    "Baby girl Halloween costumes",
-    "Baby boy Halloween costumes",
+    "baby first Halloween costume ideas",
+    "infant Halloween costumes 0-6 months",
+    "soft newborn Halloween outfits",
+    "comfortable baby Halloween costumes",
+    "first Halloween photo ideas",
   ],
-  focusTopic: "High-Contrast, Frame-Worthy Baby Halloween Costumes Built for Photography",
+  focusTopic: "Soft, Photo-Worthy Newborn & Infant Halloween Costumes for Baby's First Milestone",
   recipient: ["baby", "toddler", "gifts-for-kids"],
   occasion: ["halloween", "birthday-gifts", "parties-celebrations"],
   holiday: ["halloween"],
@@ -103,7 +97,7 @@ export const article: Article = {
       body: [
         "Halloween is all about creating memories — and the best way to capture them is with a picture-perfect costume!",
         "These 28 baby Halloween costume ideas are designed to look amazing in photos. From vibrant colors and adorable details to unique designs that pop, these costumes will make your Halloween photos frame-worthy.",
-        "To explore even more festive ideas, browse our companion guides on [29 baby Halloween costume ideas that bring extra fun](/article/baby-halloween-costumes-ideas-extra-fun-halloween-night), [25 baby Halloween costume ideas inspired by cute, classic, and creative looks](/article/baby-halloween-costumes-ideas-cute-classic-creative), [21 baby Halloween costume ideas that will steal the show](/article/baby-halloween-costumes-ideas-steal-the-show), [20 baby Halloween costume ideas that are almost too cute to spook](/article/baby-halloween-costumes-ideas-too-cute-to-spook), [24 baby Halloween costume ideas for the sweetest little trick-or-treater](/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater), [30 baby Halloween costume ideas to make your little one the star of Halloween](/article/baby-halloween-costumes-ideas-star-of-halloween), [27 baby Halloween costume ideas from adorable to spooktacular](/article/baby-halloween-costumes-ideas-adorable-to-spooktacular), [22 baby Halloween costume ideas you'll want to try](/article/baby-halloween-costumes-ideas-youll-want-to-try), [28 creative baby Halloween costume ideas](/article/creative-baby-halloween-costume-ideas), [24 fun and easy baby Halloween costume ideas for 2026](/article/fun-easy-baby-halloween-costumes-ideas-2026), [30 best baby Halloween costumes for the cutest look](/article/best-baby-halloween-costume-ideas-cutest-look), and [20 best baby costume ideas for boys, girls, and twins](/article/best-baby-halloween-costume-ideas-boys-girls-twins). And as you prepare your home for autumn entertaining, check out our favorite [cozy Thanksgiving tablescape ideas](/article/cozy-thanksgiving-tablescape-ideas) and [festive holiday mantel decorating ideas](/article/christmas-mantel-decorating-ideas).",
+        "To explore even more festive ideas, browse our companion guides on [29 baby Halloween costume ideas that bring extra fun](/article/baby-halloween-costumes-ideas-extra-fun-halloween-night), [25 baby Halloween costume ideas inspired by cute, classic, and creative looks](/article/baby-halloween-costumes-ideas-cute-classic-creative), [20 warm and cozy baby Halloween costume ideas](/article/baby-halloween-costumes-ideas-sweetest-trick-or-treater), [30 baby Halloween costume ideas to make your little one the star of Halloween](/article/baby-halloween-costumes-ideas-star-of-halloween), [27 baby Halloween costume ideas from adorable to spooktacular](/article/baby-halloween-costumes-ideas-adorable-to-spooktacular), [22 baby Halloween costume ideas you'll want to try](/article/baby-halloween-costumes-ideas-youll-want-to-try), [18 creative DIY baby Halloween costume ideas](/article/creative-baby-halloween-costume-ideas), [20 easy zip-up baby Halloween costume ideas](/article/fun-easy-baby-halloween-costumes-ideas-2026), [30 best baby Halloween costumes for the cutest look](/article/best-baby-halloween-costume-ideas-cutest-look), and [20 best baby costume ideas for boys, girls, and twins](/article/best-baby-halloween-costume-ideas-boys-girls-twins). And as you prepare your home for autumn entertaining, check out our favorite [cozy Thanksgiving tablescape ideas](/article/cozy-thanksgiving-tablescape-ideas) and [festive holiday mantel decorating ideas](/article/christmas-mantel-decorating-ideas).",
       ],
     },
     {
