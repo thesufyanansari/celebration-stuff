@@ -8,7 +8,7 @@ export const article: Article = {
     "Shopping for a teen girl this Christmas? These 22 trendy, actually-wanted picks — from K-beauty skincare sets to LED room decor — take the guesswork out of it.",
   answer:
     "The best Christmas gifts for teen girls in 2026 lean trendy and useful: the Owala Kids Insulation Stainless Steel Tumbler is a daily-use win, the BIODANCE Serum Discovery Set feeds the K-beauty obsession, and aesthetic fairy lights with photo clips instantly upgrade any bedroom. This guide rounds out the list with journals, DIY bracelet kits, Bluetooth speakers, and cozy stocking stuffers across budgets.",
-  category: "gift-guides",
+  category: "gifts-for-women",
   event: "Christmas",
   season: "Winter",
   tags: [

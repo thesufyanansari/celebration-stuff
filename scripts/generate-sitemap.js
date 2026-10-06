@@ -28,19 +28,16 @@ const staticRoutes = [
   { path: "/editorial-policy", lastmod: "2026-08-01" },
 ];
 
-const categoryRoutes = [...new Set(catSlugs)].map((c) => ({
-  path: `/category/${c}`,
-  lastmod: null,
-}));
-
 const authorRoutes = [...new Set(authorSlugs)].map((a) => ({
   path: `/author/${a}`,
   lastmod: null,
 }));
 
-// 4. Read articles and their genuine dates
+// 4. Read articles and their genuine dates + taxonomy
 const articlesIndex = fs.readFileSync("src/articles/index.ts", "utf8");
 const articleImports = articlesIndex.match(/import article\d+ from "\.\/([^"]+)"/g) || [];
+
+const activeCategorySlugs = new Set();
 
 const articleEntries = articleImports
   .map((imp) => {
@@ -54,6 +51,30 @@ const articleEntries = articleImports
     const slugMatch = content.match(/slug:\s*"([^"]+)"/);
     const updatedMatch = content.match(/updated:\s*"([^"]+)"/);
     const publishedMatch = content.match(/published:\s*"([^"]+)"/);
+    const categoryMatch = content.match(/category:\s*"([^"]+)"/);
+    const recipientMatch = content.match(/recipient:\s*\[([\s\S]*?)\]/);
+    const occasionMatch = content.match(/occasion:\s*\[([\s\S]*?)\]/);
+    const holidayMatch = content.match(/holiday:\s*\[([\s\S]*?)\]/);
+    const lifeEventMatch = content.match(/lifeEvent:\s*\[([\s\S]*?)\]/);
+    const giftStyleMatch = content.match(/giftStyle:\s*\[([\s\S]*?)\]/);
+    const tagsMatch = content.match(/tags:\s*\[([\s\S]*?)\]/);
+
+    const extractArray = (m) => (m ? [...m[1].matchAll(/"([^"]+)"/g)].map((x) => x[1]) : []);
+
+    const cat = categoryMatch ? categoryMatch[1] : null;
+    const allTax = [
+      cat,
+      ...extractArray(recipientMatch),
+      ...extractArray(occasionMatch),
+      ...extractArray(holidayMatch),
+      ...extractArray(lifeEventMatch),
+      ...extractArray(giftStyleMatch),
+      ...extractArray(tagsMatch),
+    ].filter(Boolean);
+
+    for (const t of allTax) {
+      activeCategorySlugs.add(t);
+    }
 
     const slug = slugMatch ? slugMatch[1] : path.basename(relPath);
     const lastmod =
@@ -65,6 +86,14 @@ const articleEntries = articleImports
     };
   })
   .filter(Boolean);
+
+// Filter categoryRoutes so only categories with articles are in sitemap
+const categoryRoutes = [...new Set(catSlugs)]
+  .filter((c) => activeCategorySlugs.has(c))
+  .map((c) => ({
+    path: `/category/${c}`,
+    lastmod: null,
+  }));
 
 const allEntries = [...staticRoutes, ...categoryRoutes, ...authorRoutes, ...articleEntries];
 
@@ -86,5 +115,5 @@ ${urlEntries}
 
 fs.writeFileSync("public/sitemap.xml", xml);
 console.log(
-  `Generated public/sitemap.xml with ${allEntries.length} canonical URLs under ${BASE_URL}.`,
+  `Generated public/sitemap.xml with ${allEntries.length} canonical URLs under ${BASE_URL} (${categoryRoutes.length} active categories).`,
 );

@@ -84,7 +84,7 @@ export const holidayDefinitions: RecurringHolidayDefinition[] = [
     tagline: "Thoughtful Ways to Show You Care",
     description:
       "Romantic gift ideas, cozy date night plans, and meaningful keepsakes for partners.",
-    categorySlug: "occasions",
+    categorySlug: "anniversary-gifts",
     heroImage: giftsImg,
     priority: 9,
     month: 2,

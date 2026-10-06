@@ -35,7 +35,7 @@ export const article: Article = {
     "Skip the boring generic presents. Discover 25 thoughtful Christmas gifts for Dad that celebrate his quirks, passions, and sense of humor — all under $60.",
   answer:
     "The secret to giving Dad a memorable Christmas gift is choosing something that reflects his personality rather than spending a fortune. Top thoughtful picks include the Dad's Life Story Journal for sentimental dads, the Rolling Grill Basket for BBQ lovers, and the Whiskey Gun Decanter Set for dads with great humor.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

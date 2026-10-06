@@ -4,7 +4,7 @@ import featuredImage from "@/assets/last-minute-halloween-house-party-ideas.jpg"
 export const article: Article = {
   slug: "last-minute-halloween-house-party-ideas",
   title: "12 Last-Minute Halloween House Party Ideas You Can Actually Pull Off",
-  excerpt: "That's fine. For complementary inspiration, explore our recommendations for [Halloween house party ideas on a budget](/article/halloween-house-party-ideas-on-a-budget).",
+  excerpt: "Halloween is tonight—or close enough that an elaborate decorating plan is no longer realistic. Here are 12 fast, high-impact ideas you can pull off today.",
   answer: "Halloween is tonight—or close enough that an elaborate decorating plan is no longer realistic.",
   category: "holidays",
   event: "Halloween",
@@ -28,7 +28,7 @@ export const article: Article = {
   featured: false,
 
   metaTitle: "12 Last-Minute Halloween House Party Ideas You Can Actually Pull Off | Celebration Stuff",
-  metaDescription: "That's fine. For complementary inspiration, explore our recommendations for [Halloween house party ideas on a budget](/article/halloween-house-party-ideas-",
+  metaDescription: "12 easy and fast last-minute Halloween house party ideas you can actually pull off tonight, with simple decorations, mood lighting, and quick festive touches.",
   canonicalUrl: "https://celebrationsstuff.com/article/last-minute-halloween-house-party-ideas",
   featuredImageAlt: "Last-minute Halloween house party with orange lights, black gauze, bats, spiders, skeletons, ghosts and simple party decorations",
   primaryKeyword: "last-minute Halloween house party ideas",

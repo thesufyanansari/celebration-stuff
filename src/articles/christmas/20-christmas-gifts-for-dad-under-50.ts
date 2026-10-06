@@ -30,7 +30,7 @@ export const article: Article = {
     "Finding a great gift for Dad under $50 is easier than you think. Discover 20 practical, thoughtful, and high-utility Christmas gifts for dad that all hit the sweet spot under $50.",
   answer:
     "The sweet spot for dad Christmas gifts is $50 — generous enough for premium materials, but affordable and guilt-free. Top editor-tested picks include the Wrangler Authentics Fleece Quarter-Zip for everyday comfort, Ryker Heavy Duty Roll-Up Tool Bag for handy dads, and the 31-piece BBQ Grill Accessories Set for grill masters.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

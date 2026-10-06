@@ -29,7 +29,7 @@ export const article: Article = {
     "Struggling to find the perfect Christmas gift for Dad? Discover 20 practical, useful gift ideas he'll actually appreciate and use every day — from tech gadgets to cozy comforts.",
   answer:
     "The best Christmas gifts for Dad are practical, useful, and match his personality. Top picks include the OutIn Nano Portable Espresso Maker for coffee-loving dads, New Balance 997H sneakers for budget-conscious shoppers, and the RENPHO Eyeris Eye Massager for dads who need relaxation.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

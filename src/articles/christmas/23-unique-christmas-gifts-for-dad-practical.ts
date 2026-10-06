@@ -33,7 +33,7 @@ export const article: Article = {
     "Tired of boring presents or useless novelties? Discover 23 genuinely unique Christmas gift ideas for Dad that spark curiosity and conversation while serving real everyday utility.",
   answer:
     "The secret to finding the perfect unique Christmas gift for Dad is pairing novelty with genuine utility. Standout editor picks include the Damaged Screw Extractor Set for handymen, Daxiongmao HD Endoscope Camera for DIY inspectors, and the ALKISTA Musical Tesla Coil Speaker for tech enthusiasts.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

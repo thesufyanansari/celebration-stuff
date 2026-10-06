@@ -15,8 +15,14 @@ export const holidayList = [
     desc: "Warm tablescapes & host gifts",
   },
   {
+    name: "Halloween",
+    slug: "halloween",
+    count: "100+ Guides",
+    desc: "Spooky porch decor, yard setups & costumes",
+  },
+  {
     name: "Valentine's Day",
-    slug: "occasions",
+    slug: "anniversary-gifts",
     count: "40+ Guides",
     desc: "Romantic surprises & cozy date nights",
   },
@@ -31,12 +37,6 @@ export const holidayList = [
     slug: "gifts-for-dad",
     count: "45+ Guides",
     desc: "High-utility gadgets & outdoor gear",
-  },
-  {
-    name: "Eid & Ramadan",
-    slug: "eid-ramadan",
-    count: "25+ Guides",
-    desc: "Lantern decor, date platters & favors",
   },
 ];
 
@@ -54,7 +54,8 @@ export function ExploreByHoliday() {
           </h2>
         </div>
         <Link
-          to="/events"
+          to="/category/$slug"
+          params={{ slug: "holidays" }}
           className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
         >
           <span>All Holiday Guides</span>

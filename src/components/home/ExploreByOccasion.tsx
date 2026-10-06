@@ -28,7 +28,7 @@ export const occasionList = [
   },
   {
     name: "Baby Shower Gifts",
-    slug: "baby-shower",
+    slug: "bridal-shower",
     count: "30+ Guides",
     desc: "Practical nursery picks & new mom luxury",
   },

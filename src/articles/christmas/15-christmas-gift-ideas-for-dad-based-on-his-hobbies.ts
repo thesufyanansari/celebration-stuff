@@ -25,7 +25,7 @@ export const article: Article = {
     "The easiest way to pick a great gift for Dad? Match it to what he already loves doing. Discover 15 hobby-based Christmas gift ideas for Dad — all under $90, most under $40.",
   answer:
     "The secret to picking an unforgettable Christmas gift for Dad is matching his everyday hobbies and passions. Standout hobby picks include the 10x7ft Backyard Golf Net with Practice Mat for golfers, the Razer BlackShark V2 X Gaming Headset for tech enthusiasts, and the Premium Coffee Gift Box for daily coffee rituals.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

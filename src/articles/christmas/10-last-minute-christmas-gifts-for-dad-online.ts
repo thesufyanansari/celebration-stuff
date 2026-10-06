@@ -20,7 +20,7 @@ export const article: Article = {
     "Christmas is almost here and you still need a gift for Dad? Don't panic. Discover 10 thoughtful, practical last-minute Christmas gifts for Dad available online with fast shipping.",
   answer:
     "The best last-minute Christmas gifts for Dad combine fast 1-2 day delivery with genuine daily utility and sentiment. Top editor-tested emergency picks include the AstroAI L7 Cordless Tire Inflator for practicality, the BIGASUO 10.1-Inch WiFi Digital Picture Frame for family photos, and 90 Messages in a Jar with NFC Keychain for heartfelt sentiment.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

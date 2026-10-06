@@ -1,4 +1,4 @@
-import { articles } from "@/data/articles";
+import { articles, byCategory } from "@/data/articles";
 import { categories, authors, SITE_URL } from "@/data/site";
 
 export function generateSitemapXml(): string {
@@ -13,10 +13,12 @@ export function generateSitemapXml(): string {
     { path: "/editorial-policy", lastmod: "2026-08-01" },
   ];
 
-  const categoryRoutes = categories.map((c) => ({
-    path: `/category/${c.slug}`,
-    lastmod: null,
-  }));
+  const categoryRoutes = categories
+    .filter((c) => byCategory(c.slug).length > 0)
+    .map((c) => ({
+      path: `/category/${c.slug}`,
+      lastmod: null,
+    }));
 
   const authorRoutes = authors.map((a) => ({
     path: `/author/${a.slug}`,

@@ -8,7 +8,7 @@ export const article: Article = {
     "From cozy candle sets to personalized keepsakes, these 18 Thanksgiving gift ideas for mom cover every budget and every kind of mother.",
   answer:
     "The best Thanksgiving gifts for mom balance warmth, thoughtfulness, and everyday usefulness. Strong picks include the Fall & Winter Candle Gift Set with seasonal scents like Pumpkin Spice and Cinnamon Clove, the Best Mom Ever fleece blanket for cozy evenings, and the Sweet Water Decor Hello Fall Reed Diffuser for moms who love a home that smells like the season. Personalized options like the custom photo throw blanket work especially well when you want the gift to feel one of a kind.",
-  category: "gift-guides",
+  category: "thanksgiving",
   event: "Thanksgiving",
   season: "Fall",
   tags: [
@@ -49,7 +49,7 @@ export const article: Article = {
   focusTopic: "Thanksgiving gifts for mothers",
   recipient: ["gifts-for-mom", "gifts-for-her", "gifts-for-women"],
   occasion: ["thanksgiving-gifts"],
-  holiday: ["thanksgiving-gifts"],
+  holiday: ["thanksgiving", "thanksgiving-gifts"],
   giftStyle: ["cozy-gifts", "thoughtful-gifts", "practical-gifts"],
   sections: [
     {

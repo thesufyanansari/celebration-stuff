@@ -8,7 +8,7 @@ export const article: Article = {
     "Walking into someone's home for Thanksgiving dinner empty-handed is never the move. These 17 thoughtful hostess gifts — from elegant wine accessories to cozy fall candles — say thank you in a way your host will actually remember.",
   answer:
     "The best Thanksgiving hostess gifts are useful, seasonal, and easy to enjoy: the Vinno Electric Wine Opener Set stands out for hosts who entertain often because it bundles an opener, aerator, and stopper in one rechargeable kit; the UTCG Bamboo Folding Cheese Board with Knife Set is a strong pick for anyone who loves hosting gatherings; and the Lanpn Fall Scented Candles Gift Set (Pumpkin Spice, Maple Sugar Wreath, Apple Pie, Clove Cinnamon) brings instant autumn warmth to any home.",
-  category: "gift-guides",
+  category: "thanksgiving",
   event: "Thanksgiving",
   season: "Fall",
   tags: [
@@ -51,7 +51,7 @@ export const article: Article = {
   focusTopic: "Thanksgiving hostess thank-you gifts",
   recipient: ["gifts-for-her", "gifts-for-couples", "gifts-for-friends"],
   occasion: ["thanksgiving-gifts"],
-  holiday: ["thanksgiving-gifts"],
+  holiday: ["thanksgiving", "thanksgiving-gifts"],
   giftStyle: ["elegant-gifts", "gourmet-gifts", "practical-gifts"],
   sections: [
     {

@@ -44,31 +44,94 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+const CANONICAL_HOST = "celebrationsstuff.com";
+const CANONICAL_ORIGIN = `https://${CANONICAL_HOST}`;
+
+// Known legacy/redirect mapping to closest relevant page (Phase 12 Case A)
+const LEGACY_PATH_REDIRECTS: Record<string, string> = {
+  "/events": "/category/holidays",
+  "/category/occasions": "/explore",
+  "/category/baby-shower": "/category/bridal-shower",
+  "/category/gift-guides": "/category/gifts",
+  "/category/$slug": "/explore",
+  "/article/$slug": "/explore",
+  "/author/$slug": "/about",
+  "/article": "/explore",
+  "/category": "/explore",
+  "/author": "/about",
+};
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const url = new URL(request.url);
-      const host =
+      const rawHost =
         request.headers.get("x-forwarded-host") || request.headers.get("host") || url.host;
-      const proto = request.headers.get("x-forwarded-proto") || url.protocol.replace(":", "");
+      const host = (rawHost.split(":")[0] || "").toLowerCase();
+      const proto = (
+        request.headers.get("x-forwarded-proto") || url.protocol.replace(":", "")
+      ).toLowerCase();
 
       // Avoid redirecting local development or test hosts
       const isLocal =
         host.includes("localhost") ||
         host.includes("127.0.0.1") ||
         host.includes("::1") ||
-        host.endsWith(".local");
+        host.endsWith(".local") ||
+        host.endsWith(".internal");
 
-      if (!isLocal) {
-        const isNonCanonicalHost =
-          host.toLowerCase() === "www.celebrationsstuff.com" ||
-          host.toLowerCase() === "celebrationstuff.com" ||
-          host.toLowerCase() === "www.celebrationstuff.com";
+      let normalizedPath = url.pathname;
 
-        const isHttp = proto === "http";
+      // Skip asset and static file normalization
+      const isStaticAsset =
+        normalizedPath.startsWith("/_") ||
+        normalizedPath.startsWith("/assets/") ||
+        normalizedPath.startsWith("/fonts/") ||
+        normalizedPath === "/favicon.png" ||
+        normalizedPath === "/logo.png" ||
+        normalizedPath === "/robots.txt" ||
+        normalizedPath === "/sitemap.xml";
 
-        if (isNonCanonicalHost || isHttp) {
-          const targetUrl = `https://celebrationsstuff.com${url.pathname}${url.search}`;
+      let pathChanged = false;
+
+      if (!isStaticAsset) {
+        // 1. Lowercase normalization
+        const lowerPath = normalizedPath.toLowerCase();
+        if (normalizedPath !== lowerPath) {
+          normalizedPath = lowerPath;
+          pathChanged = true;
+        }
+
+        // 2. Trailing slash normalization (strip trailing slash for non-root paths)
+        if (normalizedPath.length > 1 && normalizedPath.endsWith("/")) {
+          normalizedPath = normalizedPath.replace(/\/+$/, "");
+          pathChanged = true;
+        }
+
+        // 3. Known legacy route redirects
+        if (LEGACY_PATH_REDIRECTS[normalizedPath]) {
+          normalizedPath = LEGACY_PATH_REDIRECTS[normalizedPath];
+          pathChanged = true;
+        }
+      }
+
+      // Check if host or protocol needs redirection
+      const isNonCanonicalHost =
+        !isLocal &&
+        (host !== CANONICAL_HOST ||
+          host === "www.celebrationsstuff.com" ||
+          host === "celebrationstuff.com" ||
+          host === "www.celebrationstuff.com");
+
+      const isHttp = !isLocal && proto === "http";
+
+      // If host, protocol, or path requires normalization, issue a single 301 Permanent Redirect
+      if (isNonCanonicalHost || isHttp || (pathChanged && !isLocal)) {
+        const targetOrigin = isLocal ? `${url.protocol}//${rawHost}` : CANONICAL_ORIGIN;
+        const targetUrl = `${targetOrigin}${normalizedPath}${url.search}`;
+
+        // Prevent infinite loops if target is already identical to request
+        if (targetUrl !== request.url) {
           return new Response(null, {
             status: 301,
             headers: {

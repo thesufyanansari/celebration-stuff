@@ -30,7 +30,7 @@ export const article: Article = {
     "If your dad's eyes light up at the sight of a new gadget, you've come to the right place. Discover 20 practical, clever tech gifts he'll actually use every day.",
   answer:
     "The best Christmas gifts for a tech and gadget-loving dad combine genuine problem-solving functionality with high cool-factor appeal. Top editor picks include the WOLFBOX MegaFlow 50 High-Speed Air Duster for workbench cleaning, the Magnetic Levitation Bluetooth Speaker for futuristic desktop audio, and the Daxiongmao 1080P Endoscope Camera for DIY inspections.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

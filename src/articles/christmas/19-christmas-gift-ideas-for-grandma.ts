@@ -8,7 +8,7 @@ export const article: Article = {
     "From a memory journal that captures her stories to a heated blanket made for winter afternoons, these thoughtful Christmas gifts for grandma go far beyond the usual candle set.",
   answer:
     "The best Christmas gifts for grandma combine warmth with meaning: the Frameo 10.1-inch digital picture frame lets the whole family send her new photos from anywhere, the Bedsure heated throw blanket keeps her comfortable through winter evenings, and the Tell Me Your Life Story, Grandma guided journal turns her memories into a keepsake the family will treasure.",
-  category: "gift-guides",
+  category: "gifts-for-women",
   event: "Christmas",
   season: "Winter",
   tags: [

@@ -8,7 +8,7 @@ export const article: Article = {
     "Turn your home into a New Year's Eve venue with these 18 glamorous decor ideas — from black-and-gold balloon arches to champagne-worthy table details, all easy to set up before midnight.",
   answer:
     "The Black and Gold Balloon Garland Arch Kit by Ziophlux is the standout pick for a dramatic New Year's Eve focal point, pairing beautifully with the BOMSI 2 Pack Gold Fringe Curtain Backdrop for photos. For an upscale touch at the drinks station, the BARsics Luxury Floor-Standing Champagne Ice Bucket Set keeps bottles chilled in style all night.",
-  category: "gift-guides",
+  category: "parties-celebrations",
   event: "New Year",
   season: "Winter",
   tags: [

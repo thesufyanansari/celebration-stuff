@@ -8,7 +8,7 @@ export const article: Article = {
     "From date-night boxes to champagne flutes, these 21 New Year gift ideas for couples help you give something they will actually enjoy together.",
   answer:
     "If you need a quick answer, the Lux Luv Luxury Gift Box for Couples stands out as a ready-to-give date night in a box, the Scawim Mr and Mrs Wine Glasses Set of 2 is ideal for couples who love a New Year's Eve champagne toast, and the Modern Mixology 21-Piece Cocktail Shaker Set suits couples building a home bar together.",
-  category: "gift-guides",
+  category: "anniversary-gifts",
   event: "New Year",
   season: "Winter",
   tags: [
@@ -22,6 +22,9 @@ export const article: Article = {
     "gifts-for-him",
     "housewarming-gifts",
     "celebration-gifts",
+    "wedding-gifts",
+    "bridal-shower",
+    "anniversary-gifts",
   ],
   author: "maya-okafor",
   published: "2026-10-02",
@@ -48,8 +51,8 @@ export const article: Article = {
     "new year celebration gifts",
   ],
   focusTopic: "New Year gifts for couples",
-  recipient: ["gifts-for-couples", "gifts-for-her", "gifts-for-him"],
-  occasion: ["new-year-gifts"],
+  recipient: ["gifts-for-couples", "gifts-for-her", "gifts-for-him", "gifts-for-boyfriend"],
+  occasion: ["new-year-gifts", "anniversary-gifts", "wedding-gifts", "bridal-shower"],
   holiday: ["new-year-gifts"],
   giftStyle: ["romantic-gifts", "fun-gifts", "elegant-gifts"],
   sections: [

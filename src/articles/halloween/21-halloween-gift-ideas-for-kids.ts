@@ -6,7 +6,7 @@ export const article: Article = {
   title: "21 Halloween Gift Ideas for Kids",
   excerpt: "From glow-in-the-dark party favors to cozy Halloween plush and spooky LEGO builds, these 21 kid-approved Halloween gifts cover ages 1 to 12 without a single scary surprise.",
   answer: "For kids ages 3 to 12, start with the Creativity for Kids Halloween Window Art Kit for a creative afternoon, the Disney Seasonal Zombie Mickey Mouse Halloween 13.5-inch Feature Plush for a sing-along cuddle buddy, or the LEGO Creator 3 in 1 Haunted Mansion Building Toy for builders ages 9 and up.",
-  category: "gift-guides",
+  category: "gifts-for-kids",
   event: "Halloween",
   season: "Fall",
   tags: ["halloween-gifts", "gifts-for-kids", "halloween-toys", "trick-or-treat", "kids-gift-ideas", "halloween-party-favors", "spooky-gifts", "fall-gifts", "gifts-for-boys", "gifts-for-girls"],

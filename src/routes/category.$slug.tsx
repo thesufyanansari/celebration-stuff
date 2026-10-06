@@ -15,8 +15,9 @@ export const Route = createFileRoute("/category/$slug")({
     if (!loaderData) {
       return { meta: [{ title: "Category unavailable" }, { name: "robots", content: "noindex" }] };
     }
-    const { category } = loaderData;
+    const { category, articles } = loaderData;
     const canonicalUrl = `${SITE_URL}/category/${category.slug}`;
+    const hasArticles = articles && articles.length > 0;
 
     const jsonLdBreadcrumb = {
       "@context": "https://schema.org",
@@ -33,16 +34,22 @@ export const Route = createFileRoute("/category/$slug")({
       ],
     };
 
+    const meta: Array<{ name?: string; property?: string; content: string; title?: string }> = [
+      { title: `${category.name} Gift Ideas & Curated Guides | ${site.name}` },
+      { name: "description", content: category.description },
+      { property: "og:title", content: `${category.name} Gift Ideas | ${site.name}` },
+      { property: "og:description", content: category.description },
+      { property: "og:url", content: canonicalUrl },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ];
+
+    if (!hasArticles) {
+      meta.push({ name: "robots", content: "noindex, follow" });
+    }
+
     return {
-      meta: [
-        { title: `${category.name} Gift Ideas & Curated Guides | ${site.name}` },
-        { name: "description", content: category.description },
-        { property: "og:title", content: `${category.name} Gift Ideas | ${site.name}` },
-        { property: "og:description", content: category.description },
-        { property: "og:url", content: canonicalUrl },
-        { property: "og:type", content: "website" },
-        { name: "twitter:card", content: "summary_large_image" },
-      ],
+      meta,
       links: [{ rel: "canonical", href: canonicalUrl }],
       scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };

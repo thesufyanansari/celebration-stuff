@@ -28,7 +28,7 @@ export const article: Article = {
     "Struggling to shop for the dad who insists he 'doesn't need anything'? Discover 18 practical, clutter-free Christmas gifts that solve problems, get used up, and add real daily value.",
   answer:
     "The best gifts for a dad who doesn't want more stuff are practical problem-solvers, high-utility upgrades, and consumable essentials. Top picks include Luenx Aviator Polarized Sunglasses, a compact EDC Pocket Knife, HOTO Laser Measuring Tool, and DUDE Wipes.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [

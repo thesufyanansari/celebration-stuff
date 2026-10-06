@@ -27,7 +27,7 @@ export const article: Article = {
     "Struggling to shop for the dad who insists he 'doesn't need anything'? Discover 17 thoughtful, practical Christmas gifts designed to fill gaps he didn't even know existed.",
   answer:
     "The best gifts for a dad who has everything are thoughtful upgrades, personal keepsakes, and everyday problem-solvers. Top picks include the Personalized Leather Travel Case, Engraved Whiskey Decanter Set, TESLYAR Wood Docking Station, and Weighted Heating Pad.",
-  category: "gift-guides",
+  category: "gifts-for-dad",
   event: "Christmas",
   season: "Winter",
   tags: [
