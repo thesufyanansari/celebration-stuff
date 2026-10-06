@@ -36,8 +36,11 @@ export const article: Article = {
   answer:
     "Drawer-proof gifts fall into three categories: daily functional replacements like the ZIMASILK Silk Pillowcase ($33.99) or Travelambo RFID Wallet ($17.98), consumable luxuries like Burt's Bees Hand Repair ($14.99), and custom jewelry like MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["practical-gifts", "daily-use"],
   tags: [
     "practical-gifts",
     "gifts-she-will-use",
@@ -46,6 +49,7 @@ export const article: Article = {
     "drawer-proof-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "practical-women"],
   author: "maya-okafor",
   published: "2026-09-19",
   updated: "2026-09-19",
@@ -61,6 +65,14 @@ export const article: Article = {
     "Zero wasted gifts this holiday season. Discover 26 useful replacements, consumable bath favorites, and personalized keepsakes that women actually use daily.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/26-christmas-gifts-for-women-that-wont-end-up-in-a-drawer",
+  primaryKeyword: "Christmas gifts for women that wont end up in a drawer",
+  secondaryKeywords: [
+    "useful Christmas gifts for women",
+    "practical gifts for her she will actually use",
+    "drawer proof Christmas gifts",
+    "functional holiday gifts for women"
+  ],
+  focusTopic: "Drawer-Proof Practical Gifts for Women",
 
   sections: [
     {

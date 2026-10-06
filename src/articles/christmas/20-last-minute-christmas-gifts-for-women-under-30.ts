@@ -30,8 +30,11 @@ export const article: Article = {
   answer:
     "The best last-minute Christmas gifts under $30 are Prime-eligible items with instant appeal: brand-name skincare like the Burt's Bees Hand Repair Set ($14.99) or Tree Hut Pink Hibiscus Shower Set ($18.22), pre-manufactured initial pieces like the M MOOHAM Initial Necklace ($14.99), or cozy staples like EverFoams Slippers ($13.97).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["last-minute-gifts", "budget-gifts"],
   tags: [
     "christmas-gifts",
     "gifts-for-women",
@@ -40,6 +43,7 @@ export const article: Article = {
     "budget-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-08-26",
   updated: "2026-08-26",
@@ -55,6 +59,14 @@ export const article: Article = {
     "Discover 20 last-minute Christmas gifts for women under $30 that ship fast on Prime—from Burt's Bees gift sets to initial totes and cozy slippers.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/20-last-minute-christmas-gifts-for-women-under-30",
+  primaryKeyword: "last minute Christmas gifts for women under $30",
+  secondaryKeywords: [
+    "last minute gifts for her under 30",
+    "quick Christmas gifts for women",
+    "fast shipping holiday gifts for her",
+    "budget last minute gifts for women"
+  ],
+  focusTopic: "Last Minute Christmas Gifts for Women Under $30",
 
   sections: [
     {

@@ -29,8 +29,11 @@ export const article: Article = {
   answer:
     "Focus on understated craftsmanship, minimalist accessories, and elevated daily staples: the Kendra Scott Elisa Pendant ($60), Coach Essential Leather Wristlet ($75), ZIMASILK Silk Pillowcase ($33.99), and Scriveiner Lacquer Pen ($34.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["modern-gifts", "quiet-luxury"],
   tags: [
     "modern-woman",
     "minimalist-gifts",
@@ -39,6 +42,7 @@ export const article: Article = {
     "quiet-luxury",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "modern-woman"],
   author: "maya-okafor",
   published: "2026-09-03",
   updated: "2026-09-03",
@@ -53,6 +57,14 @@ export const article: Article = {
   metaDescription:
     "Understated, elevated holiday gift ideas for the modern minimalist. Discover 19 designer wristlets, minimal jewelry pieces, and refined daily luxuries under $100.",
   canonicalUrl: "https://celebrationsstuff.com/article/19-christmas-gifts-for-the-modern-woman",
+  primaryKeyword: "Christmas gifts for the modern woman",
+  secondaryKeywords: [
+    "minimalist gifts for her Christmas",
+    "quiet luxury gifts for women",
+    "chic modern gifts for women",
+    "contemporary Christmas gifts for her"
+  ],
+  focusTopic: "Christmas Gifts for the Modern Woman",
 
   sections: [
     {

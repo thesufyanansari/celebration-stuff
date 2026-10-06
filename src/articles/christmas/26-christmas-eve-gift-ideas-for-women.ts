@@ -36,8 +36,11 @@ export const article: Article = {
   answer:
     "The best Christmas Eve gifts are immediate-use items: silky pajamas like the Lonxu Satin Pajama Set ($18.99) worn into Christmas morning, evening relaxation picks like the Nurture by Nature Spa Kit ($33.99) or Capri Blue Volcano Candle ($12), or pairing keepsakes like the M MOOHAM Initial Necklace ($14.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-eve", "christmas-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["cozy-gifts", "tradition-gifts"],
   tags: [
     "christmas-eve",
     "gifts-for-women",
@@ -46,6 +49,7 @@ export const article: Article = {
     "pajama-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-01",
   updated: "2026-09-01",
@@ -60,6 +64,14 @@ export const article: Article = {
   metaDescription:
     "Discover 26 Christmas Eve gift ideas for women—silky pajamas worn into Christmas morning, soothing bath sets, and small thoughtful pairing gifts under $50.",
   canonicalUrl: "https://celebrationsstuff.com/article/26-christmas-eve-gift-ideas-for-women",
+  primaryKeyword: "Christmas Eve gift ideas for women",
+  secondaryKeywords: [
+    "Christmas Eve box ideas for her",
+    "cozy Christmas Eve gifts for women",
+    "Christmas Eve presents for her",
+    "night before Christmas gifts for women"
+  ],
+  focusTopic: "Christmas Eve Gifts for Women",
 
   sections: [
     {

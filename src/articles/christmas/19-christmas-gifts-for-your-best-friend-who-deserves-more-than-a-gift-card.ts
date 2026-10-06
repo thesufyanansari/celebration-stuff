@@ -29,8 +29,11 @@ export const article: Article = {
   answer:
     "Skip the generic gift card with items tailored to her personality: cult-favorite skincare sets like the Sol de Janeiro Jet Set ($34) or Summer Fridays Jet Lag ($34), daily mindfulness tools like The Five Minute Journal ($29.99), or personalized jewelry like the M MOOHAM Initial Necklace ($14.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["thoughtful-gifts", "friendship-gifts"],
   tags: [
     "gifts-for-best-friend",
     "christmas-gifts",
@@ -39,6 +42,7 @@ export const article: Article = {
     "personalized-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-best-friend", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-08-27",
   updated: "2026-08-27",
@@ -54,6 +58,14 @@ export const article: Article = {
     "No more boring gift cards. Discover 19 thoughtful, personal Christmas gifts for your best friend—cult beauty sets, initial jewelry, and self-care essentials.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/19-christmas-gifts-for-your-best-friend-who-deserves-more-than-a-gift-card",
+  primaryKeyword: "Christmas gifts for best friend",
+  secondaryKeywords: [
+    "Christmas gift ideas for female best friend",
+    "meaningful gifts for best friend Christmas",
+    "gifts for best friend instead of gift card",
+    "best friend Christmas presents"
+  ],
+  focusTopic: "Christmas Gifts for Your Best Friend",
 
   sections: [
     {

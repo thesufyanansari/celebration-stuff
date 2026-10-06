@@ -36,8 +36,11 @@ export const article: Article = {
   answer:
     "The ultimate cozy gifts upgrade her existing routine: textured blankets like the Bedsure Cable Jacquard Sherpa ($18.98) or Touchat Rabbit Fur Throw ($35.99), pillowy slides like ULTRAIDEAS Clogs ($16.99) or EverFoams ($13.97), and luxurious loungewear like the Lonxu Satin Pajama Set ($18.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["cozy-gifts", "comfort-gifts"],
   tags: [
     "cozy-gifts",
     "gifts-for-women",
@@ -46,6 +49,7 @@ export const article: Article = {
     "slippers-for-women",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-11",
   updated: "2026-09-11",
@@ -61,6 +65,14 @@ export const article: Article = {
     "Pure warmth and comfort. 26 cozy Christmas gifts for women—plush sherpa throws, memory foam slippers, silk pajamas, and relaxing aromatherapy candles.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/26-christmas-gifts-for-women-who-love-cozy-things",
+  primaryKeyword: "Christmas gifts for women who love cozy things",
+  secondaryKeywords: [
+    "cozy Christmas gifts for her",
+    "hygge gifts for women Christmas",
+    "warm and cozy gifts for her",
+    "comfort gifts for women"
+  ],
+  focusTopic: "Cozy Christmas Gifts for Women",
 
   sections: [
     {

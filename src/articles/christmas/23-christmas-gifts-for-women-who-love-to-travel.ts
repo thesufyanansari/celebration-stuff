@@ -33,8 +33,11 @@ export const article: Article = {
   answer:
     "Skip luggage accessories and gift travel lifestyle essentials: TSA-compliant skincare like the BYOMA Travel Set ($17.24) or Summer Fridays Jet Lag ($34), personal-item crossbodies like the BOSTANTEN Phone Wallet ($22.94) or Sling ($18.18), airport tumblers like the STANLEY Quencher ($34.99), and silk pillowcases ($33.99) for post-flight sleep.",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["travel-gear", "practical-gifts"],
   tags: [
     "gifts-for-travelers",
     "travel-gifts-for-women",
@@ -43,6 +46,7 @@ export const article: Article = {
     "travel-essentials",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "travelers"],
   author: "maya-okafor",
   published: "2026-09-21",
   updated: "2026-09-21",
@@ -58,6 +62,14 @@ export const article: Article = {
     "Upgrade her journey. 23 vetted Christmas gifts for women who love to travel—TSA skincare sets, personal-item crossbodies, Stanley tumblers, and recovery essentials.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/23-christmas-gifts-for-women-who-love-to-travel",
+  primaryKeyword: "travel Christmas gifts for women",
+  secondaryKeywords: [
+    "gifts for women who travel",
+    "best travel gifts for her Christmas",
+    "travel essentials gifts for women",
+    "wanderlust gifts for her"
+  ],
+  focusTopic: "Christmas Gifts for Women Who Love to Travel",
 
   sections: [
     {

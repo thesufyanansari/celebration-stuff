@@ -28,8 +28,11 @@ export const article: Article = {
   answer:
     "Make tight budgets feel substantial with personalization and recognized brands: the MignonandMignon Birthstone Necklace ($23.50), Burt's Bees Hand Repair Set ($14.99), Tree Hut Pink Hibiscus Set ($18.22), and Coolife Monogram Glass Cup ($8.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["budget-gifts", "thoughtful-on-a-budget"],
   tags: [
     "budget-gifts",
     "gifts-under-25",
@@ -38,6 +41,7 @@ export const article: Article = {
     "affordable-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "budget-shoppers"],
   author: "maya-okafor",
   published: "2026-09-21",
   updated: "2026-09-21",
@@ -53,6 +57,14 @@ export const article: Article = {
     "Stretch your holiday budget without looking cheap. Discover 18 vetted Christmas gifts for women under $25—personalized jewelry, cozy throws, and beauty sets.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/18-christmas-gifts-for-women-on-a-tight-budget-this-year",
+  primaryKeyword: "Christmas gifts for women on a tight budget",
+  secondaryKeywords: [
+    "affordable gifts for women Christmas",
+    "budget holiday gifts for her",
+    "cheap Christmas gifts for women",
+    "money saving gifts for women"
+  ],
+  focusTopic: "Tight-Budget Christmas Gifts for Women",
 
   sections: [
     {

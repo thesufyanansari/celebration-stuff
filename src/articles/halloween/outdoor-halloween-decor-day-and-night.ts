@@ -35,18 +35,11 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-day-and-night",
   featuredImageAlt:
     "Outdoor Halloween yard decorated with pumpkins, ghosts, skeletons, witches and light-up decorations that look good during the day and at night",
-  primaryKeyword: "outdoor Halloween decor",
+  primaryKeyword: "outdoor Halloween decor for day and night",
   secondaryKeywords: [
-    "outdoor Halloween decorations",
-    "Halloween yard decor",
-    "Halloween decorations day and night",
-    "light-up Halloween decorations",
-    "Halloween front yard decor",
-    "Halloween porch decorations",
-    "Halloween yard decorations",
-    "outdoor Halloween lights",
-    "Halloween lawn decor",
-    "spooky outdoor decorations",
+    "outdoor Halloween decor that looks good in daylight and night",
+    "day to night Halloween outdoor displays",
+    "versatile outdoor Halloween decor"
   ],
   focusTopic: "24-Hour Day-to-Night Outdoor Halloween Yard Decorating",
   recipient: ["homeowners", "neighbors", "trick-or-treaters"],

@@ -28,8 +28,11 @@ export const article: Article = {
   answer:
     "Gifting luxury on a strict $20 budget comes down to material selection and personalization. Top picks include the MARYLAV 18K Gold Plated Bubble Initial Necklace ($13.99), the SHENEE Floral Initial Canvas Tote ($18.99), and the Burt's Bees Hand Repair Gift Set with Cotton Gloves ($14.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["budget-gifts", "luxury-on-a-budget"],
   tags: [
     "christmas-gifts",
     "gifts-for-women",
@@ -38,6 +41,7 @@ export const article: Article = {
     "stocking-stuffers",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-15",
   updated: "2026-09-22",
@@ -53,6 +57,14 @@ export const article: Article = {
     "Discover 18 elevated Christmas gifts under $20 that look expensive—from 14K gold plated initial necklaces and memory foam slippers to monogrammed canvas totes.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/18-christmas-gifts-for-women-under-20-that-dont-look-cheap",
+  primaryKeyword: "Christmas gifts for women under $20",
+  secondaryKeywords: [
+    "cheap Christmas gifts for women that look expensive",
+    "gifts for her under $20",
+    "inexpensive holiday gifts for women",
+    "budget Christmas gifts for women under 20"
+  ],
+  focusTopic: "Christmas Gifts for Women Under $20",
 
   sections: [
     {

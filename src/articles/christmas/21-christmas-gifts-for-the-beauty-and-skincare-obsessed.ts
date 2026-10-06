@@ -31,8 +31,11 @@ export const article: Article = {
   answer:
     "Gift discovery sets and trusted minis rather than guessing her specific active serums: Summer Fridays Jet Lag Essentials ($34), TULA Best Sellers Kit ($49), Peach & Lily Glass Skin Kit ($39), or the complete starter routine e.l.f. Holy Hydration Mini Kit ($20).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["beauty-gifts", "skincare-gifts"],
   tags: [
     "beauty-gifts",
     "skincare-gifts",
@@ -41,6 +44,7 @@ export const article: Article = {
     "k-beauty",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "beauty-lovers"],
   author: "maya-okafor",
   published: "2026-08-28",
   updated: "2026-08-28",
@@ -56,6 +60,14 @@ export const article: Article = {
     "Foolproof holiday beauty gifts she won't already own. Explore 21 curated skincare sets, viral K-Beauty rituals, and prestige vanity staples under $50.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/21-christmas-gifts-for-the-beauty-and-skincare-obsessed",
+  primaryKeyword: "beauty Christmas gifts for women",
+  secondaryKeywords: [
+    "skincare gifts for her Christmas",
+    "best beauty gift sets for women",
+    "luxury beauty Christmas gifts",
+    "k-beauty gifts for her"
+  ],
+  focusTopic: "Christmas Gifts for Beauty & Skincare Lovers",
 
   sections: [
     {

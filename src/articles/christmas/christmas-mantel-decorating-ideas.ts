@@ -9,9 +9,13 @@ export const article: Article = {
   answer:
     "A full-looking Christmas mantel needs a garland roughly 1.5x the mantel length, two or three tall objects for height, and warm string lights woven inside the greenery rather than draped on top.",
   category: "holidays",
+  occasion: ["christmas", "holiday-decor"],
   event: "Christmas",
+  holiday: ["christmas"],
   season: "Winter",
+  giftStyle: ["decor-guide"],
   tags: ["christmas", "mantel", "garland", "decorating"],
+  recipient: ["homeowners", "holiday-hosts"],
   author: "sarah-linden",
   published: "2026-07-29",
   updated: "2026-07-29",
@@ -21,6 +25,15 @@ export const article: Article = {
   imageWidth: 900,
   imageHeight: 1200,
   featured: true,
+  primaryKeyword: "Christmas mantel decorating ideas",
+  secondaryKeywords: [
+    "how to decorate a Christmas mantel",
+    "easy Christmas mantel decor",
+    "holiday mantel decorating formula",
+    "fireplace Christmas decorations",
+    "cozy Christmas mantel ideas"
+  ],
+  focusTopic: "Christmas Fireplace & Mantel Decorating",
   sections: [
     {
       heading: "Buy more garland than feels reasonable",

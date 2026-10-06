@@ -35,18 +35,12 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/halloween-yard-ideas-after-dark",
   featuredImageAlt:
     "Halloween front yard glowing at night with ghosts, pumpkins, pathway lights, skeletons and illuminated decorations",
-  primaryKeyword: "halloween yard ideas",
+  primaryKeyword: "Halloween yard ideas after dark",
   secondaryKeywords: [
-    "Halloween yard decorations",
-    "outdoor Halloween decor",
-    "Halloween yard lighting",
-    "Halloween decorations outdoor",
-    "scary Halloween yard ideas",
-    "Halloween front yard ideas",
-    "light-up Halloween decorations",
-    "Halloween outdoor lights",
-    "spooky yard ideas",
-    "Halloween lawn decorations",
+    "nighttime Halloween yard ideas",
+    "illuminated Halloween yard displays",
+    "spooky yard ideas that look incredible after dark",
+    "dark Halloween yard lighting"
   ],
   focusTopic: "Nighttime Halloween Yard Decorating and Lighting",
   recipient: ["homeowners", "neighbors", "trick-or-treaters"],

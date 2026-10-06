@@ -31,8 +31,11 @@ export const article: Article = {
   answer:
     "The best non-filler stocking stuffers for women combine daily utility with recognizable brands: Burt's Bees Hand Repair ($14.99), M MOOHAM Initial Necklace ($14.99), Coolife Initial Glass Cup ($8.99), Capri Blue Volcano Mini Tin ($12), or BYOMA Hydration Set ($17.24).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "stocking-stuffers"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["small-gifts", "practical-gifts"],
   tags: [
     "stocking-stuffers",
     "gifts-for-women",
@@ -41,6 +44,7 @@ export const article: Article = {
     "holiday-gifts-2026",
     "practical-gifts",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-04",
   updated: "2026-09-04",
@@ -56,6 +60,14 @@ export const article: Article = {
     "Skip the throwaway novelty junk. These 21 useful stocking stuffers for women under $30 feature real brands, initial jewelry, and winter skincare she'll love.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/21-stocking-stuffers-for-women-that-arent-filler",
+  primaryKeyword: "stocking stuffers for women",
+  secondaryKeywords: [
+    "best stocking stuffers for women",
+    "useful stocking stuffers for her",
+    "unique stocking stuffer ideas for women",
+    "stocking fillers for her"
+  ],
+  focusTopic: "Stocking Stuffers for Women",
 
   sections: [
     {

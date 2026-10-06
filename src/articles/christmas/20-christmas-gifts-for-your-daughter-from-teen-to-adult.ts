@@ -30,8 +30,11 @@ export const article: Article = {
   answer:
     "Tailor the gift to her life stage: playful aesthetic jewelry like the MARYLAX Bubble Necklace ($9.99) or Coolife Initial Glass ($8.99) for teens, independence staples like e.l.f. Hydration ($20) or TOPDesign Totes ($17.99) for young adults, and home luxury upgrades like the ZIMASILK Silk Pillowcase ($33.99) for adult daughters.",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["sentimental-gifts", "lifestyle-gifts"],
   tags: [
     "gifts-for-daughter",
     "christmas-gifts",
@@ -40,6 +43,7 @@ export const article: Article = {
     "college-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-daughter", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-09-02",
   updated: "2026-09-02",
@@ -55,6 +59,14 @@ export const article: Article = {
     "Shop specifically for her age. 20 Christmas gifts for daughters split by teens (13-17), young adults (18-24), and adult daughters (25+).",
   canonicalUrl:
     "https://celebrationsstuff.com/article/20-christmas-gifts-for-your-daughter-from-teen-to-adult",
+  primaryKeyword: "Christmas gifts for daughter",
+  secondaryKeywords: [
+    "Christmas gifts for adult daughter",
+    "Christmas gifts for teen daughter",
+    "best Christmas gifts for daughter",
+    "thoughtful gifts for daughter Christmas"
+  ],
+  focusTopic: "Christmas Gifts for Your Daughter",
 
   sections: [
     {

@@ -37,8 +37,11 @@ export const article: Article = {
   answer:
     "Upgrade her at-home sanctuary with tactile comfort: the Lonxu Silk Satin Pajama Set ($18.99), Bedsure Sherpa Jacquard Throw ($18.98), ULTRAIDEAS Memory Foam Slippers ($16.99), and Capri Blue Volcano Candle ($25).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["homebody-gifts", "cozy-gifts"],
   tags: [
     "homebody-gifts",
     "cozy-gifts",
@@ -47,6 +50,7 @@ export const article: Article = {
     "loungewear",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "homebodies"],
   author: "maya-okafor",
   published: "2026-09-06",
   updated: "2026-09-06",
@@ -62,6 +66,14 @@ export const article: Article = {
     "The ultimate holiday guide for homebodies. Explore 27 cozy blankets, plush memory foam slippers, satin sleepwear, and soothing spa sets under $50.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/27-christmas-gifts-for-women-who-would-rather-stay-in",
+  primaryKeyword: "Christmas gifts for women who would rather stay in",
+  secondaryKeywords: [
+    "homebody gifts for her Christmas",
+    "stay at home gifts for women",
+    "introvert gifts for her Christmas",
+    "cozy loungewear gifts for women"
+  ],
+  focusTopic: "Christmas Gifts for Homebodies",
 
   sections: [
     {

@@ -35,17 +35,11 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/halloween-yard-ideas-skeletons-ghosts-gravestones",
   featuredImageAlt:
     "Halloween yard with skeletons, glowing ghosts and gravestones arranged as a spooky cemetery scene",
-  primaryKeyword: "halloween yard ideas",
+  primaryKeyword: "Halloween yard ideas with skeletons and gravestones",
   secondaryKeywords: [
-    "Halloween yard decorations",
-    "skeleton Halloween decorations",
-    "ghost Halloween decorations",
-    "gravestone Halloween decor",
-    "Halloween graveyard ideas",
-    "outdoor Halloween decorations",
-    "spooky front yard ideas",
-    "Halloween lawn decorations",
-    "cemetery Halloween decor",
+    "classic Halloween yard ideas skeletons ghosts gravestones",
+    "traditional Halloween yard display",
+    "cemetery and skeleton yard scene"
   ],
   focusTopic: "Classic Graveyard Yard Scene with Skeletons, Ghosts and Gravestones",
   recipient: ["homeowners", "neighbors", "trick-or-treaters"],

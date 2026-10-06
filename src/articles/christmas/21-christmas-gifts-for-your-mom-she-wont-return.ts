@@ -31,8 +31,11 @@ export const article: Article = {
   answer:
     "Moms keep gifts that fit their established daily habits: dermatologist-trusted skincare like Clinique Hydration Heroes ($30), consumable restocks like the Burt's Bees Classics Tin ($25), soothing bath sets like Nurture by Nature ($33.99), or sentimental jewelry like the MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["practical-gifts", "thoughtful-gifts"],
   tags: [
     "gifts-for-mom",
     "christmas-gifts",
@@ -41,6 +44,7 @@ export const article: Article = {
     "practical-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-mom", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-09-19",
   updated: "2026-09-19",
@@ -56,6 +60,14 @@ export const article: Article = {
     "Avoid the return line. 21 practical, heartwarming Christmas gifts for mom—Clinique skincare, cozy sherpa throws, personalized birthstone jewelry, and home spa kits.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/21-christmas-gifts-for-your-mom-she-wont-return",
+  primaryKeyword: "Christmas gifts for your mom she wont return",
+  secondaryKeywords: [
+    "practical Christmas gifts for mom",
+    "gifts for mom that she will actually keep",
+    "useful Christmas gifts for mom",
+    "best Christmas gifts for mom"
+  ],
+  focusTopic: "Christmas Gifts for Your Mom",
 
   sections: [
     {

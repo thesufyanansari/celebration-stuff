@@ -28,8 +28,11 @@ export const article: Article = {
   answer:
     "Skip guessing her book taste and upgrade her reading ritual: heirloom reading logs like the Veway Tree of Life Journal ($29.95), reading blankets like the Bedsure Cable Jacquard Throw ($18.98) or Touchat Rabbit Fur ($35.99), book hauling totes like the shenee Initial Tote ($7.99), and mood lighting like the Capri Blue Volcano Mini Tin ($12).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["literary-gifts", "cozy-gifts"],
   tags: [
     "gifts-for-readers",
     "book-lover-gifts",
@@ -38,6 +41,7 @@ export const article: Article = {
     "reading-nook",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "book-lovers"],
   author: "maya-okafor",
   published: "2026-09-20",
   updated: "2026-09-20",
@@ -53,6 +57,14 @@ export const article: Article = {
     "Don't buy the wrong book. 18 cozy, thoughtful gifts for the book-loving woman—reading journals, plush sofa throws, library totes, and ambient candles.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/18-christmas-gifts-for-the-book-loving-woman",
+  primaryKeyword: "Christmas gifts for book lovers women",
+  secondaryKeywords: [
+    "reading gifts for her Christmas",
+    "literary gifts for women Christmas",
+    "bookish gifts for her",
+    "gifts for readers women"
+  ],
+  focusTopic: "Christmas Gifts for Book-Loving Women",
 
   sections: [
     {

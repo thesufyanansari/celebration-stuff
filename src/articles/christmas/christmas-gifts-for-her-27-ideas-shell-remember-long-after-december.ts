@@ -37,8 +37,11 @@ export const article: Article = {
   answer:
     "The secret to a memorable Christmas gift for her is routine integration: gifts like the ZIMASILK Mulberry Silk Pillowcase ($33.99), Kendra Scott Elisa Pendant ($60), STANLEY Quencher 30 oz ($34.99), or MignonandMignon Personalized Birthstone Necklace ($23.50) get used daily or nightly across months.",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["sentimental-gifts", "luxury-gifts"],
   tags: [
     "christmas-gifts",
     "gifts-for-her",
@@ -47,6 +50,7 @@ export const article: Article = {
     "holiday-gifts-2026",
     "everyday-luxury",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-08-29",
   updated: "2026-08-29",
@@ -62,6 +66,14 @@ export const article: Article = {
     "Discover 27 non-seasonal Christmas gifts for women that stay in her routine long after the holidays—from heirloom jewelry to daily tumblers and pure silk pillowcases.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/christmas-gifts-for-her-27-ideas-shell-remember-long-after-december",
+  primaryKeyword: "memorable Christmas gifts for her",
+  secondaryKeywords: [
+    "Christmas gifts for her she will remember",
+    "unforgettable Christmas gifts for women",
+    "meaningful gifts for her",
+    "special Christmas gifts for women"
+  ],
+  focusTopic: "Memorable Christmas Gifts for Her",
 
   sections: [
     {

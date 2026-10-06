@@ -39,8 +39,11 @@ export const article: Article = {
   answer:
     "The gifts girlfriends brag about prove you were paying attention: trending jewelry like the Kendra Scott Elisa Pendant ($60) or MignonandMignon Birthstone ($23.50), cult beauty favorites like the Sol de Janeiro Jet Set ($34) or Summer Fridays Kit ($34), and everyday upgrades like the ZIMASILK Silk Pillowcase ($33.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["romantic-gifts", "trending-gifts"],
   tags: [
     "gifts-for-girlfriend",
     "christmas-gifts",
@@ -49,6 +52,7 @@ export const article: Article = {
     "trending-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-girlfriend", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-09-16",
   updated: "2026-09-16",
@@ -64,6 +68,14 @@ export const article: Article = {
     "Score major boyfriend points. 29 brag-worthy Christmas gifts for your girlfriend—trending jewelry, cult skincare, Stanley tumblers, and silk essentials.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/29-christmas-gifts-for-your-girlfriend-shell-brag-about",
+  primaryKeyword: "Christmas gifts for girlfriend",
+  secondaryKeywords: [
+    "best Christmas gifts for girlfriend",
+    "romantic Christmas gifts for girlfriend",
+    "trending Christmas gifts for girlfriend",
+    "cute Christmas gifts for girlfriend"
+  ],
+  focusTopic: "Christmas Gifts for Your Girlfriend",
 
   sections: [
     {

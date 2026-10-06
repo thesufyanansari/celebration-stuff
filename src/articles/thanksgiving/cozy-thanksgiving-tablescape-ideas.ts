@@ -14,6 +14,15 @@ export const article: Article = {
   holiday: ["thanksgiving"],
   occasion: ["thanksgiving", "family-gathering"],
   primaryKeyword: "cozy Thanksgiving tablescape ideas",
+  secondaryKeywords: [
+    "Thanksgiving tablescape ideas",
+    "easy Thanksgiving table decor",
+    "cozy fall table settings",
+    "neutral Thanksgiving table runner",
+    "rustic Thanksgiving tablescape",
+    "Thanksgiving centerpiece ideas"
+  ],
+  focusTopic: "Thanksgiving Tablescape Decorating",
   tags: ["thanksgiving", "tablescape", "hosting", "candles"],
   author: "sarah-linden",
   published: "2026-08-04",

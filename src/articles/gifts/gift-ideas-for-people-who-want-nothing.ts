@@ -12,10 +12,10 @@ export const article: Article = {
   event: "Any Occasion",
   season: "Year-round",
   tags: ["gift guide", "holiday gifts", "minimalist"],
-  recipient: ["gifts-for-mom", "gifts-for-dad", "gifts-for-women", "gifts-for-men"],
-  occasion: ["birthday-gifts", "housewarming-gifts"],
-  holiday: ["christmas-gifts"],
-  giftStyle: ["minimalist-gifts", "budget-gifts"],
+  recipient: ["gifts-for-everyone", "hard-to-shop-for"],
+  occasion: ["any-occasion", "holiday-gifts", "birthday"],
+  holiday: [],
+  giftStyle: ["experience-gifts", "consumable-gifts", "practical-gifts", "minimalist-gifts"],
   author: "maya-okafor",
   published: "2026-08-11",
   updated: "2026-08-15",
@@ -25,6 +25,15 @@ export const article: Article = {
   imageWidth: 900,
   imageHeight: 1200,
   featured: true,
+  primaryKeyword: "gift ideas for people who want nothing",
+  secondaryKeywords: [
+    "gifts for people who want nothing",
+    "what to get someone who wants nothing",
+    "gifts for people who have everything",
+    "gifts for minimalists",
+    "experience gifts for people who want nothing"
+  ],
+  focusTopic: "Gifts for People Who Want Nothing",
   sections: [
     {
       heading: "Category one: excellent consumables",

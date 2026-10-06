@@ -37,13 +37,12 @@ export const article: Article = {
     "https://celebrationsstuff.com/article/12-christmas-gifts-for-mom-she-will-actually-love",
   featuredImageAlt:
     "Beautifully wrapped Christmas gifts arranged with seasonal decor and a handwritten 'For Mom' gift tag.",
-  primaryKeyword: "Christmas gifts for Mom",
+  primaryKeyword: "Christmas gifts for mom she will actually love",
   secondaryKeywords: [
-    "gift ideas for Mom",
-    "thoughtful gifts for Mom",
-    "Christmas presents for Mom",
-    "Mom gift guide",
-    "holiday gifts for Mom",
+    "Christmas gifts for mom tested and reviewed",
+    "foolproof Christmas gifts for mom",
+    "gifts mom will really love Christmas",
+    "practical and loving gifts for mom"
   ],
   focusTopic: "Christmas Gift Recommendations for Mothers",
   recipient: ["gifts-for-mom", "gifts-for-women"],

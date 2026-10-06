@@ -31,18 +31,11 @@ export const article: Article = {
   metaDescription: "Disclosure: This article contains affiliate links. If you buy through one of these links, we may earn a commission at no additional cost to you.\r\n\r\nThe mos",
   canonicalUrl: "https://celebrationsstuff.com/article/vintage-halloween-decorations-treasures-from-the-past",
   featuredImageAlt: "Vintage-inspired Halloween decorations with gothic hands, lace spiderwebs, skeletons, witches, candlelight and old-fashioned spooky details",
-  primaryKeyword: "vintage Halloween decorations",
+  primaryKeyword: "authentic vintage Halloween decorations from the past",
   secondaryKeywords: [
-      "vintage Halloween decor",
-      "antique-inspired Halloween decorations",
-      "old-fashioned Halloween decor",
-      "nostalgic Halloween decorations",
-      "retro Halloween decor",
-      "old-school Halloween decorations",
-      "gothic Halloween decor",
-      "classic Halloween decorations",
-      "vintage-inspired Halloween decor",
-      "Halloween collectibles style"
+    "where to find real vintage Halloween decorations",
+    "antique Halloween collectibles",
+    "authentic retro Halloween treasures"
   ],
   focusTopic: "Vintage Halloween Decorations That Look Like Treasures From the Past",
   recipient: [

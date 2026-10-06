@@ -38,8 +38,11 @@ export const article: Article = {
   answer:
     "The best Christmas gifts for women under $50 balance tactile luxury with daily function. Standout options include the ZIMASILK Mulberry Silk Pillowcase ($29.99) for hair and skin benefits, the STANLEY Quencher 30oz ($35.00) in soft lilac, and the Sol de Janeiro Perfume Mist Discovery Set ($40.00) for versatile holiday fragrance.",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["luxury-on-a-budget", "beauty-gifts", "lifestyle-gifts"],
   tags: [
     "christmas-gifts",
     "gifts-for-women",
@@ -48,6 +51,7 @@ export const article: Article = {
     "gifts-for-her",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-12",
   updated: "2026-09-22",
@@ -62,6 +66,14 @@ export const article: Article = {
   metaDescription:
     "Discover 28 high-end Christmas gift ideas for women under $50 that look and feel indulgent—from cult-favorite beauty sets to Grade 6A silk pillowcases and insulated drinkware.",
   canonicalUrl: "https://celebrationsstuff.com/article/28-christmas-gifts-for-her-under-50",
+  primaryKeyword: "Christmas gifts for her under $50",
+  secondaryKeywords: [
+    "Christmas gifts for women under $50",
+    "luxurious gifts under $50 for her",
+    "affordable luxury gifts for women",
+    "holiday gifts for her under 50 dollars"
+  ],
+  focusTopic: "Christmas Gifts for Women Under $50",
 
   sections: [
     {

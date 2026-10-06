@@ -35,18 +35,11 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/halloween-front-yard-ideas-trick-or-treaters",
   featuredImageAlt:
     "Scary Halloween front yard with zombies, skeletons, ghosts, tombstones, spiders and glowing pathway decorations at night",
-  primaryKeyword: "halloween front yard ideas",
+  primaryKeyword: "Halloween front yard ideas for trick-or-treaters",
   secondaryKeywords: [
-    "Halloween yard decorations",
-    "scary Halloween yard ideas",
-    "outdoor Halloween decorations",
-    "Halloween front yard decor",
-    "spooky yard ideas",
-    "Halloween lawn decorations",
-    "Halloween graveyard ideas",
-    "Halloween animatronics",
-    "scary outdoor Halloween decor",
-    "Halloween pathway decorations",
+    "delight trick or treaters front yard ideas",
+    "kid-friendly Halloween front yard displays",
+    "front yard decorations for trick or treaters"
   ],
   focusTopic: "Scary Front Yard Halloween Staging for Trick-or-Treaters",
   recipient: ["homeowners", "neighbors", "trick-or-treaters"],

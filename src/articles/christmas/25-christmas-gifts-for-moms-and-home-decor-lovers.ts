@@ -35,8 +35,11 @@ export const article: Article = {
   answer:
     "Stick to neutral textures, prestige home fragrances, and keepsake personal jewelry: the Capri Blue Volcano Diffuser ($40), ZIMASILK Mulberry Silk Pillowcase ($33.99), Bedsure Sherpa Jacquard Throw ($18.98), or the personalized MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["home-decor", "cozy-gifts"],
   tags: [
     "gifts-for-mom",
     "home-decor-gifts",
@@ -45,6 +48,7 @@ export const article: Article = {
     "cozy-home",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-mom", "home-decor-lovers"],
   author: "maya-okafor",
   published: "2026-08-31",
   updated: "2026-08-31",
@@ -60,6 +64,14 @@ export const article: Article = {
     "Tasteful, clutter-free holiday home decor and comfort gifts for moms. Explore 25 neutral throws, luxury diffusers, and heirloom jewelry pieces under $50.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/25-christmas-gifts-for-moms-and-home-decor-lovers",
+  primaryKeyword: "home decor Christmas gifts for moms",
+  secondaryKeywords: [
+    "interior decor gifts for mom Christmas",
+    "home lover gifts for her",
+    "aesthetic home gifts for mom",
+    "cozy home Christmas gifts for women"
+  ],
+  focusTopic: "Home Decor Christmas Gifts for Moms",
 
   sections: [
     {

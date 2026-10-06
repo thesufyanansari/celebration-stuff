@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "node scripts/generate-sitemap.js && vite build",
+    "build": "node scripts/generate-keyword-registry.mjs && node scripts/generate-sitemap.js && vite build",
     "build:dev": "vite build --mode development",
+    "registry:build": "node scripts/generate-keyword-registry.mjs",
+    "registry:test": "node scripts/test-keyword-registry.mjs",
+    "keyword:check": "node scripts/check-new-keyword.mjs",
     "start": "node .output/server/index.mjs",
     "preview": "vite preview",
     "lint": "eslint .",

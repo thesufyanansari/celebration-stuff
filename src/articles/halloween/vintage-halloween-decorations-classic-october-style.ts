@@ -31,18 +31,11 @@ export const article: Article = {
   metaDescription: "Disclosure: This article contains affiliate links. If you buy through one of these links, we may earn a commission at no additional cost to you.\r\n\r\nClassic",
   canonicalUrl: "https://celebrationsstuff.com/article/vintage-halloween-decorations-classic-october-style",
   featuredImageAlt: "Vintage-inspired Halloween decorations with black and orange trees, witch decor, floating pumpkins, bats, skeletons and candlelight",
-  primaryKeyword: "vintage Halloween decorations",
+  primaryKeyword: "classic vintage Halloween decorations",
   secondaryKeywords: [
-      "vintage Halloween decor",
-      "classic Halloween decorations",
-      "old-school Halloween decor",
-      "retro Halloween decorations",
-      "classic October decor",
-      "vintage-inspired Halloween ideas",
-      "nostalgic Halloween decorations",
-      "traditional Halloween decor",
-      "black and orange Halloween decor",
-      "old-fashioned Halloween decorations"
+    "classic October style vintage Halloween decor",
+    "retro Halloween decorating style",
+    "nostalgic October Halloween displays"
   ],
   focusTopic: "Classic October Vintage Halloween Decorations",
   recipient: [

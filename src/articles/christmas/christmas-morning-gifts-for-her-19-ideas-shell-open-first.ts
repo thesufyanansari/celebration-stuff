@@ -29,8 +29,11 @@ export const article: Article = {
   answer:
     "The best Christmas morning gifts to open first are wearable or usable immediately: initial necklaces like the M MOOHAM Initial ($14.99), fresh coffee drinkware like the Coolife Initial Cup ($8.99) or BJPKPK Tumbler ($9.99), and plush cozy picks like EverFoams Slippers ($13.97).",
   category: "gifts-for-women",
+  occasion: ["christmas-morning", "christmas-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["cozy-gifts", "morning-routine"],
   tags: [
     "christmas-morning",
     "gifts-for-her",
@@ -39,6 +42,7 @@ export const article: Article = {
     "cozy-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-07",
   updated: "2026-09-07",
@@ -54,6 +58,13 @@ export const article: Article = {
     "Set the holiday tone with 19 Christmas morning gifts for women designed to be opened first—wearable initial jewelry, warm slippers, and coffee essentials.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/christmas-morning-gifts-for-her-19-ideas-shell-open-first",
+  primaryKeyword: "Christmas morning gifts for her",
+  secondaryKeywords: [
+    "first gifts to open Christmas morning for her",
+    "Christmas morning surprises for wife",
+    "morning of Christmas gift ideas for women"
+  ],
+  focusTopic: "Christmas Morning Gifts for Her",
 
   sections: [
     {

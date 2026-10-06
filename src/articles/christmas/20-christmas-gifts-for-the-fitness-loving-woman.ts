@@ -30,8 +30,11 @@ export const article: Article = {
   answer:
     "Skip the technical gym clothing and gift workout lifestyle essentials: high-capacity tumblers like the STANLEY Quencher 30 oz ($34.99) or HydroJug Traveler ($31.99), gym-bag skincare like the BYOMA Travel Set ($17.24) or Sol de Janeiro Shower Kit ($34), and overnight recovery tools like the ZIMASILK Silk Pillowcase ($33.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["fitness-gifts", "wellness-gifts"],
   tags: [
     "gifts-for-fitness-lovers",
     "christmas-gifts",
@@ -40,6 +43,7 @@ export const article: Article = {
     "workout-recovery",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "fitness-lovers"],
   author: "maya-okafor",
   published: "2026-09-14",
   updated: "2026-09-14",
@@ -55,6 +59,14 @@ export const article: Article = {
     "Skip the awkward gym clothes. 20 Christmas gifts for active women—insulated Stanley tumblers, post-workout skincare, hands-free slings, and recovery sets.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/20-christmas-gifts-for-the-fitness-loving-woman",
+  primaryKeyword: "Christmas gifts for fitness lovers women",
+  secondaryKeywords: [
+    "workout gifts for her Christmas",
+    "gym gifts for women Christmas",
+    "fitness gifts for her",
+    "wellness Christmas gifts for women"
+  ],
+  focusTopic: "Christmas Gifts for Fitness-Loving Women",
 
   sections: [
     {

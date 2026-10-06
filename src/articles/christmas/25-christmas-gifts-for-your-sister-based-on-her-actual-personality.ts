@@ -37,8 +37,11 @@ export const article: Article = {
   answer:
     "Match your sister's real personality: cozy homebodies love the Lonxu Satin Pajama Set ($18.99) or Bedsure Sherpa Throw ($18.98), skincare obsessives want Summer Fridays Jet Lag ($34) or TULA Kits ($49), journalers appreciate The Five Minute Journal ($29.99), and trendy sisters love AIPPK Clover Bracelets ($12.89).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["personality-gifts", "fun-gifts"],
   tags: [
     "gifts-for-sister",
     "christmas-gifts",
@@ -47,6 +50,7 @@ export const article: Article = {
     "gifts-by-personality",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-sister", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-09-21",
   updated: "2026-09-21",
@@ -62,6 +66,14 @@ export const article: Article = {
     "Match the gift to who your sister actually is. 25 vetted Christmas gifts for sisters organized by cozy homebody, skincare lover, journaler, and trendsetter.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/25-christmas-gifts-for-your-sister-based-on-her-actual-personality",
+  primaryKeyword: "Christmas gifts for your sister",
+  secondaryKeywords: [
+    "Christmas gift ideas for sister",
+    "gifts for sister based on personality",
+    "unique Christmas gifts for sister",
+    "best gifts for sister Christmas"
+  ],
+  focusTopic: "Christmas Gifts for Your Sister",
 
   sections: [
     {

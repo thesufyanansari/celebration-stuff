@@ -1,0 +1,796 @@
+{
+  "clusters": [
+    {
+      "clusterId": "thanksgiving",
+      "clusterName": "Thanksgiving",
+      "seasonEvent": "Thanksgiving",
+      "season": "Fall",
+      "categoryUrl": "https://celebrationsstuff.com/category/thanksgiving",
+      "mainPillar": {
+        "title": "Thanksgiving Celebration & Gift Guide Pillar",
+        "canonicalUrl": "https://celebrationsstuff.com/category/thanksgiving",
+        "primaryKeyword": "thanksgiving gift ideas",
+        "status": "Active"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Mom",
+          "primaryKeyword": "thanksgiving gift ideas for mom",
+          "canonicalUrl": "https://celebrationsstuff.com/article/18-thanksgiving-gift-ideas-for-mom",
+          "status": "Active",
+          "secondaryKeywords": [
+            "thanksgiving gifts for mother",
+            "cozy gifts for mom",
+            "thoughtful thanksgiving gifts for mom",
+            "fall gifts for mom",
+            "best thanksgiving gifts for mom"
+          ]
+        },
+        {
+          "recipient": "Host / Hostess",
+          "primaryKeyword": "thanksgiving hostess gift ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/17-thanksgiving-hostess-gift-ideas",
+          "status": "Active",
+          "secondaryKeywords": [
+            "hostess gifts for thanksgiving",
+            "thank you gifts for hostess",
+            "thanksgiving dinner host gift",
+            "fall hostess gifts",
+            "best hostess gifts"
+          ]
+        },
+        {
+          "recipient": "Teacher",
+          "primaryKeyword": "thanksgiving gift ideas for teachers",
+          "canonicalUrl": "https://celebrationsstuff.com/article/thanksgiving-gift-ideas-for-teachers",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "teacher thanksgiving gift ideas",
+            "thanksgiving gifts for teachers",
+            "thanksgiving teacher gifts",
+            "small thanksgiving gifts for teachers",
+            "best thanksgiving gifts for teachers",
+            "thanksgiving appreciation gifts for teachers"
+          ]
+        },
+        {
+          "recipient": "Dad",
+          "primaryKeyword": "thanksgiving gift ideas for dad",
+          "canonicalUrl": "https://celebrationsstuff.com/article/thanksgiving-gift-ideas-for-dad",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "thanksgiving gifts for dad",
+            "best thanksgiving gifts for dad",
+            "unique thanksgiving gifts for dad",
+            "thanksgiving presents for dad",
+            "thoughtful thanksgiving gifts for dad"
+          ]
+        },
+        {
+          "recipient": "Clients / Coworkers",
+          "primaryKeyword": "thanksgiving gifts for clients",
+          "canonicalUrl": "https://celebrationsstuff.com/article/thanksgiving-gifts-for-clients",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "corporate thanksgiving gift ideas",
+            "business thanksgiving gifts",
+            "client appreciation gifts thanksgiving"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Gift Baskets",
+          "primaryKeyword": "thanksgiving gift basket ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/thanksgiving-gift-basket-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "thanksgiving food baskets",
+            "fall gift baskets",
+            "gourmet thanksgiving hampers"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Tablescapes",
+          "primaryKeyword": "cozy Thanksgiving tablescape ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/cozy-thanksgiving-tablescape-ideas",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Thanksgiving tablescape ideas",
+            "easy Thanksgiving table decor",
+            "cozy fall table settings",
+            "neutral Thanksgiving table runner"
+          ]
+        },
+        {
+          "topic": "DIY Gifts",
+          "primaryKeyword": "DIY thanksgiving gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/diy-thanksgiving-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "homemade thanksgiving gifts",
+            "easy diy thanksgiving gift ideas",
+            "thanksgiving craft gifts"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Thanksgiving articles must never mix with Christmas or Halloween articles in breadcrumbs or categories.",
+        "modifierConsolidationRule": "Modifiers like 'best', 'cute', 'unique', 'small' belong to the canonical recipient article rather than spawning new URLs.",
+        "priceTierRule": "Price variations under $25/$50 should be consolidated as sections within recipient guides unless sufficient unique search volume and distinct products exist.",
+        "diySeparationRule": "DIY queries require distinct tutorial/craft intent and justify separate URLs only when providing non-commercial handmade instructions."
+      }
+    },
+    {
+      "clusterId": "christmas",
+      "clusterName": "Christmas",
+      "seasonEvent": "Christmas",
+      "season": "Winter",
+      "categoryUrl": "https://celebrationsstuff.com/category/christmas-gifts",
+      "mainPillar": {
+        "title": "Christmas Gifts Master Category Pillar",
+        "canonicalUrl": "https://celebrationsstuff.com/category/christmas-gifts",
+        "primaryKeyword": "Christmas gifts",
+        "status": "Active"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Dad",
+          "primaryKeyword": "Christmas gift ideas for dad",
+          "canonicalUrl": "https://celebrationsstuff.com/article/20-christmas-gift-ideas-for-dad-useful-picks",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gifts for dad",
+            "practical Christmas gifts for dad",
+            "useful dad gifts",
+            "tech gifts for dad",
+            "budget-friendly dad gifts",
+            "unique dad Christmas gifts"
+          ]
+        },
+        {
+          "recipient": "Mom",
+          "primaryKeyword": "best Christmas gifts for mom 2026",
+          "canonicalUrl": "https://celebrationsstuff.com/article/best-christmas-gifts-for-mom-2026",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gifts for mom 2026",
+            "top Christmas gifts for mother",
+            "best holiday gift ideas for mom"
+          ]
+        },
+        {
+          "recipient": "Wife",
+          "primaryKeyword": "Christmas gifts for wife that arent boring",
+          "canonicalUrl": "https://celebrationsstuff.com/article/23-christmas-gifts-for-your-wife-that-arent-boring",
+          "status": "Active",
+          "secondaryKeywords": [
+            "unique Christmas gifts for wife",
+            "thoughtful Christmas gifts for wife",
+            "romantic Christmas gifts for wife",
+            "what to get wife for Christmas"
+          ]
+        },
+        {
+          "recipient": "Girlfriend",
+          "primaryKeyword": "Christmas gifts for girlfriend",
+          "canonicalUrl": "https://celebrationsstuff.com/article/29-christmas-gifts-for-your-girlfriend-shell-brag-about",
+          "status": "Active",
+          "secondaryKeywords": [
+            "best Christmas gifts for girlfriend",
+            "romantic Christmas gifts for girlfriend",
+            "trending Christmas gifts for girlfriend",
+            "cute Christmas gifts for girlfriend"
+          ]
+        },
+        {
+          "recipient": "Sister",
+          "primaryKeyword": "Christmas gifts for your sister",
+          "canonicalUrl": "https://celebrationsstuff.com/article/25-christmas-gifts-for-your-sister-based-on-her-actual-personality",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gift ideas for sister",
+            "gifts for sister based on personality",
+            "unique Christmas gifts for sister"
+          ]
+        },
+        {
+          "recipient": "Daughter",
+          "primaryKeyword": "Christmas gifts for daughter",
+          "canonicalUrl": "https://celebrationsstuff.com/article/20-christmas-gifts-for-your-daughter-from-teen-to-adult",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gifts for adult daughter",
+            "Christmas gifts for teen daughter",
+            "best Christmas gifts for daughter"
+          ]
+        },
+        {
+          "recipient": "Best Friend",
+          "primaryKeyword": "Christmas gifts for best friend",
+          "canonicalUrl": "https://celebrationsstuff.com/article/19-christmas-gifts-for-your-best-friend-who-deserves-more-than-a-gift-card",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gift ideas for female best friend",
+            "meaningful gifts for best friend Christmas",
+            "best friend Christmas presents"
+          ]
+        },
+        {
+          "recipient": "Mother-in-Law",
+          "primaryKeyword": "Christmas gifts for mother-in-law",
+          "canonicalUrl": "https://celebrationsstuff.com/article/24-christmas-gifts-for-your-mother-in-law-yes-really",
+          "status": "Active",
+          "secondaryKeywords": [
+            "best Christmas gifts for mother in law",
+            "thoughtful gifts for mother-in-law Christmas",
+            "what to buy mother in law for Christmas"
+          ]
+        },
+        {
+          "recipient": "Coworkers",
+          "primaryKeyword": "Christmas gifts for female coworkers",
+          "canonicalUrl": "https://celebrationsstuff.com/article/27-christmas-gifts-for-coworkers-and-female-friends",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gifts for coworkers and friends",
+            "office Christmas gifts for women",
+            "small gifts for female coworkers"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Stocking Stuffers",
+          "primaryKeyword": "stocking stuffers for women",
+          "canonicalUrl": "https://celebrationsstuff.com/article/21-stocking-stuffers-for-women-that-arent-filler",
+          "status": "Active",
+          "secondaryKeywords": [
+            "best stocking stuffers for women",
+            "useful stocking stuffers for her",
+            "unique stocking stuffer ideas for women"
+          ]
+        },
+        {
+          "giftType": "Budget Under $20",
+          "primaryKeyword": "Christmas gifts for women under $20",
+          "canonicalUrl": "https://celebrationsstuff.com/article/18-christmas-gifts-for-women-under-20-that-dont-look-cheap",
+          "status": "Active",
+          "secondaryKeywords": [
+            "cheap Christmas gifts for women that look expensive",
+            "gifts for her under $20",
+            "budget Christmas gifts for women under 20"
+          ]
+        },
+        {
+          "giftType": "Budget Under $50",
+          "primaryKeyword": "Christmas gifts for her under $50",
+          "canonicalUrl": "https://celebrationsstuff.com/article/28-christmas-gifts-for-her-under-50",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Christmas gifts for women under $50",
+            "luxurious gifts under $50 for her",
+            "affordable luxury gifts for women"
+          ]
+        },
+        {
+          "giftType": "Splurge Under $100",
+          "primaryKeyword": "Christmas gifts for her under $100",
+          "canonicalUrl": "https://celebrationsstuff.com/article/24-christmas-gifts-for-her-under-100-when-you-want-to-splurge-a-little",
+          "status": "Active",
+          "secondaryKeywords": [
+            "splurge Christmas gifts for women",
+            "luxury gifts for her under 100",
+            "premium gifts for women under 100 dollars"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Mantel Decorating",
+          "primaryKeyword": "Christmas mantel decorating ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/christmas-mantel-decorating-ideas",
+          "status": "Active",
+          "secondaryKeywords": [
+            "how to decorate a Christmas mantel",
+            "easy Christmas mantel decor",
+            "holiday mantel decorating formula"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Christmas gift articles must never bleed into Thanksgiving, Halloween, or Mother's Day categories.",
+        "modifierConsolidationRule": "Recipient articles absorb aesthetic adjectives (cute, stylish, amazing, best) into their existing secondary keyword targets.",
+        "priceTierRule": "Dedicated price pages exist only for high-volume tiers ($20, $50, $100) with proven commercial catalog depth.",
+        "diySeparationRule": "DIY Christmas gift guides are reserved for handmade craft tutorials and printable gifts."
+      }
+    },
+    {
+      "clusterId": "halloween",
+      "clusterName": "Halloween",
+      "seasonEvent": "Halloween",
+      "season": "Fall",
+      "categoryUrl": "https://celebrationsstuff.com/category/halloween",
+      "mainPillar": {
+        "title": "Halloween Celebrations Master Category",
+        "canonicalUrl": "https://celebrationsstuff.com/category/halloween",
+        "primaryKeyword": "Halloween ideas",
+        "status": "Active"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Baby Costumes",
+          "primaryKeyword": "best baby Halloween costume ideas boys girls twins",
+          "canonicalUrl": "https://celebrationsstuff.com/article/best-baby-halloween-costume-ideas-boys-girls-twins",
+          "status": "Active",
+          "secondaryKeywords": [
+            "baby Halloween costume ideas",
+            "baby Halloween costumes boys and girls",
+            "twin baby Halloween costumes"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Outdoor Decor",
+          "primaryKeyword": "outdoor Halloween decorations",
+          "canonicalUrl": "https://celebrationsstuff.com/article/outdoor-halloween-decorations",
+          "status": "Active",
+          "secondaryKeywords": [
+            "best outdoor Halloween decorations",
+            "exterior Halloween decorating ideas",
+            "ultimate outdoor Halloween guide"
+          ]
+        },
+        {
+          "giftType": "Vintage Decor",
+          "primaryKeyword": "classic vintage Halloween decorations",
+          "canonicalUrl": "https://celebrationsstuff.com/article/vintage-halloween-decorations-classic-october-style",
+          "status": "Active",
+          "secondaryKeywords": [
+            "classic October style vintage Halloween decor",
+            "retro Halloween decorating style"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Porch Decor",
+          "primaryKeyword": "stylish Halloween porch decorations",
+          "canonicalUrl": "https://celebrationsstuff.com/article/stylish-halloween-porch-decorations",
+          "status": "Active",
+          "secondaryKeywords": [
+            "Halloween front porch decor",
+            "classy Halloween porch ideas",
+            "fall front porch styling"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Halloween content is strictly quarantined from Thanksgiving and Christmas.",
+        "modifierConsolidationRule": "Baby costume style variants (cute, fun, sweetest) are strictly mapped to their dedicated subtopic articles.",
+        "priceTierRule": "Budget yard and porch decor guides are consolidated into specific dedicated budget guides.",
+        "diySeparationRule": "DIY yard decor guides provide homemade item formulas distinct from commercial prop reviews."
+      }
+    },
+    {
+      "clusterId": "new-year",
+      "clusterName": "New Year",
+      "seasonEvent": "New Year",
+      "season": "Winter",
+      "categoryUrl": "https://celebrationsstuff.com/category/new-year",
+      "mainPillar": {
+        "title": "New Year's Eve Celebrations Pillar",
+        "canonicalUrl": "https://celebrationsstuff.com/category/new-year",
+        "primaryKeyword": "New Year's Eve celebration ideas",
+        "status": "Active"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Party Guests",
+          "primaryKeyword": "New Year's Eve party favors guests will love",
+          "canonicalUrl": "https://celebrationsstuff.com/article/new-years-eve-party-favors-guests-will-love",
+          "status": "Active",
+          "secondaryKeywords": [
+            "NYE party favors",
+            "New Year's party favors",
+            "midnight party favors"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Champagne Glassware",
+          "primaryKeyword": "best champagne glasses for New Year's Eve toasts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/best-champagne-glasses-for-new-years-eve-toasts",
+          "status": "Active",
+          "secondaryKeywords": [
+            "champagne flutes NYE",
+            "coupe glasses New Year",
+            "toast glasses"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Party Planning",
+          "primaryKeyword": "how to host a New Year's Eve party at home",
+          "canonicalUrl": "https://celebrationsstuff.com/article/how-to-host-a-new-years-eve-party-at-home",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "hosting NYE at home",
+            "New Year countdown party ideas"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "New Year's content focuses on countdown, entertaining, and champagne rather than general holiday gifts.",
+        "modifierConsolidationRule": "Glassware and favor keywords are consolidated into their respective product guides.",
+        "priceTierRule": "Budget NYE party ideas live within the hosting master guide.",
+        "diySeparationRule": "DIY NYE photo booth props belong in party entertainment tutorials."
+      }
+    },
+    {
+      "clusterId": "valentines-day",
+      "clusterName": "Valentine's Day",
+      "seasonEvent": "Valentine's Day",
+      "season": "Spring",
+      "categoryUrl": "https://celebrationsstuff.com/category/valentines-day",
+      "mainPillar": {
+        "title": "Valentine's Day Gifts & Ideas Master Guide",
+        "canonicalUrl": "https://celebrationsstuff.com/category/valentines-day",
+        "primaryKeyword": "Valentine's Day gift ideas",
+        "status": "Planned"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Boyfriend / Husband",
+          "primaryKeyword": "Valentine's Day gifts for him",
+          "canonicalUrl": "https://celebrationsstuff.com/article/valentines-day-gifts-for-him",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Valentine gifts for boyfriend",
+            "romantic gifts for husband",
+            "unique Valentine gifts for men"
+          ]
+        },
+        {
+          "recipient": "Girlfriend / Wife",
+          "primaryKeyword": "Valentine's Day gifts for her",
+          "canonicalUrl": "https://celebrationsstuff.com/article/valentines-day-gifts-for-her",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Valentine gifts for girlfriend",
+            "romantic gifts for wife",
+            "best Valentine gifts for women"
+          ]
+        },
+        {
+          "recipient": "Friends / Galentine's",
+          "primaryKeyword": "Galentine's Day gift ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/galentines-day-gift-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for best friends Valentine's Day",
+            "Galentine gift exchange ideas"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Romantic Jewelry & Keepsakes",
+          "primaryKeyword": "romantic Valentine's Day gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/romantic-valentines-day-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "sentimental Valentine gifts",
+            "personalized couples gifts"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Date Night at Home",
+          "primaryKeyword": "Valentine's Day date night ideas at home",
+          "canonicalUrl": "https://celebrationsstuff.com/article/valentines-day-date-night-ideas-at-home",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "romantic date night at home",
+            "indoor Valentine's Day dates"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Valentine's Day romantic intent must not be confused with anniversary or Christmas gifts.",
+        "modifierConsolidationRule": "Romantic and cute modifiers are subsumed into the Her and Him canonical guides.",
+        "priceTierRule": "Budget Valentine's gifts under $30 are incorporated as sections unless search intent dictates standalone page.",
+        "diySeparationRule": "DIY Valentine cards and homemade treats are separated into crafting tutorials."
+      }
+    },
+    {
+      "clusterId": "ramadan",
+      "clusterName": "Ramadan",
+      "seasonEvent": "Ramadan",
+      "season": "Spring",
+      "categoryUrl": "https://celebrationsstuff.com/category/eid-ramadan",
+      "mainPillar": {
+        "title": "Ramadan Decor & Gifting Guide",
+        "canonicalUrl": "https://celebrationsstuff.com/category/eid-ramadan",
+        "primaryKeyword": "Ramadan gift ideas",
+        "status": "Planned"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Iftar Host",
+          "primaryKeyword": "Ramadan Iftar host gift ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/ramadan-iftar-host-gift-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Iftar thank you gifts",
+            "dates and sweets for Iftar host",
+            "Ramadan dinner guest gifts"
+          ]
+        },
+        {
+          "recipient": "Kids",
+          "primaryKeyword": "Ramadan gifts for kids",
+          "canonicalUrl": "https://celebrationsstuff.com/article/ramadan-gifts-for-kids",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Ramadan countdown calendar gifts",
+            "Islamic books and games for children"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Gift Baskets & Dates",
+          "primaryKeyword": "Ramadan gourmet gift baskets",
+          "canonicalUrl": "https://celebrationsstuff.com/article/ramadan-gourmet-gift-baskets",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "luxury date gift boxes",
+            "halal gourmet hampers"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Home Decor",
+          "primaryKeyword": "Ramadan home decorating ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/ramadan-home-decorating-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "crescent and star lights Ramadan",
+            "Ramadan corner setup ideas"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Ramadan focuses on spiritual preparation, Iftar hosting, and fasting decor; distinct from Eid al-Fitr celebratory gifts.",
+        "modifierConsolidationRule": "Decor variations are consolidated under home decorating ideas.",
+        "priceTierRule": "Budget Iftar favors live within the host guide.",
+        "diySeparationRule": "Ramadan DIY countdown banners are separated as crafts."
+      }
+    },
+    {
+      "clusterId": "eid",
+      "clusterName": "Eid",
+      "seasonEvent": "Eid",
+      "season": "Spring",
+      "categoryUrl": "https://celebrationsstuff.com/category/eid-ramadan",
+      "mainPillar": {
+        "title": "Eid Celebrations & Gift Ideas",
+        "canonicalUrl": "https://celebrationsstuff.com/category/eid-ramadan",
+        "primaryKeyword": "Eid gift ideas",
+        "status": "Planned"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Kids (Eidi)",
+          "primaryKeyword": "Eid gift ideas for kids",
+          "canonicalUrl": "https://celebrationsstuff.com/article/eid-gift-ideas-for-kids",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Eidi gifts for children",
+            "Eid toys and surprises",
+            "Eid al-Fitr presents for toddlers"
+          ]
+        },
+        {
+          "recipient": "Parents / Family",
+          "primaryKeyword": "Eid gift ideas for family",
+          "canonicalUrl": "https://celebrationsstuff.com/article/eid-gift-ideas-for-family",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Eid gifts for parents",
+            "Eid presents for elders",
+            "family Eid hampers"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Sweet Boxes & Luxury Oud",
+          "primaryKeyword": "luxury Eid gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/luxury-eid-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "oud perfume Eid gifts",
+            "baklava and sweet gift boxes"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Eid Table & Home Styling",
+          "primaryKeyword": "Eid Mubarak table decor ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/eid-mubarak-table-decor-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Eid lunch table setting",
+            "Eid party decoration styling"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Eid content is celebratory, focusing on feasts, Eidi, and apparel.",
+        "modifierConsolidationRule": "Adjectives like luxury and unique are consolidated under recipient pages.",
+        "priceTierRule": "Affordable Eidi envelopes and tokens remain in the kids guide.",
+        "diySeparationRule": "DIY Eid Mubarak cards are tutorial articles."
+      }
+    },
+    {
+      "clusterId": "mothers-day",
+      "clusterName": "Mother's Day",
+      "seasonEvent": "Mother's Day",
+      "season": "Spring",
+      "categoryUrl": "https://celebrationsstuff.com/category/mothers-day",
+      "mainPillar": {
+        "title": "Mother's Day Gift Guide Pillar",
+        "canonicalUrl": "https://celebrationsstuff.com/category/mothers-day",
+        "primaryKeyword": "Mother's Day gift ideas",
+        "status": "Planned"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "First-Time Mom",
+          "primaryKeyword": "first Mother's Day gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/first-mothers-day-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for new moms Mother's Day",
+            "first time mom keepsake gifts"
+          ]
+        },
+        {
+          "recipient": "Grandma",
+          "primaryKeyword": "Mother's Day gifts for grandma",
+          "canonicalUrl": "https://celebrationsstuff.com/article/mothers-day-gifts-for-grandma",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for grandmother Mother's Day",
+            "sentimental gifts for grandma"
+          ]
+        },
+        {
+          "recipient": "Mother-in-Law",
+          "primaryKeyword": "Mother's Day gifts for mother-in-law",
+          "canonicalUrl": "https://celebrationsstuff.com/article/mothers-day-gifts-for-mother-in-law",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for mother in law Mother's Day",
+            "thoughtful mother in law gifts"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "Sentimental Jewelry",
+          "primaryKeyword": "sentimental Mother's Day gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/sentimental-mothers-day-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "custom birthstone jewelry for mom",
+            "personalized keepsakes for Mother's Day"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Mother's Day Brunch",
+          "primaryKeyword": "Mother's Day brunch table setting ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/mothers-day-brunch-table-setting-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "spring brunch tablescape",
+            "hosting Mother's Day brunch at home"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Mother's Day queries are distinct from Christmas gifts for mom or Thanksgiving gifts for mom.",
+        "modifierConsolidationRule": "Unique, cute, best, and thoughtful modifiers are consolidated into canonical Mom guides.",
+        "priceTierRule": "Price tiers under $50 are sections within the primary Mom guide.",
+        "diySeparationRule": "DIY Mother's Day gifts for kids are tutorial articles."
+      }
+    },
+    {
+      "clusterId": "fathers-day",
+      "clusterName": "Father's Day",
+      "seasonEvent": "Father's Day",
+      "season": "Summer",
+      "categoryUrl": "https://celebrationsstuff.com/category/fathers-day",
+      "mainPillar": {
+        "title": "Father's Day Gift Guide Pillar",
+        "canonicalUrl": "https://celebrationsstuff.com/category/fathers-day",
+        "primaryKeyword": "Father's Day gift ideas",
+        "status": "Planned"
+      },
+      "supportingRecipientPages": [
+        {
+          "recipient": "Dad Who Has Everything",
+          "primaryKeyword": "Father's Day gifts for dad who has everything",
+          "canonicalUrl": "https://celebrationsstuff.com/article/fathers-day-gifts-for-dad-who-has-everything",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for hard to buy for dad Father's Day",
+            "unique Father's Day gifts for dad"
+          ]
+        },
+        {
+          "recipient": "Grandpa",
+          "primaryKeyword": "Father's Day gifts for grandpa",
+          "canonicalUrl": "https://celebrationsstuff.com/article/fathers-day-gifts-for-grandpa",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for grandfather Father's Day",
+            "thoughtful gifts for grandpa"
+          ]
+        },
+        {
+          "recipient": "First-Time Dad",
+          "primaryKeyword": "first Father's Day gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/first-fathers-day-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "gifts for new dad Father's Day",
+            "first time father presents"
+          ]
+        }
+      ],
+      "giftTypePages": [
+        {
+          "giftType": "BBQ & Outdoor Gear",
+          "primaryKeyword": "Father's Day grilling and BBQ gifts",
+          "canonicalUrl": "https://celebrationsstuff.com/article/fathers-day-grilling-and-bbq-gifts",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "grill master gifts for dad",
+            "outdoor smoker accessories"
+          ]
+        }
+      ],
+      "informationalPages": [
+        {
+          "topic": "Father's Day Backyard Cookout",
+          "primaryKeyword": "Father's Day backyard cookout ideas",
+          "canonicalUrl": "https://celebrationsstuff.com/article/fathers-day-backyard-cookout-ideas",
+          "status": "Planned",
+          "secondaryKeywords": [
+            "Father's Day party setup",
+            "outdoor BBQ menu and decor"
+          ]
+        }
+      ],
+      "keywordRules": {
+        "crossSeasonIsolation": "Father's Day seasonal intent focuses on summer, outdoor, grilling, and fatherhood; distinct from Christmas gifts for dad.",
+        "modifierConsolidationRule": "Practical and useful dad modifiers live within the primary Dad guides.",
+        "priceTierRule": "Budget Father's Day gifts under $30 belong as sections.",
+        "diySeparationRule": "DIY Father's Day gift cards from toddlers are tutorial crafts."
+      }
+    }
+  ]
+}

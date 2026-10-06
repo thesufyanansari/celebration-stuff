@@ -59,14 +59,12 @@ export const article: Article = {
     "https://celebrationsstuff.com/article/outdoor-halloween-decorations-impress-neighbors",
   featuredImageAlt:
     "17 outdoor Halloween decorations that actually impress the neighbors featuring inflatables, animatronics, and spooky front yard displays",
-  primaryKeyword: "outdoor halloween decorations",
+  primaryKeyword: "outdoor Halloween decorations that impress neighbors",
   secondaryKeywords: [
-    "halloween yard ideas",
-    "outdoor halloween decor",
-    "halloween front yard",
-    "impress the neighbors halloween",
-    "halloween yard inflatables",
-    "halloween animatronics",
+    "neighborhood outdoor Halloween decor",
+    "outdoor Halloween decorations to impress the whole neighborhood",
+    "impressive outdoor Halloween setup",
+    "spectacular exterior Halloween decor"
   ],
   focusTopic: "Outdoor Halloween Decorations & Yard Displays That Impress Neighbors",
   recipient: ["homeowners", "neighbors", "family"],

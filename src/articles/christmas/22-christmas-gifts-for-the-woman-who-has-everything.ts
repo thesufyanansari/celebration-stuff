@@ -32,8 +32,11 @@ export const article: Article = {
   answer:
     "The secret to shopping for the woman who has everything is focusing on three rules: small luxuries she hesitates to buy herself like the ZIMASILK Silk Pillowcase ($33.99), consumables that disappear without clutter like the Nurture by Nature Spa Kit ($33.99) or Sol de Janeiro Jet Set ($34), and custom birthstone jewelry like MignonandMignon ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["unique-gifts", "luxury-gifts"],
   tags: [
     "gifts-for-women-who-have-everything",
     "christmas-gifts",
@@ -42,6 +45,7 @@ export const article: Article = {
     "unique-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "hard-to-shop-for"],
   author: "maya-okafor",
   published: "2026-09-08",
   updated: "2026-09-08",
@@ -57,6 +61,14 @@ export const article: Article = {
     "She buys what she wants—what do you get her? 22 unique Christmas gifts for the woman who has everything: silk pillowcases, luxury consumables, and custom keepsakes.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/22-christmas-gifts-for-the-woman-who-has-everything",
+  primaryKeyword: "Christmas gifts for the woman who has everything",
+  secondaryKeywords: [
+    "gifts for women who have everything",
+    "unique gifts for her who has it all",
+    "luxury gifts for the woman who has everything",
+    "what to get a woman who wants nothing"
+  ],
+  focusTopic: "Christmas Gifts for the Woman Who Has Everything",
 
   sections: [
     {

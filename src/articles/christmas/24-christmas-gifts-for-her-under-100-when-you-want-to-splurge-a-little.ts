@@ -34,8 +34,11 @@ export const article: Article = {
   answer:
     "A splurge gift under $100 delivers designer prestige and enduring quality. Top editor picks include the Michael Kors Jet Set Charm Shoulder Bag ($97.13), the Coach Essential Pebble Leather Corner Zip Wristlet ($75.00), the Kendra Scott Elisa Pendant Necklace ($60.00), and the Swarovski Emily Crystal Tennis Bracelet ($65.00).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["luxury-gifts", "premium-gifts"],
   tags: [
     "christmas-gifts",
     "gifts-for-women",
@@ -44,6 +47,7 @@ export const article: Article = {
     "luxury-gifts-for-her",
     "holiday-gift-guide-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-22",
   updated: "2026-09-23",
@@ -59,6 +63,14 @@ export const article: Article = {
     "Spoil her with 24 luxurious Christmas gifts under $100—from Coach leather wristlets and Michael Kors bags to Kendra Scott jewelry and Italian sterling silver.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/24-christmas-gifts-for-her-under-100-when-you-want-to-splurge-a-little",
+  primaryKeyword: "Christmas gifts for her under $100",
+  secondaryKeywords: [
+    "splurge Christmas gifts for women",
+    "luxury gifts for her under 100",
+    "holiday gifts for her under $100",
+    "premium gifts for women under 100 dollars"
+  ],
+  focusTopic: "Christmas Gifts for Her Under $100",
 
   sections: [
     {

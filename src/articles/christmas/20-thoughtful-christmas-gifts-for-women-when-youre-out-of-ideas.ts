@@ -30,8 +30,11 @@ export const article: Article = {
   answer:
     "When you're out of ideas, stop browsing random items and pick a reliable category: daily-use upgrades like Burt's Bees Hand Repair ($14.99) or EverFoams Slippers ($13.97), small luxuries like the ZIMASILK Silk Pillowcase ($33.99), or personalized jewelry like the MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["thoughtful-gifts", "foolproof-gifts"],
   tags: [
     "thoughtful-gifts",
     "gifts-for-her",
@@ -40,6 +43,7 @@ export const article: Article = {
     "last-minute-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-12",
   updated: "2026-09-12",
@@ -55,6 +59,14 @@ export const article: Article = {
     "Stuck on holiday shopping? Stop scrolling and choose from 20 vetted, thoughtful Christmas gifts for women—daily upgrades, small luxuries, and custom keepsakes.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/20-thoughtful-christmas-gifts-for-women-when-youre-out-of-ideas",
+  primaryKeyword: "thoughtful Christmas gifts for women when out of ideas",
+  secondaryKeywords: [
+    "last minute thoughtful gifts for her",
+    "meaningful Christmas gifts for women",
+    "fail proof Christmas gifts for her",
+    "gifts for women when you have no ideas"
+  ],
+  focusTopic: "Thoughtful Gifts for Women When Out of Ideas",
 
   sections: [
     {

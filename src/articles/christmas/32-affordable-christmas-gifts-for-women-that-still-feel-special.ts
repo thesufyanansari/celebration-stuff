@@ -42,8 +42,11 @@ export const article: Article = {
   answer:
     "An affordable Christmas gift feels special when it upgrades a daily routine or carries personal meaning. Top selections include the ZIMASILK Mulberry Silk Pillowcase ($29.99), the TOPDesign Embroidered Monogram Canvas Tote ($22.99), and the Bedsure Faux Fur Throw ($32.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["budget-gifts", "thoughtful-gifts"],
   tags: [
     "christmas-gifts",
     "gifts-for-women",
@@ -52,6 +55,7 @@ export const article: Article = {
     "thoughtful-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-for-her"],
   author: "maya-okafor",
   published: "2026-09-18",
   updated: "2026-09-22",
@@ -67,6 +71,14 @@ export const article: Article = {
     "Explore 32 budget-friendly Christmas gift ideas for women that feel intentional, elevated, and deeply thoughtful—from Grade 6A silk pillowcases to monogrammed totes.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/32-affordable-christmas-gifts-for-women-that-still-feel-special",
+  primaryKeyword: "affordable Christmas gifts for women",
+  secondaryKeywords: [
+    "budget Christmas gifts for women",
+    "thoughtful affordable gifts for her",
+    "inexpensive Christmas gifts for women",
+    "special gifts for her on a budget"
+  ],
+  focusTopic: "Affordable Christmas Gifts for Women",
 
   sections: [
     {

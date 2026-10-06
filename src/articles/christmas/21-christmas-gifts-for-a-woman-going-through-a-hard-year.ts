@@ -31,8 +31,11 @@ export const article: Article = {
   answer:
     "Choose gifts focused entirely on quiet comfort and zero expectations: the Bedsure Sherpa Jacquard Throw ($18.98), ZIMASILK Silk Pillowcase ($33.99), Lonxu Silk Satin Pajamas ($18.99), and Nurture by Nature Restorative Spa Kit ($33.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "care-package"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["comfort-gifts", "care-package"],
   tags: [
     "comfort-gifts",
     "care-package",
@@ -41,6 +44,7 @@ export const article: Article = {
     "thoughtful-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "loved-ones-in-need"],
   author: "maya-okafor",
   published: "2026-09-17",
   updated: "2026-09-17",
@@ -56,6 +60,14 @@ export const article: Article = {
     "Gentle, comforting holiday gifts that ask nothing in return. Explore 21 cozy blankets, soft loungewear, calming bath sets, and quiet keepsakes under $50.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/21-christmas-gifts-for-a-woman-going-through-a-hard-year",
+  primaryKeyword: "Christmas gifts for a woman going through a hard year",
+  secondaryKeywords: [
+    "comforting gifts for her Christmas",
+    "care package gifts for women holiday",
+    "encouragement gifts for women",
+    "thoughtful grief gifts for her"
+  ],
+  focusTopic: "Comforting Gifts for a Hard Year",
 
   sections: [
     {

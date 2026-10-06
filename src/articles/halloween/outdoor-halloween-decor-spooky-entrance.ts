@@ -35,18 +35,11 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/outdoor-halloween-decor-spooky-entrance",
   featuredImageAlt:
     "Spooky Halloween front entrance with hanging ghosts, witch hats, candles, bats, pumpkins and glowing decorations",
-  primaryKeyword: "outdoor Halloween decor",
+  primaryKeyword: "outdoor Halloween decor for spooky entrance",
   secondaryKeywords: [
-    "Halloween entrance decor",
-    "Halloween porch decorations",
-    "outdoor Halloween decorations",
-    "spooky front door decor",
-    "Halloween front entrance ideas",
-    "Halloween porch decor",
-    "scary Halloween entrance",
-    "Halloween doorway decorations",
-    "Halloween outdoor lights",
-    "Halloween yard entrance decor",
+    "how to create a spooky entrance Halloween",
+    "spooky front entrance Halloween decor",
+    "haunted entryway outdoor decor"
   ],
   focusTopic: "Spooky Halloween Front Porch and Entrance Decorating",
   recipient: ["homeowners", "neighbors", "trick-or-treaters"],

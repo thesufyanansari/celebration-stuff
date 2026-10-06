@@ -37,8 +37,11 @@ export const article: Article = {
   answer:
     "The sweet spot for coworker and friend gifts is $15 to $35: universally useful winter hand care like Burt's Bees Hand Repair ($14.99), desk coffee tumblers like the BJPKPK Tumbler ($9.99), personalized initial totes like shenee ($7.99), or recognized home scents like Capri Blue Volcano Mini Tins ($12).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "office-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["office-appropriate", "budget-gifts"],
   tags: [
     "coworker-gifts",
     "gifts-for-friends",
@@ -47,6 +50,7 @@ export const article: Article = {
     "gifts-under-25",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-coworkers", "gifts-for-friends"],
   author: "maya-okafor",
   published: "2026-09-05",
   updated: "2026-09-05",
@@ -62,6 +66,14 @@ export const article: Article = {
     "Safe, useful, and thoughtful. 27 Christmas gifts for coworkers and friends under $50—desk tumblers, Burt's Bees tins, monogrammed totes, and spa baskets.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/27-christmas-gifts-for-coworkers-and-female-friends",
+  primaryKeyword: "Christmas gifts for female coworkers",
+  secondaryKeywords: [
+    "Christmas gifts for coworkers and friends",
+    "office Christmas gifts for women",
+    "small gifts for female coworkers",
+    "budget Christmas gifts for coworkers"
+  ],
+  focusTopic: "Christmas Gifts for Coworkers & Friends",
 
   sections: [
     {

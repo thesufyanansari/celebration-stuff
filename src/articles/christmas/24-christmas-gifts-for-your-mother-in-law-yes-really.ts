@@ -34,8 +34,11 @@ export const article: Article = {
   answer:
     "The ideal mother-in-law gift is warm, elegant, and non-intrusive: trusted skincare like Clinique Hydration Heroes ($30), continuous home fragrance like the Capri Blue Volcano Diffuser ($40), luxurious relaxation hampers like Nurture by Nature ($33.99), or subtle designer pieces like the Coach Wristlet ($75).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["elegant-gifts", "thoughtful-gifts"],
   tags: [
     "gifts-for-mother-in-law",
     "christmas-gifts",
@@ -44,6 +47,7 @@ export const article: Article = {
     "elegant-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-mother-in-law", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-08-30",
   updated: "2026-08-30",
@@ -59,6 +63,14 @@ export const article: Article = {
     "High stakes made simple. 24 safe, elegant Christmas gifts for your mother-in-law—trusted Clinique sets, Capri Blue diffusers, and cozy neutral throws.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/24-christmas-gifts-for-your-mother-in-law-yes-really",
+  primaryKeyword: "Christmas gifts for mother-in-law",
+  secondaryKeywords: [
+    "best Christmas gifts for mother in law",
+    "thoughtful gifts for mother-in-law Christmas",
+    "impressive mother in law Christmas gifts",
+    "what to buy mother in law for Christmas"
+  ],
+  focusTopic: "Christmas Gifts for Mother-in-Law",
 
   sections: [
     {

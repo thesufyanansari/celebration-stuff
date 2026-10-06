@@ -34,8 +34,11 @@ export const article: Article = {
   answer:
     "Choose gifts that disappear naturally or replace existing items: consumable self-care like the Sol de Janeiro Jet Set ($34) or Burt's Bees Hand Repair ($14.99), functional replacements like the ZIMASILK Silk Pillowcase ($33.99), or pocket-sized keepsakes like MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["clutter-free", "consumable-gifts"],
   tags: [
     "clutter-free-gifts",
     "minimalist-gifts",
@@ -44,6 +47,7 @@ export const article: Article = {
     "consumable-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "minimalists"],
   author: "maya-okafor",
   published: "2026-09-15",
   updated: "2026-09-15",
@@ -59,6 +63,14 @@ export const article: Article = {
     "Clutter-free holiday gifts that don't end up on shelves. Explore 24 consumable bath sets, daily functional upgrades, and pocket-sized jewelry keepsakes under $50.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/24-christmas-gifts-for-women-who-dont-want-more-clutter",
+  primaryKeyword: "Christmas gifts for women who dont want more clutter",
+  secondaryKeywords: [
+    "clutter free Christmas gifts for her",
+    "consumable Christmas gifts for women",
+    "minimalist holiday gifts for her",
+    "non material gifts for women"
+  ],
+  focusTopic: "Clutter-Free Christmas Gifts for Women",
 
   sections: [
     {

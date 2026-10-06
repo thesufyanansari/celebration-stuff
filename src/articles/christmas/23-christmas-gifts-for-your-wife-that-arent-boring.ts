@@ -33,8 +33,11 @@ export const article: Article = {
   answer:
     "A non-boring gift for your wife requires specificity: designer jewelry like the Kendra Scott Elisa Pendant ($60) or Swarovski Emily Tennis Bracelet ($65), everyday luxury upgrades like the ZIMASILK Mulberry Silk Pillowcase ($33.99), or quiet leather splurges like the Coach Essential Wristlet ($75).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["romantic-gifts", "luxury-gifts", "thoughtful-gifts"],
   tags: [
     "gifts-for-wife",
     "christmas-gifts",
@@ -43,6 +46,7 @@ export const article: Article = {
     "luxury-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-wife", "gifts-for-women"],
   author: "maya-okafor",
   published: "2026-09-13",
   updated: "2026-09-13",
@@ -58,6 +62,14 @@ export const article: Article = {
     "Don't give a forgettable gift. Discover 23 non-boring Christmas gifts for your wife—from Italian sterling silver jewelry to mulberry silk and luxury candles.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/23-christmas-gifts-for-your-wife-that-arent-boring",
+  primaryKeyword: "Christmas gifts for wife that arent boring",
+  secondaryKeywords: [
+    "unique Christmas gifts for wife",
+    "thoughtful Christmas gifts for wife",
+    "romantic Christmas gifts for wife",
+    "what to get wife for Christmas"
+  ],
+  focusTopic: "Christmas Gifts for Your Wife",
 
   sections: [
     {

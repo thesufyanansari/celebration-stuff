@@ -43,8 +43,11 @@ export const article: Article = {
   answer:
     "Match the gift tone to the relationship: romantic staples for partners like the Kendra Scott Elisa Necklace ($60) or Swarovski Tennis Bracelet ($65), brand-name reliability for moms like the Clinique Hydration Heroes ($30), personal keepsakes for sisters like the MignonandMignon Birthstone ($23.50), and foolproof consumables for coworkers like Burt's Bees Hand Repair ($14.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["curated-guide", "every-relationship"],
   tags: [
     "gifts-for-women",
     "christmas-gifts",
@@ -55,6 +58,7 @@ export const article: Article = {
     "coworker-gifts",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "gifts-by-relationship"],
   author: "maya-okafor",
   published: "2026-09-10",
   updated: "2026-09-10",
@@ -70,6 +74,13 @@ export const article: Article = {
     "One list, every woman on your holiday shopping list. Explore 33 vetted Christmas gifts organized by partner, mom, sister, daughter, coworker, and hostess.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/33-christmas-gifts-for-the-women-in-your-life-one-list-every-relationship",
+  primaryKeyword: "Christmas gifts for the women in your life",
+  secondaryKeywords: [
+    "Christmas gifts for every woman in your life",
+    "gifts for women Christmas master guide",
+    "holiday gifts for all the women in your family"
+  ],
+  focusTopic: "Christmas Gifts for Every Woman in Your Life",
 
   sections: [
     {

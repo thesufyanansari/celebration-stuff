@@ -29,13 +29,12 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/best-christmas-gifts-for-mom-2026",
   featuredImageAlt:
     "A collage of top Christmas gifts for Mom including a smart mug, blanket, jewelry, and candles.",
-  primaryKeyword: "Christmas gifts for Mom",
+  primaryKeyword: "best Christmas gifts for mom 2026",
   secondaryKeywords: [
-    "best gifts for Mom 2026",
-    "unique Christmas gifts for Mom",
-    "Amazon gifts for Mom",
-    "thoughtful Christmas presents",
-    "Mom gift guide",
+    "Christmas gifts for mom 2026",
+    "top Christmas gifts for mother",
+    "best holiday gift ideas for mom",
+    "annual Christmas gift guide for mom"
   ],
   focusTopic: "Christmas Gift Recommendations for Mothers",
   recipient: ["gifts-for-mom", "gifts-for-women"],

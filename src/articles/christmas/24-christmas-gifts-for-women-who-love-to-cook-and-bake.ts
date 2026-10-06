@@ -34,8 +34,11 @@ export const article: Article = {
   answer:
     "The best gifts for passionate cooks celebrate the cooking lifestyle: heirloom recipe keepers like the Veway Tree of Life Journal ($29.95), intensive skin relief like Burt's Bees Hand Repair ($14.99) for frequent hand washing, counter hydration like the STANLEY Quencher ($34.99), and post-feast wine chillers like the Huski Wine Tumbler ($29.99).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["kitchen-gifts", "culinary-gifts"],
   tags: [
     "gifts-for-cooks",
     "gifts-for-bakers",
@@ -44,6 +47,7 @@ export const article: Article = {
     "kitchen-lifestyle",
     "holiday-gifts-2026",
   ],
+  recipient: ["gifts-for-women", "cooks-and-bakers"],
   author: "maya-okafor",
   published: "2026-09-17",
   updated: "2026-09-17",
@@ -59,6 +63,14 @@ export const article: Article = {
     "Don't buy kitchen unitaskers. 24 thoughtful gifts for women who love cooking and baking—recipe journals, hand repair balms, counter tumblers, and wine chillers.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/24-christmas-gifts-for-women-who-love-to-cook-and-bake",
+  primaryKeyword: "Christmas gifts for women who love to cook",
+  secondaryKeywords: [
+    "baking gifts for women Christmas",
+    "kitchen gifts for her Christmas",
+    "gifts for foodies women",
+    "culinary Christmas gifts for her"
+  ],
+  focusTopic: "Christmas Gifts for Cooks & Bakers",
 
   sections: [
     {

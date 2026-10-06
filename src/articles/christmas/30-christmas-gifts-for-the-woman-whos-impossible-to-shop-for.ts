@@ -40,8 +40,11 @@ export const article: Article = {
   answer:
     "Follow the Three Rules: consumables that get used up, small daily luxuries she wouldn't justify for herself, and personalized keepsakes nobody else can give her. Standouts include the ZIMASILK Silk Pillowcase ($33.99), Sol de Janeiro Jet Set ($34), and MignonandMignon Birthstone Necklace ($23.50).",
   category: "gifts-for-women",
+  occasion: ["christmas-gifts", "holiday-gifts"],
   event: "Christmas",
+  holiday: ["christmas-gifts"],
   season: "Winter",
+  giftStyle: ["unique-gifts", "problem-solver"],
   tags: [
     "hard-to-shop-for",
     "gifts-for-her",
@@ -65,6 +68,13 @@ export const article: Article = {
     "Stop stressing over hard-to-shop-for women. Discover 30 tested Christmas gifts—consumables, daily upgrades, and custom keepsakes that never get returned.",
   canonicalUrl:
     "https://celebrationsstuff.com/article/30-christmas-gifts-for-the-woman-whos-impossible-to-shop-for",
+  primaryKeyword: "Christmas gifts for the woman who is impossible to shop for",
+  secondaryKeywords: [
+    "gifts for hard to shop for women Christmas",
+    "unique gifts for picky women",
+    "what to get a woman who doesn't know what she wants"
+  ],
+  focusTopic: "Gifts for the Impossible-to-Shop-For Woman",
 
   sections: [
     {

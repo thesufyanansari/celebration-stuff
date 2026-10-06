@@ -35,18 +35,11 @@ export const article: Article = {
   canonicalUrl: "https://celebrationsstuff.com/article/halloween-front-yard-ideas-without-gore",
   featuredImageAlt:
     "Spooky Halloween front yard with glowing ghosts, witches, pumpkins, bats and skeletons without graphic gore",
-  primaryKeyword: "halloween front yard ideas",
+  primaryKeyword: "Halloween front yard ideas without gore",
   secondaryKeywords: [
-    "non-gory Halloween decorations",
-    "family-friendly Halloween yard ideas",
-    "spooky Halloween front yard",
-    "outdoor Halloween decor",
-    "Halloween yard decorations",
-    "Halloween porch decorations",
-    "cute spooky Halloween decor",
-    "Halloween lawn ideas",
-    "Halloween front yard decor",
-    "classy Halloween outdoor decorations",
+    "tasteful Halloween front yard ideas without gore",
+    "non-gory Halloween yard decorations",
+    "family-friendly non-scary front yard Halloween"
   ],
   focusTopic: "Family-Friendly Non-Gory Spooky Halloween Front Yard Decor",
   recipient: ["homeowners", "families", "neighbors", "trick-or-treaters"],
