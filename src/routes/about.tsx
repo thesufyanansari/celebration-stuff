@@ -4,6 +4,16 @@ import { authors, site, SITE_URL } from "@/data/site";
 export const Route = createFileRoute("/about")({
   head: () => {
     const canonicalUrl = `${SITE_URL}/about`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "About Us", item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: `About ${site.name} — Our Editorial Team` },
@@ -22,6 +32,7 @@ export const Route = createFileRoute("/about")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: AboutPage,
@@ -30,6 +41,14 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
+          Home
+        </Link>
+        <span className="text-border mx-2">/</span>
+        <span className="text-foreground font-medium">About Us</span>
+      </nav>
+
       <h1 className="text-h1">About {site.name}</h1>
       <p className="mt-4 text-lg text-foreground-muted">{site.description}</p>
       <p className="mt-4 text-foreground-muted">

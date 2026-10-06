@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { articles } from "@/data/articles";
 import { categories, SITE_URL } from "@/data/site";
@@ -8,6 +8,16 @@ import { Newsletter } from "@/components/site/Newsletter";
 export const Route = createFileRoute("/explore")({
   head: () => {
     const canonicalUrl = `${SITE_URL}/explore`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Explore Ideas", item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: "Explore Celebration Ideas — Celebration Stuff" },
@@ -26,6 +36,7 @@ export const Route = createFileRoute("/explore")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: ExplorePage,
@@ -57,6 +68,14 @@ function ExplorePage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
+          Home
+        </Link>
+        <span className="text-border mx-2">/</span>
+        <span className="text-foreground font-medium">Explore Ideas</span>
+      </nav>
+
       <header className="max-w-2xl">
         <p className="text-overline">Explore</p>
         <h1 className="mt-2 text-h1">Every celebration idea in one place</h1>

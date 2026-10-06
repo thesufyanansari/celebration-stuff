@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ShieldCheck } from "lucide-react";
 import { getArticle, getRelatedArticles } from "@/data/articles";
-import { getAuthor, site, SITE_URL } from "@/data/site";
+import { getAuthor, getCategory, site, SITE_URL } from "@/data/site";
 import { CommentsSection } from "@/components/site/CommentsSection";
 import { PinterestCta } from "@/components/site/PinterestCta";
 import { Newsletter } from "@/components/site/Newsletter";
@@ -37,6 +37,11 @@ export const Route = createFileRoute("/article/$slug")({
     const pageDescription = article.metaDescription || article.excerpt;
     const authorObj = getAuthor(article.author);
     const authorName = authorObj?.name || article.author;
+    const categoryObj = getCategory(article.category);
+    const categoryName = categoryObj?.name || "Gift Guides";
+    const categoryUrl = categoryObj
+      ? `${SITE_URL}/category/${categoryObj.slug}`
+      : `${SITE_URL}/explore`;
 
     const jsonLdArticle = {
       "@context": "https://schema.org",
@@ -70,8 +75,8 @@ export const Route = createFileRoute("/article/$slug")({
         {
           "@type": "ListItem",
           position: 2,
-          name: "Gift Guides",
-          item: `${SITE_URL}/explore`,
+          name: categoryName,
+          item: categoryUrl,
         },
         { "@type": "ListItem", position: 3, name: article.title, item: canonicalUrl },
       ],

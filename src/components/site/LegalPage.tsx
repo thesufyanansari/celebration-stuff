@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Link } from "@tanstack/react-router";
 
 export function LegalPage({
   title,
@@ -11,6 +12,14 @@ export function LegalPage({
 }) {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
+          Home
+        </Link>
+        <span className="text-border mx-2">/</span>
+        <span className="text-foreground font-medium">{title}</span>
+      </nav>
+
       <h1 className="text-h1">{title}</h1>
       <p className="text-caption mt-2">Last updated {updated}</p>
       <div className="mt-8 grid gap-6 text-foreground-muted [&_h2]:text-h2 [&_h2]:text-foreground">

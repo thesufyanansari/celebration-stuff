@@ -39,16 +39,18 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
           Home
         </Link>
         <span className="text-border">/</span>
-        <Link to="/explore" className="transition-colors hover:text-primary">
-          Gift Guides
-        </Link>
-        {category && (
-          <>
-            <span className="text-border">/</span>
-            <Link to="/category/$slug" params={{ slug: category.slug }} className="transition-colors hover:text-primary">
-              {category.name}
-            </Link>
-          </>
+        {category ? (
+          <Link
+            to="/category/$slug"
+            params={{ slug: category.slug }}
+            className="transition-colors hover:text-primary"
+          >
+            {category.name}
+          </Link>
+        ) : (
+          <Link to="/explore" className="transition-colors hover:text-primary">
+            Gift Guides
+          </Link>
         )}
         <span className="text-border">/</span>
         <span className="max-w-[200px] truncate font-medium text-foreground sm:max-w-xs md:max-w-md">

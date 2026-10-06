@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { articles as allArticles } from "@/data/articles";
 import { getAuthor, site, SITE_URL } from "@/data/site";
 import { BlogGrid } from "@/components/site/ArticleCard";
@@ -15,6 +15,16 @@ export const Route = createFileRoute("/author/$slug")({
     }
     const { author } = loaderData;
     const canonicalUrl = `${SITE_URL}/author/${author.slug}`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: author.name, item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: `${author.name} — ${site.name}` },
@@ -26,6 +36,7 @@ export const Route = createFileRoute("/author/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: AuthorPage,
@@ -36,6 +47,14 @@ function AuthorPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
+          Home
+        </Link>
+        <span className="text-border mx-2">/</span>
+        <span className="text-foreground font-medium">{author.name}</span>
+      </nav>
+
       <header className="flex max-w-2xl items-start gap-4">
         <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-accent-soft font-semibold text-accent">
           {author.initials}

@@ -1,10 +1,20 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { site, SITE_URL } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
   head: () => {
     const canonicalUrl = `${SITE_URL}/contact`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Contact Us", item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: `Contact ${site.name} — Pitches & Partnerships` },
@@ -23,6 +33,7 @@ export const Route = createFileRoute("/contact")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: ContactPage,
@@ -33,6 +44,14 @@ function ContactPage() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
+          Home
+        </Link>
+        <span className="text-border mx-2">/</span>
+        <span className="text-foreground font-medium">Contact Us</span>
+      </nav>
+
       <h1 className="text-h1">Contact us</h1>
       <p className="mt-4 text-foreground-muted">
         Story ideas, corrections or partnerships — email{" "}

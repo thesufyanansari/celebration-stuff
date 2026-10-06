@@ -24,13 +24,7 @@ export const Route = createFileRoute("/category/$slug")({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Categories",
-          item: `${SITE_URL}/explore`,
-        },
-        { "@type": "ListItem", position: 3, name: category.name, item: canonicalUrl },
+        { "@type": "ListItem", position: 2, name: category.name, item: canonicalUrl },
       ],
     };
 
@@ -62,13 +56,11 @@ function CategoryPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <nav aria-label="Breadcrumb" className="text-caption mb-4">
-        <Link to="/" className="hover:text-primary">
+      <nav aria-label="Breadcrumb" className="text-caption mb-4 flex items-center text-xs text-foreground-muted">
+        <Link to="/" className="hover:text-primary transition-colors">
           Home
         </Link>
-        <span className="px-2">/</span>
-        <span>Categories</span>
-        <span className="px-2">/</span>
+        <span className="text-border mx-2">/</span>
         <span className="text-foreground font-medium">{category.name}</span>
       </nav>
 

@@ -5,6 +5,16 @@ import { site, SITE_URL } from "@/data/site";
 export const Route = createFileRoute("/terms")({
   head: () => {
     const canonicalUrl = `${SITE_URL}/terms`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Terms of Use", item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: `Terms of Use — ${site.name}` },
@@ -20,6 +30,7 @@ export const Route = createFileRoute("/terms")({
         { name: "twitter:card", content: "summary" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: () => (

@@ -5,6 +5,16 @@ import { site, SITE_URL } from "@/data/site";
 export const Route = createFileRoute("/affiliate-disclosure")({
   head: () => {
     const canonicalUrl = `${SITE_URL}/affiliate-disclosure`;
+
+    const jsonLdBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Affiliate Disclosure", item: canonicalUrl },
+      ],
+    };
+
     return {
       meta: [
         { title: `Affiliate Disclosure — ${site.name}` },
@@ -20,6 +30,7 @@ export const Route = createFileRoute("/affiliate-disclosure")({
         { name: "twitter:card", content: "summary" },
       ],
       links: [{ rel: "canonical", href: canonicalUrl }],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLdBreadcrumb) }],
     };
   },
   component: () => (
